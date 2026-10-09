@@ -337,3 +337,36 @@ body[data-page="carta"] { background: var(--papel); }
   .pp { place-items: end stretch; padding: 0; }
   .pp__caja { width: 100%; border-radius: 26px 26px 0 0; padding: 22px 18px calc(22px + env(safe-area-inset-bottom)); transform: translateY(100%); }
 }
+
+/* v4 · Pedido de varios platos por WhatsApp */
+.pp__caja { max-height: 92vh; overflow: auto; }
+.pp__cab2 { margin: 0 44px 14px 0; }
+.pp__cab2 h3 { font-size: 1.4rem; line-height: 1.15; margin: 4px 0 0; }
+.pp__cab2 h3 span { color: var(--vino); }
+.pp__lista { list-style: none; margin: 0 0 16px; padding: 0; display: grid; gap: 8px; max-height: 38vh; overflow: auto; }
+.pp__fila { display: grid; grid-template-columns: 52px 1fr auto; gap: 12px; align-items: center; background: #fff; border-radius: 14px; padding: 7px; box-shadow: var(--sombra-s); }
+.pp__fila.nuevo { animation: entra .45s var(--ease); }
+.pp__mini { width: 52px; height: 52px; border-radius: 11px; overflow: hidden; background: var(--vino); color: var(--maiz); display: grid; place-items: center; }
+.pp__mini img { width: 100%; height: 100%; object-fit: cover; }
+.pp__mini svg { width: 80%; }
+.pp__nom { min-width: 0; line-height: 1.2; }
+.pp__nom b { display: block; font-size: .92rem; }
+.pp__nom small { color: var(--vino); font-weight: 700; }
+.pp__qty { display: inline-flex; align-items: center; background: var(--papel); border-radius: 999px; box-shadow: inset 0 0 0 1px rgba(89,1,29,.15); }
+.pp__qty button { border: 0; background: none; width: 34px; height: 34px; font-size: 1.2rem; font-weight: 700; color: var(--vino); cursor: pointer; border-radius: 50%; }
+.pp__qty span { min-width: 20px; text-align: center; font-weight: 800; }
+.pp__mas { border: 0; border-radius: 16px; padding: 12px; cursor: pointer; font: 700 .95rem var(--f-body); background: transparent; color: var(--vino); box-shadow: inset 0 0 0 2px rgba(89,1,29,.25); }
+.pp__mas:hover { background: rgba(89,1,29,.06); }
+.pp__dom { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 4px; }
+.pp__dom span { grid-column: 1 / -1; font-size: .78rem; color: var(--tinta-2); }
+.pp__dom .pp__op { padding: 11px 14px; }
+.pp__dom .pp__op::after { right: 12px; font-size: 1rem; }
+.pp__vaciar { border: 0; background: none; color: var(--tinta-2); font-size: .8rem; text-decoration: underline; cursor: pointer; justify-self: center; }
+.pp__vacio { padding: 6px 40px 6px 0; }
+.pp__vacio p { margin: 8px 0 0; }
+
+.pp-fab { position: fixed; left: 20px; bottom: 22px; z-index: 82; display: flex; align-items: center; gap: 9px; border: 0; border-radius: 999px; cursor: pointer; background: var(--vino); color: var(--crema); font: 700 .92rem var(--f-body); padding: .75em 1.1em; box-shadow: var(--sombra); opacity: 0; pointer-events: none; transform: translateY(20px); transition: .4s var(--ease); }
+.pp-fab.on { opacity: 1; pointer-events: auto; transform: none; }
+.pp-fab svg { width: 20px; height: 20px; }
+.pp-fab b { background: var(--maiz); color: var(--vino-900); min-width: 24px; height: 24px; border-radius: 12px; display: grid; place-items: center; font-size: .8rem; padding: 0 6px; }
+@media (max-width: 640px) { .pp-fab { left: 12px; bottom: 86px; } }

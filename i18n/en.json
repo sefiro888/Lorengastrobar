@@ -1094,5 +1094,14 @@
  "Un toque y te abrimos WhatsApp con el combo ya escrito para recogerlo en el local. Para envío a domicilio, pídelo en Glovo o Uber Eats.": "One tap and we'll open WhatsApp with the combo already written for pick-up at the restaurant. For home delivery, order it on Glovo or Uber Eats.",
  "<a class=\"btn btn--sm btn--wa\" data-pack-wa=\"\" href=\"#\">Encargar por WhatsApp</a>": "<a class=\"btn btn--sm btn--wa\" data-pack-wa=\"\" href=\"#\">Order on WhatsApp</a>",
  "<a class=\"pp__op pp__op--g\" href=\"#\" id=\"pp-glovo\" rel=\"noopener\" target=\"_blank\"><b>Glovo</b><span>A domicilio · busca «Loren Gastrobar»</span></a> <a class=\"pp__op pp__op--u\" href=\"#\" id=\"pp-uber\" rel=\"noopener\" target=\"_blank\"><b>Uber Eats</b><span>A domicilio · acepta Ticket Restaurant®</span></a> <a class=\"pp__op pp__op--w\" href=\"#\" id=\"pp-wa\" rel=\"noopener\" target=\"_blank\"><b>Recoger en el local</b><span>Te lo dejamos listo · por WhatsApp, sin comisiones</span></a>": "<a class=\"pp__op pp__op--g\" href=\"#\" id=\"pp-glovo\" rel=\"noopener\" target=\"_blank\"><b>Glovo</b><span>Delivery · search for \"Loren Gastrobar\"</span></a> <a class=\"pp__op pp__op--u\" href=\"#\" id=\"pp-uber\" rel=\"noopener\" target=\"_blank\"><b>Uber Eats</b><span>Delivery · accepts Ticket Restaurant®</span></a> <a class=\"pp__op pp__op--w\" href=\"#\" id=\"pp-wa\" rel=\"noopener\" target=\"_blank\"><b>Pick up at the restaurant</b><span>We'll have it ready · via WhatsApp, no fees</span></a>",
- "¡Hola Loren! Quiero encargar {x} para recoger en el local. ¿A qué hora puedo pasar?": "Hi Loren! I'd like to order {x} for pick-up at the restaurant. What time can I come by?"
+ "¡Hola Loren! Quiero encargar {x} para recoger en el local. ¿A qué hora puedo pasar?": "Hi Loren! I'd like to order {x} for pick-up at the restaurant. What time can I come by?",
+ "Tu pedido": "Your order",
+ "Aún no has añadido nada. Toca «Pedir» en los platos que quieras.": "You haven't added anything yet. Tap \"Order\" on the dishes you want.",
+ "Total aprox.": "Approx. total",
+ "¿A qué hora puedo pasar?": "What time can I come by?",
+ "Pedir por WhatsApp": "Order on WhatsApp",
+ "Recoger en el local · el mensaje ya va escrito, sin comisiones": "Pick-up at the restaurant · message already written, no fees",
+ "Añadir más platos": "Add more dishes",
+ "¿Prefieres a domicilio? Pide en su página:": "Prefer delivery? Order on their page:",
+ "Vaciar pedido": "Clear order"
 }

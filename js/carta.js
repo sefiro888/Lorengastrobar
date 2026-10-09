@@ -1,7 +1,7 @@
 /* =========================================================
    LOREN RESTOBAR · Carta interactiva
-   La carta es para mirar y elegir. Cada plato tiene «Pedir»:
-   Glovo, Uber Eats o encargarlo por WhatsApp para recoger.
+   La carta es para mirar y elegir. Cada plato tiene «Pedir»: se
+   suman varios platos y se encargan por WhatsApp (o Glovo / Uber Eats).
    ========================================================= */
 (function () {
   const L = window.LOREN, CARTA = window.CARTA, CATS = window.CATEGORIAS;
@@ -31,23 +31,73 @@
     ? `<a class="pedir-btn pedir-btn--wa" href="${wa(p.cat === "finde" ? T("¡Hola Loren! ¿Este finde tenéis {x}? Quería reservar.", { x: p.n }) : T("¡Hola Loren! ¿Hoy tenéis {x}? Me gustaría pedirlo.", { x: p.n }))}" target="_blank" rel="noopener">${T(p.cat === "finde" ? "Reservar" : "Preguntar")}</a>`
     : `<button class="pedir-btn" data-pedir-plato="${p.id}" aria-label="${T("Pedir")} ${p.n}">${BOLSA}${T("Pedir")}</button>`;
 
-  const pp = $("#pp");
-  function abrirPedir(id) {
-    const p = byId(id); if (!p) return;
-    $("#pp-img").innerHTML = p.img ? `<img src="${p.img}" alt="">` : enc(0.9);
-    $("#pp-nom").textContent = p.n;
-    $("#pp-precio").textContent = euro(p.precio);
-    $("#pp-glovo").href = L.links.glovo;
-    $("#pp-uber").href = L.links.uber;
-    $("#pp-wa").href = wa(T("¡Hola Loren! Quiero encargar {x} para recoger en el local. ¿A qué hora puedo pasar?", { x: p.n }));
-    pp.classList.add("on");
+  /* ---------- Pedido: varios platos → un solo WhatsApp ---------- */
+  const pp = $("#pp"), ppCaja = $("#pp-caja");
+  const pedido = new Map(); // id -> cantidad
+  try { JSON.parse(sessionStorage.getItem("loren-pedido") || "[]").forEach(([id, n]) => byId(id) && n > 0 && pedido.set(id, n)); } catch (e) {}
+  const guardar = () => { try { sessionStorage.setItem("loren-pedido", JSON.stringify([...pedido])); } catch (e) {} };
+  const total = () => [...pedido].reduce((s, [id, n]) => s + byId(id).precio * n, 0);
+  const cuantos = () => [...pedido.values()].reduce((s, n) => s + n, 0);
+  const mensaje = () => {
+    const lineas = [...pedido].map(([id, n]) => `• ${n} x ${byId(id).n}`).join("\n");
+    return `${T("¡Mba'éichapa, Loren! Quiero encargar para recoger en el local:")}\n${lineas}\n\n${T("Total aprox.")}: ${euro(total())}\n${T("¿A qué hora puedo pasar?")}`;
+  };
+  const X = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>';
+
+  const fab = document.createElement("button");
+  fab.className = "pp-fab"; fab.type = "button";
+  document.body.appendChild(fab);
+  fab.addEventListener("click", () => abrirPedido());
+
+  function pintarPedido() {
+    const n = cuantos();
+    fab.innerHTML = `${BOLSA}<span>${T("Tu pedido")}</span><b>${n}</b>`;
+    fab.classList.toggle("on", n > 0 && !pp.classList.contains("on"));
+    if (!n) {
+      ppCaja.innerHTML = `<button class="qv__x" data-pp-cerrar aria-label="${T("Cerrar")}">${X}</button>
+        <div class="pp__vacio"><span class="pp__eti">${T("Tu pedido")}</span><p>${T("Aún no has añadido nada. Toca «Pedir» en los platos que quieras.")}</p></div>`;
+      return;
+    }
+    const filas = [...pedido].map(([id, c]) => {
+      const p = byId(id);
+      return `<li class="pp__fila"><span class="pp__mini">${p.img ? `<img src="${p.img}" alt="">` : enc(0.9)}</span>
+        <div class="pp__nom"><b>${p.n}</b><small>${euro(p.precio * c)}</small></div>
+        <div class="pp__qty"><button type="button" data-q="-1" data-id="${id}" aria-label="${T("Quitar uno")}">−</button><span>${c}</span><button type="button" data-q="1" data-id="${id}" aria-label="${T("Añadir uno")}">+</button></div></li>`;
+    }).join("");
+    ppCaja.innerHTML = `<button class="qv__x" data-pp-cerrar aria-label="${T("Cerrar")}">${X}</button>
+      <div class="pp__cab2"><span class="pp__eti">${T("Tu pedido")}</span><h3>${n} ${T(n === 1 ? "plato" : "platos")} · <span>${euro(total())}</span></h3></div>
+      <ul class="pp__lista">${filas}</ul>
+      <div class="pp__ops">
+        <a class="pp__op pp__op--w" href="${wa(mensaje())}" target="_blank" rel="noopener"><b>${T("Pedir por WhatsApp")}</b><span>${T("Recoger en el local · el mensaje ya va escrito, sin comisiones")}</span></a>
+        <button type="button" class="pp__mas" data-pp-cerrar>＋ ${T("Añadir más platos")}</button>
+        <div class="pp__dom"><span>${T("¿Prefieres a domicilio? Pide en su página:")}</span>
+          <a class="pp__op pp__op--g" href="${L.links.glovo}" target="_blank" rel="noopener"><b>Glovo</b></a>
+          <a class="pp__op pp__op--u" href="${L.links.uber}" target="_blank" rel="noopener"><b>Uber Eats</b></a></div>
+        <button type="button" class="pp__vaciar" data-vaciar>${T("Vaciar pedido")}</button>
+      </div>`;
   }
-  const cerrarPedir = () => pp.classList.remove("on");
-  pp.addEventListener("click", (e) => { if (e.target === pp || e.target.closest("[data-pp-cerrar]") || e.target.closest(".pp__op")) setTimeout(cerrarPedir, 50); });
+  function abrirPedido() { pintarPedido(); pp.classList.add("on"); fab.classList.remove("on"); }
+  function anadir(id) {
+    pedido.set(id, (pedido.get(id) || 0) + 1);
+    guardar(); abrirPedido();
+    const li = $(`[data-id="${id}"]`, ppCaja); li && li.closest(".pp__fila").classList.add("nuevo");
+  }
+  const cerrarPedir = () => { pp.classList.remove("on"); pintarPedido(); };
+  pp.addEventListener("click", (e) => {
+    if (e.target === pp || e.target.closest("[data-pp-cerrar]")) return cerrarPedir();
+    const q = e.target.closest("[data-q]");
+    if (q) {
+      const id = q.dataset.id, n = (pedido.get(id) || 0) + +q.dataset.q;
+      n > 0 ? pedido.set(id, n) : pedido.delete(id);
+      guardar(); pintarPedido(); return;
+    }
+    if (e.target.closest("[data-vaciar]")) { pedido.clear(); guardar(); pintarPedido(); }
+  });
+  pintarPedido();
 
   document.addEventListener("click", (e) => {
     const b = e.target.closest("[data-pedir-plato]");
-    if (b) { e.preventDefault(); e.stopPropagation(); abrirPedir(b.dataset.pedirPlato); return; }
+    if (b) { e.preventDefault(); e.stopPropagation(); anadir(b.dataset.pedirPlato); return; }
     const v = e.target.closest("[data-ver]");
     if (v) { e.preventDefault(); abrirFicha(v.dataset.ver); }
   });
