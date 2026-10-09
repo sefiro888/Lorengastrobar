@@ -6,7 +6,7 @@
 | `index.html` | Inicio: resumen de todo con enlaces a cada sección |
 | `historia.html` | Nuestra historia: 6 capítulos, gráfico de votos del Mundial de Comidas, la familia, valores, comunidad y prensa |
 | `sabores.html` | Guía de la cocina paraguaya: 3 pilares, enciclopedia de 10 platos con pronunciación en voz alta, rutas para primerizos, test «¿Qué plato eres?» y diccionario guaraní |
-| `carta.html` | Carta interactiva: escaparate de imprescindibles, categorías con banner, buscador, filtros, orden, vista cuadrícula/lista, ficha de cada plato con sugerencias, combos y **Mi bandeja** (carrito que se guarda en el navegador y envía el pedido por WhatsApp) |
+| `carta.html` | Carta interactiva: escaparate de imprescindibles, categorías con banner, buscador, filtros, orden, vista cuadrícula/lista, ficha de cada plato con sugerencias, combos por WhatsApp y botón **«Pedir»** en cada plato (Glovo, Uber Eats o recoger por WhatsApp). Sin carrito: las apps no admiten recibir un pedido desde fuera |
 | `domicilio.html` | A domicilio: Glovo, Uber Eats o recoger, comparativa, pasos, «lo que mejor viaja» con trucos, packs y preguntas frecuentes |
 | `eventos.html` | Eventos y catering: tipos de evento, bandejas de bocaditos, reservas de grupo, proceso, configurador por WhatsApp y preguntas frecuentes |
 | `visitanos.html` | Visítanos: horario en gráfico con la hora actual, momentos del día, cómo llegar, mapa, reserva por WhatsApp, servicios, galería y preguntas frecuentes |

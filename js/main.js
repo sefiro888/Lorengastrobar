@@ -137,6 +137,11 @@
       obs.unobserve(e.target);
     });
   }, { threshold: 0.15, rootMargin: "0px 0px -40px 0px" });
+  // el valor final se ve desde el principio (por si la animación no llega a dispararse)
+  $$("[data-count]").forEach((el) => {
+    const n = el.dataset.count;
+    el.textContent = (el.dataset.pre || "") + (window.IDIOMA === "en" ? n : n.replace(".", ",")) + (el.dataset.suf || "");
+  });
   $$(".rv, [data-count]").forEach((el) => obs.observe(el));
 
   function contar(el) {

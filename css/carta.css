@@ -2,7 +2,6 @@
    LOREN RESTOBAR · La carta interactiva
    ========================================================= */
 body[data-page="carta"] { background: var(--papel); }
-body[data-page="carta"] .wa-flot { display: none; }
 
 /* ---------- HERO ---------- */
 .ch {
@@ -239,7 +238,6 @@ body[data-page="carta"] .wa-flot { display: none; }
   .qv__img { min-height: 260px; }
   .platos.lista { grid-template-columns: 1fr; }
   .fab-bandeja { left: 12px; right: 12px; bottom: 84px; justify-content: flex-start; }
-  body[data-page="carta"] .barra-movil { display: none; }
   .fab-bandeja { bottom: 14px; }
 }
 @media (max-width: 640px) {
@@ -276,4 +274,66 @@ body[data-page="carta"] .wa-flot { display: none; }
 @media (max-width: 640px) {
   .ch__tit .sc { position: static; display: block; margin-top: -4px; transform: rotate(-6deg); }
   @keyframes letra2 { from { opacity: 0; } to { opacity: 1; } }
+}
+
+/* =========================================================
+   v3 · Sin bandeja: botón «Pedir» + hoja de opciones
+   y barra de categorías fina que se esconde al bajar
+   ========================================================= */
+.cherr { padding: 34px 0 6px; }
+.cherr .cnav__herr { padding-bottom: 0; }
+.cnav { top: 66px; transition: transform .45s var(--ease), box-shadow .3s; }
+.cnav.oculta { transform: translateY(calc(-100% - 80px)); box-shadow: none; }
+.cnav__cats { padding: 10px 0; }
+
+.pedir-btn {
+  display: inline-flex; align-items: center; gap: 7px; border: 0; border-radius: 999px; cursor: pointer;
+  background: var(--vino); color: var(--crema); font: 700 .88rem var(--f-body); padding: .65em 1.15em; text-decoration: none;
+  box-shadow: 0 8px 20px -10px rgba(89,1,29,.8); transition: transform .3s var(--ease), background .3s; white-space: nowrap;
+}
+.pedir-btn svg { width: 17px; height: 17px; }
+.pedir-btn:hover { transform: translateY(-2px); background: var(--vino-500); }
+.pedir-btn--wa { background: var(--maiz); color: var(--vino-900); box-shadow: 0 8px 20px -10px rgba(232,180,58,.8); }
+.ver-btn { border: 0; background: none; color: var(--tinta-2); font: 600 .84rem var(--f-body); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; padding: .4em 0; }
+.ver-btn:hover { color: var(--vino); }
+.escap .pedir-btn { font-size: 1rem; padding: .95em 1.6em; background: var(--maiz); color: var(--vino-900); }
+.qv__acc .pedir-btn { font-size: 1rem; padding: .85em 1.5em; }
+
+/* Hoja «¿Cómo lo quieres?» */
+.pp { position: fixed; inset: 0; z-index: 275; display: grid; place-items: center; padding: 20px; background: rgba(20,0,6,.6); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); opacity: 0; visibility: hidden; transition: .35s; }
+.pp.on { opacity: 1; visibility: visible; }
+.pp__caja { position: relative; width: min(440px, 100%); background: var(--papel); border-radius: 26px; padding: 24px 22px 22px; transform: translateY(24px); transition: transform .5s var(--ease); box-shadow: var(--sombra); }
+.pp.on .pp__caja { transform: none; }
+.pp__cab { display: grid; grid-template-columns: 74px 1fr; gap: 14px; align-items: center; margin: 0 40px 18px 0; }
+.pp__img { width: 74px; height: 74px; border-radius: 18px; overflow: hidden; background: var(--vino); color: var(--maiz); display: grid; place-items: center; }
+.pp__img img { width: 100%; height: 100%; object-fit: cover; }
+.pp__img svg { width: 80%; }
+.pp__eti { font-size: .72rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: var(--vino-500); }
+.pp__cab h3 { font-size: 1.35rem; line-height: 1.15; margin: 4px 0 2px; }
+.pp__cab b { font-family: var(--f-display); color: var(--vino); font-size: 1.15rem; }
+.pp__ops { display: grid; gap: 10px; }
+.pp__op { display: grid; gap: 2px; padding: 14px 18px 14px 18px; border-radius: 16px; text-decoration: none; position: relative; transition: transform .3s var(--ease); }
+.pp__op::after { content: "→"; position: absolute; right: 18px; top: 50%; translate: 0 -50%; font-weight: 800; font-size: 1.1rem; }
+.pp__op:hover { transform: translateX(4px); }
+.pp__op b { font-size: 1.05rem; }
+.pp__op span { font-size: .8rem; opacity: .85; }
+.pp__op--g { background: #ffc244; color: #1d1d1b; }
+.pp__op--u { background: #06c167; color: #fff; }
+.pp__op--w { background: var(--vino); color: var(--crema); }
+.pp .qv__x { top: 16px; right: 16px; }
+
+@media (max-width: 640px) {
+  .cnav { top: 66px; }
+  .cnav__cats a { font-size: .8rem; padding: 4px 12px 4px 4px; }
+  .cnav__cats a img, .cnav__cats a .ph { width: 26px; height: 26px; }
+  .cnav__cats { padding: 8px 0; }
+  .cherr { padding-top: 22px; }
+  .cherr .cnav__herr { gap: 8px; }
+  .cherr .chip { font-size: .8rem; padding: .45em .8em; }
+  .cherr .orden { font-size: .8rem; }
+  .p-card__pie { flex-wrap: wrap; gap: 6px; }
+  .p-card .pedir-btn { font-size: .8rem; padding: .55em 1em; }
+  .p-card .ver-btn { display: none; }
+  .pp { place-items: end stretch; padding: 0; }
+  .pp__caja { width: 100%; border-radius: 26px 26px 0 0; padding: 22px 18px calc(22px + env(safe-area-inset-bottom)); transform: translateY(100%); }
 }

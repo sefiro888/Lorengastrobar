@@ -1685,7 +1685,7 @@
  },
  {
   "p": "carta",
-  "es": "La carta completa de Loren Restobar: chipa guazú, sopa paraguaya, mbejú, empanadas, milanesas, parrillada y especiales del fin de semana. Arma tu bandeja y pide por WhatsApp, Glovo o Uber Eats."
+  "es": "La carta completa de Loren Restobar: chipa guazú, sopa paraguaya, mbejú, empanadas, milanesas, parrillada y especiales del fin de semana. Pide por Glovo, Uber Eats o encarga para recoger por WhatsApp."
  },
  {
   "p": "carta",
@@ -1705,7 +1705,7 @@
  },
  {
   "p": "carta",
-  "es": "Todo lo que sale de la cocina de Loren: clásicos paraguayos, milanesas que desbordan el plato y los caldos del fin de semana. Toca cualquier plato para verlo en grande y ve llenando <strong style=\"color:var(--maiz)\">tu bandeja</strong>."
+  "es": "Todo lo que sale de la cocina de Loren: clásicos paraguayos, milanesas que desbordan el plato y los caldos del fin de semana. Toca cualquier plato para verlo en grande y, cuando lo tengas claro, pídelo por <strong style=\"color:var(--maiz)\">Glovo, Uber Eats o WhatsApp</strong>."
  },
  {
   "p": "carta",
@@ -1793,7 +1793,7 @@
  },
  {
   "p": "carta",
-  "es": "Un toque y todo el combo entra en tu bandeja. Luego puedes quitar o añadir lo que quieras."
+  "es": "Un toque y te abrimos WhatsApp con el combo ya escrito para recogerlo en el local. Para envío a domicilio, pídelo en Glovo o Uber Eats."
  },
  {
   "p": "carta",
@@ -1805,7 +1805,7 @@
  },
  {
   "p": "carta",
-  "es": "Añadir a la bandeja"
+  "es": "<a class=\"btn btn--sm btn--wa\" data-pack-wa=\"\" href=\"#\">Encargar por WhatsApp</a>"
  },
  {
   "p": "carta",
@@ -1841,47 +1841,11 @@
  },
  {
   "p": "carta",
-  "es": "Abrir mi bandeja"
+  "es": "¿Cómo lo quieres?"
  },
  {
   "p": "carta",
-  "es": "<small>Mi bandeja</small><strong id=\"fab-total\">0,00 €</strong>"
- },
- {
-  "p": "carta",
-  "es": "Mi bandeja"
- },
- {
-  "p": "carta",
-  "es": "lo que se te antoja hoy"
- },
- {
-  "p": "carta",
-  "es": "<span>Total orientativo</span><b id=\"b-total\">0,00 €</b>"
- },
- {
-  "p": "carta",
-  "es": "Hora de recogida"
- },
- {
-  "p": "carta",
-  "es": "Notas: sin cebolla, alergias…"
- },
- {
-  "p": "carta",
-  "es": "Encargar para recoger (WhatsApp)"
- },
- {
-  "p": "carta",
-  "es": "<a class=\"btn btn--glovo btn--sm\" data-link=\"glovo\" href=\"#\" rel=\"noopener\" target=\"_blank\">Glovo</a><a class=\"btn btn--uber btn--sm\" data-link=\"uber\" href=\"#\" rel=\"noopener\" target=\"_blank\">Uber Eats</a>"
- },
- {
-  "p": "carta",
-  "es": "Para envío a domicilio, añade los platos en tu app favorita."
- },
- {
-  "p": "carta",
-  "es": "Vaciar bandeja"
+  "es": "<a class=\"pp__op pp__op--g\" href=\"#\" id=\"pp-glovo\" rel=\"noopener\" target=\"_blank\"><b>Glovo</b><span>A domicilio · busca «Loren Gastrobar»</span></a> <a class=\"pp__op pp__op--u\" href=\"#\" id=\"pp-uber\" rel=\"noopener\" target=\"_blank\"><b>Uber Eats</b><span>A domicilio · acepta Ticket Restaurant®</span></a> <a class=\"pp__op pp__op--w\" href=\"#\" id=\"pp-wa\" rel=\"noopener\" target=\"_blank\"><b>Recoger en el local</b><span>Te lo dejamos listo · por WhatsApp, sin comisiones</span></a>"
  },
  {
   "p": "domicilio",
