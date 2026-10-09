@@ -1,0 +1,220 @@
+440|Price: high to low
+441|View
+442|Grid
+443|List
+444|We couldn't find that dish…
+445|Try another word or <a data-reserva="" href="#" style="color:var(--vino);font-weight:700">ask us on WhatsApp</a>.
+446|Sharing menus
+447|Can't decide? <em>Pick a combo</em>
+448|One tap and the whole combo goes into your tray. You can remove or add whatever you like afterwards.
+449|Paraguayan starter pack
+450|The classics to try for the first time. For two.
+451|Add to tray
+452|Sunday table
+453|The picada completa and everything that goes with it. For four.
+454|Milanesa night
+455|Empanadas to start and two star milanesas. For two hungry people.
+456|Approximate prices including VAT; they may vary in the restaurant and on delivery apps. *Wheat-free: made with cassava and corn, in a kitchen that also handles wheat. Ask our team about allergens.
+457|Dish details
+458|Close
+459|Goes great with
+460|Open my tray
+461|<small>My tray</small><strong id="fab-total">0,00 €</strong>
+462|My tray
+463|what you fancy today
+464|<span>Approximate total</span><b id="b-total">0,00 €</b>
+465|Pick-up time
+466|Notes: no onion, allergies…
+467|Order for pick-up (WhatsApp)
+468|=
+469|For home delivery, add the dishes in your favourite app.
+470|Empty tray
+471|Paraguayan food delivery in Barcelona · Loren Restobar
+472|Order Paraguayan food delivery in Barcelona: empanadas, chipa guazú, mbejú and milanesas from Loren Restobar on Glovo, Uber Eats or for pick-up via WhatsApp.
+473|<a href="index.html">Home</a> / <span>Delivery</span>
+474|Paraguay comes <em>to your sofa</em>
+475|Freshly made empanadas, still-warm chipa guazú and milanesas that don't fit in the box. Order on Glovo or Uber Eats, or message us on WhatsApp and pick it up with no fees.
+476|<a class="btn btn--glovo" data-link="glovo" href="#" rel="noopener" target="_blank">Order on Glovo</a> <a class="btn btn--uber" data-link="uber" href="#" rel="noopener" target="_blank">Order on Uber Eats</a> <a class="btn btn--ghost" data-wa-recoger="" href="#" rel="noopener" target="_blank">Pick up in store</a>
+477|<b>97%</b><span>happy on Glovo</span>
+478|<b>4.9★</b><span>on Uber Eats</span>
+479|<b>0 €</b><span>fees if you pick up</span>
+480|Basket of homemade empanadas
+481|<b>€22.50</b><small>Box of 6 empanadas · the most ordered to share</small>
+482|Three ways to order
+483|You choose <em>how</em>
+484|Fast delivery in the area. With Glovo Prime, delivery is often free.
+485|Accepts Ticket Restaurant® in the app and has the widest menu: picada completa, mandi'ó chyryry…
+486|No fees · ready when you want
+487|Message us on WhatsApp, we'll confirm the time and you pick it up at Carrer de la Muntanya 115.
+488|Comparison
+489|Which one <em>suits me</em>?
+490|All three options have the same kitchen behind them. What changes is payment, delivery and a few surprises on the menu.
+491|Pick up in store
+492|Rating
+493|97% happy
+494|4.6 ★ on Google (739)
+495|Best for
+496|Ordering home quickly, especially with Prime
+497|Office lunch with Ticket Restaurant®
+498|Large orders and saving on delivery
+499|Minimum order
+500|Whatever the app says
+501|<span class="si">No minimum</span>
+502|Payment
+503|Card in the app
+504|Card and Ticket Restaurant® in the app
+505|In store
+506|Menu
+507|Classics, milanesas, tapas and drinks
+508|The widest: picada completa, mandi'ó chyryry, tripe milanesa…
+509|<span class="si">The full menu + daily specials</span>
+510|Fees
+511|Delivery fees depending on the app
+512|Prices, minimums and delivery areas are managed by each app and may vary depending on your address and the time.
+513|That easy
+514|From our kitchen <em>to your table</em>
+515|Choose
+516|Open Glovo or Uber Eats and search for "Loren Gastrobar", or message us on WhatsApp if you're picking up.
+517|Order
+518|Not sure about a dish? Check the <a href="sabores.html" style="color:var(--maiz)">flavour guide</a> or ask us.
+519|We cook
+520|Everything is made to order: the empanadas are fried, the milanesa is breaded and the mbejú comes straight off the griddle.
+521|Enjoy
+522|And if you liked it, leave us a review: it helps us so much. Aguyje!
+523|What travels best
+524|Arrives as if <em>freshly made</em>
+525|Our favourites for delivery and a tip from Loren to keep them perfect if you don't eat them straight away.
+526|They survive the journey beautifully and are perfect for sharing.
+527|🔥 Tip: 5 minutes in the oven at 180 °C and they're crispy again.
+528|Tasty warm and even better the next day.
+529|🔥 Tip: flip it in a frying pan with a little butter.
+530|Travels whole and is cut into portions at home.
+531|🔥 Tip: 20–30 seconds in the microwave and it's ready.
+532|Milanesas
+533|Huge portions: one is enough for two if you order a starter.
+534|🔥 Tip: in the oven, never the microwave, so it stays crispy.
+535|The Paraguayan street classic, with chips.
+536|🔥 Tip: open it as soon as it arrives so it doesn't go soggy.
+537|Mbejú with cheese
+538|Best eaten soon: the cheese is just right.
+539|🔥 Tip: hot frying pan, 1 minute on each side.
+540|Suggested bundles
+541|Don't know what to order? <em>We've done it for you</em>
+542|Office Bundle
+543|Office bundle
+544|A hearty meal for one. Ideal with Ticket Restaurant® on Uber Eats.
+545|Family Bundle
+546|Family bundle
+547|For four: empanadas, two milanesas to share and the Paraguayan classics.
+548|Match Bundle
+549|Match bundle
+550|Everything to nibble in front of the TV. Beers included.
+551|Approximate totals with menu prices. To order on Glovo or Uber Eats, add the dishes in the app; "Order" opens WhatsApp for pick-up in store.
+552|Frequently asked questions
+553|All about <em>delivery</em>
+554|How far do you deliver?
+555|Delivery is handled by Glovo and Uber Eats, and each app will confirm whether it reaches your address. It usually covers the neighbourhoods around Camp de l'Arpa and Sant Martí. If it doesn't reach you, come and pick it up!
+556|What time can I order?
+557|In the apps you can order while the kitchen is open (on Uber Eats, roughly from 10:45 to 22:30). For pick-up, check our <a href="visitanos.html">opening hours</a>.
+558|Can I order the weekend specials too?
+559|Vorí vorí, pira caldo and soyo are made at weekends in limited quantities. Message us on WhatsApp and we'll tell you if there's any left to take away.
+560|Do you accept Ticket Restaurant?
+561|Yes, you can pay with Ticket Restaurant® through Uber Eats.
+562|Do you do large orders for offices or parties?
+563|Of course! For groups we recommend our catering trays. Check the <a href="eventos.html">events and catering</a> page and ask for a no-obligation quote.
+564|I have allergies or intolerances, what should I do?
+565|Before ordering, contact us by phone or WhatsApp (602 07 68 28) and we'll tell you about the allergens in each dish. Many Paraguayan classics are made with cassava and corn, without wheat, but in a kitchen that also handles wheat.
+566|Are the prices the same as in the restaurant?
+567|The apps may have slightly different prices from the restaurant. Picking up in store saves you the delivery fees.
+568|Hungry? <em>Jaha!</em>
+569|Choose your favourite app and in no time you'll have Paraguay at home.
+570|<a class="btn btn--glovo" data-link="glovo" href="#" rel="noopener" target="_blank">Order on Glovo</a> <a class="btn btn--uber" data-link="uber" href="#" rel="noopener" target="_blank">Order on Uber Eats</a> <a class="btn btn--ghost" href="carta.html">See the menu first</a>
+571|Paraguayan events and catering · Loren Restobar
+572|Celebrate your birthday, company lunch or christening Paraguayan style. Trays of party bites —empanadas, chipas, finger sandwiches, sopa paraguaya— and group bookings at Loren Restobar, Barcelona.
+573|<a href="index.html">Home</a> / <span>Events and catering</span>
+574|Birthdays, christenings, company lunches, afterworks or that party at home. We'll prepare trays of homemade party bites or book the restaurant for you with a tailor-made menu. You bring the occasion; we bring the flavour.
+575|<a class="btn" href="#configurador">Get a quote</a><a class="btn btn--ghost" href="#bandejas">See the trays</a>
+576|<b>🎂</b><span>Bring your own cake</span>
+577|<b>☀️</b><span>Terrace for groups</span>
+578|<b>0 €</b><span>No-obligation quote</span>
+579|Paraguayan catering tray with finger sandwiches, mini milanesas and sopa paraguaya
+580|<b>Party bites</b><small>Empanadas, chipas, croquettes, finger sandwiches and sopa paraguaya</small>
+581|For every occasion
+582|What are we <em>celebrating</em>?
+583|We adapt to you: from an afternoon snack of party bites to a company lunch with a mixed grill on the brazier.
+584|From 18 to 80. We'll book your table, let you bring the cake and prepare sharing platters so nobody goes hungry.
+585|Company lunches
+586|Team lunches, Christmas dinners or a different kind of corporate cocktail. Surprise them with something they've never tried.
+587|Terrace, cold beers, empanadas and tequeños. The perfect plan after the office.
+588|Christenings and communions
+589|Trays of party bites to take home or to your venue: the classic at Paraguayan family celebrations.
+590|Weddings and engagements
+591|A personalised menu and attentive service for the most special day, with all the flavour of our homeland.
+592|Matches and national holidays
+593|Paraguay plays, Paraguay celebrates. Come with your shirt on and watch the match as if you were at home.
+594|Trays of <em>party bites</em>
+595|In Paraguay there's no party without bocaditos. We prepare homemade trays ready to serve. These are just examples: we'll put them together to your taste and give you a tailor-made quote.
+596|≈ 10–15 people
+597|Classic Tray
+598|Mini beef and chicken empanadas
+599|Homemade croquettes
+600|Chipa and mini cheese chipas
+601|Assorted fried bites
+602|Order this tray
+603|Tray of finger sandwiches and mini milanesas
+604|≈ 20–30 people
+605|Party Tray
+606|Finger sandwiches with ham, cheese, egg and tomato
+607|Mini milanesa sandwiches
+608|Empanadas and croquettes
+609|Sopa paraguaya in portions
+610|Made to measure
+611|Paraguayan Table
+612|Chipa guazú and sopa paraguaya in a serving dish
+613|Mbejú to share
+614|Mixed grill or milanesas
+615|Tres leches for dessert
+616|Design my table
+617|Table for groups
+618|At the restaurant
+619|Book <em>for your group</em>
+620|Our dining room and the terrace on Carrer de la Muntanya are perfect for groups of friends, families and work teams. A cosy atmosphere, Latin music that livens up at night and a team that takes care of every detail.
+621|<b>Tailor-made menu</b><span>Sharing platters, main courses and dessert, to suit your budget.</span>
+622|<b>Bring your cake</b><span>Birthday? You can bring your own cake and we'll bring it out with candles.</span>
+623|<b>Terrace</b><span>Perfect for afterworks and long afternoons when the weather's nice.</span>
+624|<b>Long opening hours</b><span>Fridays until midnight and Saturdays until 00:30.</span>
+625|How it works
+626|From the idea <em>to the party</em>
+627|Tell us
+628|Fill in the planner: type of event, guests, date and what you fancy.
+629|We suggest
+630|Loren prepares a proposal and a tailor-made quote for you via WhatsApp.
+631|You confirm
+632|We fine-tune details, quantities and the pick-up or booking time.
+633|Let's celebrate!
+634|Pick up your freshly made trays or come to the restaurant with your people.
+635|Planner <span class="gn">made to measure</span>
+636|Design <em>your event</em>
+637|Choose what you fancy and we'll send you a no-obligation quote. When you send it, WhatsApp opens with your whole order already written.
+638|Wedding / engagement
+639|Match / party
+640|Booking at the restaurant
+641|Not sure yet
+642|What do you fancy?
+643|🥟 Empanadas
+644|=
+645|=
+646|Finger sandwiches
+647|🥪 Finger sandwiches
+648|Croquettes
+649|Mini milanesas
+650|🔥 Mixed grill
+651|=
+652|=
+653|Approximate budget (optional)
+654|E.g.: €15 per person
+655|Allergies, pick-up time, decorations, surprises…
+656|No obligation. We'll get back to you as soon as possible.
+657|Before <em>you plan it</em>
+658|How far in advance do I need to order?
+659|For small trays, a couple of days is usually enough. For big events, weddings or special dates, the sooner the better: that way we can secure the day and quantities.

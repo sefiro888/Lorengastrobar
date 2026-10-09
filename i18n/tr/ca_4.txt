@@ -1,0 +1,210 @@
+880|Alfajors casolans de dolç de llet amb coco.
+881|Pastís de xocolata
+882|Per als més llaminers.
+883|=
+884|El refresc de Sud-amèrica. Llauna de 33 cl.
+885|Cervesa Corona
+886|=
+887|Cervesa Budweiser
+888|Cervesa Miller
+889|Refrescos
+890|Coca-Cola, Coca-Cola Zero, Fanta Taronja, Aquarius Llimona, Nestea.
+891|Diumenge
+892|Dilluns
+893|Dimarts
+894|Dimecres
+895|Dijous
+896|Divendres
+897|Dissabte
+898|Som el que et fem sentir
+899|La nostra història
+900|Sabors
+901|del Paraguai
+902|A domicili
+903|Esdeveniments
+904|Visita'ns
+905|Loren Restobar, inici
+906|Demanar a casa
+907|Reservar
+908|Obrir el menú
+909|Menú mòbil
+910|Inici
+911|Carta per imprimir
+912|«Gràcies» en guaraní. Per venir, per demanar, per tornar.
+913|Cuina paraguaiana i espanyola casolana al cor de Sant Martí. Un trosset del Paraguai a Barcelona.
+914|Explora
+915|Sabors del Paraguai
+916|Esdeveniments i càtering
+917|Com demanar a domicili
+918|Reservar a OpenTable
+919|Contacte
+920|Fet amb ❤️ i molta chipa
+921|Escriu-nos per WhatsApp
+922|Et reservem taula?
+923|Accions ràpides
+924|Demanar
+925|Trucar
+926|Com ho vols?
+927|Tria la teva app i en minuts tens el Paraguai a taula.
+928|Recollir al local (WhatsApp)
+929|Dubtes? Tot sobre el repartiment →
+930|Anterior
+931|Següent
+932|Brou de gallina de pagès · cap de setmana
+933|Dos ous i patates
+934|Midó de mandioca
+935|A la brasa, en ferro
+936|Milanesa americana
+937|Bacó, formatge i ou
+938|Pasta casolana
+939|avui a les {h}
+940|demà a les {h}
+941|avui
+942|Obert ara · fins a les {h}
+943|Tancat · obrim {x}
+944|És cap de setmana! Avui hi ha vorí vorí i pira caldo
+945|a l'olla
+946|Compte enrere per al proper vorí vorí
+947|dies
+948|hores
+949|min
+950|seg
+951|per definir
+952|Mba'éichapa, Loren! M'agradaria organitzar un esdeveniment:
+953|Tipus
+954|Detalls
+955|Gràcies!
+956|Hola, Loren! Voldria encarregar per recollir al local:
+957|Hora aproximada de recollida:
+958|Hola, Loren! M'agradaria reservar una taula 🙂
+959|Ds
+960|Dg
+961|Com el fem
+962|Com es menja
+963|Hola, Loren! Aquest cap de setmana teniu {x}? Voldria reservar.
+964|Reservar per al cap de setmana
+965|Veure a la carta
+966|Total orientatiu
+967|{x} per persona
+968|Hola, Loren! Vull demanar «{x}» per recollir:
+969|Tu ets…
+970|Hola, Loren! Segons el vostre test soc {x} 😄 El teniu aquest cap de setmana?
+971|Repetir el test
+972|Mba'éichapa, Loren! Vull organitzar un esdeveniment:
+973|Em ve de gust
+974|Pressupost aprox.
+975|Hola, Loren! M'agradaria reservar taula 🙂
+976|Nota
+977|Només caps de setmana
+978|Consultar
+979|Demanar-lo ara
+980|L'orgull de qualsevol rostit paraguaià
+981|Un pastís al forn de blat de moro tendre que queda esponjós per dins i daurat per fora. «Guazú» vol dir «gran» en guaraní: és la versió en safata de la chipa.
+982|Blat de moro tendre, ceba, ous, quallada, formatge tendre, llard i sal. Al forn fins que es daura.
+983|Calent, a porcions, com a entrant o acompanyant la graellada.
+984|Graellada paraguaiana · Vorí vorí · una Guaraná ben freda
+985|L'única sopa del món que es menja amb forquilla
+986|Malgrat el nom, és un pa de pessic salat de blat de moro. Diu la llegenda que la cuinera del president Carlos Antonio López va tirar massa farina de blat de moro a una sopa… i l'«error» es va convertir en plat nacional.
+987|Farina de blat de moro, ous, quallada, formatge tendre, ceba, llet, llard, un toc d'anís i sal.
+988|Tèbia, sola o amb carns. Segur que repeteixes.
+989|Milanesa a caballo · Picada completa · Chipa guazú
+990|Cruixent per fora, el formatge s'estira per dins
+991|Una coca a la planxa de midó de mandioca d'herència guaraní. El nostre reel ensenyant com el fem va superar els 2.400 «m'agrada».
+992|Midó de mandioca, farina de blat de moro, formatge ratllat, llet, mantega i sal. El farcit porta mozzarella fosa.
+993|Acabat de fer. Al Paraguai es pren a l'esmorzar o al berenar amb cocido o cafè amb llet.
+994|Cafè amb llet · Sopa paraguaiana
+995|El plat amb què vam representar el Paraguai
+996|Un brou de gallina de pagès amb boletes de farina de blat de moro i formatge. El nom ve de «bolita» (boleta). Amb aquest plat la Loren va portar el Paraguai al Mundial de Menjars d'Ibai Llanos.
+997|Gallina de pagès cuita a foc lent, verdures i boletes de farina de blat de moro pastades amb formatge.
+998|Ben calent, amb cullera gran. A l'hivern es demana més que mai.
+999|Chipa guazú · Mandioca
+1000|=
+1001|«Pira» vol dir peix en guaraní
+1002|Un brou de peix espès i reconfortant, típic de les zones de riu del Paraguai. El preparem cada cap de setmana.
+1003|Peix, verdures, llet i formatge fins a aconseguir un brou cremós.
+1004|En plat fondo, per escalfar-se.
+1005|Sopa paraguaiana · Mandioca
+1006|=
+1007|Ve de «so'o josopy»: carn picada
+1008|Una sopa espessa de carn picada, de les més estimades de la cuina paraguaiana. Amb el professor de guaraní Mbo'ehára Marce vam explicar a Instagram l'origen del seu nom.
+1009|Carn picada, verdures i brou. Se serveix amb truiteta paraguaiana i mandioca.
+1010|Calent, alternant cullerada i tros de truiteta.
+1011|Mandioca · Truiteta
+1012|=
+1013|Un saltat de mandioca: el plat estrella del nostre segon local i un dels més demanats per compartir.
+1014|Mandioca, patata, formatge, pernil, ceba tendra i un ou ferrat al damunt. També amb bacó.
+1015|Al centre de la taula, trencant l'ou sobre la mandioca.
+1016|Cervesa ben freda · Picada de xoriço
+1017|carn · pollastre · pernil i formatge · blat de moro
+1018|El més anomenat a les nostres ressenyes
+1019|Massa casolana i farcit sucós. Són el plat que més apareix a les nostres ressenyes de Google.
+1020|La de carn porta vedella, ceba, pebrot verd, all, ou dur, comí i pebre. També de pollastre, pernil i formatge, i blat de moro amb mozzarella.
+1021|Amb la mà i sense por. El box de sis és perfecte per tastar-les totes.
+1022|Guaraná · Iuca brava
+1023|Al Paraguai el rostit és un ritual familiar
+1024|La taula paraguaiana de diumenge, servida fumejant en braser.
+1025|Rostit, xoriço, chinchulín i pollastre, amb mandioca i chipa guazú.
+1026|Per a dos o més, al centre i sense pressa.
+1027|Chipa guazú · Amanida de la casa
+1028|=
+1029|Deu maneres de menjar el plat més popular
+1030|Al Paraguai la milanesa és gairebé un plat nacional. Aquí l'arrebossem al moment i la servim en racions que desborden el plat.
+1031|Vedella o pollastre arrebossats al moment. A caballo (dos ous ferrats), napolitana, americana, quatre formatges, fugazzeta, caprese… o en entrepà.
+1032|Amb patates fregides, llimona i gana.
+1033|Sopa paraguaiana · Coca-Cola freda
+1034|Ets l'ànima de la festa: generós, càlid i sempre present a les trobades. Combines amb tot i ningú no s'oblida de tu.
+1035|Ets abraçada i llar. La teva gent acudeix a tu quan necessita consol, i saps que les coses bones necessiten temps.
+1036|Cruixent per fora, tendre per dins. Matines amb alegria i sempre tens un pla per a l'esmorzar.
+1037|El teu és a l'engròs: sense mitges tintes i amb dos ous al damunt. Ningú no passa gana al teu costat.
+1038|Típic paraguaià
+1039|Preferit
+1040|Només cap de setmana
+1041|{x} afegit a la teva safata
+1042|Hola, Loren! Avui teniu {x}? M'agradaria demanar-lo.
+1043|Treure'n un
+1044|Afegir-ne un
+1045|Afegir
+1046|plats i begudes
+1047|típics paraguaians
+1048|des de
+1049|sense blat*
+1050|Cap de setmana
+1051|La teva safata és buida.
+1052|Comença per una chipa guazú!
+1053|Mba'éichapa, Loren! Vull encarregar per recollir al local:
+1054|Notes
+1055|Combo «{x}» afegit
+1056|Preguntar
+1057|begudes
+1058|plats
+1059|Consultar · cap de setmana
+1060|Cuina paraguaiana casolana · Barcelona
+1061|típic paraguaià
+1062|preferit de la casa
+1063|Benvinguts
+1064|Celebres alguna cosa?
+1065|Aniversaris, batejos, dinars d'empresa… Preparem safates de mossets paraguaians —empanades, chipas, croquetes, entrepans de motlle i sopa paraguaiana— o et reservem el local amb un menú a mida.
+1066|Pregunta'ns
+1067|Que vagi de gust
+1068|Petit diccionari guaraní de la taula
+1069|per demanar com un paraguaià
+1070|què tal?
+1071|gràcies
+1072|menjar
+1073|gran
+1074|mandioca
+1075|peix
+1076|l'espetec de la paella
+1077|alegria
+1078|«teranyina», el nostre encaix
+1079|som-hi!
+1080|Reserves i comandes
+1081|també WhatsApp
+1082|Demana'ns també a Glovo i Uber Eats
+1083|IVA inclòs. Consulta els al·lèrgens al personal. Preus subjectes a canvis.
+1084|Pàgina {n} de la carta
+1085|Imprimir / PDF
+1086|plat
+1087|Clàssics
+1088|Compartir i milaneses
+1089|Plats i postres

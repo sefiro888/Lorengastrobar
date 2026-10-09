@@ -1,0 +1,220 @@
+440|Preu: de major a menor
+441|Vista
+442|Quadrícula
+443|Llista
+444|No trobem aquest plat…
+445|Prova amb una altra paraula o <a data-reserva="" href="#" style="color:var(--vino);font-weight:700">pregunta'ns per WhatsApp</a>.
+446|Menús per compartir
+447|Indecís? <em>Tria un combo</em>
+448|Un toc i tot el combo entra a la teva safata. Després pots treure o afegir el que vulguis.
+449|Iniciació paraguaiana
+450|Els clàssics per tastar per primera vegada. Per a dos.
+451|Afegir a la safata
+452|Taula de diumenge
+453|La picada completa i tot el que l'acompanya. Per a quatre.
+454|Nit de milaneses
+455|Empanades per obrir boca i dues milaneses estrella. Per a dos amb gana.
+456|Preus orientatius amb IVA inclòs; poden variar a sala i a les apps de repartiment. *Sense blat: elaborat amb mandioca i blat de moro, en una cuina que també treballa amb blat. Consulta els al·lèrgens a l'equip.
+457|Fitxa del plat
+458|Tancar
+459|Va molt bé amb
+460|Obrir la meva safata
+461|<small>La meva safata</small><strong id="fab-total">0,00 €</strong>
+462|La meva safata
+463|el que et ve de gust avui
+464|<span>Total orientatiu</span><b id="b-total">0,00 €</b>
+465|Hora de recollida
+466|Notes: sense ceba, al·lèrgies…
+467|Encarregar per recollir (WhatsApp)
+468|=
+469|Per a l'enviament a domicili, afegeix els plats a la teva app preferida.
+470|Buidar la safata
+471|Menjar paraguaià a domicili a Barcelona · Loren Restobar
+472|Demana menjar paraguaià a domicili a Barcelona: empanades, chipa guazú, mbejú i milaneses de Loren Restobar per Glovo, Uber Eats o per recollir per WhatsApp.
+473|<a href="index.html">Inici</a> / <span>A domicili</span>
+474|El Paraguai arriba <em>al teu sofà</em>
+475|Empanades acabades de fer, chipa guazú encara tèbia i milaneses que no caben a la capsa. Demana per Glovo, Uber Eats o encarrega-ho per WhatsApp i passa a recollir-ho sense comissions.
+476|<a class="btn btn--glovo" data-link="glovo" href="#" rel="noopener" target="_blank">Demanar a Glovo</a> <a class="btn btn--uber" data-link="uber" href="#" rel="noopener" target="_blank">Demanar a Uber Eats</a> <a class="btn btn--ghost" data-wa-recoger="" href="#" rel="noopener" target="_blank">Recollir al local</a>
+477|<b>97%</b><span>satisfets a Glovo</span>
+478|<b>4,9★</b><span>a Uber Eats</span>
+479|<b>0 €</b><span>de comissió si recculls</span>
+480|Cistella d'empanades casolanes
+481|<b>22,50 €</b><small>Box de 6 empanades · el més demanat per compartir</small>
+482|Tres maneres de demanar
+483|Tu tries <em>com</em>
+484|Enviament ràpid a la zona. Amb Glovo Prime, sovint l'enviament et surt gratis.
+485|Accepta Ticket Restaurant® a l'app i té la carta més àmplia: picada completa, mandi'ó chyryry…
+486|Sense comissions · a punt a la teva hora
+487|Escriu-nos per WhatsApp, et confirmem l'hora i ho recculls al carrer de la Muntanya 115.
+488|Comparativa
+489|Quina em <em>convé</em>?
+490|Les tres opcions tenen la mateixa cuina al darrere. Canvia la forma de pagament, l'enviament i alguna sorpresa a la carta.
+491|Recollir al local
+492|Valoració
+493|97% satisfets
+494|4,6 ★ a Google (739)
+495|Ideal per a
+496|Demanar ràpid a casa, sobretot amb Prime
+497|El dinar de l'oficina amb Ticket Restaurant®
+498|Comandes grans i estalviar-te l'enviament
+499|Comanda mínima
+500|La que indiqui l'app
+501|<span class="si">Sense mínim</span>
+502|Pagament
+503|Targeta a l'app
+504|Targeta i Ticket Restaurant® a l'app
+505|Al local
+506|Carta
+507|Clàssics, milaneses, tapes i begudes
+508|La més àmplia: picada completa, mandi'ó chyryry, mondongo…
+509|<span class="si">Tota la carta + especials del dia</span>
+510|Comissions
+511|Despeses d'enviament segons l'app
+512|Els preus, mínims i zones de repartiment els gestiona cada aplicació i poden variar segons la teva adreça i l'hora.
+513|Així de fàcil
+514|De la nostra cuina <em>a la teva taula</em>
+515|Tria
+516|Obre Glovo o Uber Eats i cerca «Loren Gastrobar», o escriu-nos per WhatsApp si vens a recollir.
+517|Demana
+518|Dubtes amb algun plat? Mira la <a href="sabores.html" style="color:var(--maiz)">guia de sabors</a> o pregunta'ns.
+519|Cuinem
+520|Tot es prepara al moment: les empanades es fregeixen, la milanesa s'arrebossa i el mbejú surt de la planxa.
+521|Gaudeix
+522|I si t'ha agradat, deixa'ns la teva ressenya: ens ajuda moltíssim. Aguyje!
+523|El que millor viatja
+524|Arriba com <em>acabat de fer</em>
+525|Els nostres preferits per demanar a casa i un truc de la Loren perquè estiguin perfectes si trigues a menjar-te'ls.
+526|Aguanten el viatge de meravella i són perfectes per compartir.
+527|🔥 Truc: 5 min al forn a 180 °C i tornen a cruixir.
+528|Bona tèbia i encara millor l'endemà.
+529|🔥 Truc: volta i volta a la paella amb una mica de mantega.
+530|Viatja sencera i es talla a porcions a casa.
+531|🔥 Truc: 20–30 segons de microones i a punt.
+532|Milaneses
+533|Racions enormes: una dona per a dos si demanes entrant.
+534|🔥 Truc: al forn, mai al microones, perquè continuï cruixent.
+535|El clàssic de carrer paraguaià, amb patates.
+536|🔥 Truc: obre'l només arribar perquè no es reblaneixi.
+537|Mbejú amb formatge
+538|Millor menjar-lo aviat: el formatge és al seu punt.
+539|🔥 Truc: paella calenta, 1 minut per cada costat.
+540|Packs suggerits
+541|No saps què demanar? <em>T'ho donem fet</em>
+542|Pack Oficina
+543|Pack oficina
+544|Menjar contundent per a una persona. Ideal amb Ticket Restaurant® a Uber Eats.
+545|Pack Família
+546|Pack família
+547|Per a quatre: empanades, dues milaneses per compartir i els clàssics paraguaians.
+548|Pack Partit
+549|Pack partit
+550|Tot per picar davant de la tele. Cerveses incloses.
+551|Totals orientatius amb preus de la carta. Per demanar-ho a Glovo o Uber Eats afegeix els plats des de l'app; amb «Encarregar» s'obre WhatsApp per recollir-ho al local.
+552|Preguntes freqüents
+553|Tot sobre <em>el repartiment</em>
+554|Fins on arribeu?
+555|El repartiment el fan Glovo i Uber Eats, i cada app et confirma si arriba a la teva adreça. Normalment cobreix els barris propers al Camp de l'Arpa i Sant Martí. Si no t'arriba, vine a recollir-ho!
+556|A quina hora puc demanar?
+557|A les apps pots demanar mentre la cuina estigui oberta (a Uber Eats, aproximadament de 10:45 a 22:30). Per recollir al local, consulta el nostre <a href="visitanos.html">horari</a>.
+558|Els especials del cap de setmana també es poden demanar?
+559|El vorí vorí, el pira caldo i el soyo es preparen els caps de setmana i en quantitat limitada. Escriu-nos per WhatsApp i et direm si en queden per emportar.
+560|Accepteu Ticket Restaurant?
+561|Sí, a través d'Uber Eats pots pagar amb Ticket Restaurant®.
+562|Feu comandes grans per a oficines o festes?
+563|És clar! Per a grups et recomanem les nostres safates de càtering. Mira la pàgina d'<a href="eventos.html">esdeveniments i càtering</a> i demana pressupost sense compromís.
+564|Tinc al·lèrgies o intoleràncies, què faig?
+565|Abans de demanar, contacta amb nosaltres per telèfon o WhatsApp (602 07 68 28) i t'informarem dels al·lèrgens de cada plat. Molts clàssics paraguaians s'elaboren amb mandioca i blat de moro, sense blat, però en una cuina on també es treballa amb blat.
+566|Els preus són els mateixos que al restaurant?
+567|Les apps poden tenir preus lleugerament diferents dels de sala. Si recculls al local t'estalvies les despeses d'enviament.
+568|Gana? <em>Jaha!</em>
+569|Tria la teva app preferida i en una estona tens el Paraguai a casa.
+570|<a class="btn btn--glovo" data-link="glovo" href="#" rel="noopener" target="_blank">Demanar a Glovo</a> <a class="btn btn--uber" data-link="uber" href="#" rel="noopener" target="_blank">Demanar a Uber Eats</a> <a class="btn btn--ghost" href="carta.html">Veure primer la carta</a>
+571|Esdeveniments i càtering paraguaià · Loren Restobar
+572|Celebra el teu aniversari, dinar d'empresa o bateig a la paraguaiana. Safates de mossets —empanades, chipas, entrepans de motlle, sopa paraguaiana— i reserves per a grups a Loren Restobar, Barcelona.
+573|<a href="index.html">Inici</a> / <span>Esdeveniments i càtering</span>
+574|Aniversaris, batejos, dinars d'empresa, afterworks o aquella festa a casa. Et preparem safates de mossets casolans o et reservem el local amb un menú a mida. Tu poses l'ocasió; nosaltres, el sabor.
+575|<a class="btn" href="#configurador">Demanar pressupost</a><a class="btn btn--ghost" href="#bandejas">Veure safates</a>
+576|<b>🎂</b><span>Pots portar el teu pastís</span>
+577|<b>☀️</b><span>Terrassa per a grups</span>
+578|<b>0 €</b><span>Pressupost sense compromís</span>
+579|Safata de càtering paraguaià amb entrepans de motlle, milanesetes i sopa paraguaiana
+580|<b>Mossets</b><small>Empanades, chipas, croquetes, entrepans de motlle i sopa paraguaiana</small>
+581|Per a cada ocasió
+582|Què <em>celebrem</em>?
+583|Ens adaptem a tu: des d'un berenar de mossets fins a un dinar d'empresa amb graellada al braser.
+584|Dels 18 als 80. Reservem la teva taula, et deixem portar el pastís i preparem picades perquè ningú no passi gana.
+585|Dinars d'empresa
+586|Dinars d'equip, sopars de Nadal o un còctel professional diferent. Sorprèn amb alguna cosa que no han tastat mai.
+587|Terrassa, cerveses fresques, empanades i tequeños. El pla perfecte per sortir de l'oficina.
+588|Batejos i comunions
+589|Safates de mossets per emportar a casa o al saló: el clàssic de les celebracions familiars paraguaianes.
+590|Casaments i peticions
+591|Menú personalitzat i servei acurat per al dia més especial, amb tot el sabor de la nostra terra.
+592|Partits i dates pàtries
+593|El Paraguai juga, el Paraguai celebra. Vine amb la samarreta posada i viu el partit com a casa.
+594|Safates de <em>mossets</em>
+595|Al Paraguai no hi ha festa sense mossets. Et preparem safates casolanes a punt per servir. Aquestes són orientatives: les muntem al teu gust i et fem un pressupost a mida.
+596|≈ 10–15 persones
+597|Safata Clàssica
+598|Empanadetes de carn i pollastre
+599|Croquetes casolanes
+600|Chipa i chipetes de formatge
+601|Mossets fregits variats
+602|Demanar aquesta safata
+603|Safata d'entrepans de motlle i milanesetes
+604|≈ 20–30 persones
+605|Safata Festa
+606|Entrepans de motlle de pernil, formatge, ou i tomàquet
+607|Mini entrepans de milanesa
+608|Empanades i croquetes
+609|Sopa paraguaiana a porcions
+610|A la teva mida
+611|Taula Paraguaiana
+612|Chipa guazú i sopa paraguaiana en safata
+613|Mbejú per compartir
+614|Graellada o milaneses
+615|Tres leches de postres
+616|Dissenyar la meva taula
+617|Taula per a grups
+618|Al restaurant
+619|Reserva <em>per al teu grup</em>
+620|El nostre menjador i la terrassa del carrer de la Muntanya s'adapten a grups d'amics, famílies i equips de treball. Ambient acollidor, música llatina de fons que s'anima a la nit i un equip que cuida cada detall.
+621|<b>Menú a mida</b><span>Picades per al centre, plats principals i postres, segons el teu pressupost.</span>
+622|<b>Porta el teu pastís</b><span>Aniversari? Pots portar el teu pastís i nosaltres el traiem amb espelmes.</span>
+623|<b>Terrassa</b><span>Perfecta per a afterworks i tardes llargues quan acompanya el temps.</span>
+624|<b>Horari ampli</b><span>Divendres fins a mitjanit i dissabtes fins a les 00:30.</span>
+625|Com funciona
+626|De la idea <em>a la festa</em>
+627|Explica'ns
+628|Omple el configurador: tipus d'esdeveniment, persones, data i el que et ve de gust.
+629|Et proposem
+630|La Loren et prepara una proposta i un pressupost a mida per WhatsApp.
+631|Confirmes
+632|Ajustem detalls, quantitats i hora de recollida o de reserva.
+633|A celebrar!
+634|Recculls les teves safates acabades de fer o vens amb la teva gent al local.
+635|Configurador <span class="gn">a la teva mida</span>
+636|Dissenya <em>el teu esdeveniment</em>
+637|Tria el que et ve de gust i t'enviem un pressupost sense compromís. En enviar s'obre WhatsApp amb tota la teva comanda ja escrita.
+638|Casament / petició
+639|Partit / festa
+640|Reserva al restaurant
+641|Encara no ho sé
+642|Què et ve de gust?
+643|🥟 Empanades
+644|=
+645|🧀 Sopa paraguaiana
+646|Entrepans de motlle
+647|🥪 Entrepans de motlle
+648|Croquetes
+649|Milanesetes
+650|🔥 Graellada
+651|=
+652|=
+653|Pressupost aproximat (opcional)
+654|P. ex.: 15 € per persona
+655|Al·lèrgies, hora de recollida, decoració, sorpreses…
+656|Sense compromís. Et responem al més aviat possible.
+657|Abans <em>d'organitzar-ho</em>
+658|Amb quanta antelació he de demanar?
+659|Per a safates petites, amb un parell de dies sol ser suficient. Per a esdeveniments grans, casaments o dates assenyalades, com més aviat millor: així assegurem el dia i les quantitats.

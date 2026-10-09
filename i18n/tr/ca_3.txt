@@ -1,0 +1,220 @@
+660|Puc portar el meu propi pastís?
+661|Sí, pots portar el teu pastís d'aniversari. Avisa'ns en reservar i el tindrem a punt per al moment de les espelmes.
+662|Feu menús tancats per a grups?
+663|Sí. Et proposem un menú amb entrants per compartir, principals i postres ajustat al teu pressupost per persona.
+664|Les safates es recullen o les porteu?
+665|Normalment es recullen al local del carrer de la Muntanya 115. Si necessites una altra opció, pregunta'ns.
+666|Teniu opcions per a al·lèrgies o vegetarians?
+667|Molts mossets paraguaians es poden adaptar i diversos clàssics s'elaboren sense blat. Indica-ho al configurador i t'assessorarem.
+668|Que la teva festa <em>tingui gust de Paraguai</em>
+669|<a class="btn" href="#configurador">Demanar pressupost</a><a class="btn btn--line" href="tel:+34602076828">Trucar: 602 07 68 28</a>
+670|Visita'ns · Horari, com arribar-hi i reserves · Loren Restobar
+671|Loren Restobar, carrer de la Muntanya 115, 08026 Barcelona (Camp de l'Arpa). Horari, metro, reserves per WhatsApp o OpenTable, terrassa i pet friendly.
+672|<a href="index.html">Inici</a> / <span>Visita'ns</span>
+673|La porta és <em>oberta</em>
+674|Som al carrer de la Muntanya 115, al Camp de l'Arpa (Sant Martí), a uns 15 minuts a peu de la Sagrada Família. Esmorzars des de les 9:00, menú del dia, sopars i els caps de setmana més paraguaians de Barcelona.
+675|<a class="btn" href="#reservar">Reservar taula</a><a class="btn btn--ghost" data-link="maps" href="#" rel="noopener" target="_blank">Obrir a Google Maps</a>
+676|La barra de Loren Restobar
+677|<b>Muntanya 115</b><small>08026 Barcelona · Metro L5 Camp de l'Arpa · L1/L2 Clot</small>
+678|Horari <span class="gn">aravo</span>
+679|Quan <em>trobar-nos</em>
+680|La línia blanca marca l'hora actual. Els horaris poden variar els dies festius: si vens de lluny, escriu-nos abans.
+681|<span>🥐 Esmorzars des de les 9:00</span><span>🍽️ Menú del dia</span><span>🌙 Sopars de dimecres a dissabte</span>
+682|El millor moment
+683|Cada hora <em>té el seu pla</em>
+684|Esmorzar
+685|Mbejú acabat de fer i cafè amb llet, com s'esmorza al Paraguai. Tranquil i sense esperes.
+686|Migdia · dl–dv
+687|Menú del dia
+688|Cuina paraguaiana i espanyola casolana a preu de barri. Pregunta pel menú d'avui.
+689|Nits · dc–ds
+690|Sopar i terrassa
+691|Picades per compartir, milaneses i cerveses fresques. Els divendres i dissabtes, fins a mitjanit.
+692|Ds · Dg
+693|Cap de setmana paraguaià
+694|Vorí vorí, pira caldo i soyo. És quan més s'omple: <strong>reserva</strong> i arriba amb gana.
+695|Com arribar-hi <span class="gn">tape</span>
+696|Fàcil, <em>en metro o a peu</em>
+697|=
+698|<b>Metro Camp de l'Arpa</b><span>Línia 5 (blava), la parada més propera.</span>
+699|=
+700|<b>Metro Clot</b><span>Línies 1 (vermella) i 2 (lila). També Rodalies a Clot-Aragó.</span>
+701|<b>Des de la Sagrada Família</b><span>Uns 15 minuts caminant cap al Camp de l'Arpa.</span>
+702|<b>En cotxe</b><span>No tenim pàrquing propi; hi ha aparcament al carrer i pàrquings a la zona.</span>
+703|=
+704|Reserves
+705|Et guardem <em>la taula</em>
+706|Omple el formulari i s'obrirà WhatsApp amb la teva reserva escrita. Prefereixes una altra via? També pots trucar-nos o reservar a OpenTable.
+707|<a class="btn btn--vino" href="tel:+34602076828">Trucar · 602 07 68 28</a> <a class="btn btn--line" data-link="opentable" href="#" rel="noopener" target="_blank">Reservar a OpenTable</a>
+708|<span>👥 Grups</span><span>☀️ Terrassa</span><span>🐾 Amb mascota</span><span>🎂 Porta el teu pastís</span>
+709|Nom
+710|A nom de qui?
+711|Dia
+712|Hora
+713|Zona
+714|M'és igual
+715|Interior
+716|Terrassa
+717|Alguna cosa que hàgim de saber?
+718|Aniversari, trona, al·lèrgies, vinc amb el meu gos…
+719|Reservar per WhatsApp
+720|Et confirmarem la reserva pel mateix xat.
+721|El que hi trobaràs
+722|Petits detalls <em>que importen</em>
+723|<b>Terrassa</b><span>Per a les tardes llargues i els afterworks.</span>
+724|<b>Pet friendly</b><span>El teu gos també és benvingut (i li posem aigua).</span>
+725|<b>Es parla guaraní</b><span>I castellà i català, és clar. Demana «tembi'u» sense por.</span>
+726|<b>Targetes</b><span>Acceptem targeta de crèdit i dèbit.</span>
+727|<b>Wifi</b><span>Per si vens a esmorzar amb el portàtil.</span>
+728|<b>Per emportar</b><span>Encarrega per WhatsApp i recull sense comissions.</span>
+729|<b>Cervesa i vi</b><span>I Guaraná, el refresc preferit de Sud-amèrica.</span>
+730|<b>Ambient familiar</b><span>Nens, avis i amics: aquí hi cabem tots.</span>
+731|El local <span class="gn">ko'ápe</span>
+732|Així és <em>casa nostra</em>
+733|Racó paraguaià
+734|Mbejú i chipa guazú a taula
+735|Abans de <em>venir</em>
+736|Cal reservar?
+737|Entre setmana sol haver-hi lloc, però els caps de setmana el local s'omple —sobretot al migdia— i l'aforament és limitat. Et recomanem reservar per WhatsApp o a OpenTable.
+738|Puc venir amb el meu gos?
+739|Sí! Som pet friendly i al teu company li posem aigua.
+740|Teniu menú del dia?
+741|Sí, de dilluns a divendres al migdia, combinant cuina paraguaiana i espanyola casolana. Pregunta'ns pel menú d'avui.
+742|Quan hi ha vorí vorí i pira caldo?
+743|Els caps de setmana, en quantitat limitada. Si vens expressament a buscar-los, reserva i avisa'ns.
+744|Feu celebracions al local?
+745|Sí: aniversaris, dinars d'empresa, afterworks… i fins i tot pots portar el teu pastís. Mira la pàgina d'<a href="eventos.html">esdeveniments</a>.
+746|T'esperem. <em>Eju!</em>
+747|«Vine», en guaraní. Porta gana i, si vols, un amic que encara no conegui el Paraguai.
+748|<a class="btn" href="#reservar">Reservar taula</a><a class="btn btn--ghost" href="carta.html">Veure la carta</a>
+749|Carta · Loren Restobar
+750|Carta clàssica de Loren Restobar, cuina paraguaiana casolana a Barcelona.
+751|Imprimir / Desar en PDF
+752|← Tornar al web
+753|Format A4 · 3 pàgines
+754|Tembi'u paraguaià
+755|Els clàssics de l'àvia
+756|tembi'u = menjar
+757|Massa casolana, farcides a mà
+758|Especials del cap de setmana
+759|Només dissabtes i diumenges
+760|=
+761|Picades, tapes i racions
+762|La nostra especialitat, arrebossades al moment
+763|Plats i pastes
+764|Ñoquis i tallarines casolans
+765|Entrepans i burger
+766|Amb patates fregides
+767|Postres
+768|El final dolç
+769|Begudes
+770|Fresques, com el tereré
+771|Pastís al forn de blat de moro tendre, ceba, ou, quallada i formatge fresc. Esponjós per dins i daurat per fora.
+772|«Chipa gran» en guaraní
+773|L'única sopa del món que es menja amb forquilla: farina de blat de moro, ou, quallada, formatge tendre, ceba i un toc d'anís.
+774|Patrimoni de la taula paraguaiana
+775|Mbejú tradicional
+776|Coca cruixent de midó de mandioca, farina de blat de moro, formatge, llet i mantega, feta a la planxa.
+777|Es pronuncia «mbeiú»
+778|Mbejú farcit de formatge
+779|El nostre mbejú amb cor de mozzarella fosa. El que s'estira.
+780|=
+781|Mandioca saltada amb patata, formatge, pernil, ceba tendra i un ou ferrat al damunt.
+782|«Mandioca que espetega a la paella»
+783|Mandi'ó chyryry amb bacó
+784|La versió més llaminera del saltat de mandioca, amb bacó cruixent.
+785|La nostra resposta paraguaiana a les braves: mandioca fregida cruixent amb salsa de la casa.
+786|Ració de mandioca
+787|Mandioca (iuca) bullida, el pa de cada dia al Paraguai. Per acompanyar-ho tot.
+788|=
+789|Guisat tradicional de blat de moro i fesols amb carn i verdures, dels que es couen a foc lent.
+790|«Barreja» en guaraní
+791|Rostit a l'olla
+792|Costella de vedella cuinada lentament a l'olla fins que queda tendra i daurada, amb mandioca.
+793|Box de 6 empanades
+794|Carn, pollastre, pernil i formatge i blat de moro. Per compartir (o no).
+795|Empanada de carn
+796|Vedella, ceba, pebrot, all, ou dur, comí i pebre. La més demanada.
+797|Empanada de pollastre
+798|Pit de pollastre amb ceba, pebrot verd i vermell, all i ou dur.
+799|Empanada de pernil i formatge
+800|Pernil dolç i mozzarella fosa.
+801|Empanada de blat de moro
+802|Blat de moro tendre i mozzarella. Dolça, suau i molt paraguaiana.
+803|Brou de gallina de pagès amb boletes de farina de blat de moro i formatge. El plat amb què la Loren va representar el Paraguai al Mundial de Menjars de l'Ibai.
+804|De «boleta» → vorí
+805|=
+806|El nostre famós brou de peix, espès i reconfortant, com a les ribes del riu Paraguai.
+807|pira = peix
+808|Soyo amb truiteta
+809|Sopa de carn picada, acompanyada de truiteta paraguaiana i mandioca.
+810|De «so'o josopy», carn picada
+811|Servida en braser: rostit, xoriço, chinchulín, pollastre, mandioca i chipa guazú. Per a dos o més.
+812|Milanesa, rostit, xoriço, iuca fregida i chipa guazú. Una taula sencera de Paraguai.
+813|Graellada mixta
+814|Carns a la brasa amb verdures i llimona, servides en planxa de ferro.
+815|Picada de milanesa amb mel i mostassa
+816|Milanesetes cruixents amb salsa de mel i mostassa.
+817|Picada de xoriço amb chimichurri
+818|Xoriço criollo a la brasa amb el nostre chimichurri.
+819|Tequeños amb mel i mostassa
+820|5 unitats.
+821|Aletes de pollastre
+822|7 unitats, ben daurades.
+823|Tires de pollastre amb chili dolç
+824|Pollastre arrebossat amb salsa de chili dolç. Picant suau.
+825|Calamars a la romana
+826|Anelles de calamar arrebossades i fregides.
+827|Tapes espanyoles
+828|Pernil ibèric amb pa amb tomàquet i un vermut: la cara espanyola de la casa.
+829|Ous estavellats amb pernil
+830|Patates, ous trencats i pernil.
+831|Patates braves
+832|Amb salsa brava casolana.
+833|Croquetes de pernil
+834|3 unitats, cremoses per dins i cruixents per fora.
+835|Amanida de la casa
+836|Enciam, tomàquet, ceba, pastanaga, cogombre i pebrot verd.
+837|Amanida de formatge de cabra
+838|Amb reducció de Mòdena.
+839|=
+840|Milanesa de vedella amb ceba fregida, dos ous ferrats i guarnició.
+841|Milanesa a la napolitana
+842|Tomàquet fregit, pernil, formatge i ou, amb patates fregides.
+843|Tomàquet fregit, bacó, formatge i ou, amb patates fregides.
+844|Milanesa quatre formatges
+845|Banyada en salsa de quatre formatges, amb patates fregides.
+846|=
+847|Amb ceba i formatge fos, a l'estil porteny-paraguaià.
+848|Milanesa de pollastre a la napolitana
+849|Pit arrebossat, salsa de tomàquet, gouda, pernil dolç i ou ferrat.
+850|Milanesa de vedella
+851|La clàssica, amb llimona i guarnició.
+852|Milanesa de tripa
+853|Per als de debò: tripa arrebossada, amb guarnició.
+854|Milanesa caprese
+855|Amb tomàquet cherry, mozzarella i alfàbrega.
+856|=
+857|Filet de vedella amb ceba confitada, dos ous ferrats i patates.
+858|Ñoquis de vedella
+859|Ñoquis casolans amb carn de vedella guisada amb la seva salsa.
+860|Tallarines de vedella
+861|Tallarines amb vedella estofada, com les del diumenge a casa.
+862|Entrepà de milanesa complet
+863|Milanesa, enciam, tomàquet, pernil dolç, gouda i ou ferrat. Amb patates.
+864|Filet de llom de vedella, enciam, tomàquet, gouda, pernil, ou i allioli. Amb patates.
+865|Entrepà de milanesa tradicional
+866|Milanesa amb enciam i tomàquet.
+867|Entrepà de pollastre complet
+868|Pollastre, enciam, tomàquet, pernil, formatge i ou.
+869|Hamburguesa de vedella completa
+870|Vedella, enciam, tomàquet, gouda, pernil dolç i ou ferrat. Amb patates.
+871|Lomito àrab
+872|El clàssic de carrer del Paraguai: lomito en pa àrab a la planxa, amb salsa i patates fregides.
+873|Pastís tres leches
+874|Pa de pessic xopat en tres llets, suau i fresquet.
+875|Pastís de formatge
+876|Cremós, casolà.
+877|Flam casolà
+878|Flam de la casa amb caramel. Irresistible.
+879|=

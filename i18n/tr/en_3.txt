@@ -1,0 +1,220 @@
+660|Can I bring my own cake?
+661|Yes, you can bring your birthday cake. Let us know when you book and we'll have it ready for the candles.
+662|Do you do set menus for groups?
+663|Yes. We'll suggest a menu with starters to share, mains and dessert to fit your budget per person.
+664|Do I pick up the trays or do you deliver them?
+665|They're usually picked up at the restaurant on Carrer de la Muntanya 115. If you need another option, just ask.
+666|Do you have options for allergies or vegetarians?
+667|Many Paraguayan party bites can be adapted and several classics are made without wheat. Mention it in the planner and we'll advise you.
+668|Make your party <em>taste of Paraguay</em>
+669|<a class="btn" href="#configurador">Get a quote</a><a class="btn btn--line" href="tel:+34602076828">Call: 602 07 68 28</a>
+670|Visit us · Opening hours, directions and bookings · Loren Restobar
+671|Loren Restobar, Carrer de la Muntanya 115, 08026 Barcelona (Camp de l'Arpa). Opening hours, metro, bookings via WhatsApp or OpenTable, terrace and pet friendly.
+672|<a href="index.html">Home</a> / <span>Visit us</span>
+673|The door is <em>open</em>
+674|We're at Carrer de la Muntanya 115, in El Camp de l'Arpa (Sant Martí), about a 15-minute walk from the Sagrada Família. Breakfast from 9:00, set lunch menu, dinners and the most Paraguayan weekends in Barcelona.
+675|<a class="btn" href="#reservar">Book a table</a><a class="btn btn--ghost" data-link="maps" href="#" rel="noopener" target="_blank">Open in Google Maps</a>
+676|The bar at Loren Restobar
+677|=
+678|Opening hours <span class="gn">aravo</span>
+679|When <em>to find us</em>
+680|The white line marks the current time. Hours may vary on public holidays: if you're coming from far away, message us first.
+681|<span>🥐 Breakfast from 9:00</span><span>🍽️ Set lunch menu</span><span>🌙 Dinners Wednesday to Saturday</span>
+682|The best time
+683|Every hour <em>has its plan</em>
+684|Breakfast
+685|Freshly made mbejú and milky coffee, the way Paraguayans have breakfast. Relaxed and no waiting.
+686|Lunchtime · Mon–Fri
+687|Set lunch menu
+688|Homemade Paraguayan and Spanish cooking at neighbourhood prices. Ask about today's menu.
+689|Evenings · Wed–Sat
+690|Dinner and terrace
+691|Sharing platters, milanesas and cold beers. On Fridays and Saturdays, until midnight.
+692|Sat · Sun
+693|Paraguayan weekend
+694|Vorí vorí, pira caldo and soyo. It's our busiest time: <strong>book</strong> and come hungry.
+695|Getting here <span class="gn">tape</span>
+696|Easy, <em>by metro or on foot</em>
+697|=
+698|<b>Camp de l'Arpa metro</b><span>Line 5 (blue), the nearest stop.</span>
+699|=
+700|<b>Clot metro</b><span>Lines 1 (red) and 2 (purple). Also Rodalies trains at Clot-Aragó.</span>
+701|<b>From the Sagrada Família</b><span>About a 15-minute walk towards Camp de l'Arpa.</span>
+702|<b>By car</b><span>We don't have our own car park; there's street parking and public car parks nearby.</span>
+703|=
+704|Bookings
+705|We'll save you <em>a table</em>
+706|Fill in the form and WhatsApp will open with your booking written out. Prefer another way? You can also call us or book on OpenTable.
+707|<a class="btn btn--vino" href="tel:+34602076828">Call · 602 07 68 28</a> <a class="btn btn--line" data-link="opentable" href="#" rel="noopener" target="_blank">Book on OpenTable</a>
+708|<span>👥 Groups</span><span>☀️ Terrace</span><span>🐾 Pets welcome</span><span>🎂 Bring your cake</span>
+709|Name
+710|Under what name?
+711|Day
+712|Time
+713|Area
+714|No preference
+715|Indoors
+716|Terrace
+717|Anything we should know?
+718|Birthday, high chair, allergies, coming with my dog…
+719|Book via WhatsApp
+720|We'll confirm your booking in the same chat.
+721|What you'll find
+722|Little details <em>that matter</em>
+723|<b>Terrace</b><span>For long afternoons and afterworks.</span>
+724|<b>Pet friendly</b><span>Your dog is welcome too (and we'll bring water).</span>
+725|<b>Guaraní spoken</b><span>And Spanish, of course. Ask for "tembi'u" without fear.</span>
+726|<b>Cards</b><span>We accept credit and debit cards.</span>
+727|<b>Wi-Fi</b><span>In case you come for breakfast with your laptop.</span>
+728|<b>Takeaway</b><span>Order via WhatsApp and pick up with no fees.</span>
+729|<b>Beer and wine</b><span>And Guaraná, South America's favourite soft drink.</span>
+730|<b>Family atmosphere</b><span>Kids, grandparents and friends: there's room for everyone.</span>
+731|The restaurant <span class="gn">ko'ápe</span>
+732|This is <em>our home</em>
+733|Paraguayan corner
+734|Mbejú and chipa guazú on the table
+735|Before <em>you come</em>
+736|Do I need to book?
+737|During the week there's usually room, but at weekends we fill up —especially at lunchtime— and space is limited. We recommend booking via WhatsApp or on OpenTable.
+738|Can I bring my dog?
+739|Yes! We're pet friendly and we'll bring your companion some water.
+740|Do you have a set lunch menu?
+741|Yes, Monday to Friday at lunchtime, combining homemade Paraguayan and Spanish cooking. Ask us about today's menu.
+742|When is there vorí vorí and pira caldo?
+743|At weekends, in limited quantities. If you're coming especially for them, book and let us know.
+744|Do you host celebrations at the restaurant?
+745|Yes: birthdays, company lunches, afterworks… and you can even bring your own cake. Check the <a href="eventos.html">events</a> page.
+746|We're waiting for you. <em>Eju!</em>
+747|"Come" in Guaraní. Bring your appetite and, if you like, a friend who doesn't know Paraguay yet.
+748|<a class="btn" href="#reservar">Book a table</a><a class="btn btn--ghost" href="carta.html">See the menu</a>
+749|Menu · Loren Restobar
+750|Classic menu of Loren Restobar, homemade Paraguayan cooking in Barcelona.
+751|Print / Save as PDF
+752|← Back to the website
+753|A4 format · 3 pages
+754|Paraguayan tembi'u
+755|Grandma's classics
+756|tembi'u = food
+757|Homemade pastry, filled by hand
+758|Weekend specials
+759|Saturdays and Sundays only
+760|=
+761|Sharing platters, tapas and portions
+762|Our speciality, breaded to order
+763|Mains and pasta
+764|Homemade gnocchi and tagliatelle
+765|Sandwiches and burgers
+766|With chips
+767|Desserts
+768|The sweet ending
+769|Drinks
+770|Cold, like tereré
+771|Baked cake of fresh sweetcorn, onion, egg, curd and fresh cheese. Fluffy inside and golden outside.
+772|"Big chipa" in Guaraní
+773|The only soup in the world eaten with a fork: cornmeal, egg, curd, soft cheese, onion and a hint of aniseed.
+774|A treasure of the Paraguayan table
+775|Traditional mbejú
+776|Crispy flatbread of cassava starch, cornmeal, cheese, milk and butter, cooked on the griddle.
+777|Pronounced "mbe-YOO"
+778|Cheese-filled mbejú
+779|Our mbejú with a melted mozzarella heart. The stretchy one.
+780|=
+781|Sautéed cassava with potato, cheese, ham, spring onion and a fried egg on top.
+782|"Cassava that sizzles in the pan"
+783|Mandi'ó chyryry with bacon
+784|The most indulgent version of the cassava sauté, with crispy bacon.
+785|Our Paraguayan answer to patatas bravas: crispy fried cassava with our house sauce.
+786|Side of cassava
+787|Boiled cassava (yuca), Paraguay's everyday bread. To go with everything.
+788|=
+789|Traditional slow-cooked stew of corn and beans with meat and vegetables.
+790|"Mixture" in Guaraní
+791|Pot roast
+792|Beef ribs slow-cooked in the pot until tender and golden, with cassava.
+793|Box of 6 empanadas
+794|Beef, chicken, ham and cheese, and sweetcorn. To share (or not).
+795|Beef empanada
+796|Beef, onion, pepper, garlic, hard-boiled egg, cumin and black pepper. The most ordered.
+797|Chicken empanada
+798|Chicken breast with onion, green and red pepper, garlic and hard-boiled egg.
+799|Ham and cheese empanada
+800|Cooked ham and melted mozzarella.
+801|Sweetcorn empanada
+802|Fresh sweetcorn and mozzarella. Sweet, mild and very Paraguayan.
+803|Free-range chicken broth with little balls of cornmeal and cheese. The dish Loren used to represent Paraguay in Ibai's Food World Cup.
+804|From "bolita" (little ball) → vorí
+805|=
+806|Our famous fish broth, thick and comforting, like on the banks of the Paraguay River.
+807|pira = fish
+808|Soyo with tortillita
+809|Minced beef soup, served with a Paraguayan tortillita and cassava.
+810|From "so'o josopy", minced meat
+811|Served on a brazier: beef, chorizo, chinchulín, chicken, cassava and chipa guazú. For two or more.
+812|Milanesa, beef, chorizo, fried cassava and chipa guazú. A whole Paraguayan table.
+813|Mixed grill
+814|Chargrilled meats with vegetables and lemon, served on a cast-iron plate.
+815|Milanesa bites with honey mustard
+816|Crispy mini milanesas with honey and mustard sauce.
+817|Chorizo bites with chimichurri
+818|Chargrilled criollo chorizo with our chimichurri.
+819|Tequeños with honey mustard
+820|5 pieces.
+821|Chicken wings
+822|7 pieces, nicely golden.
+823|Chicken strips with sweet chilli
+824|Breaded chicken with sweet chilli sauce. Mildly spicy.
+825|Calamari
+826|Battered and fried squid rings.
+827|Spanish tapas
+828|Iberian ham with tomato bread and a vermouth: the Spanish side of the house.
+829|Broken eggs with ham
+830|Potatoes, broken eggs and ham.
+831|Patatas bravas
+832|With homemade brava sauce.
+833|Ham croquettes
+834|3 pieces, creamy inside and crispy outside.
+835|House salad
+836|Lettuce, tomato, onion, carrot, cucumber and green pepper.
+837|Goat's cheese salad
+838|With balsamic reduction.
+839|=
+840|Beef milanesa with fried onion, two fried eggs and a side.
+841|Milanesa napolitana
+842|Tomato sauce, ham, cheese and egg, with chips.
+843|Tomato sauce, bacon, cheese and egg, with chips.
+844|Four-cheese milanesa
+845|Covered in four-cheese sauce, with chips.
+846|=
+847|With onion and melted cheese, Buenos Aires-Paraguayan style.
+848|Chicken milanesa napolitana
+849|Breaded chicken breast, tomato sauce, gouda, cooked ham and a fried egg.
+850|Beef milanesa
+851|The classic, with lemon and a side.
+852|Tripe milanesa
+853|For true fans: breaded tripe, with a side.
+854|Milanesa caprese
+855|With cherry tomatoes, mozzarella and basil.
+856|Bife a caballo (steak)
+857|Beef steak with softened onion, two fried eggs and chips.
+858|Beef gnocchi
+859|Homemade gnocchi with beef stewed in its own sauce.
+860|Beef tagliatelle
+861|Tagliatelle with braised beef, like Sunday lunch at home.
+862|Full milanesa sandwich
+863|Milanesa, lettuce, tomato, cooked ham, gouda and a fried egg. With chips.
+864|Beef tenderloin, lettuce, tomato, gouda, ham, egg and aioli. With chips.
+865|Traditional milanesa sandwich
+866|Milanesa with lettuce and tomato.
+867|Full chicken sandwich
+868|Chicken, lettuce, tomato, ham, cheese and egg.
+869|Full beef burger
+870|Beef, lettuce, tomato, gouda, cooked ham and a fried egg. With chips.
+871|Lomito árabe (wrap)
+872|Paraguay's street-food classic: lomito in griddled flatbread, with sauce and chips.
+873|Tres leches cake
+874|Sponge cake soaked in three kinds of milk, soft and refreshing.
+875|Cheesecake
+876|Creamy and homemade.
+877|Homemade flan
+878|Our house flan with caramel. Irresistible.
+879|=

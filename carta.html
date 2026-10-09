@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>La carta · Loren Restobar · Comida paraguaya en Barcelona</title>
+  <meta name="description" content="La carta completa de Loren Restobar: chipa guazú, sopa paraguaya, mbejú, empanadas, milanesas, parrillada y especiales del fin de semana. Arma tu bandeja y pide por WhatsApp, Glovo o Uber Eats.">
+  <meta name="theme-color" content="#2a000e">
+  <link rel="icon" href="img/marca/favicon.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..800,0..100,0..1;1,9..144,300..800,0..100,0..1&family=Yellowtail&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/paginas.css">
+  <link rel="stylesheet" href="css/carta.css">
+</head>
+<body data-page="carta">
+<div id="shell-top"></div>
+<main>
+
+<!-- HERO -->
+<section class="ch">
+  <div class="ch__encaje" data-nanduti></div>
+  <div class="wrap">
+    <nav class="miga" aria-label="Migas"><a href="index.html">Inicio</a> / <span>La carta</span></nav>
+    <div class="ch__tit"><h1 aria-label="La carta"><span>L</span><span style="animation-delay:.06s">a</span> <span style="animation-delay:.14s">c</span><span style="animation-delay:.2s">a</span><span style="animation-delay:.26s">r</span><span style="animation-delay:.32s">t</span><span style="animation-delay:.38s">a</span></h1><span class="sc">tembi'u</span></div>
+    <p class="ch__sub">Todo lo que sale de la cocina de Loren: clásicos paraguayos, milanesas que desbordan el plato y los caldos del fin de semana. Toca cualquier plato para verlo en grande y ve llenando <strong style="color:var(--maiz)">tu bandeja</strong>.</p>
+    <div class="ch__stats" id="ch-stats"></div>
+    <div class="ch__ctas">
+      <a href="#estrellas" class="btn">Ver los imprescindibles</a>
+      <a href="#carta" class="btn btn--ghost">Ir a la carta</a>
+      <a href="carta-clasica.html" class="btn btn--ghost">Carta para imprimir</a>
+    </div>
+  </div>
+  <div class="tira" aria-hidden="true"><div class="tira__fila" id="tira1"></div><div class="tira__fila tira__fila--2" id="tira2"></div></div>
+</section>
+
+<!-- ESCAPARATE -->
+<section class="sec escap" id="estrellas">
+  <div class="wrap">
+    <span class="eyebrow" style="color:var(--maiz)">Los imprescindibles <span class="gn">iporãvéva</span></span>
+    <div class="escap__stage">
+      <div class="escap__disco">
+        <div class="enc" data-nanduti data-sw="0.5"></div>
+        <div class="aro"></div>
+        <div class="fotos" id="escap-fotos"></div>
+        <div class="precio-g"><div><b id="escap-precio">4,40 €</b><small>precio</small></div></div>
+      </div>
+      <div class="escap__info" id="escap-info">
+        <div class="num anim"><b id="escap-num">01</b> / <span id="escap-tot">06</span></div>
+        <h2 class="anim" id="escap-nom">Chipa guazú</h2>
+        <div class="gn anim" id="escap-gn"></div>
+        <p class="anim" id="escap-desc"></p>
+        <div class="hero__ctas anim" style="margin-top:0">
+          <span id="escap-add"></span>
+          <button class="btn btn--ghost" id="escap-ver">Ver ficha</button>
+        </div>
+        <div class="escap__thumbs" id="escap-thumbs"></div>
+        <div class="escap__barra"><i id="escap-barra"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CARTA -->
+<div class="cnav" id="carta">
+  <div class="wrap">
+    <div class="cnav__cats" id="cnav-cats"></div>
+    <div class="cnav__herr">
+      <label class="buscador"><span class="sr-only">Buscar plato</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input id="c-buscar" type="search" placeholder="Busca: chipa, queso, milanesa…" autocomplete="off">
+      </label>
+      <button class="chip" data-tag="py"><i class="bandera"></i> Típico paraguayo</button>
+      <button class="chip" data-tag="top">★ Favoritos</button>
+      <button class="chip" data-tag="comp">Para compartir</button>
+      <button class="chip" data-tag="sintrigo">Sin trigo*</button>
+      <select class="orden" id="c-orden" aria-label="Ordenar">
+        <option value="rec">Recomendado</option><option value="asc">Precio: menor a mayor</option><option value="desc">Precio: mayor a menor</option>
+      </select>
+      <div class="vista" role="group" aria-label="Vista">
+        <button class="on" data-vista="grid" aria-label="Cuadrícula"><svg viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="3" width="8" height="8" rx="2"/><rect x="3" y="13" width="8" height="8" rx="2"/><rect x="13" y="13" width="8" height="8" rx="2"/></svg></button>
+        <button data-vista="lista" aria-label="Lista"><svg viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="4" width="18" height="4" rx="2"/><rect x="3" y="10" width="18" height="4" rx="2"/><rect x="3" y="16" width="18" height="4" rx="2"/></svg></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="wrap" id="c-lista" data-lb-grupo style="padding-bottom:40px"></section>
+<div class="wrap vacio-c" id="c-vacio"><div class="enc" data-nanduti></div><h3 style="font-size:1.8rem;color:var(--vino)">No encontramos ese plato…</h3><p style="color:var(--tinta-2)">Prueba con otra palabra o <a href="#" data-reserva style="color:var(--vino);font-weight:700">pregúntanos por WhatsApp</a>.</p></div>
+
+<!-- COMBOS -->
+<section class="sec sec--crema">
+  <div class="wrap">
+    <div class="cabecera cabecera--centro">
+      <span class="eyebrow rv">Menús para compartir</span>
+      <h2 class="titulo rv" data-delay="1">¿Indeciso? <em>Elige un combo</em></h2>
+      <p class="lead rv" data-delay="2">Un toque y todo el combo entra en tu bandeja. Luego puedes quitar o añadir lo que quieras.</p>
+    </div>
+    <div class="tres">
+      <article class="ruta rv" data-delay="1" data-nombre="Iniciación paraguaya" data-personas="2" data-pack="Chipa guazú|Sopa paraguaya|Mbejú relleno de queso|Empanada de carne*2|Guaraná*2">
+        <div class="ruta__cab"><div class="nanduti-bg" data-nanduti></div><span class="ico">🌽</span><h3>Iniciación paraguaya</h3><p>Los clásicos para probar por primera vez. Para dos.</p></div>
+        <ul></ul><div class="ruta__total"><button class="btn btn--sm btn--vino" data-combo>Añadir a la bandeja</button></div>
+      </article>
+      <article class="ruta ruta--dest rv" data-delay="2" data-nombre="Mesa de domingo" data-personas="4" data-pack="Picada completa|Chipa guazú*2|Sopa paraguaya*2|Yuca brava con salsa casera|Tarta tres leches*2">
+        <div class="ruta__cab"><div class="nanduti-bg" data-nanduti></div><span class="ico">🔥</span><h3>Mesa de domingo</h3><p>La picada completa y todo lo que la acompaña. Para cuatro.</p></div>
+        <ul></ul><div class="ruta__total"><button class="btn btn--sm btn--vino" data-combo>Añadir a la bandeja</button></div>
+      </article>
+      <article class="ruta rv" data-delay="3" data-nombre="Noche de milanesas" data-personas="2" data-pack="Box de 6 empanadas|Milanesa a caballo|Milanesa a la napolitana|Cerveza Corona*2">
+        <div class="ruta__cab"><div class="nanduti-bg" data-nanduti></div><span class="ico">🍺</span><h3>Noche de milanesas</h3><p>Empanadas para abrir y dos milanesas estrella. Para dos con hambre.</p></div>
+        <ul></ul><div class="ruta__total"><button class="btn btn--sm btn--vino" data-combo>Añadir a la bandeja</button></div>
+      </article>
+    </div>
+    <p class="carta__nota" style="margin-top:26px">Precios orientativos con IVA incluido; pueden variar en sala y en las apps de reparto. *Sin trigo: elaborado con mandioca y maíz, en cocina que también trabaja con trigo. Consulta alérgenos al equipo.</p>
+  </div>
+</section>
+
+</main>
+
+<!-- FICHA -->
+<div class="qv" id="qv" role="dialog" aria-modal="true" aria-label="Ficha del plato">
+  <div class="qv__caja">
+    <button class="qv__x" data-qv-cerrar aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <div class="qv__img" id="qv-img"></div>
+    <div class="qv__info">
+      <span class="cat-n" id="qv-cat"></span>
+      <h2 id="qv-nom"></h2>
+      <div class="gn" id="qv-gn"></div>
+      <div class="tags" id="qv-tags"></div>
+      <p class="desc" id="qv-desc"></p>
+      <div class="qv__acc"><span id="qv-precio"></span><span id="qv-add"></span><span id="qv-links" style="display:flex;gap:6px;flex-wrap:wrap"></span></div>
+      <div class="qv__con"><h4>Va genial con</h4><div class="sug" id="qv-sug"></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- BANDEJA -->
+<button class="fab-bandeja" id="fab-bandeja" aria-label="Abrir mi bandeja">
+  <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h18l-2 9H5z"/><path d="M8 11l2-6M16 11l-2-6"/></svg><b id="fab-n">0</b></span>
+  <span class="t"><small>Mi bandeja</small><strong id="fab-total">0,00 €</strong></span>
+</button>
+<aside class="bandeja" id="bandeja" aria-label="Mi bandeja">
+  <div class="bandeja__fondo" data-b-cerrar></div>
+  <div class="bandeja__panel">
+    <div class="bandeja__cab"><div class="enc" data-nanduti></div><h3>Mi bandeja</h3><p>lo que se te antoja hoy</p><button class="qv__x" data-b-cerrar aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+    <div class="bandeja__lista" id="b-lista"></div>
+    <div class="bandeja__pie">
+      <div class="tot"><span>Total orientativo</span><b id="b-total">0,00 €</b></div>
+      <div class="fila"><input id="b-nombre" placeholder="Tu nombre"><input id="b-hora" placeholder="Hora de recogida"></div>
+      <textarea id="b-nota" rows="2" placeholder="Notas: sin cebolla, alergias…"></textarea>
+      <a class="btn btn--wa" id="b-wa" href="#" target="_blank" rel="noopener">Encargar para recoger (WhatsApp)</a>
+      <div class="fila"><a class="btn btn--glovo btn--sm" href="#" data-link="glovo" target="_blank" rel="noopener">Glovo</a><a class="btn btn--uber btn--sm" href="#" data-link="uber" target="_blank" rel="noopener">Uber Eats</a></div>
+      <p class="aviso">Para envío a domicilio, añade los platos en tu app favorita. <button class="vaciar" id="b-vaciar">Vaciar bandeja</button></p>
+    </div>
+  </div>
+</aside>
+<div class="toast" id="toast"><i>✓</i><span></span></div>
+
+<div id="shell-bottom"></div>
+<script src="js/data.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/nanduti.js"></script>
+<script src="js/paginas.js"></script>
+<script src="js/carta.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+0|Loren Restobar · Homemade Paraguayan food in Barcelona
+1|A little piece of Paraguay in Barcelona. Chipa guazú, sopa paraguaya, mbejú, vorí vorí, homemade empanadas and milanesas by chef Loren Vera. Carrer de la Muntanya 115 · Book or order on Glovo and Uber Eats.
+2|Loren Restobar · A little piece of Paraguay in Barcelona
+3|Homemade Paraguayan cooking since 2020. Book a table, order delivery or explore our menu.
+4|Mba'éichapa! <small>"How are you?" in Guaraní</small>
+5|<span class="linea"><span>A little piece</span></span> <span class="linea"><span>of <em>Paraguay</em></span></span> <span class="linea"><span>in Barcelona</span></span>
+6|Freshly baked chipa guazú, stretchy cheese mbejú, free-range chicken vorí vorí and the most generous milanesas in town. Grandma's recipes, cooked every day by chef <strong>Loren Vera</strong>.
+7|Book a table
+8|Order delivery
+9|See the menu
+10|<b>4.6</b><span><span class="estrellas">★★★★★</span>739 Google reviews</span>
+11|<b>4.9</b><span><span class="estrellas">★★★★★</span>on Uber Eats</span>
+12|<b>30K</b><span>family on<br/>Instagram</span>
+13|House specialities
+14|<b>6</b><small>years</small>
+15|<b>Vorí vorí</b><small>Free-range chicken broth</small>
+16|Discover<i></i>
+17|<span>Chipa guazú</span><span>Sopa paraguaya</span><span>Mbejú</span><span>Vorí vorí</span><span>Homemade empanadas</span><span>Mandi'ó chyryry</span><span>Pira caldo</span><span>Milanesa a caballo</span><span>Brazier grill</span><span>Tres leches</span> <span>Chipa guazú</span><span>Sopa paraguaya</span><span>Mbejú</span><span>Vorí vorí</span><span>Homemade empanadas</span><span>Mandi'ó chyryry</span><span>Pira caldo</span><span>Milanesa a caballo</span><span>Brazier grill</span><span>Tres leches</span>
+18|It's not about who we are… <span class="hl">it's about how we make you feel.</span> Here you eat like at <span class="sc">grandma's house</span>, Guaraní is spoken at the bar and every dish leaves the kitchen with a little piece of our homeland.
+19|Family recipes
+20|Handed down from Loren's parents and grandparents, from San José de los Arroyos to your table.
+21|All made here
+22|Empanada dough, chipa, mbejú and broths are made fresh every day in our kitchen.
+23|Generous portions
+24|Nobody leaves hungry. Dishes to share and neighbourhood prices.
+25|Flavour that brings cultures together
+26|Homemade Paraguayan and Spanish cooking, a terrace and a family atmosphere. Pets are welcome too.
+27|Chef Loren Vera holding a bowl of vorí vorí
+28|<span class="script">Loren Vera</span><small>Chef and heart of the house</small>
+29|Our story <span class="gn">Che róga</span>
+30|From San José de los Arroyos <em>to Camp de l'Arpa</em>
+31|Lorenza Vera —Loren to everyone— arrived in Spain more than 17 years ago with a suitcase full of recipes. She studied cooking, worked in restaurants and, in the middle of the pandemic, dared to open her own place to fulfil a dream:
+32|"To prove that Paraguayan food is just as excellent as any other."<small>— LOREN VERA</small>
+33|Today, together with her family —her son José Manuel is her "right hand"— and a team that will even serve you in Guaraní, Loren Restobar is a meeting point for Paraguayans who miss home and for locals discovering it for the first time.
+34|<b>Paraguay</b><span>Grows up in San José de los Arroyos surrounded by chipas, cocido and Sunday barbecues.</span>
+35|<b>2020 · Loren opens</b><span>In the middle of the pandemic, Loren Gastrobar is born on Carrer de la Muntanya, with empanadas and chipa guazú as its flagship.</span>
+36|<b>2022 · The family grows</b><span>Loren Restobar arrives: more tables, a bigger menu, the same home cooking.</span>
+37|<b>2026 · Paraguay at the Food World Cup</b><span>Her vorí vorí represents Paraguay in Ibai Llanos' Food World Cup: <strong>over 249,000 votes</strong> on Instagram alone and front-page news in Paraguay.</span>
+38|Read the full story
+39|<b data-count="6">0</b><span>years cooking Paraguay in Barcelona</span>
+40|<b data-count="4.6" data-suf="★">0</b><span>average from 739 Google reviews</span>
+41|<b data-count="30" data-suf="K">0</b><span>Instagram followers</span>
+42|<b data-count="249" data-suf="K">0</b><span>votes for our vorí vorí</span>
+43|Flavour dictionary <span class="gn">tembi'u</span>
+44|First time trying <em>Paraguayan food</em>?
+45|We'll make it easy. Hover over (or tap) each dish to find out what it is, how to say it and why no Paraguayan table is complete without it.
+46|=
+47|the star dish
+48|=
+49|Baked cake of fresh sweetcorn, egg, onion and fresh cheese. Fluffy, golden and wheat-free.
+50|"Guazú" means big in Guaraní
+51|Sopa paraguaya
+52|the soup you slice
+53|=
+54|It's not a soup: it's a savoury cornbread made with cornmeal, curd, cheese and onion.
+55|Legend has it that it was born from a "mistake" in President Carlos Antonio López's kitchen
+56|=
+57|crispy and cheesy
+58|=
+59|Griddled flatbread made with cassava starch, cornmeal and cheese. Crispy outside, soft inside.
+60|A Guaraní heritage; in Paraguay it's eaten with cocido or milky coffee
+61|=
+62|Ibai's favourite
+63|=
+64|Free-range chicken broth with little balls of cornmeal and cheese. A hug in a bowl.
+65|The dish Loren used to represent Paraguay in front of 1.7 million votes
+66|Empanadas
+67|the most talked-about
+68|beef · chicken · ham &amp; cheese · sweetcorn
+69|Homemade pastry and a juicy filling. The beef one has hard-boiled egg, cumin and peppers, just as tradition demands.
+70|The most mentioned dish in our Google reviews
+71|Cassava
+72|=
+73|cassava
+74|=
+75|Cassava (yuca). In Paraguay it goes with every meal like bread does here: boiled, fried "brava" style or sautéed as <em>chyryry</em>.
+76|"Chyryry" imitates the sizzle of the frying pan
+77|Paraguayan mixed grill
+78|Mixed grill
+79|on the brazier
+80|the Sunday barbecue
+81|Beef, chorizo, chinchulín and chicken, with cassava and chipa guazú, served sizzling on a brazier.
+82|In Paraguay, a barbecue is almost a family ritual
+83|=
+84|ten different ways
+85|a caballo · napolitana · fugazzeta
+86|Beef or chicken breaded to order, in portions that overflow the plate. Also in a sandwich.
+87|Order it "a caballo": topped with two fried eggs
+88|<a class="btn btn--vino" href="sabores.html">Discover all the flavours of Paraguay</a>
+89|Weekend specials <span class="gn">sábado ha domingo</span>
+90|Saturdays and Sundays <em>smell of broth</em>
+91|Some dishes need time, a big pot and patience. We save them for the weekend, when half of Paraguayan Barcelona comes looking for them.
+92|<i></i><span>Countdown to the next vorí vorí</span>
+93|<a class="btn" data-reserva="" href="#">Book for the weekend</a>
+94|Vorí vorí <small>the famous one</small>
+95|Free-range chicken broth with little corn and cheese balls.
+96|Pira caldo <small>pira = fish</small>
+97|Our fish broth, thick and comforting.
+98|=
+99|Soyo <small>with tortillita</small>
+100|Minced beef soup with a Paraguayan tortillita and cassava.
+101|Mixed grill <small>on the brazier</small>
+102|To share, with chipa guazú and cassava.
+103|The menu <span class="gn">tembi'u</span>
+104|Our classic menu, <em>right here</em>
+105|This is the menu we hand you at the table: Paraguayan classics, milanesas, weekend specials and even a little Guaraní dictionary. Flip the pages, tap them to read them full-size or take it with you as a PDF.
+106|<b id="sc-n1">61</b><span>dishes and drinks</span>
+107|<b id="sc-n2">20</b><span>Paraguayan classics</span>
+108|<b id="sc-n3">4</b><span>weekend specials</span>
+109|Most ordered
+110|<a class="btn" href="carta.html">Open the interactive menu</a> <a class="btn btn--ghost" href="carta-clasica.html">Print / PDF</a>
+111|Previous page
+112|Next page
+113|Tap the page to read it full-size · swipe to turn
+114|Delivery <span class="gn">jaha!</span>
+115|Paraguay comes <em>to your door</em>
+116|Order from your favourite app or message us on WhatsApp and pick it up piping hot. Empanadas, milanesas and chipa guazú travel beautifully.
+117|=
+118|★ 97% happy customers
+119|Fast delivery across the area. Often free delivery with Prime.
+120|Order on Glovo
+121|=
+122|★ 4.9 · 43 ratings
+123|Accepts Ticket Restaurant® in the app. Perfect for an office lunch.
+124|Order on Uber Eats
+125|Takeaway
+126|No fees · pick up in store
+127|Message us on WhatsApp, we'll give you a time and have it ready for you at Carrer de la Muntanya 115.
+128|Order on WhatsApp
+129|<a class="btn btn--line" href="domicilio.html">Areas, bundles and FAQs</a>
+130|<b>@lorenrestobar_</b><small>30.1K followers</small>
+131|The Loren experience <span class="gn">vy'a</span>
+132|Come hungry, <em>leave as family</em>
+133|Guarania music in the background, the sizzle of the brazier and a table that's never empty. Follow us for the dish of the day, weekend specials and what's cooking in our kitchen.
+134|30.1K
+135|=
+136|12.9K
+137|=
+138|=
+139|=
+140|How we make vorí vorí
+141|How we make mbejú
+142|Pira caldo every weekend
+143|Loren tells you her story
+144|Paraguayan catering tray
+145|Catering tray with sandwiches, mini milanesas, empanadas and sopa paraguaya
+146|Catering to take away
+147|Table set for a group
+148|Celebrations
+149|Tray of empanadas, croquettes and chipas
+150|Party bites
+151|Events and catering <span class="gn">vy'apavẽ</span>
+152|Your celebration, <em>Paraguayan style</em>
+153|Birthdays, christenings, company lunches, afterworks or that party at home: we prepare trays of party bites (empanadas, chipas, croquettes, finger sandwiches, sopa paraguaya) or book the restaurant for you with a tailor-made menu.
+154|<span>🎂 Birthdays</span><span>💼 Company</span><span>🥂 Afterwork</span><span>👶 Christenings</span><span>💍 Weddings</span><span>⚽ Matches</span>
+155|Your name
+156|Full name
+157|Type of event
+158|Birthday
+159|Company lunch
+160|=
+161|Christening / communion
+162|Wedding
+163|Other
+164|Guests
+165|Date
+166|Format
+167|Book at the restaurant
+168|Catering / trays to take away
+169|Not sure yet, advise me
+170|Anything else
+171|Dishes you'd like, allergies, budget…
+172|Send via WhatsApp
+173|WhatsApp will open with your message ready. We reply the same day. <a href="eventos.html" style="color:var(--vino);font-weight:700">See trays and events →</a>
+174|Our home <span class="gn">ko'ápe</span>
+175|Come in, <em>sit down</em>, make yourself at home
+176|The bar
+177|Restaurant bar
+178|Milanesa americana
+179|The dining room
+180|Dining room with a living green wall
+181|Mbejú and chipa guazú, photo by a customer
+182|Mbejú and chipa guazú
+183|Yuca brava with homemade sauce
+184|Yuca brava
+185|Corner with Paraguayan decoration
+186|A corner of the restaurant with Paraguayan decoration
+187|Mixed grill on a cast-iron plate
+188|Picada completa, photo by a customer
+189|Picada completa
+190|Sopa paraguaya in the dining room
+191|Sopa paraguaya served in the dining room
+192|Sopa paraguaya with a traditional hat in the background
+193|Lomito sandwich
+194|Chorizo, cassava and Paraguayan cheese
+195|Chorizo with cassava and cheese
+196|What people say <span class="gn">aguyje!</span>
+197|739 reviews <em>can't be wrong</em>
+198|=
+199|<b>4.6</b><small>739 reviews · Google</small>
+200|=
+201|<b>4.9</b><small>Uber Eats</small>
+202|<b>97%</b><small>satisfaction · Glovo</small>
+203|=
+204|<b>100%</b><small>recommend · Facebook</small>
+205|It was our first time here and we loved it. We ordered a bit of everything to try and it was all 10 out of 10.
+206|=
+207|=
+208|The food was spectacular and the service truly excellent. The atmosphere is very pleasant, comfortable and family-friendly.
+209|=
+210|=
+211|The mixed grill… the fried cassava… the empanadas… a delight.
+212|<b>Google customer</b>Featured review
+213|Jennifer gave us excellent service and all the food was delicious. We'll be back!
+214|=
+215|<b>Matías G.</b>With family · Tripadvisor
+216|Excellent service, everything was delicious, we had a great time as a family. We'll be back!!!
+217|Good service and very tasty traditional Paraguayan food.
+218|<span>They've written about us</span> <a href="https://www.latribuna.com.py/nacionales/locales/2026/09/03/vori-vori-cae-frente-al-chivito-uruguayo-pero-sigue-siendo-el-favorito-en-espana/" rel="noopener" target="_blank">La Tribuna</a> <a href="https://www.lanacion.com.py/lnpop/2026/08/24/mundial-de-comidas-de-ibai-paraguay-gana-en-instagram-pero-uruguay-arrasa-en-tiktok/" rel="noopener" target="_blank">La Nación</a> <a href="https://www.extra.com.py/mundo/el-vori-vori-paraguayo-se-enfrenta-al-chivito-uruguayo-en-mundial-de-comidas-y-vos-podes-elegir-al-ganador" rel="noopener" target="_blank">Extra</a> <a href="https://epa.com.py/el-vori-vori-necesita-nuestro-voto-en-el-mundial-de-comidas-organizado-por-un-influencer-espanol/" rel="noopener" target="_blank">EPA!</a> <a href="https://infonegocios.com.py/infogourmet/loren-gastrobar-lleva-la-gastronomia-paraguaya-a-barcelona-la-chef-que-abrio-dos-locales-en-la-ciudad-condal" rel="noopener" target="_blank">InfoNegocios</a> <a href="https://elomnivoro.com/2023/01/20/sin-pausa-loren-paso-del-gastro-al-resto/" rel="noopener" target="_blank">El Omnívoro</a>
+219|Visit us <span class="gn">eju!</span>

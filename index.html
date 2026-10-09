@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Loren Restobar · Comida paraguaya casera en Barcelona</title>
+  <meta name="description" content="Un pedacito de Paraguay en Barcelona. Chipa guazú, sopa paraguaya, mbejú, vorí vorí, empanadas y milanesas caseras de la chef Loren Vera. Carrer de la Muntanya 115 · Reserva o pide por Glovo y Uber Eats.">
+  <meta name="theme-color" content="#59011d">
+  <meta property="og:title" content="Loren Restobar · Un pedacito de Paraguay en Barcelona">
+  <meta property="og:description" content="Cocina paraguaya casera desde 2020. Reserva, pide a domicilio o descubre nuestra carta.">
+  <meta property="og:image" content="img/platos/chipa-guazu.webp">
+  <meta property="og:type" content="restaurant">
+  <link rel="icon" href="img/marca/favicon.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..800,0..100,0..1;1,9..144,300..800,0..100,0..1&family=Yellowtail&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/carta-clasica.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Loren Restobar",
+    "servesCuisine": ["Paraguaya", "Latinoamericana", "Española"],
+    "address": { "@type": "PostalAddress", "streetAddress": "Carrer de la Muntanya, 115", "postalCode": "08026", "addressLocality": "Barcelona", "addressCountry": "ES" },
+    "geo": { "@type": "GeoCoordinates", "latitude": 41.41277, "longitude": 2.18289 },
+    "telephone": "+34602076828",
+    "priceRange": "€",
+    "acceptsReservations": "True",
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.6", "reviewCount": "739" },
+    "sameAs": ["https://www.instagram.com/lorenrestobar_/", "https://www.tiktok.com/@lorenrestobar", "https://www.facebook.com/lorenrestobar"]
+  }
+  </script>
+</head>
+<body data-page="inicio">
+
+<!-- ============ LOADER ============ -->
+<div class="loader" aria-hidden="true">
+  <div class="loader__inner">
+    <div data-nanduti data-dibujar data-sw="0.9"></div>
+    <img src="img/marca/logo-tabla.webp" alt="">
+  </div>
+</div>
+
+<div id="shell-top"></div>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="inicio">
+  <canvas id="brasas" aria-hidden="true"></canvas>
+  <div class="hero__grano"></div>
+  <div class="wrap">
+    <div class="hero__texto">
+      <p class="hero__saludo hero__fade">Mba'éichapa! <small>¿Qué tal? en guaraní</small></p>
+      <h1>
+        <span class="linea"><span>Un pedacito</span></span>
+        <span class="linea"><span>de <em>Paraguay</em></span></span>
+        <span class="linea"><span>en Barcelona</span></span>
+      </h1>
+      <p class="hero__txt hero__fade">Chipa guazú recién horneada, mbejú que estira, vorí vorí de gallina casera y las milanesas más generosas de la ciudad. Recetas de la abuela, cocinadas cada día por la chef <strong>Loren Vera</strong>.</p>
+      <div class="hero__ctas hero__fade hero__fade--2">
+        <a href="#" class="btn" data-reserva>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+          Reservar mesa
+        </a>
+        <a href="#" class="btn btn--ghost" data-pedir>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 18a2 2 0 1 0 4 0 2 2 0 0 0-4 0zM15 18a2 2 0 1 0 4 0 2 2 0 0 0-4 0zM7 18H4V8h9v10h-4M13 11h4l3 4v3h-1"/></svg>
+          Pedir a domicilio
+        </a>
+        <a href="#carta" class="btn btn--ghost">Ver la carta</a>
+      </div>
+      <div class="hero__pruebas hero__fade hero__fade--3">
+        <div class="prueba"><b>4,6</b><span><span class="estrellas">★★★★★</span>739 reseñas en Google</span></div>
+        <div class="prueba"><b>4,9</b><span><span class="estrellas">★★★★★</span>en Uber Eats</span></div>
+        <div class="prueba"><b>30K</b><span>familia en<br>Instagram</span></div>
+      </div>
+    </div>
+
+    <div class="plato hero__fade" aria-label="Platos de la casa">
+      <div class="plato__encaje" data-nanduti data-sw="0.55"></div>
+      <div class="plato__encaje plato__encaje--2" data-nanduti data-sw="0.6" data-petalos="12"></div>
+      <div class="plato__aro"></div>
+      <div class="plato__fotos"></div>
+      <div class="plato__sello">
+        <svg viewBox="0 0 100 100" aria-hidden="true"><defs><path id="circ" d="M50 50m-38 0a38 38 0 1 1 76 0a38 38 0 1 1-76 0"/></defs><text font-size="9.5" font-weight="700" letter-spacing="2.4" fill="#59011d"><textPath href="#circ">DESDE 2020 · RECETAS DE CASA ·</textPath></text></svg>
+        <div><b>6</b><small>años</small></div>
+      </div>
+      <div class="plato__etiqueta">
+        <span class="num">01</span>
+        <div class="txt"><b>Vorí vorí</b><small>Caldo de gallina casera</small></div>
+      </div>
+    </div>
+  </div>
+  <a href="#bienvenida" class="hero__scroll">Descubre<i></i></a>
+</section>
+
+<div class="marquesina" aria-hidden="true">
+  <div class="marquesina__pista">
+    <span>Chipa guazú</span><span>Sopa paraguaya</span><span>Mbejú</span><span>Vorí vorí</span><span>Empanadas caseras</span><span>Mandi'ó chyryry</span><span>Pira caldo</span><span>Milanesa a caballo</span><span>Parrillada al brasero</span><span>Tres leches</span>
+    <span>Chipa guazú</span><span>Sopa paraguaya</span><span>Mbejú</span><span>Vorí vorí</span><span>Empanadas caseras</span><span>Mandi'ó chyryry</span><span>Pira caldo</span><span>Milanesa a caballo</span><span>Parrillada al brasero</span><span>Tres leches</span>
+  </div>
+</div>
+
+<!-- ============ BIENVENIDA ============ -->
+<section class="sec bienvenida" id="bienvenida">
+  <div class="wrap">
+    <div class="encaje-sep rv"><div data-nanduti style="width:54px" data-sw="1.4"></div></div>
+    <p class="gran rv" data-delay="1">
+      No es lo que somos… <span class="hl">es lo que te hacemos sentir.</span>
+      Aquí se come como en <span class="sc">casa de la abuela</span>, se habla guaraní en la barra y cada plato sale de la cocina con un trocito de nuestra tierra.
+    </p>
+    <div class="pilares">
+      <div class="pilar rv" data-delay="1">
+        <div class="pilar__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-3 3-6 4-6 9a6 6 0 0 0 12 0c0-5-3-6-6-9z"/><path d="M12 13v5"/></svg></div>
+        <h3>Recetas de familia</h3>
+        <p>Las de los padres y abuelos de Loren, de San José de los Arroyos a tu mesa.</p>
+      </div>
+      <div class="pilar rv" data-delay="2">
+        <div class="pilar__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11h16M5 11a7 7 0 0 0 14 0M9 4c0 2 2 2 2 4M13 4c0 2 2 2 2 4"/></svg></div>
+        <h3>Todo hecho aquí</h3>
+        <p>Masa de empanada, chipa, mbejú y caldos se preparan cada día en nuestra cocina.</p>
+      </div>
+      <div class="pilar rv" data-delay="3">
+        <div class="pilar__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3 19c0-3 3-5 6-5s6 2 6 5M15 14.5c3 0 6 1.6 6 4.5"/></svg></div>
+        <h3>Raciones generosas</h3>
+        <p>Nadie se va con hambre. Platos para compartir y precios de barrio.</p>
+      </div>
+      <div class="pilar rv" data-delay="4">
+        <div class="pilar__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10z"/></svg></div>
+        <h3>Sabor que une culturas</h3>
+        <p>Cocina paraguaya y española casera, terraza y ambiente familiar. Las mascotas también son bienvenidas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HISTORIA ============ -->
+<section class="sec sec--vino historia" id="historia">
+  <div class="wrap">
+    <div class="historia__foto rv rv--izq">
+      <div class="encaje" data-nanduti data-sw="0.8"></div>
+      <div class="marco"><img src="img/local/loren-chef-vori.webp" alt="La chef Loren Vera con un plato de vorí vorí" loading="lazy"></div>
+      <div class="historia__firma"><span class="script">Loren Vera</span><small>Chef y alma de la casa</small></div>
+    </div>
+    <div class="historia__txt rv rv--der">
+      <span class="eyebrow">Nuestra historia <span class="gn">Che róga</span></span>
+      <h2 class="titulo">De San José de los Arroyos <em>al Camp de l'Arpa</em></h2>
+      <p>Lorenza Vera —Loren para todos— llegó a España hace más de 17 años con una maleta llena de recetas. Estudió cocina, trabajó en restaurantes y, en plena pandemia, se atrevió a abrir su propio local para cumplir un sueño:</p>
+      <blockquote class="cita">«Demostrar que la comida paraguaya es tan excelente como las demás.»<small>— LOREN VERA</small></blockquote>
+      <p>Hoy, junto a su familia —su hijo José Manuel es su «mano derecha»— y un equipo que te atiende hasta en guaraní, Loren Restobar es punto de encuentro para paraguayos que echan de menos su tierra y para barceloneses que la descubren por primera vez.</p>
+      <ul class="linea-tiempo">
+        <li class="rv" data-delay="1"><b>Paraguay</b><span>Crece en San José de los Arroyos entre chipas, cocidos y domingos de asado.</span></li>
+        <li class="rv" data-delay="2"><b>2020 · Abre Loren</b><span>En plena pandemia nace Loren Gastrobar en Carrer de la Muntanya, con empanadas y chipa guazú como bandera.</span></li>
+        <li class="rv" data-delay="3"><b>2022 · Crece la familia</b><span>Llega Loren Restobar: más mesas, más carta, la misma cocina de casa.</span></li>
+        <li class="rv" data-delay="4"><b>2026 · Paraguay en el Mundial de Comidas</b><span>Su vorí vorí representa a Paraguay en el Mundial de Comidas de Ibai Llanos: <strong>más de 249.000 votos</strong> solo en Instagram y portada en la prensa paraguaya.</span></li>
+      </ul>
+      <a href="historia.html" class="btn" style="margin-top:10px">Leer la historia completa</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CIFRAS ============ -->
+<section class="sec sec--crema" style="padding-block: clamp(60px,8vw,100px)">
+  <div class="wrap">
+    <div class="cifras rv">
+      <div class="cifra"><b data-count="6">0</b><span>años cocinando Paraguay en Barcelona</span></div>
+      <div class="cifra"><b data-count="4.6" data-suf="★">0</b><span>media en 739 reseñas de Google</span></div>
+      <div class="cifra"><b data-count="30" data-suf="K">0</b><span>seguidores en Instagram</span></div>
+      <div class="cifra"><b data-count="249" data-suf="K">0</b><span>votos para nuestro vorí vorí</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SABORES / GLOSARIO ============ -->
+<section class="sec sec--crema" id="sabores" style="padding-top:0">
+  <div class="wrap">
+    <div class="cabecera cabecera--split">
+      <div>
+        <span class="eyebrow rv">Diccionario del sabor <span class="gn">tembi'u</span></span>
+        <h2 class="titulo rv" data-delay="1">¿Primera vez con la <em>comida paraguaya</em>?</h2>
+      </div>
+      <p class="lead rv" data-delay="2">Te lo ponemos fácil. Pasa el ratón (o toca) cada plato y descubre qué es, cómo se dice y por qué en Paraguay no puede faltar.</p>
+    </div>
+    <div class="sabores__grid">
+      <div class="sabor rv" tabindex="0" data-delay="1"><div class="sabor__in">
+        <div class="sabor__cara sabor__cara--frente"><img src="img/platos/chipa-guazu.webp" alt="Chipa guazú" loading="lazy"><span class="gira"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 3v5h-5M21 12a9 9 0 0 1-15 6.7L3 16M3 21v-5h5"/></svg></span><div class="nom"><h3>Chipa guazú</h3><small>el plato estrella</small></div></div>
+        <div class="sabor__cara sabor__cara--dorso"><div class="nanduti-bg" data-nanduti></div><h3>Chipa guazú</h3><div class="pron">chi-pa gua-SÚ</div><p>Pastel horneado de choclo (maíz tierno), huevo, cebolla y queso fresco. Esponjoso, dorado y sin trigo.</p><div class="dato">«Guazú» significa grande en guaraní</div></div>
+      </div></div>
+
+      <div class="sabor rv" tabindex="0" data-delay="2"><div class="sabor__in">
+        <div class="sabor__cara sabor__cara--frente"><img src="img/platos/sopa-paraguaya.webp" alt="Sopa paraguaya" loading="lazy"><span class="gira"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 3v5h-5M21 12a9 9 0 0 1-15 6.7L3 16M3 21v-5h5"/></svg></span><div class="nom"><h3>Sopa paraguaya</h3><small>la sopa que se corta</small></div></div>
+        <div class="sabor__cara sabor__cara--dorso"><div class="nanduti-bg" data-nanduti></div><h3>Sopa paraguaya</h3><div class="pron">so-pa pa-ra-GUA-ya</div><p>No es una sopa: es un bizcocho salado de harina de maíz, cuajada, queso y cebolla.</p><div class="dato">Cuenta la leyenda que nació de un «error» en la cocina del presidente Carlos Antonio López</div></div>
+      </div></div>
+
+      <div class="sabor rv" tabindex="0" data-delay="3"><div class="sabor__in">
+        <div class="sabor__cara sabor__cara--frente"><img src="img/platos/mbeju-queso.webp" alt="Mbejú" loading="lazy"><span class="gira"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 3v5h-5M21 12a9 9 0 0 1-15 6.7L3 16M3 21v-5h5"/></svg></span><div class="nom"><h3>Mbejú</h3><small>crujiente y con queso</small></div></div>
+        <div class="sabor__cara sabor__cara--dorso"><div class="nanduti-bg" data-nanduti></div><h3>Mbejú</h3><div class="pron">mbe-YÚ</div><p>Torta a la plancha de almidón de mandioca, maíz y queso. Crujiente por fuera, tierna por dentro.</p><div class="dato">Herencia guaraní; en Paraguay se toma con cocido o café con leche</div></div>
+      </div></div>
+
+      <div class="sabor rv" tabindex="0" data-delay="4"><div class="sabor__in">
+        <div class="sabor__cara sabor__cara--frente"><img src="img/platos/caldo-gallina.webp" alt="Vorí vorí" loading="lazy"><span class="gira"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 3v5h-5M21 12a9 9 0 0 1-15 6.7L3 16M3 21v-5h5"/></svg></span><div class="nom"><h3>Vorí vorí</h3><small>el de Ibai</small></div></div>
+        <div class="sabor__cara sabor__cara--dorso"><div class="nanduti-bg" data-nanduti></div><h3>Vorí vorí</h3><div class="pron">bo-RÍ bo-RÍ</div><p>Caldo de gallina casera con bolitas de harina de maíz y queso. Abrazo en forma de plato.</p><div class="dato">El plato con el que Loren representó a Paraguay ante 1,7 millones de votos</div></div>
+      </div></div>
+
+      <div class="sabor rv" tabindex="0" data-delay="1"><div class="sabor__in">
+        <div class="sabor__cara sabor__cara--frente"><img src="img/platos/box-empanadas.webp" alt="Empanadas" loading="lazy"><span class="gira"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 3v5h-5M21 12a9 9 0 0 1-15 6.7L3 16M3 21v-5h5"/></svg></span><div class="nom"><h3>Empanadas</h3><small>las más nombradas</small></div></div>
+        <div class="sabor__cara sabor__cara--dorso"><div class="nanduti-bg" data-nanduti></div><h3>Empanadas</h3><div class="pron">carne · pollo · J&amp;Q · choclo</div><p>Masa casera y relleno jugoso. La de carne lleva huevo duro, comino y pimiento, como manda la tradición.</p><div class="dato">Lo más mencionado en nuestras reseñas de Google</div></div>
+      </div></div>
+
+      <div class="sabor rv" tabindex="0" data-delay="2"><div class="sabor__in">
+        <div class="sabor__cara sabor__cara--frente"><img src="img/platos/mandioca.webp" alt="Mandioca" loading="lazy"><span class="gira"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 3v5h-5M21 12a9 9 0 0 1-15 6.7L3 16M3 21v-5h5"/></svg></span><div class="nom"><h3>Mandi'ó</h3><small>la mandioca</small></div></div>
+        <div class="sabor__cara sabor__cara--dorso"><div class="nanduti-bg" data-nanduti></div><h3>Mandi'ó</h3><div class="pron">man-di-Ó</div><p>La yuca. En Paraguay acompaña cada comida como aquí el pan: hervida, frita «brava» o salteada en <em>chyryry</em>.</p><div class="dato">«Chyryry» imita el chisporroteo de la sartén</div></div>
+      </div></div>
+
+      <div class="sabor rv" tabindex="0" data-delay="3"><div class="sabor__in">
+        <div class="sabor__cara sabor__cara--frente"><img src="img/platos/parrillada-paraguaya.webp" alt="Parrillada paraguaya" loading="lazy"><span class="gira"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 3v5h-5M21 12a9 9 0 0 1-15 6.7L3 16M3 21v-5h5"/></svg></span><div class="nom"><h3>Parrillada</h3><small>al brasero</small></div></div>
+        <div class="sabor__cara sabor__cara--dorso"><div class="nanduti-bg" data-nanduti></div><h3>Parrillada paraguaya</h3><div class="pron">el asado del domingo</div><p>Asado, chorizo, chinchulín y pollo, con mandioca y chipa guazú, servidos humeantes en brasero.</p><div class="dato">En Paraguay, el asado es casi un ritual familiar</div></div>
+      </div></div>
+
+      <div class="sabor rv" tabindex="0" data-delay="4"><div class="sabor__in">
+        <div class="sabor__cara sabor__cara--frente"><img src="img/platos/mila-napolitana.webp" alt="Milanesa" loading="lazy"><span class="gira"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 3v5h-5M21 12a9 9 0 0 1-15 6.7L3 16M3 21v-5h5"/></svg></span><div class="nom"><h3>Milanesa</h3><small>diez maneras</small></div></div>
+        <div class="sabor__cara sabor__cara--dorso"><div class="nanduti-bg" data-nanduti></div><h3>Milanesa</h3><div class="pron">a caballo · napo · fugazzeta</div><p>Ternera o pollo rebozados al momento, en raciones que desbordan el plato. También en sándwich.</p><div class="dato">Pídela «a caballo»: con dos huevos fritos encima</div></div>
+      </div></div>
+    </div>
+    <div style="text-align:center;margin-top:44px"><a href="sabores.html" class="btn btn--vino">Descubre todos los sabores de Paraguay</a></div>
+  </div>
+</section>
+
+<!-- ============ FINDE ============ -->
+<section class="sec sec--oscuro finde" id="finde">
+  <div class="wrap">
+    <div class="rv rv--izq">
+      <span class="eyebrow">Especiales del finde <span class="gn">sábado ha domingo</span></span>
+      <h2 class="titulo">Los sábados y domingos <em>huelen a caldo</em></h2>
+      <p class="lead">Hay platos que piden tiempo, olla grande y paciencia. Los guardamos para el fin de semana, cuando media Barcelona paraguaya viene a buscarlos.</p>
+      <div class="finde__cuenta" aria-live="polite"></div>
+      <p class="finde__estado"><i></i><span>Cuenta atrás para el próximo vorí vorí</span></p>
+      <div style="margin-top:28px"><a href="#" class="btn" data-reserva>Reservar para el finde</a></div>
+    </div>
+    <div class="finde__platos rv rv--der">
+      <div class="finde__plato"><div class="foto"><img src="img/platos/caldo-gallina.webp" alt="Vorí vorí" loading="lazy"></div><div><h3>Vorí vorí <small>el famoso</small></h3><p>Caldo de gallina casera con bolitas de maíz y queso.</p></div></div>
+      <div class="finde__plato"><div class="foto" data-nanduti data-sw="1"></div><div><h3>Pira caldo <small>pira = pez</small></h3><p>Nuestro caldo de pescado, espeso y reconfortante.</p></div></div>
+      <div class="finde__plato"><div class="foto"><img src="img/redes/ig-soyo.webp" alt="Soyo" loading="lazy" style="object-position:50% 45%"></div><div><h3>Soyo <small>con tortillita</small></h3><p>Sopa de carne machacada con tortillita paraguaya y mandioca.</p></div></div>
+      <div class="finde__plato"><div class="foto"><img src="img/platos/parrillada-paraguaya.webp" alt="Parrillada" loading="lazy"></div><div><h3>Parrillada <small>al brasero</small></h3><p>Para compartir, con chipa guazú y mandioca.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CARTA ============ -->
+<section class="sec sec-carta" id="carta">
+  <span id="la-carta"></span>
+  <div class="sec-carta__enc" data-nanduti></div>
+  <div class="wrap sec-carta__grid">
+    <div class="sec-carta__txt rv rv--izq">
+      <span class="eyebrow">La carta <span class="gn">tembi'u</span></span>
+      <h2 class="titulo">La carta de siempre, <em>a la vista</em></h2>
+      <p class="lead">Así es la carta que te damos en la mesa: los clásicos paraguayos, las milanesas, los especiales del finde y hasta un pequeño diccionario guaraní. Pasa las hojas, tócalas para leerlas en grande o llévatela en PDF.</p>
+      <div class="sec-carta__datos">
+        <div><b id="sc-n1">61</b><span>platos y bebidas</span></div>
+        <div><b id="sc-n2">20</b><span>típicos paraguayos</span></div>
+        <div><b id="sc-n3">4</b><span>especiales del finde</span></div>
+      </div>
+      <h3 class="sec-carta__sub">Lo más pedido</h3>
+      <ul class="sec-carta__top" id="sec-carta-top"></ul>
+      <div class="hero__ctas">
+        <a href="carta.html" class="btn">Abrir la carta interactiva</a>
+        <a href="carta-clasica.html" class="btn btn--ghost">Imprimir / PDF</a>
+      </div>
+    </div>
+    <div class="visor cc rv rv--der" id="visor-carta">
+      <div class="visor__mesa"></div>
+      <div class="visor__ctrl">
+        <button class="flecha" data-prev aria-label="Hoja anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+        <div class="visor__dots"></div>
+        <button class="flecha" data-next aria-label="Hoja siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>
+      </div>
+      <p class="visor__ayuda">Toca la hoja para leerla en grande · desliza para pasar</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PEDIR ============ -->
+<section class="sec sec--crema pedir" id="pedir">
+  <div class="wrap">
+    <div class="cabecera cabecera--split">
+      <div>
+        <span class="eyebrow rv">A domicilio <span class="gn">jaha!</span></span>
+        <h2 class="titulo rv" data-delay="1">Paraguay llega <em>a tu puerta</em></h2>
+      </div>
+      <p class="lead rv" data-delay="2">Pide desde tu app favorita o encárganos por WhatsApp y pasa a recogerlo calentito. Empanadas, milanesas y chipa guazú viajan de maravilla.</p>
+    </div>
+    <div class="pedir__grid">
+      <a class="app app--glovo rv" data-delay="1" href="#" target="_blank" rel="noopener" data-link="glovo">
+        <span class="app__marca">Glovo</span>
+        <span class="app__nota">★ 97% de clientes satisfechos</span>
+        <p>Envío rápido por toda la zona. Muchas veces con entrega gratis con Prime.</p>
+        <span class="app__ir">Pedir en Glovo <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></span>
+        <span class="app__deco"><img src="img/platos/box-empanadas.webp" alt="" loading="lazy"></span>
+      </a>
+      <a class="app app--uber rv" data-delay="2" href="#" target="_blank" rel="noopener" data-link="uber">
+        <span class="app__marca">Uber Eats</span>
+        <span class="app__nota">★ 4,9 · 43 valoraciones</span>
+        <p>Acepta Ticket Restaurant® en la app. Ideal para la comida de la oficina.</p>
+        <span class="app__ir">Pedir en Uber Eats <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></span>
+        <span class="app__deco"><img src="img/platos/mila-caballo-pro.webp" alt="" loading="lazy"></span>
+      </a>
+      <a class="app app--wa rv" data-delay="3" href="#" target="_blank" rel="noopener" data-wa-recoger>
+        <span class="app__marca">Para llevar</span>
+        <span class="app__nota">Sin comisiones · recoges en local</span>
+        <p>Escríbenos por WhatsApp, te decimos la hora y lo tienes listo en Carrer de la Muntanya 115.</p>
+        <span class="app__ir">Encargar por WhatsApp <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></span>
+        <span class="app__deco"><img src="img/platos/chipa-guazu.webp" alt="" loading="lazy"></span>
+      </a>
+    </div>
+    <div style="text-align:center;margin-top:40px"><a href="domicilio.html" class="btn btn--line">Zonas, packs y preguntas frecuentes</a></div>
+  </div>
+</section>
+
+<!-- ============ VÍVELO / REDES ============ -->
+<section class="sec sec--vino vivelo">
+  <div class="wrap">
+    <div class="movil rv rv--zoom">
+      <video data-auto muted loop playsinline preload="metadata" poster="video/loren-sabores-poster.jpg">
+        <source src="video/loren-sabores.mp4" type="video/mp4">
+      </video>
+      <div class="movil__ig"><span class="av"><img src="img/marca/logo-tabla.webp" alt=""></span><div><b>@lorenrestobar_</b><small>30,1 mil seguidores</small></div></div>
+    </div>
+    <div class="rv rv--der">
+      <span class="eyebrow">Así se vive Loren <span class="gn">vy'a</span></span>
+      <h2 class="titulo">Ven con hambre, <em>vete con familia</em></h2>
+      <p class="lead">Guaranias de fondo, el chisporroteo del brasero y una mesa que nunca se queda vacía. Síguenos y entérate del plato del día, los especiales del finde y lo que se cuece en nuestra cocina.</p>
+      <div class="redes">
+        <a class="red" href="#" data-link="instagram" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          <b>30,1K</b><span>Instagram</span>
+        </a>
+        <a class="red" href="#" data-link="tiktok" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.8A4.3 4.3 0 0 1 15.5 3h-3.1v12.4a2.6 2.6 0 1 1-2.6-2.6c.3 0 .5 0 .8.1V9.7a5.7 5.7 0 1 0 4.9 5.7V9a7.4 7.4 0 0 0 4.3 1.4V7.3a4.3 4.3 0 0 1-3.2-1.5z"/></svg>
+          <b>12,9K</b><span>TikTok</span>
+        </a>
+        <a class="red" href="#" data-link="facebook" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3c-2.8 0-4 1.7-4 4.3V10H7v4h3v8h4v-8h3l1-4h-4V8.6c0-.4.3-.6.7-.6z"/></svg>
+          <b>11K</b><span>Facebook</span>
+        </a>
+      </div>
+      <div class="ig-tira">
+        <a href="https://www.instagram.com/lorenrestobar_/reel/DdCWXbbM0z1/" target="_blank" rel="noopener"><img src="img/redes/ig-vori.webp" alt="" loading="lazy"><span>Así hacemos el vorí vorí</span></a>
+        <a href="https://www.instagram.com/lorenrestobar_/reel/Dd6v3Zbs8LY/" target="_blank" rel="noopener"><img src="img/redes/ig-mbeju.webp" alt="" loading="lazy"><span>Cómo hacemos el mbejú</span></a>
+        <a href="https://www.instagram.com/lorenrestobar_/reel/Ddethzus-4E/" target="_blank" rel="noopener"><img src="img/redes/ig-pira.webp" alt="" loading="lazy"><span>Pira caldo cada finde</span></a>
+        <a href="https://www.instagram.com/lorenrestobar_/reel/DdUDoFisPl6/" target="_blank" rel="noopener"><img src="img/redes/ig-historia.webp" alt="" loading="lazy"><span>Loren te cuenta su historia</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EVENTOS ============ -->
+<section class="sec sec--crema eventos" id="eventos">
+  <div class="wrap">
+    <div class="eventos__fotos rv rv--izq" data-lb-grupo>
+      <figure data-lb="img/local/catering-bandeja.webp" data-cap="Bandeja de catering paraguayo"><img src="img/local/catering-bandeja.webp" alt="Bandeja de catering con sándwiches, milanesitas, empanadas y sopa paraguaya" loading="lazy"><figcaption>Catering para llevar</figcaption></figure>
+      <figure data-lb="img/local/mesa-grupo.webp" data-cap="Mesa preparada para un grupo"><img src="img/local/mesa-grupo.webp" alt="Mesa preparada para un grupo" loading="lazy"><figcaption>Celebraciones</figcaption></figure>
+      <figure data-lb="img/local/bandeja-chipas-empanadas.webp" data-cap="Bandeja de empanadas, croquetas y chipas"><img src="img/local/bandeja-chipas-empanadas.webp" alt="Bandeja de empanadas, croquetas y chipas" loading="lazy"><figcaption>Bocaditos</figcaption></figure>
+    </div>
+    <div class="rv rv--der">
+      <span class="eyebrow">Eventos y catering <span class="gn">vy'apavẽ</span></span>
+      <h2 class="titulo">Tu celebración, <em>a la paraguaya</em></h2>
+      <p class="lead">Cumpleaños, bautizos, comidas de empresa, afterworks o esa fiesta en casa: preparamos bandejas de bocaditos (empanadas, chipas, croquetas, sándwiches de miga, sopa paraguaya) o te reservamos el local con menú a medida.</p>
+      <div class="ocasiones"><span>🎂 Cumpleaños</span><span>💼 Empresa</span><span>🥂 Afterwork</span><span>👶 Bautizos</span><span>💍 Bodas</span><span>⚽ Partidos</span></div>
+      <form class="form-evento" id="form-evento">
+        <label>Tu nombre<input name="nombre" required placeholder="Nombre y apellido"></label>
+        <label>Tipo de evento
+          <select name="tipo"><option>Cumpleaños</option><option>Comida de empresa</option><option>Afterwork</option><option>Bautizo / comunión</option><option>Boda</option><option>Otro</option></select>
+        </label>
+        <label>Personas<input name="personas" type="number" min="2" value="10" required></label>
+        <label>Fecha<input name="fecha" type="date"></label>
+        <label class="full">Formato
+          <select name="formato"><option>Reservar en el restaurante</option><option>Catering / bandejas para llevar</option><option>Aún no lo sé, aconsejadme</option></select>
+        </label>
+        <label class="full">Algo más<textarea name="mensaje" placeholder="Platos que os gustaría, alergias, presupuesto…"></textarea></label>
+        <button class="btn btn--vino" type="submit"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.1-1.3A10 10 0 1 0 12 2zm5.3 14c-.2.6-1.3 1.2-1.8 1.3-.5 0-1 .3-3.4-.7-2.9-1.2-4.7-4.1-4.8-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.1.1.3 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg> Enviar por WhatsApp</button>
+        <p class="nota">Se abrirá WhatsApp con tu mensaje listo. Respondemos en el día. <a href="eventos.html" style="color:var(--vino);font-weight:700">Ver bandejas y eventos →</a></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALERÍA ============ -->
+<section class="sec" id="galeria">
+  <div class="wrap">
+    <div class="cabecera cabecera--centro">
+      <span class="eyebrow rv">Nuestra casa <span class="gn">ko'ápe</span></span>
+      <h2 class="titulo rv" data-delay="1">Pasa, <em>siéntate</em>, estás en casa</h2>
+    </div>
+    <div class="galeria__grid" data-lb-grupo>
+      <a class="rv" href="#" data-lb="img/local/barra.webp" data-cap="La barra"><img src="img/local/barra.webp" alt="Barra del restaurante" loading="lazy"></a>
+      <a class="rv" href="#" data-lb="img/platos/mila-americana-pro.webp" data-cap="Milanesa a la americana"><img src="img/platos/mila-americana-pro.webp" alt="Milanesa a la americana" loading="lazy"></a>
+      <a class="rv" href="#" data-lb="img/local/sala-pared-verde.webp" data-cap="El comedor"><img src="img/local/sala-pared-verde.webp" alt="Comedor con pared vegetal" loading="lazy"></a>
+      <a class="rv" href="#" data-lb="img/clientes/mbeju-chipa-guazu.webp" data-cap="Mbejú y chipa guazú, foto de un cliente"><img src="img/clientes/mbeju-chipa-guazu.webp" alt="Mbejú y chipa guazú" loading="lazy"></a>
+      <a class="rv" href="#" data-lb="img/platos/yuca-brava-pro.webp" data-cap="Yuca brava con salsa casera"><img src="img/platos/yuca-brava-pro.webp" alt="Yuca brava" loading="lazy"></a>
+      <a class="rv" href="#" data-lb="img/local/sala-entrada.webp" data-cap="Rincón con decoración paraguaya"><img src="img/local/sala-entrada.webp" alt="Rincón del local con decoración paraguaya" loading="lazy"></a>
+      <a class="rv" href="#" data-lb="img/platos/parrillada-mixta.webp" data-cap="Parrillada en plancha de hierro"><img src="img/platos/parrillada-mixta.webp" alt="Parrillada" loading="lazy"></a>
+      <a class="rv" href="#" data-lb="img/clientes/picada-paraguaya.webp" data-cap="Picada completa, foto de un cliente"><img src="img/clientes/picada-paraguaya.webp" alt="Picada completa" loading="lazy"></a>
+      <a class="rv" href="#" data-lb="img/local/sala-sopa.webp" data-cap="Sopa paraguaya en sala"><img src="img/local/sala-sopa.webp" alt="Sopa paraguaya servida en el comedor" loading="lazy"></a>
+      <a class="rv" href="#" data-lb="img/platos/sopa-paraguaya.webp" data-cap="Sopa paraguaya"><img src="img/platos/sopa-paraguaya.webp" alt="Sopa paraguaya con sombrero típico de fondo" loading="lazy"></a>
+      <a class="rv" href="#" data-lb="img/platos/sandwich-lomito.webp" data-cap="Sándwich de lomito"><img src="img/platos/sandwich-lomito.webp" alt="Sándwich de lomito" loading="lazy"></a>
+      <a class="rv" href="#" data-lb="img/clientes/chorizo-mandioca-queso.webp" data-cap="Chorizo, mandioca y queso paraguayo"><img src="img/clientes/chorizo-mandioca-queso.webp" alt="Chorizo con mandioca y queso" loading="lazy"></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OPINIONES ============ -->
+<section class="sec sec--crema opiniones" id="opiniones">
+  <div class="wrap">
+    <div class="cabecera cabecera--centro">
+      <span class="eyebrow rv">Lo que dicen <span class="gn">aguyje!</span></span>
+      <h2 class="titulo rv" data-delay="1">739 reseñas <em>no se equivocan</em></h2>
+    </div>
+    <div class="notas rv">
+      <div class="nota-plat"><span class="logo" style="background:#4285f4">G</span><div><b>4,6</b><small>739 reseñas · Google</small></div></div>
+      <div class="nota-plat"><span class="logo" style="background:#06c167">U</span><div><b>4,9</b><small>Uber Eats</small></div></div>
+      <div class="nota-plat"><span class="logo" style="background:#ffc244;color:#1d1d1b">G</span><div><b>97%</b><small>satisfacción · Glovo</small></div></div>
+      <div class="nota-plat"><span class="logo" style="background:#1877f2">f</span><div><b>100%</b><small>lo recomienda · Facebook</small></div></div>
+    </div>
+  </div>
+  <div style="overflow:hidden;padding:10px 0 30px">
+    <div class="carrusel">
+      <article class="resena"><div class="est">★★★★★</div><p>Es la primera vez que venimos y quedamos encantados. Pedimos un poco de todo para probar y estaba todo 10 de 10.</p><footer><i>L</i><div><b>Lorena D.</b>Google</div></footer></article>
+      <article class="resena"><div class="est">★★★★★</div><p>La comida estuvo espectacular y el servicio fue verdaderamente excelente. El ambiente es muy agradable, cómodo y familiar.</p><footer><i>Y</i><div><b>Yanina C.</b>Local Guide · Google</div></footer></article>
+      <article class="resena"><div class="est">★★★★★</div><p>La parrillada… la yuca frita… las empanadas… un manjar.</p><footer><i>G</i><div><b>Cliente de Google</b>Reseña destacada</div></footer></article>
+      <article class="resena"><div class="est">★★★★★</div><p>Jennifer, una excelente atención y súper rica toda la comida del local. ¡Volveremos!</p><footer><i>M</i><div><b>Matías G.</b>En familia · Tripadvisor</div></footer></article>
+      <article class="resena"><div class="est">★★★★★</div><p>Excelente servicio, muy rico todo, pasamos muy bien en familia. ¡¡¡Volveremos!!!</p><footer><i>G</i><div><b>Cliente de Google</b>Reseña destacada</div></footer></article>
+      <article class="resena"><div class="est">★★★★★</div><p>Buen servicio y comida típica paraguaya muy rica.</p><footer><i>G</i><div><b>Cliente de Google</b>Reseña destacada</div></footer></article>
+      <!-- duplicado para bucle infinito -->
+      <article class="resena" aria-hidden="true"><div class="est">★★★★★</div><p>Es la primera vez que venimos y quedamos encantados. Pedimos un poco de todo para probar y estaba todo 10 de 10.</p><footer><i>L</i><div><b>Lorena D.</b>Google</div></footer></article>
+      <article class="resena" aria-hidden="true"><div class="est">★★★★★</div><p>La comida estuvo espectacular y el servicio fue verdaderamente excelente. El ambiente es muy agradable, cómodo y familiar.</p><footer><i>Y</i><div><b>Yanina C.</b>Local Guide · Google</div></footer></article>
+      <article class="resena" aria-hidden="true"><div class="est">★★★★★</div><p>La parrillada… la yuca frita… las empanadas… un manjar.</p><footer><i>G</i><div><b>Cliente de Google</b>Reseña destacada</div></footer></article>
+      <article class="resena" aria-hidden="true"><div class="est">★★★★★</div><p>Jennifer, una excelente atención y súper rica toda la comida del local. ¡Volveremos!</p><footer><i>M</i><div><b>Matías G.</b>En familia · Tripadvisor</div></footer></article>
+      <article class="resena" aria-hidden="true"><div class="est">★★★★★</div><p>Excelente servicio, muy rico todo, pasamos muy bien en familia. ¡¡¡Volveremos!!!</p><footer><i>G</i><div><b>Cliente de Google</b>Reseña destacada</div></footer></article>
+      <article class="resena" aria-hidden="true"><div class="est">★★★★★</div><p>Buen servicio y comida típica paraguaya muy rica.</p><footer><i>G</i><div><b>Cliente de Google</b>Reseña destacada</div></footer></article>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="prensa rv">
+      <span>Han hablado de nosotros</span>
+      <a href="https://www.latribuna.com.py/nacionales/locales/2026/09/03/vori-vori-cae-frente-al-chivito-uruguayo-pero-sigue-siendo-el-favorito-en-espana/" target="_blank" rel="noopener">La Tribuna</a>
+      <a href="https://www.lanacion.com.py/lnpop/2026/08/24/mundial-de-comidas-de-ibai-paraguay-gana-en-instagram-pero-uruguay-arrasa-en-tiktok/" target="_blank" rel="noopener">La Nación</a>
+      <a href="https://www.extra.com.py/mundo/el-vori-vori-paraguayo-se-enfrenta-al-chivito-uruguayo-en-mundial-de-comidas-y-vos-podes-elegir-al-ganador" target="_blank" rel="noopener">Extra</a>
+      <a href="https://epa.com.py/el-vori-vori-necesita-nuestro-voto-en-el-mundial-de-comidas-organizado-por-un-influencer-espanol/" target="_blank" rel="noopener">EPA!</a>
+      <a href="https://infonegocios.com.py/infogourmet/loren-gastrobar-lleva-la-gastronomia-paraguaya-a-barcelona-la-chef-que-abrio-dos-locales-en-la-ciudad-condal" target="_blank" rel="noopener">InfoNegocios</a>
+      <a href="https://elomnivoro.com/2023/01/20/sin-pausa-loren-paso-del-gastro-al-resto/" target="_blank" rel="noopener">El Omnívoro</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VISÍTANOS ============ -->
+<section class="sec sec--oscuro visita" id="visitanos">
+  <div class="wrap">
+    <div class="rv rv--izq">
+      <span class="eyebrow">Visítanos <span class="gn">eju!</span></span>
+      <h2 class="titulo">Te esperamos <em>en Muntanya 115</em></h2>
+      <p style="margin:18px 0 0"><span data-estado class="estado"></span></p>
+      <ul class="horario"></ul>
+      <div class="datos">
+        <div class="dato"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><div><b>Carrer de la Muntanya, 115</b><span>08026 Barcelona · El Camp de l'Arpa, a 15 min a pie de la Sagrada Família</span></div></div>
+        <div class="dato"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M5 11h14M8 21l2-4M16 21l-2-4"/><circle cx="9" cy="14" r=".6" fill="currentColor"/><circle cx="15" cy="14" r=".6" fill="currentColor"/></svg></span><div><b>Metro</b><span>L5 Camp de l'Arpa · L1 y L2 Clot</span></div></div>
+        <div class="dato"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span><div><b>Reservas y pedidos</b><a href="tel:+34602076828">602 07 68 28</a> · <a href="#" data-reserva>WhatsApp</a> · <a href="#" data-link="opentable" target="_blank" rel="noopener">OpenTable</a></div></div>
+      </div>
+      <div class="extras">
+        <a href="visitanos.html" class="btn btn--sm" style="margin-right:6px">Cómo llegar y reservar</a><span>☀️ Terraza</span><span>🐾 Pet friendly</span><span>💳 Tarjeta</span><span>🥐 Desayunos desde las 9:00</span><span>🍽️ Menú del día</span><span>🗣️ Se habla guaraní</span>
+      </div>
+    </div>
+    <div class="mapa rv rv--der">
+      <iframe title="Mapa de Loren Restobar" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=Loren+Restobar,+Carrer+de+la+Muntanya+115,+08026+Barcelona&z=16&output=embed"></iframe>
+      <div class="mapa__pin">
+        <div><b>Loren Restobar</b><small>Carrer de la Muntanya, 115 · Barcelona</small></div>
+        <a href="#" data-link="maps" target="_blank" rel="noopener" class="btn btn--vino btn--sm">Cómo llegar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<div id="shell-bottom"></div>
+
+<script src="js/data.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/nanduti.js"></script>
+<script src="js/carta-clasica.js"></script>
+<script>
+  CartaClasica.visor(document.getElementById("visor-carta"));
+  (function () {
+    const slug = (s) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+    const top = ["Chipa guazú", "Box de 6 empanadas", "Milanesa a caballo", "Mbejú relleno de queso", "Picada completa", "Sopa paraguaya"]
+      .map((n) => CARTA.find((p) => p.nombre === n)).filter(Boolean);
+    document.getElementById("sec-carta-top").innerHTML = top.map((p) =>
+      `<li><a href="${PREF}carta.html#plato-${slug(p.nombre)}"><img src="${p.img}" alt="" loading="lazy"><span>${T(p.nombre)}</span><b>${EURO(p.precio)}</b></a></li>`).join("");
+    document.getElementById("sc-n1").textContent = CARTA.length;
+    document.getElementById("sc-n2").textContent = CARTA.filter((p) => (p.tags || []).includes("py")).length;
+    document.getElementById("sc-n3").textContent = CARTA.filter((p) => p.cat === "finde").length;
+  })();
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>

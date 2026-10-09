@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head><base href="../"/><script>window.IDIOMA="en";window.PREF="en/";</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Menu · Loren Restobar</title>
+<meta content="Classic menu of Loren Restobar, homemade Paraguayan cooking in Barcelona." name="description"/>
+<meta content="#59011d" name="theme-color"/>
+<link href="img/marca/favicon.webp" rel="icon" type="image/webp"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..700&amp;family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..800,0..100;1,9..144,300..800,0..100&amp;family=Yellowtail&amp;display=swap" rel="stylesheet"/>
+<link href="css/carta-clasica.css" rel="stylesheet"/>
+<style>
+    :root { --f-display: "Fraunces", Georgia, serif; --f-body: "DM Sans", system-ui, sans-serif; --f-script: "Yellowtail", cursive; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; }
+    body { background: #3a1019; font-family: var(--f-body); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .barra { position: sticky; top: 0; z-index: 10; display: flex; gap: 10px; justify-content: center; align-items: center; flex-wrap: wrap; padding: 14px 16px; background: rgba(42,0,14,.92); backdrop-filter: blur(10px); }
+    .barra a, .barra button { font: 700 .9rem var(--f-body); border: 0; border-radius: 999px; padding: .75em 1.3em; cursor: pointer; text-decoration: none; }
+    .barra .primario { background: #e8b43a; color: #2a000e; }
+    .barra .sec { background: rgba(243,238,220,.12); color: #f3eedc; }
+    .barra span { color: rgba(243,238,220,.6); font-size: .82rem; }
+    .hojas { display: grid; gap: 36px; justify-content: center; padding: 36px 16px 60px; }
+    @media (max-width: 860px) { .hojas { padding: 20px 0 40px; gap: 20px; } }
+    @page { size: A4; margin: 0; }
+    @media print {
+      body { background: none; }
+      .barra { display: none; }
+      .hojas { display: block; padding: 0; }
+      .cc .hoja { box-shadow: none; width: 210mm; height: 297mm; min-height: 0; page-break-after: always; break-after: page; }
+      .cc .hoja:last-child { page-break-after: auto; break-after: auto; }
+    }
+  </style>
+<link href="en/carta-clasica.html" hreflang="es" rel="alternate"/><link href="ca/carta-clasica.html" hreflang="ca" rel="alternate"/><link href="en/carta-clasica.html" hreflang="en" rel="alternate"/></head>
+<body>
+<div class="barra">
+<button class="primario" onclick="window.print()">Print / Save as PDF</button>
+<a class="sec" href="en/index.html#la-carta">← Back to the website</a>
+<span>A4 format · 3 pages</span>
+</div>
+<div class="hojas cc cc--libre" id="hojas"></div>
+<script src="js/i18n.js"></script><script src="js/data.js"></script>
+<script src="js/nanduti.js"></script>
+<script src="js/carta-clasica.js"></script>
+<script>CartaClasica.render(document.getElementById("hojas"));</script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head><base href="../"/><script>window.IDIOMA="en";window.PREF="en/";</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<title>Menu · Loren Restobar · Paraguayan food in Barcelona</title>
+<meta content="The full menu at Loren Restobar: chipa guazú, sopa paraguaya, mbejú, empanadas, milanesas, mixed grill and weekend specials. Build your tray and order via WhatsApp, Glovo or Uber Eats." name="description"/>
+<meta content="#2a000e" name="theme-color"/>
+<link href="img/marca/favicon.webp" rel="icon" type="image/webp"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&amp;family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..800,0..100,0..1;1,9..144,300..800,0..100,0..1&amp;family=Yellowtail&amp;display=swap" rel="stylesheet"/>
+<link href="css/styles.css" rel="stylesheet"/>
+<link href="css/paginas.css" rel="stylesheet"/>
+<link href="css/carta.css" rel="stylesheet"/>
+<link href="en/carta.html" hreflang="es" rel="alternate"/><link href="ca/carta.html" hreflang="ca" rel="alternate"/><link href="en/carta.html" hreflang="en" rel="alternate"/></head>
+<body data-page="carta">
+<div id="shell-top"></div>
+<main>
+<!-- HERO -->
+<section class="ch">
+<div class="ch__encaje" data-nanduti=""></div>
+<div class="wrap">
+<nav aria-label="Breadcrumbs" class="miga"><a href="en/index.html">Home</a> / <span>Menu</span></nav>
+<div class="ch__tit"><h1 aria-label="The menu"><span>T</span><span style="animation-delay:.06s">h</span><span style="animation-delay:.1s">e</span> <span style="animation-delay:.16s">m</span><span style="animation-delay:.22s">e</span><span style="animation-delay:.28s">n</span><span style="animation-delay:.34s">u</span></h1><span class="sc">tembi'u</span></div>
+<p class="ch__sub">Everything that comes out of Loren's kitchen: Paraguayan classics, milanesas that overflow the plate and the weekend broths. Tap any dish to see it full-size and start filling <strong style="color:var(--maiz)">your tray</strong>.</p>
+<div class="ch__stats" id="ch-stats"></div>
+<div class="ch__ctas"><a class="btn" href="#estrellas">See the must-tries</a> <a class="btn btn--ghost" href="#carta">Go to the menu</a> <a class="btn btn--ghost" href="en/carta-clasica.html">Printable menu</a></div>
+</div>
+<div aria-hidden="true" class="tira"><div class="tira__fila" id="tira1"></div><div class="tira__fila tira__fila--2" id="tira2"></div></div>
+</section>
+<!-- ESCAPARATE -->
+<section class="sec escap" id="estrellas">
+<div class="wrap">
+<span class="eyebrow" style="color:var(--maiz)">The must-tries <span class="gn">iporãvéva</span></span>
+<div class="escap__stage">
+<div class="escap__disco">
+<div class="enc" data-nanduti="" data-sw="0.5"></div>
+<div class="aro"></div>
+<div class="fotos" id="escap-fotos"></div>
+<div class="precio-g"><div><b id="escap-precio">4,40 €</b><small>price</small></div></div>
+</div>
+<div class="escap__info" id="escap-info">
+<div class="num anim"><b id="escap-num">01</b> / <span id="escap-tot">06</span></div>
+<h2 class="anim" id="escap-nom">Chipa guazú</h2>
+<div class="gn anim" id="escap-gn"></div>
+<p class="anim" id="escap-desc"></p>
+<div class="hero__ctas anim" style="margin-top:0">
+<span id="escap-add"></span>
+<button class="btn btn--ghost" id="escap-ver">View details</button>
+</div>
+<div class="escap__thumbs" id="escap-thumbs"></div>
+<div class="escap__barra"><i id="escap-barra"></i></div>
+</div>
+</div>
+</div>
+</section>
+<!-- CARTA -->
+<div class="cnav" id="carta">
+<div class="wrap">
+<div class="cnav__cats" id="cnav-cats"></div>
+<div class="cnav__herr">
+<label class="buscador"><span class="sr-only">Search dish</span>
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2" viewbox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+<input autocomplete="off" id="c-buscar" placeholder="Search: chipa, cheese, milanesa…" type="search"/>
+</label>
+<button class="chip" data-tag="py"><i class="bandera"></i> Paraguayan classic</button>
+<button class="chip" data-tag="top">★ Favourites</button>
+<button class="chip" data-tag="comp">To share</button>
+<button class="chip" data-tag="sintrigo">Wheat-free*</button>
+<select aria-label="Sort" class="orden" id="c-orden">
+<option value="rec">Recommended</option><option value="asc">Price: low to high</option><option value="desc">Price: high to low</option>
+</select>
+<div aria-label="View" class="vista" role="group">
+<button aria-label="Grid" class="on" data-vista="grid"><svg fill="currentColor" viewbox="0 0 24 24"><rect height="8" rx="2" width="8" x="3" y="3"></rect><rect height="8" rx="2" width="8" x="13" y="3"></rect><rect height="8" rx="2" width="8" x="3" y="13"></rect><rect height="8" rx="2" width="8" x="13" y="13"></rect></svg></button>
+<button aria-label="List" data-vista="lista"><svg fill="currentColor" viewbox="0 0 24 24"><rect height="4" rx="2" width="18" x="3" y="4"></rect><rect height="4" rx="2" width="18" x="3" y="10"></rect><rect height="4" rx="2" width="18" x="3" y="16"></rect></svg></button>
+</div>
+</div>
+</div>
+</div>
+<section class="wrap" data-lb-grupo="" id="c-lista" style="padding-bottom:40px"></section>
+<div class="wrap vacio-c" id="c-vacio"><div class="enc" data-nanduti=""></div><h3 style="font-size:1.8rem;color:var(--vino)">We couldn't find that dish…</h3><p style="color:var(--tinta-2)">Try another word or <a data-reserva="" href="#" style="color:var(--vino);font-weight:700">ask us on WhatsApp</a>.</p></div>
+<!-- COMBOS -->
+<section class="sec sec--crema">
+<div class="wrap">
+<div class="cabecera cabecera--centro">
+<span class="eyebrow rv">Sharing menus</span>
+<h2 class="titulo rv" data-delay="1">Can't decide? <em>Pick a combo</em></h2>
+<p class="lead rv" data-delay="2">One tap and the whole combo goes into your tray. You can remove or add whatever you like afterwards.</p>
+</div>
+<div class="tres">
+<article class="ruta rv" data-delay="1" data-nombre="Paraguayan starter pack" data-pack="Chipa guazú|Sopa paraguaya|Mbejú relleno de queso|Empanada de carne*2|Guaraná*2" data-personas="2">
+<div class="ruta__cab"><div class="nanduti-bg" data-nanduti=""></div><span class="ico">🌽</span><h3>Paraguayan starter pack</h3><p>The classics to try for the first time. For two.</p></div>
+<ul></ul><div class="ruta__total"><button class="btn btn--sm btn--vino" data-combo="">Add to tray</button></div>
+</article>
+<article class="ruta ruta--dest rv" data-delay="2" data-nombre="Sunday table" data-pack="Picada completa|Chipa guazú*2|Sopa paraguaya*2|Yuca brava con salsa casera|Tarta tres leches*2" data-personas="4">
+<div class="ruta__cab"><div class="nanduti-bg" data-nanduti=""></div><span class="ico">🔥</span><h3>Sunday table</h3><p>The picada completa and everything that goes with it. For four.</p></div>
+<ul></ul><div class="ruta__total"><button class="btn btn--sm btn--vino" data-combo="">Add to tray</button></div>
+</article>
+<article class="ruta rv" data-delay="3" data-nombre="Milanesa night" data-pack="Box de 6 empanadas|Milanesa a caballo|Milanesa a la napolitana|Cerveza Corona*2" data-personas="2">
+<div class="ruta__cab"><div class="nanduti-bg" data-nanduti=""></div><span class="ico">🍺</span><h3>Milanesa night</h3><p>Empanadas to start and two star milanesas. For two hungry people.</p></div>
+<ul></ul><div class="ruta__total"><button class="btn btn--sm btn--vino" data-combo="">Add to tray</button></div>
+</article>
+</div>
+<p class="carta__nota" style="margin-top:26px">Approximate prices including VAT; they may vary in the restaurant and on delivery apps. *Wheat-free: made with cassava and corn, in a kitchen that also handles wheat. Ask our team about allergens.</p>
+</div>
+</section>
+</main>
+<!-- FICHA -->
+<div aria-label="Dish details" aria-modal="true" class="qv" id="qv" role="dialog">
+<div class="qv__caja">
+<button aria-label="Close" class="qv__x" data-qv-cerrar=""><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.4" viewbox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
+<div class="qv__img" id="qv-img"></div>
+<div class="qv__info">
+<span class="cat-n" id="qv-cat"></span>
+<h2 id="qv-nom"></h2>
+<div class="gn" id="qv-gn"></div>
+<div class="tags" id="qv-tags"></div>
+<p class="desc" id="qv-desc"></p>
+<div class="qv__acc"><span id="qv-precio"></span><span id="qv-add"></span><span id="qv-links" style="display:flex;gap:6px;flex-wrap:wrap"></span></div>
+<div class="qv__con"><h4>Goes great with</h4><div class="sug" id="qv-sug"></div></div>
+</div>
+</div>
+</div>
+<!-- BANDEJA -->
+<button aria-label="Open my tray" class="fab-bandeja" id="fab-bandeja">
+<span class="ico"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M3 11h18l-2 9H5z"></path><path d="M8 11l2-6M16 11l-2-6"></path></svg><b id="fab-n">0</b></span>
+<span class="t"><small>My tray</small><strong id="fab-total">0,00 €</strong></span>
+</button>
+<aside aria-label="My tray" class="bandeja" id="bandeja">
+<div class="bandeja__fondo" data-b-cerrar=""></div>
+<div class="bandeja__panel">
+<div class="bandeja__cab"><div class="enc" data-nanduti=""></div><h3>My tray</h3><p>what you fancy today</p><button aria-label="Close" class="qv__x" data-b-cerrar=""><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.4" viewbox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"></path></svg></button></div>
+<div class="bandeja__lista" id="b-lista"></div>
+<div class="bandeja__pie">
+<div class="tot"><span>Approximate total</span><b id="b-total">0,00 €</b></div>
+<div class="fila"><input id="b-nombre" placeholder="Your name"/><input id="b-hora" placeholder="Pick-up time"/></div>
+<textarea id="b-nota" placeholder="Notes: no onion, allergies…" rows="2"></textarea>
+<a class="btn btn--wa" href="#" id="b-wa" rel="noopener" target="_blank">Order for pick-up (WhatsApp)</a>
+<div class="fila"><a class="btn btn--glovo btn--sm" data-link="glovo" href="#" rel="noopener" target="_blank">Glovo</a><a class="btn btn--uber btn--sm" data-link="uber" href="#" rel="noopener" target="_blank">Uber Eats</a></div>
+<p class="aviso">For home delivery, add the dishes in your favourite app. <button class="vaciar" id="b-vaciar">Empty tray</button></p>
+</div>
+</div>
+</aside>
+<div class="toast" id="toast"><i>✓</i><span></span></div>
+<div id="shell-bottom"></div>
+<script src="js/i18n.js"></script><script src="js/data.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/nanduti.js"></script>
+<script src="js/paginas.js"></script>
+<script src="js/carta.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
