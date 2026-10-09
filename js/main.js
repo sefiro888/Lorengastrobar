@@ -373,8 +373,8 @@
   let W = 0, H = 0, visible = true, raf = 0, t0 = performance.now();
   function medir() {
     const r = cv.getBoundingClientRect();
-    W = cv.width = Math.max(200, Math.round(r.width * ESC));
-    H = cv.height = Math.max(200, Math.round(r.height * ESC));
+    W = cv.width = Math.min(700, Math.max(200, Math.round(r.width * ESC)));
+    H = cv.height = Math.min(900, Math.max(200, Math.round(r.height * ESC)));
   }
   function pintar(t) {
     ctx.clearRect(0, 0, W, H);
@@ -391,6 +391,12 @@
       ctx.fillStyle = pend > 0 ? `rgba(0,0,0,${pend * 0.35})` : `rgba(255,255,255,${-pend * 0.25})`;
       ctx.fillRect(x, top + off, sw + 1, alto + 1);
     }
+    // difuminado arriba y abajo (sin máscaras CSS, más ligero en móvil)
+    ctx.globalCompositeOperation = "destination-in";
+    const g = ctx.createLinearGradient(0, 0, 0, H);
+    g.addColorStop(0, "rgba(0,0,0,0)"); g.addColorStop(0.12, "#000"); g.addColorStop(0.62, "#000"); g.addColorStop(1, "rgba(0,0,0,0)");
+    ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+    ctx.globalCompositeOperation = "source-over";
   }
   function bucle(now) {
     raf = 0;

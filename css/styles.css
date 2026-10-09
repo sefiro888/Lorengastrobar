@@ -191,8 +191,7 @@ h1, h2, h3, h4 { font-family: var(--f-display); font-weight: 600; line-height: 1
 }
 /* Bandera de Paraguay ondeando: marca de agua */
 #bandera {
-  position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; pointer-events: none; opacity: .21; filter: blur(1.2px);
-  -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 12%, #000 62%, transparent 100%); mask-image: linear-gradient(180deg, transparent 0, #000 12%, #000 62%, transparent 100%);
+  position: absolute; left: 0; top: 0; width: 100%; height: 100%; max-width: 100%; z-index: -1; pointer-events: none; opacity: .21; contain: strict;
 }
 @media (max-width: 900px) { #bandera { opacity: .19; } }
 #brasas { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; pointer-events: none; }
