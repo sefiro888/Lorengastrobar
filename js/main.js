@@ -362,3 +362,44 @@
   /* ---------- Año footer ---------- */
   $$("[data-anio]").forEach((el) => (el.textContent = new Date().getFullYear()));
 })();
+
+/* ---------- Bandera de Paraguay ondeando (marca de agua del hero) ---------- */
+(function () {
+  const cv = document.getElementById("bandera"); if (!cv) return;
+  const ctx = cv.getContext("2d");
+  const ESC = 0.5, COLS = 150;
+  const FRANJAS = ["#d52b1e", "#e4dccb", "#0038a8"];
+  const quieto = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let W = 0, H = 0, visible = true, raf = 0, t0 = performance.now();
+  function medir() {
+    const r = cv.getBoundingClientRect();
+    W = cv.width = Math.max(200, Math.round(r.width * ESC));
+    H = cv.height = Math.max(200, Math.round(r.height * ESC));
+  }
+  function pintar(t) {
+    ctx.clearRect(0, 0, W, H);
+    const alto = Math.min(H * 0.62, W * 0.95), top = Math.max(H * 0.1, Math.min(H * 0.12, H * 0.5 - alto / 2)), sw = W / COLS, amp = H * 0.045;
+    for (let i = 0; i < COLS; i++) {
+      const u = i / (COLS - 1), x = i * sw;
+      const k = u * 9 - t * 1.5, fija = 0.15 + 0.85 * u;       // la tela se agita más lejos del asta
+      const off = Math.sin(k) * amp * fija + Math.sin(k * 0.5 + 1.3) * amp * 0.5 * fija + u * H * 0.04;
+      const pend = Math.cos(k) * fija;                          // pendiente → luz y sombra
+      FRANJAS.forEach((col, f) => {
+        ctx.fillStyle = col;
+        ctx.fillRect(x, top + off + f * alto / 3, sw + 1, alto / 3 + 1);
+      });
+      ctx.fillStyle = pend > 0 ? `rgba(0,0,0,${pend * 0.35})` : `rgba(255,255,255,${-pend * 0.25})`;
+      ctx.fillRect(x, top + off, sw + 1, alto + 1);
+    }
+  }
+  function bucle(now) {
+    raf = 0;
+    if (visible && !document.hidden) { pintar((now - t0) / 1000); raf = requestAnimationFrame(bucle); }
+  }
+  function arrancar() { if (!raf && !quieto) raf = requestAnimationFrame(bucle); }
+  medir(); pintar(2);
+  let rt; window.addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(() => { medir(); pintar(2); }, 150); });
+  new IntersectionObserver(([e]) => { visible = e.isIntersecting; if (visible) arrancar(); }).observe(cv);
+  document.addEventListener("visibilitychange", arrancar);
+  arrancar();
+})();
