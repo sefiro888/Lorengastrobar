@@ -200,7 +200,7 @@ window.CARTA = [
     desc: "El clásico callejero de Paraguay: lomito en pan árabe a la plancha, con salsa y patatas fritas.", tags: ["py"] },
 
   /* --- POSTRES --- */
-  { cat: "postres", nombre: "Tarta tres leches", precio: 5.50, img: "img/platos/hl-postres.webp",
+  { cat: "postres", nombre: "Tarta tres leches", precio: 5.50, img: "img/platos/tres-leches.webp",
     desc: "Bizcocho empapado en tres leches, suave y fresquito.", tags: ["top"] },
   { cat: "postres", nombre: "Tarta de queso", precio: 4.90, img: null,
     desc: "Cremosa, casera." },
