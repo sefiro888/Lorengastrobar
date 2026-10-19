@@ -886,4 +886,8 @@ html, body { overflow-x: clip; }
 .idiomas--drawer { margin-top: 26px; background: rgba(243,238,220,.08); }
 .idiomas--drawer a { font-size: .95rem; padding: .6em 1em; }
 @media (max-width: 1240px) { .nav__links a { padding: .5em .6em; font-size: .88rem; } }
-@media (max-width: 640px) { .idiomas--nav { display: none; } }
+@media (max-width: 640px) {
+  .nav__cta { display: none; }
+  .idiomas--nav { margin-left: auto; }
+  .idiomas--nav a { font-size: .74rem; padding: .55em .7em; }
+}
