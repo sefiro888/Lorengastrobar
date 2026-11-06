@@ -331,3 +331,4 @@
 .dos > *, .tres > *, .cuatro > *, .phero__grid > * { min-width: 0; }
 .form-evento > * { min-width: 0; }
 .form-evento input[type=date] { min-height: 44px; }
+.sanjuan { align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; background: var(--brasa); color: #fff; font-size: .74rem; font-weight: 800; letter-spacing: .04em; padding: .4em .85em; border-radius: 999px; margin-bottom: 10px; }

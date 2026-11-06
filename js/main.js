@@ -202,7 +202,7 @@
       const now = new Date(), dia = now.getDay(), h = now.getHours() + now.getMinutes() / 60;
       const enFinde = (dia === 6 && h >= 10) || (dia === 0 && h < 17);
       if (enFinde) {
-        est.textContent = T("¡Es finde! Hoy hay vorí vorí y pira caldo");
+        est.textContent = T("¡Es finde! Hoy hay vorí vorí y asado a la olla");
         cuenta.innerHTML = `<div><b>🍲</b><span>${T("en la olla")}</span></div><div><b>${T(dia === 6 ? "Sáb" : "Dom")}</b><span>${T("hoy")}</span></div>`;
         return;
       }

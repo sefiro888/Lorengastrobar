@@ -95,9 +95,6 @@ window.CARTA = [
   { cat: "paraguayo", nombre: "Jopara", precio: null, img: "img/platos/hl-jopara.webp",
     desc: "Guiso tradicional de maíz y poroto con carne y verduras, de los que se cocinan a fuego lento.",
     gn: "«Mezcla» en guaraní", tags: ["py"] },
-  { cat: "paraguayo", nombre: "Asado a la olla", precio: null, img: "img/platos/hl-asado-olla.webp",
-    desc: "Costilla de ternera cocinada lentamente en olla hasta quedar tierna y dorada, con mandioca.",
-    tags: ["py"] },
 
   /* --- EMPANADAS --- */
   { cat: "empanadas", nombre: "Box de 6 empanadas", precio: 22.50, img: "img/platos/hl-empanadas.webp",
@@ -115,9 +112,9 @@ window.CARTA = [
   { cat: "finde", nombre: "Vorí vorí", precio: null, img: "img/platos/hl-vori-vori.webp",
     desc: "Caldo de gallina casera con bolitas de harina de maíz y queso. El plato con el que Loren representó a Paraguay en el Mundial de Comidas de Ibai.",
     gn: "De «bolita» → vorí", tags: ["py", "top", "finde"] },
-  { cat: "finde", nombre: "Pira caldo", precio: null, img: null,
-    desc: "Nuestro famoso caldo de pescado, espeso y reconfortante, como en las orillas del río Paraguay.",
-    gn: "pira = pez", tags: ["py", "finde"] },
+  { cat: "finde", nombre: "Asado a la olla", precio: null, img: "img/platos/hl-asado-olla.webp",
+    desc: "Costilla de ternera cocinada lentamente en olla hasta quedar tierna y dorada, con mandioca.",
+    tags: ["py", "finde"] },
   { cat: "finde", nombre: "Soyo con tortillita", precio: null, img: null,
     desc: "Sopa de carne machacada, acompañada de tortillita paraguaya y mandioca.",
     gn: "De «so'o josopy», carne machacada", tags: ["py", "finde"] },
@@ -196,9 +193,6 @@ window.CARTA = [
   { cat: "sandwiches", nombre: "Hamburguesa de ternera completa", precio: 12.90, img: "img/platos/hl-hamburguesa.webp",
     desc: "Ternera, lechuga, tomate, gouda, jamón dulce y huevo frito. Con patatas." },
 
-  { cat: "sandwiches", nombre: "Lomito árabe", precio: null, img: "img/platos/hl-lomito-arabe.webp",
-    desc: "El clásico callejero de Paraguay: lomito en pan árabe a la plancha, con salsa y patatas fritas.", tags: ["py"] },
-
   /* --- POSTRES --- */
   { cat: "postres", nombre: "Tarta tres leches", precio: 5.50, img: "img/platos/tres-leches.webp",
     desc: "Bizcocho empapado en tres leches, suave y fresquito.", tags: ["top"] },
@@ -210,6 +204,8 @@ window.CARTA = [
     desc: "Alfajores caseros de dulce de leche con coco.", tags: ["py"] },
   { cat: "postres", nombre: "Tarta de chocolate", precio: null, img: "img/platos/hl-tarta-chocolate.webp",
     desc: "Para los muy golosos." },
+  { cat: "postres", nombre: "Pastafrola", precio: null, img: null,
+    desc: "Tarta casera de masa quebrada rellena de dulce, con su clásico enrejado por encima.", tags: ["py"] },
 
   /* --- BEBIDAS --- */
   { cat: "bebidas", nombre: "Guaraná", precio: 2.50, img: "img/platos/guarana.webp",

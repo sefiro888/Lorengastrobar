@@ -9,7 +9,6 @@ Revisión de las 61 entradas de la carta y de todas las páginas.
 
 | Plato | Dónde se nota |
 |---|---|
-| **Pira caldo** | Especial del finde: sale en el inicio, la carta y la guía de sabores |
 | **Soyo con tortillita** | Especial del finde: ahora usa la portada de un reel con texto |
 | **Empanada de choclo** | Carta |
 | **Mandi'ó chyryry con bacon** | Carta |
@@ -19,6 +18,7 @@ Revisión de las 61 entradas de la carta y de todas las páginas.
 | **Calamares a la romana** | Carta |
 | **Ensalada de queso de cabra** | Carta |
 | **Tarta de queso** | Carta |
+| **Pastafrola** | Carta (postre nuevo) |
 | Bebidas: cervezas (Corona, Budweiser, Miller) y refrescos | Carta (se ven en lista; aquí la foto es opcional) |
 
 ## 🟠 Prioridad 2 · Comida con foto floja (conviene sustituirla)
