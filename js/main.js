@@ -61,9 +61,9 @@
 
   /* ---------- Plato giratorio del hero ---------- */
   const platos = [
-    { img: "img/platos/caldo-gallina.webp", nom: "Vorí vorí", sub: T("Caldo de gallina casera · finde") },
-    { img: "img/platos/mila-caballo-pro.webp", nom: T("Milanesa a caballo"), sub: T("Dos huevos y patatas") },
-    { img: "img/platos/mbeju-queso.webp", nom: T("Mbejú con queso"), sub: T("Almidón de mandioca") },
+    { img: "img/platos/plato-vori.webp", nom: "Vorí vorí", sub: T("Caldo de gallina casera · finde") },
+    { img: "img/platos/plato-mila-caballo.webp", nom: T("Milanesa a caballo"), sub: T("Dos huevos y patatas") },
+    { img: "img/platos/plato-mbeju.webp", nom: T("Mbejú con queso"), sub: T("Almidón de mandioca") },
     { img: "img/platos/parrillada-mixta.webp", nom: T("Parrillada"), sub: T("A la brasa, en hierro") },
     { img: "img/platos/mila-americana-pro.webp", nom: T("Milanesa americana"), sub: T("Bacon, queso y huevo") },
     { img: "img/platos/noquis.webp", nom: T("Ñoquis de ternera"), sub: T("Pasta casera") }

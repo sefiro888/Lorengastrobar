@@ -228,7 +228,7 @@ h1, h2, h3, h4 { font-family: var(--f-display); font-weight: 600; line-height: 1
 }
 .plato__encaje { position: absolute; left: -15%; top: -15%; width: 130%; height: 130%; max-width: none; object-fit: contain; animation: girar 140s linear infinite; filter: drop-shadow(0 30px 50px rgba(0,0,0,.35)); pointer-events: none; }
 
-.plato__aro { position: absolute; inset: 19%; border-radius: 50%; box-shadow: 0 40px 80px -20px rgba(0,0,0,.7), 0 0 0 6px rgba(243,238,220,.9); }
+.plato__aro { position: absolute; inset: 19%; border-radius: 50%; background: var(--crema); box-shadow: 0 40px 80px -20px rgba(0,0,0,.7), 0 0 0 6px rgba(243,238,220,.9); }
 .plato__fotos { position: absolute; inset: 21%; border-radius: 50%; overflow: hidden; background: var(--vino-900); }
 .plato__fotos img {
   position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 50%;

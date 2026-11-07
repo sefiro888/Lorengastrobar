@@ -119,7 +119,7 @@
   /* ---------- Escaparate ---------- */
   const ESTRELLAS = ["Chipa guazú", "Vorí vorí", "Milanesa a caballo", "Mbejú relleno de queso", "Picada completa", "Box de 6 empanadas"].map((n) => CARTA.find((p) => p.nombre === n)).filter(Boolean);
   const ef = $("#escap-fotos"), info = $("#escap-info");
-  ef.innerHTML = ESTRELLAS.map((p) => `<img src="${p.img}" alt="${p.n}">`).join("");
+  ef.innerHTML = ESTRELLAS.map((p) => `<img src="${p.disco || p.img}" alt="${p.n}">`).join("");
   $("#escap-thumbs").innerHTML = ESTRELLAS.map((p, i) => `<button data-e="${i}" aria-label="${p.n}"><img src="${p.img}" alt=""></button>`).join("");
   $("#escap-tot").textContent = String(ESTRELLAS.length).padStart(2, "0");
   let ei = 0, eStart = 0;

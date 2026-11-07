@@ -14,7 +14,7 @@ BG = np.array([87, 1, 23], np.float32)
 dist = np.sqrt(((src - BG) ** 2).sum(-1))
 ALFA = np.clip((dist - 22) / 95, 0, 1)
 
-def recorte(x0, y0, x1, y1, centro=None, radio=None, solo_principal=False):
+def recorte(x0, y0, x1, y1, centro=None, radio=None, solo_principal=False, ajustar=True):
     a = ALFA[y0:y1, x0:x1].copy()
     c = src[y0:y1, x0:x1]
     if centro is not None:
@@ -40,12 +40,16 @@ def recorte(x0, y0, x1, y1, centro=None, radio=None, solo_principal=False):
         col = np.where(a[..., None] > 0, (c - BG * (1 - a[..., None])) / np.maximum(a[..., None], 1e-3), 0)
     rgba = np.dstack([np.clip(col, 0, 255), a * 255]).astype(np.uint8)
     im = Image.fromarray(rgba, "RGBA")
+    if not ajustar:
+        return im
     bb = im.getbbox()
     return im.crop(bb) if bb else im
 
 dest = os.path.join(R, "img", "marca")
-cx, cy, rr = 768, 497, 326
-aro = recorte(cx - rr, cy - rr, cx + rr, cy + rr, (cx, cy), rr)
+# centro real del aro (centro del hueco interior, medido sobre la ilustración)
+cx, cy, rr = 766.6, 496.0, 330
+x0, y0 = int(round(cx - rr)), int(round(cy - rr))
+aro = recorte(x0, y0, x0 + 2 * rr, y0 + 2 * rr, (cx, cy), rr, ajustar=False)
 aro.save(os.path.join(dest, "nanduti-aro.webp"), "WEBP", quality=92, method=6)
 aro.save(os.path.join(dest, "nanduti-aro.png"), optimize=True)
 print("aro", aro.size)

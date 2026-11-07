@@ -78,7 +78,7 @@ window.CARTA = [
   { cat: "paraguayo", nombre: "Mbejú tradicional", precio: 4.80, img: "img/platos/mbeju.webp",
     desc: "Torta crujiente de almidón de mandioca, harina de maíz, queso, leche y mantequilla, hecha a la plancha.",
     gn: "Se pronuncia «mbeyú»", tags: ["py", "sintrigo"] },
-  { cat: "paraguayo", nombre: "Mbejú relleno de queso", precio: 5.90, img: "img/platos/hl-mbeju.webp",
+  { cat: "paraguayo", nombre: "Mbejú relleno de queso", precio: 5.90, img: "img/platos/hl-mbeju.webp", disco: "img/platos/plato-mbeju.webp",
     desc: "Nuestro mbejú con corazón de mozzarella fundida. El que estira.",
     tags: ["py", "top", "sintrigo"] },
   { cat: "paraguayo", nombre: "Mandi'ó chyryry", precio: 12.30, img: "img/platos/hl-chyryry.webp",
@@ -106,7 +106,7 @@ window.CARTA = [
     desc: "Maíz tierno y mozzarella. Dulce, suave y muy paraguaya.", tags: ["py"] },
 
   /* --- ESPECIALES DEL FINDE --- */
-  { cat: "finde", nombre: "Vorí vorí", precio: null, img: "img/platos/hl-vori-vori.webp",
+  { cat: "finde", nombre: "Vorí vorí", precio: null, img: "img/platos/hl-vori-vori.webp", disco: "img/platos/plato-vori.webp",
     desc: "Caldo de gallina casera con bolitas de harina de maíz y queso. El plato con el que Loren representó a Paraguay en el Mundial de Comidas de Ibai.",
     gn: "De «bolita» → vorí", tags: ["py", "top", "finde"] },
   { cat: "finde", nombre: "Asado a la olla", precio: null, img: "img/platos/hl-asado-olla.webp",
@@ -151,7 +151,7 @@ window.CARTA = [
     desc: "Con reducción de Módena." },
 
   /* --- MILANESAS --- */
-  { cat: "milanesas", nombre: "Milanesa a caballo", precio: 18.90, img: "img/platos/mila-caballo-pro.webp",
+  { cat: "milanesas", nombre: "Milanesa a caballo", precio: 18.90, img: "img/platos/mila-caballo-pro.webp", disco: "img/platos/plato-mila-caballo.webp",
     desc: "Milanesa de ternera con cebolla frita, dos huevos fritos y guarnición.", tags: ["top"] },
   { cat: "milanesas", nombre: "Milanesa a la napolitana", precio: 19.90, img: "img/platos/hl-milanesa.webp",
     desc: "Tomate frito, jamón, queso y huevo, con patatas fritas.", tags: ["top"] },
