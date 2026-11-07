@@ -30,10 +30,10 @@
         <p class="lema">«${T(L.lema)}»</p><div class="sub">${T("Cocina paraguaya casera · Barcelona")}</div></div>
        <div class="cols">${grupo("paraguayo")}${grupo("empanadas")}${grupo("finde", true)}</div>
        <p class="leyenda"><i style="background:#59011d;color:#f3eedc">PY</i> ${T("típico paraguayo")} &nbsp;·&nbsp; <i style="background:#e8b43a;color:#2a000e">★</i> ${T("favorito de la casa")}</p>`,
-      `${mini("Mba'éichapa! " + T("Bienvenidos"))}<div class="cols">${grupo("compartir")}${grupo("milanesas")}</div>
-       <div class="caviso"><div class="r">${enc(1)}</div><div><h3>${T("¿Celebras algo?")}</h3><p>${T("Cumpleaños, bautizos, comidas de empresa… Preparamos bandejas de bocaditos paraguayos —empanadas, chipas, croquetas, sándwiches de miga y sopa paraguaya— o te reservamos el local con menú a medida.")}</p></div><div class="tel"><small>${T("Pregúntanos")}</small>${L.telefono}</div></div>`,
-      `${mini("Vy'apavẽ! " + T("Que lo disfrutes"))}<div class="cols">${grupo("platos")}${grupo("sandwiches")}${grupo("postres")}${grupo("bebidas")}</div>
-       <div class="dicc"><div class="rueda">${enc(0.9)}</div><div>
+      `${mini("Mba'éichapa! " + T("Bienvenidos"))}<div class="cols">${grupo("compartir")}${grupo("milanesas")}${grupo("platos")}
+       <div class="caviso caviso--col"><div class="r">${enc(1)}</div><div><h3>${T("¿Celebras algo?")}</h3><p>${T("Cumpleaños, bautizos, comidas de empresa… Preparamos bandejas de bocaditos paraguayos —empanadas, chipas, croquetas, sándwiches de miga y sopa paraguaya— o te reservamos el local con menú a medida.")}</p></div><div class="tel"><small>${T("Pregúntanos")}</small>${L.telefono}</div></div></div>`,
+      `${mini("Vy'apavẽ! " + T("Que lo disfrutes"))}<div class="cols">${grupo("sandwiches")}
+       <div class="dicc dicc--col"><div class="rueda">${enc(0.9)}</div><div>
          <h3>${T("Pequeño diccionario guaraní de la mesa")}</h3><div class="s">${T("para pedir como un paraguayo")}</div>
          <dl>
            <div><dt>Mba'éichapa</dt><dd>${T("¿qué tal?")}</dd></div><div><dt>Aguyje</dt><dd>${T("gracias")}</dd></div>
@@ -41,7 +41,7 @@
            <div><dt>Mandi'ó</dt><dd>${T("mandioca")}</dd></div><div><dt>Pira</dt><dd>${T("pez, pescado")}</dd></div>
            <div><dt>Chyryry</dt><dd>${T("el chisporroteo de la sartén")}</dd></div><div><dt>Vy'a</dt><dd>${T("alegría")}</dd></div>
            <div><dt>Ñandutí</dt><dd>${T("«tela de araña», nuestro encaje")}</dd></div><div><dt>Jaha!</dt><dd>${T("¡vamos!")}</dd></div>
-         </dl></div></div>
+         </dl></div></div>${grupo("postres")}${grupo("bebidas")}</div>
        <div class="cpie"><span class="gr">Aguyje!</span>
         <b>${L.direccion} · ${L.cp}</b> · ${T("Reservas y pedidos")} <b>${L.telefono}</b> (${T("también WhatsApp")})<br>
         ${T("Pídenos también en Glovo y Uber Eats")} · @lorenrestobar_<br>

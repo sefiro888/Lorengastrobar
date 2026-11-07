@@ -38,12 +38,12 @@
 
 /* collage de platos circulares */
 .collage { position: relative; aspect-ratio: 1; width: 100%; max-width: 520px; margin-inline: auto; }
-.collage .c { position: absolute; border-radius: 50%; overflow: hidden; box-shadow: 0 30px 60px -20px rgba(0,0,0,.7), 0 0 0 8px rgba(243,238,220,.12); animation: flotar 7s ease-in-out infinite; }
+.collage .c { position: absolute; border-radius: 50%; overflow: hidden; box-shadow: 0 30px 60px -20px rgba(0,0,0,.7), 0 0 0 6px rgba(243,238,220,.9); animation: flotar 7s ease-in-out infinite; }
 .collage .c img { width: 100%; height: 100%; object-fit: cover; }
 .collage .c1 { width: 58%; aspect-ratio: 1; left: 20%; top: 4%; }
 .collage .c2 { width: 40%; aspect-ratio: 1; left: 0; bottom: 6%; animation-delay: -2s; }
 .collage .c3 { width: 44%; aspect-ratio: 1; right: 0; bottom: 0; animation-delay: -4s; }
-.collage .enc { position: absolute; inset: -6%; color: var(--maiz); opacity: .35; animation: girar 90s linear infinite; }
+.collage .enc { position: absolute; left: -12%; top: -12%; width: 124%; height: 124%; max-width: none; object-fit: contain; animation: girar 140s linear infinite; filter: drop-shadow(0 30px 50px rgba(0,0,0,.35)); pointer-events: none; }
 
 /* ---------- Bloques genéricos ---------- */
 .dos { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(30px, 6vw, 80px); align-items: center; }

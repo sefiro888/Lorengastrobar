@@ -91,6 +91,17 @@
 .cc .caviso .tel { font-family: var(--f-display); font-weight: 700; font-size: 13pt; text-align: right; line-height: 1.2; }
 .cc .caviso .tel small { display: block; font-family: var(--f-body); font-size: 6.8pt; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; opacity: .7; }
 
+.cc .caviso--col { position: relative; left: auto; right: auto; bottom: auto; break-inside: avoid; grid-template-columns: 15mm 1fr; gap: 4mm; padding: 4.5mm 5mm; margin-top: 1mm; text-align: left; }
+.cc .caviso--col .r { width: 15mm; }
+.cc .caviso--col h3 { font-size: 13pt; }
+.cc .caviso--col p { font-size: 7.2pt; line-height: 1.4; }
+.cc .caviso--col .tel { grid-column: 2; text-align: left; font-size: 12pt; margin-top: -2mm; }
+.cc .caviso--col .tel small { display: inline; margin-right: 2mm; }
+.cc .dicc--col { break-inside: avoid; grid-template-columns: 1fr; gap: 0; padding: 5mm 5mm 4mm; margin: 0 0 7mm; }
+.cc .dicc--col .rueda { display: none; }
+.cc .dicc--col h3 { font-size: 12.5pt; }
+.cc .dicc--col dl { gap: 1.4mm 5mm; }
+.cc .dicc--col dl div { font-size: 7.4pt; }
 /* Versión página suelta en móvil: la hoja se reorganiza */
 @media (max-width: 860px) {
   .cc--libre .hoja { width: 100vw; min-height: auto; padding: 14mm 7mm 30mm; }
