@@ -92,9 +92,6 @@ window.CARTA = [
   { cat: "paraguayo", nombre: "Ración de mandioca", precio: 1.90, img: "img/platos/mandioca.webp",
     desc: "Mandioca (yuca) hervida, el pan de cada día en Paraguay. Para acompañar todo.", tags: ["py", "sintrigo"] },
 
-  { cat: "paraguayo", nombre: "Jopara", precio: null, img: "img/platos/hl-jopara.webp",
-    desc: "Guiso tradicional de maíz y poroto con carne y verduras, de los que se cocinan a fuego lento.",
-    gn: "«Mezcla» en guaraní", tags: ["py"] },
 
   /* --- EMPANADAS --- */
   { cat: "empanadas", nombre: "Box de 6 empanadas", precio: 22.50, img: "img/platos/hl-empanadas.webp",

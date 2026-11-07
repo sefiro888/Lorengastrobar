@@ -27,7 +27,6 @@ Revisión de las 61 entradas de la carta y de todas las páginas.
 |---|---|
 | **Picada completa** | Foto de un cliente, móvil y con mala luz. **Es el plato más caro (39,90 €) y debería lucir mucho** |
 | **Parrillada paraguaya (brasero)** | Vertical y de poca resolución |
-| **Jopara** | Captura de una historia de Instagram con stickers y texto |
 | **Mbejú tradicional** | Lleva la palabra «Mbejú» escrita encima |
 | **Empanada de carne** | Foto genérica con fondo blanco (parece de stock) |
 | **Empanada de jamón y queso** | Foto genérica (parece de stock) |
