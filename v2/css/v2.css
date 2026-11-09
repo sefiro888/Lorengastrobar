@@ -1,0 +1,207 @@
+/* =========================================================
+   LOREN · VERSIÓN 2 — línea gráfica del Key Visual
+   Carbón con encaje, fuego y chispas, letreros de madera,
+   titulares condensados y subtítulos a pincel.
+   ========================================================= */
+:root {
+  --carbon: #151012;
+  --carbon-2: #1f1719;
+  --fuego: #ff8a2a;
+  --f-display: "Montserrat", system-ui, sans-serif;
+  --f-titular: "Anton", Impact, "Arial Narrow", sans-serif;
+  --f-script: "Kaushan Script", "Brush Script MT", cursive;
+  --f-body: "Montserrat", system-ui, -apple-system, Segoe UI, sans-serif;
+}
+body { font-family: var(--f-body); }
+
+/* ---------- Titulares: condensados en mayúsculas, el acento a pincel ---------- */
+.hero h1, .titulo, .phero h1, .ch__tit h1, .escap__info h2, .finde .titulo {
+  font-family: var(--f-titular); font-weight: 400; text-transform: uppercase; letter-spacing: .01em; line-height: 1.02;
+  font-variation-settings: normal;
+}
+.hero h1 em, .titulo em, .phero h1 em {
+  font-family: var(--f-script); text-transform: none; font-style: normal; letter-spacing: 0; font-weight: 400;
+  color: var(--maiz); display: inline-block; transform: rotate(-3deg); line-height: 1.1;
+}
+.titulo em { font-size: .92em; }
+.hero h1 { font-size: clamp(2.7rem, 6.2vw, 5.4rem); }
+.eyebrow { font-family: var(--f-body); font-weight: 700; }
+.gn, .sc, .script { font-family: var(--f-script) !important; }
+h3, h4 { font-family: var(--f-display); font-weight: 700; }
+
+/* ---------- Fondos oscuros: carbón con encaje y brasas ---------- */
+.hero, .phero, .ch, .escap, .sec--vino, .sec--oscuro, .pie, .cocina, .mdd {
+  background:
+    radial-gradient(ellipse 70% 45% at 50% 108%, rgba(255,110,30,.22), transparent 70%),
+    radial-gradient(ellipse 50% 40% at 85% 20%, rgba(89,1,29,.55), transparent 70%),
+    linear-gradient(rgba(16,11,13,.62), rgba(16,11,13,.82)),
+    url("../img/kv/textura-oscura.webp") center / cover,
+    var(--carbon);
+  color: var(--crema);
+}
+.sec--vino .lead, .sec--oscuro .lead { color: rgba(243,238,220,.78); }
+.hero__grano { opacity: .5; }
+#bandera { opacity: .13 !important; mix-blend-mode: screen; }
+
+/* chispas que suben (se generan en v2.js) */
+.chispas { position: absolute; inset: 0; pointer-events: none; overflow: hidden; z-index: 0; }
+.chispas i {
+  position: absolute; bottom: -10px; width: var(--t, 3px); height: var(--t, 3px); border-radius: 50%;
+  background: radial-gradient(circle, #ffe2a8 0%, #ff9b3a 45%, rgba(255,90,20,0) 70%);
+  box-shadow: 0 0 8px 2px rgba(255,140,40,.55);
+  animation: chispa var(--d, 7s) linear var(--r, 0s) infinite; opacity: 0;
+}
+@keyframes chispa {
+  0% { transform: translate(0, 0) scale(1); opacity: 0; }
+  10% { opacity: 1; }
+  70% { opacity: .9; }
+  100% { transform: translate(var(--x, 40px), -95vh) scale(.4); opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) { .chispas { display: none; } }
+
+/* ---------- Secciones claras: papel con el ñandutí vectorial de Loren ---------- */
+.sec--crema, .bienvenida, .sec-carta { position: relative; overflow: hidden; isolation: isolate; }
+.sec--crema::after, .bienvenida::after, .sec-carta::after {
+  content: ""; position: absolute; z-index: -1; pointer-events: none; aspect-ratio: 1;
+  width: clamp(220px, 32vw, 420px); right: clamp(-140px, -8vw, -60px); top: clamp(-120px, -6vw, -40px);
+  background: var(--vino); opacity: .07;
+  -webkit-mask: url("../img/kv/motivo-roseta.png") center / contain no-repeat;
+  mask: url("../img/kv/motivo-roseta.png") center / contain no-repeat;
+  animation: girar 160s linear infinite;
+}
+.sec--crema:nth-of-type(even)::after, .bienvenida::after {
+  -webkit-mask-image: url("../img/kv/motivo-pavo.png"); mask-image: url("../img/kv/motivo-pavo.png");
+  right: auto; left: clamp(-120px, -6vw, -40px); top: auto; bottom: clamp(-100px, -5vw, -30px); animation: none; transform: rotate(-8deg);
+}
+
+/* ---------- Plato del inicio: la flor de ñandutí del Key Visual ---------- */
+.plato__encaje, .escap__disco .enc, .collage .enc, .loader__encaje { filter: drop-shadow(0 0 40px rgba(255,130,40,.18)) drop-shadow(0 30px 50px rgba(0,0,0,.5)); }
+.plato::before {
+  content: ""; position: absolute; inset: 8%; border-radius: 50%; z-index: -1;
+  background: radial-gradient(circle, rgba(255,120,30,.35), transparent 65%); filter: blur(30px);
+  animation: latido 4s ease-in-out infinite;
+}
+@keyframes latido { 50% { opacity: .55; transform: scale(.94); } }
+.loader { background: var(--carbon) url("../img/kv/textura-oscura.webp") center / cover; }
+
+/* ---------- Letrero de madera colgado (como en sus stories) ---------- */
+.letrero {
+  --cuerda: 54px;
+  position: relative; display: inline-block; margin-top: var(--cuerda);
+  padding: .42em 1.05em .36em; border-radius: 7px;
+  font: 400 clamp(1.7rem, 4.2vw, 2.9rem)/1 var(--f-titular); text-transform: uppercase; letter-spacing: .02em;
+  color: #fff4e2; text-shadow: 0 2px 0 rgba(60,25,5,.65), 0 0 22px rgba(255,170,80,.35);
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='90'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.003 0.22' numOctaves='4' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 .22 0 0 0 0 .1 0 0 0 0 .03 0 0 0 .75 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)'/%3E%3C/svg%3E") center / 100% 100%,
+    linear-gradient(180deg, #c27a3c 0%, #9a5626 48%, #73391410 49%, #7c3f17 52%, #9a5626 100%);
+  box-shadow: inset 0 0 0 2px rgba(40,15,0,.35), inset 0 -8px 14px rgba(40,15,0,.35), inset 0 6px 10px rgba(255,210,150,.18),
+    0 22px 34px -14px rgba(0,0,0,.8), 0 0 46px rgba(255,140,40,.28);
+  transform-origin: 50% calc(-1 * var(--cuerda)); animation: balanceo 6s ease-in-out infinite;
+}
+.letrero::before, .letrero::after {
+  content: ""; position: absolute; bottom: calc(100% - 4px); width: 6px; height: calc(var(--cuerda) + 10px); border-radius: 3px;
+  background: repeating-linear-gradient(160deg, #e2c393 0 4px, #a57d49 4px 8px); box-shadow: 0 2px 4px rgba(0,0,0,.4);
+}
+.letrero::before { left: 13%; } .letrero::after { right: 13%; }
+.letrero--peq { font-size: clamp(1.25rem, 3vw, 1.8rem); --cuerda: 40px; }
+@keyframes balanceo { 0%, 100% { transform: rotate(-1.6deg); } 50% { transform: rotate(1.2deg); } }
+@media (prefers-reduced-motion: reduce) { .letrero { animation: none; transform: rotate(-1deg); } }
+
+/* ---------- Sección «La cocina de Loren»: equipo + vídeos ---------- */
+.cocina { position: relative; overflow: hidden; isolation: isolate; padding: clamp(80px, 10vw, 140px) 0; }
+.cocina__cab { display: grid; grid-template-columns: 1.05fr 1fr; gap: clamp(30px, 5vw, 70px); align-items: center; margin-bottom: clamp(40px, 6vw, 70px); }
+.cocina__cab p { color: rgba(243,238,220,.8); font-size: 1.06rem; line-height: 1.7; margin: 22px 0 0; max-width: 54ch; }
+.cocina__cab .sc { color: var(--maiz); font-size: 1.5rem; display: block; margin-top: 18px; }
+.polaroids { position: relative; aspect-ratio: 5 / 4; }
+.polaroid { position: absolute; margin: 0; background: #f6efdf; padding: 10px 10px 40px; box-shadow: 0 30px 50px -18px rgba(0,0,0,.85); }
+.polaroid img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; }
+.polaroid figcaption { position: absolute; left: 0; right: 0; bottom: 8px; text-align: center; font: 400 1.15rem var(--f-script); color: var(--vino); }
+.polaroid--1 { width: 58%; left: 0; top: 4%; transform: rotate(-5deg); z-index: 2; }
+.polaroid--2 { width: 50%; right: 0; top: 0; transform: rotate(6deg); }
+.polaroid--3 { width: 40%; right: 10%; bottom: -6%; transform: rotate(-2deg); z-index: 3; }
+.videos { display: grid; grid-template-columns: repeat(5, 1fr); gap: clamp(12px, 1.6vw, 22px); }
+.video {
+  position: relative; margin: 0; aspect-ratio: 9 / 16; border-radius: 22px; overflow: hidden; background: #000;
+  box-shadow: 0 0 0 1px rgba(243,238,220,.14), 0 30px 60px -24px rgba(0,0,0,.9); transform: translateZ(0);
+}
+.video:nth-child(even) { margin-top: 40px; }
+.video video { width: 100%; height: 100%; object-fit: cover; display: block; }
+.video figcaption {
+  position: absolute; inset: auto 0 0; padding: 50px 14px 14px; color: #fff;
+  background: linear-gradient(transparent, rgba(0,0,0,.85));
+}
+.video figcaption b { display: block; font: 400 1.35rem/1 var(--f-titular); text-transform: uppercase; letter-spacing: .02em; }
+.video figcaption span { font: 400 1rem var(--f-script); color: var(--maiz); }
+.video .vivo { position: absolute; top: 12px; left: 12px; font: 700 .62rem var(--f-body); letter-spacing: .14em; text-transform: uppercase; background: rgba(0,0,0,.55); color: #fff; padding: 5px 9px; border-radius: 99px; display: flex; align-items: center; gap: 6px; }
+.video .vivo::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: #ff4d3d; box-shadow: 0 0 8px #ff4d3d; animation: latido 1.4s infinite; }
+
+/* ---------- Menú del día: letrero + pergamino ---------- */
+.mdd { position: relative; overflow: hidden; isolation: isolate; padding: clamp(70px, 9vw, 130px) 0; }
+.mdd__grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(30px, 6vw, 80px); align-items: center; }
+.mdd__izq { text-align: center; }
+.pergamino {
+  position: relative; margin: 34px auto 0; max-width: 470px; padding: 44px clamp(22px, 4vw, 44px) 40px; color: #4a1712;
+  background: radial-gradient(ellipse at 50% 40%, #fbf1da 0%, #f0dfb9 60%, #ddc08c 100%);
+  box-shadow: inset 0 0 40px rgba(140,90,30,.35), 0 30px 60px -20px rgba(0,0,0,.85);
+  border-radius: 3px;
+}
+.pergamino::before, .pergamino::after {
+  content: ""; position: absolute; left: -14px; right: -14px; height: 26px; border-radius: 14px;
+  background: linear-gradient(180deg, #fbf1da, #e2c896 45%, #b8935a 100%); box-shadow: 0 6px 12px rgba(0,0,0,.35);
+}
+.pergamino::before { top: -13px; } .pergamino::after { bottom: -13px; transform: scaleY(-1); }
+.pergamino h3 { font: 400 1.9rem var(--f-script); color: var(--vino); margin: 0 0 12px; }
+.pergamino ul { list-style: none; padding: 0; margin: 0; text-align: left; }
+.pergamino li { padding: 10px 0; border-bottom: 1.5px solid rgba(89,1,29,.35); font-weight: 600; font-size: .98rem; }
+.pergamino li::before { content: "– "; color: var(--vino); }
+.pergamino .precio { display: inline-block; margin-top: 22px; background: var(--vino); color: #fff; font: 400 2rem/1 var(--f-titular); padding: 10px 22px; border-radius: 10px 30px 10px 30px; box-shadow: 0 10px 20px -8px rgba(89,1,29,.6); }
+.pergamino small { display: block; margin-top: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; font-size: .72rem; }
+.mdd__local { display: inline-flex; align-items: center; gap: 10px; margin-top: 30px; background: var(--vino); color: var(--crema); padding: 10px 20px; border-radius: 99px; font-weight: 600; font-size: .92rem; }
+.mdd__local b { color: #fff; }
+.mdd__der h2 { margin: 0 0 18px; }
+.mdd__der p { color: rgba(243,238,220,.8); line-height: 1.7; }
+.mdd__foto { position: relative; margin-top: 30px; }
+.mdd__foto img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 26px; box-shadow: 0 40px 70px -30px rgba(0,0,0,.9); }
+.mdd__foto .flor { position: absolute; width: 30%; right: -7%; bottom: -12%; animation: girar 90s linear infinite; filter: drop-shadow(0 20px 30px rgba(0,0,0,.6)); }
+.mdd__nota { font-size: .8rem !important; opacity: .7; margin-top: 14px; }
+
+/* ---------- Dos locales ---------- */
+.locales { display: grid; gap: 12px; margin-top: 22px; }
+.local { display: grid; grid-template-columns: 44px 1fr; gap: 14px; align-items: center; padding: 14px 16px; border-radius: 16px; background: rgba(243,238,220,.06); border: 1px solid rgba(243,238,220,.14); }
+.local .n { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: var(--vino); color: var(--maiz); font: 400 1.3rem var(--f-titular); }
+.local b { display: block; color: var(--crema); font-size: 1.02rem; }
+.local small { color: rgba(243,238,220,.7); }
+
+/* ---------- Distintivo de versión ---------- */
+.v2-chip {
+  position: fixed; right: 16px; bottom: 96px; z-index: 90; display: flex; align-items: center; gap: 10px;
+  background: rgba(21,16,18,.92); color: var(--crema); border: 1px solid rgba(243,238,220,.2); backdrop-filter: blur(8px);
+  padding: 8px 8px 8px 14px; border-radius: 99px; font: 600 .78rem var(--f-body); box-shadow: 0 10px 30px rgba(0,0,0,.4);
+}
+.v2-chip b { color: var(--maiz); font-family: var(--f-titular); font-weight: 400; letter-spacing: .04em; font-size: .95rem; }
+.v2-chip a { background: var(--crema); color: var(--carbon); text-decoration: none; padding: 6px 12px; border-radius: 99px; }
+.idiomas { display: none !important; }
+@media (max-width: 900px) {
+  .v2-chip { bottom: 84px; right: auto; left: 10px; font-size: .72rem; }
+}
+
+/* ---------- Móvil ---------- */
+@media (max-width: 900px) {
+  .cocina__cab, .mdd__grid { grid-template-columns: 1fr; }
+  .polaroids { max-width: 520px; margin: 10px auto 30px; width: 100%; }
+  .videos {
+    grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 62%; overflow-x: auto;
+    scroll-snap-type: x mandatory; margin-inline: calc(-1 * var(--gutter)); padding: 4px var(--gutter) 18px; scrollbar-width: none;
+  }
+  .videos::-webkit-scrollbar { display: none; }
+  .video { scroll-snap-align: center; }
+  .video:nth-child(even) { margin-top: 0; }
+  .mdd__foto .flor { width: 30%; right: -3%; }
+}
+
+/* La carta clásica (visor del inicio) conserva su tipografía de imprenta */
+.cc { --f-display: "Fraunces", Georgia, serif; --f-script: "Yellowtail", cursive; --f-body: "DM Sans", system-ui, sans-serif; font-family: var(--f-body); }
+
+/* La carta: el titular condensado ocupa más; «tembi'u» va debajo, a pincel */
+.ch__tit h1 { font-size: clamp(4rem, 12vw, 9.5rem); letter-spacing: .01em; line-height: .95; }
+.ch__tit .sc { position: static; display: block; margin-top: -.15em; font-size: clamp(2rem, 4.6vw, 3.6rem); }
