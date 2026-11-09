@@ -111,12 +111,6 @@ editar("index.html", [
     ('<img class="plato__encaje" src="img/kv/flor-kv.webp"', '<img class="plato__encaje plato__encaje--bandera" src="img/kv/nanduti-bandera.webp"'),
     ("<!-- ============ HISTORIA ============ -->", COCINA),
     ("<!-- ============ FINDE ============ -->", MDD),
-    ('<h2 class="titulo">Te esperamos <em>en Muntanya 115</em></h2>',
-     '<h2 class="titulo">Te esperamos en <em>nuestros dos locales</em></h2>\n'
-     '      <div class="locales">\n'
-     '        <div class="local"><span class="n">1</span><div><b>Carrer de la Muntanya, 115</b><small>Camp de l\'Arpa · menú del día · terraza · este es su horario ↓</small></div></div>\n'
-     '        <div class="local"><span class="n">2</span><div><b>Carrer de Villarroel, 247</b><small>Eixample · horario por confirmar</small></div></div>\n'
-     '      </div>'),
 ])
 
 # --- Carta: fotos propias en lugar de las genéricas ---
@@ -142,9 +136,4 @@ editar("historia.html", [
      '    <figure class="polaroid rv" style="position:relative;width:min(520px,92%);margin:0 auto 60px;transform:rotate(-2deg)"><img src="img/kv/equipo.webp" alt="Loren con su equipo de cocina"><figcaption>La familia Loren en la cocina</figcaption></figure>\n    <div class="equipo">'),
 ])
 
-# --- Pie: los dos locales ---
-editar("js/layout.js", [
-    ('<li>08026 Barcelona</li>', '<li><a href="${P}visitanos.html">Carrer de Villarroel, 247</a></li>'),
-    ('(WhatsApp)</li>', '(WhatsApp)</li><li><a href="tel:+34930068665">930 06 86 65</a></li>'),
-])
 print("v2 lista")
