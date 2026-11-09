@@ -217,3 +217,7 @@ h3, h4 { font-family: var(--f-display); font-weight: 700; }
 .hero .plato__encaje--bandera { animation: none; left: -24%; top: -24%; width: 148%; height: 148%; opacity: .96; }
 .pergamino .precios { display: flex; justify-content: center; gap: 26px; flex-wrap: wrap; margin-top: 6px; }
 .pergamino .precios > div { display: grid; justify-items: center; }
+
+/* La cocina: sólo la foto de Loren */
+.polaroids--solo { aspect-ratio: auto; display: flex; justify-content: center; }
+.polaroid--solo { position: relative; width: min(400px, 82%); transform: rotate(3deg); }

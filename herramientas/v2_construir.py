@@ -57,10 +57,8 @@ COCINA = f'''<!-- ============ LA COCINA DE LOREN (v2) ============ -->
         <p>Aquí nada llega precocinado. El mbejú se tuesta en la sartén con mantequilla, la sopa paraguaya sale del horno con su costra dorada y el vorí vorí se sirve con las bolitas recién hechas. Loren y su equipo lo cocinan cada día, como en Paraguay.</p>
         <span class="sc">Hecho cada día, con las manos</span>
       </div>
-      <div class="polaroids rv rv--der">
-        <figure class="polaroid polaroid--1"><img src="img/kv/equipo.webp" alt="Loren con su equipo de cocina" loading="lazy"><figcaption>El equipo</figcaption></figure>
-        <figure class="polaroid polaroid--2"><img src="img/kv/loren-sarten.webp" alt="Loren mostrando un plato recién hecho" loading="lazy"><figcaption>Loren</figcaption></figure>
-        <figure class="polaroid polaroid--3"><img src="img/kv/brasero-mesa.webp" alt="Parrillada al brasero en la mesa" loading="lazy"><figcaption>Al brasero</figcaption></figure>
+      <div class="polaroids polaroids--solo rv rv--der">
+        <figure class="polaroid polaroid--solo"><img src="img/kv/loren-sarten.webp" alt="Loren mostrando un plato recién hecho" loading="lazy"><figcaption>Loren</figcaption></figure>
       </div>
     </div>
     <div class="videos">
@@ -130,10 +128,5 @@ editar("eventos.html", [
      '<img src="img/kv/bocaditos-sandwiches.webp" alt="Bandejas de sándwiches de miga" loading="lazy" style="object-position:50% 45%">'),
 ])
 
-# --- Historia: foto del equipo ---
-editar("historia.html", [
-    ('    <div class="equipo">',
-     '    <figure class="polaroid rv" style="position:relative;width:min(520px,92%);margin:0 auto 60px;transform:rotate(-2deg)"><img src="img/kv/equipo.webp" alt="Loren con su equipo de cocina"><figcaption>La familia Loren en la cocina</figcaption></figure>\n    <div class="equipo">'),
-])
 
 print("v2 lista")
