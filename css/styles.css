@@ -622,7 +622,7 @@ section { position: relative; }
 /* Prensa */
 .prensa { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 12px 34px; margin-top: 70px; padding-top: 40px; border-top: 1px solid rgba(89,1,29,.12); }
 .prensa > span { font-size: .75rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--tinta-2); width: 100%; text-align: center; margin-bottom: 6px; }
-.prensa a { font-family: var(--f-display); font-size: 1.35rem; font-weight: 700; color: var(--vino); opacity: .55; text-decoration: none; transition: opacity .3s; font-style: italic; }
+.prensa a, .prensa b { font-family: var(--f-display); font-size: 1.35rem; font-weight: 700; color: var(--vino); opacity: .55; text-decoration: none; transition: opacity .3s; font-style: italic; }
 .prensa a:hover { opacity: 1; }
 
 /* =========================================================
