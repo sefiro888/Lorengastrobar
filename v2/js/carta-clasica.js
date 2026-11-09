@@ -21,6 +21,11 @@
       <h2><span class="orn">${enc(1.6, 10)}</span>${c.n}</h2><div class="gsub">${c.s}</div><div class="linea"></div>
       ${items.map(item).join("")}</section>`;
   };
+  const bebidas = () => {
+    const bs = C.filter((p) => p.cat === "bebidas"), grupos = [...new Set(bs.map((p) => p.grupo))];
+    return grupos.map((g) => `<section class="grupo grupo--beb"><h2><span class="orn">${enc(1.6, 10)}</span>${T(g)}</h2><div class="linea"></div>
+      ${bs.filter((p) => p.grupo === g).map((p) => `<div class="beb"><b>${p.n}</b>${p.d ? `<small>${p.d}</small>` : ""}<span class="pts"></span><span class="pr">${euro(p.precio)}</span></div>`).join("")}</section>`).join("");
+  };
   const esquinas = () => `<div class="esq esq--tl">${enc(1)}</div><div class="esq esq--tr">${enc(1)}</div><div class="esq esq--bl">${enc(1)}</div><div class="esq esq--br">${enc(1)}</div><div class="franja"><i></i><i></i><i></i></div>`;
   const mini = (txt) => `<div class="cab cab--mini"><img src="img/marca/logo-loren.webp" alt="Loren Restobar"><span>${txt}</span></div>`;
 
@@ -30,9 +35,9 @@
         <p class="lema">«${T(L.lema)}»</p><div class="sub">${T("Cocina paraguaya casera · Barcelona")}</div></div>
        <div class="cols">${grupo("paraguayo")}${grupo("empanadas")}${grupo("finde", true)}</div>
        <p class="leyenda"><i style="background:#59011d;color:#f3eedc">PY</i> ${T("típico paraguayo")} &nbsp;·&nbsp; <i style="background:#e8b43a;color:#2a000e">★</i> ${T("favorito de la casa")}</p>`,
-      `${mini("Mba'éichapa! " + T("Bienvenidos"))}<div class="cols">${grupo("compartir")}${grupo("milanesas")}${grupo("platos")}
-       <div class="caviso caviso--col"><div class="r">${enc(1)}</div><div><h3>${T("¿Celebras algo?")}</h3><p>${T("Cumpleaños, bautizos, comidas de empresa… Preparamos bandejas de bocaditos paraguayos —empanadas, chipas, croquetas, sándwiches de miga y sopa paraguaya— o te reservamos el local con menú a medida.")}</p></div><div class="tel"><small>${T("Pregúntanos")}</small>${L.telefono}</div></div></div>`,
-      `${mini("Vy'apavẽ! " + T("Que lo disfrutes"))}<div class="cols">${grupo("sandwiches")}
+      `${mini("Mba'éichapa! " + T("Bienvenidos"))}<div class="cols">${grupo("sandwiches")}${grupo("milanesas")}${grupo("parrilla")}</div>`,
+      `${mini("Vy'apavẽ! " + T("Que lo disfrutes"))}<div class="cols">${grupo("platos")}${grupo("compartir")}${grupo("ensaladas")}${grupo("postres")}
+       <div class="caviso caviso--col"><div class="r">${enc(1)}</div><div><h3>${T("¿Celebras algo?")}</h3><p>${T("Cumpleaños, bautizos, comidas de empresa… Preparamos bandejas de bocaditos paraguayos —empanadas, chipas, croquetas, sándwiches de miga y sopa paraguaya— o te reservamos el local con menú a medida.")}</p></div><div class="tel"><small>${T("Pregúntanos")}</small>${L.telefono}</div></div>
        <div class="dicc dicc--col"><div class="rueda">${enc(0.9)}</div><div>
          <h3>${T("Pequeño diccionario guaraní de la mesa")}</h3><div class="s">${T("para pedir como un paraguayo")}</div>
          <dl>
@@ -41,11 +46,12 @@
            <div><dt>Mandi'ó</dt><dd>${T("mandioca")}</dd></div><div><dt>Pira</dt><dd>${T("pez, pescado")}</dd></div>
            <div><dt>Chyryry</dt><dd>${T("el chisporroteo de la sartén")}</dd></div><div><dt>Vy'a</dt><dd>${T("alegría")}</dd></div>
            <div><dt>Ñandutí</dt><dd>${T("«tela de araña», nuestro encaje")}</dd></div><div><dt>Jaha!</dt><dd>${T("¡vamos!")}</dd></div>
-         </dl></div></div>${grupo("postres")}${grupo("bebidas")}</div>
+         </dl></div></div></div>`,
+      `${mini(T("Para brindar"))}<div class="cols cols--bebidas">${bebidas()}</div>
        <div class="cpie"><span class="gr">Aguyje!</span>
         <b>${L.direccion} · ${L.cp}</b> · ${T("Reservas y pedidos")} <b>${L.telefono}</b> (${T("también WhatsApp")})<br>
         ${T("Pídenos también en Glovo y Uber Eats")} · @lorenrestobar_<br>
-        ${T("IVA incluido. Consulta alérgenos al personal. Precios sujetos a cambios.")}</div>`
+        ${T("IVA incluido. Consulta alérgenos al personal. Precios sujetos a cambios.")} ${T(window.AVISO_TERRAZA)}</div>`
     ];
   }
   const hoja = (h, i) => `<article class="hoja" aria-label="${T("Página {n} de la carta", { n: i + 1 })}">${esquinas()}${h}</article>`;

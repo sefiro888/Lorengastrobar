@@ -69,7 +69,7 @@
  },
  {
   "p": "index",
-  "es": "<span>Chipa guazú</span><span>Sopa paraguaya</span><span>Mbejú</span><span>Vorí vorí</span><span>Empanadas caseras</span><span>Mandi'ó chyryry</span><span>Asado a la olla</span><span>Milanesa a caballo</span><span>Parrillada al brasero</span><span>Tres leches</span> <span>Chipa guazú</span><span>Sopa paraguaya</span><span>Mbejú</span><span>Vorí vorí</span><span>Empanadas caseras</span><span>Mandi'ó chyryry</span><span>Asado a la olla</span><span>Milanesa a caballo</span><span>Parrillada al brasero</span><span>Tres leches</span>"
+  "es": "<span>Chipa guazú</span><span>Sopa paraguaya</span><span>Mbejú</span><span>Vorí vorí</span><span>Empanadas caseras</span><span>Mandi'ó chyryry</span><span>Asado a la olla</span><span>Milanesa a caballo</span><span>Picada paraguaya</span><span>Tres leches</span> <span>Chipa guazú</span><span>Sopa paraguaya</span><span>Mbejú</span><span>Vorí vorí</span><span>Empanadas caseras</span><span>Mandi'ó chyryry</span><span>Asado a la olla</span><span>Milanesa a caballo</span><span>Picada paraguaya</span><span>Tres leches</span>"
  },
  {
   "p": "index",
@@ -357,15 +357,15 @@
  },
  {
   "p": "index",
-  "es": "Especiales del finde <span class=\"gn\">sábado ha domingo</span>"
+  "es": "Especiales del finde <span class=\"gn\">viernes a domingo</span>"
  },
  {
   "p": "index",
-  "es": "Los sábados y domingos <em>huelen a caldo</em>"
+  "es": "Los fines de semana <em>huelen a caldo</em>"
  },
  {
   "p": "index",
-  "es": "Hay platos que piden tiempo, olla grande y paciencia. Los guardamos para el fin de semana, cuando media Barcelona paraguaya viene a buscarlos."
+  "es": "Hay platos que piden tiempo, olla grande y paciencia. Los guardamos para los viernes, sábados y domingos, cuando media Barcelona paraguaya viene a buscarlos."
  },
  {
   "p": "index",
@@ -381,7 +381,7 @@
  },
  {
   "p": "index",
-  "es": "Caldo de gallina casera con bolitas de maíz y queso."
+  "es": "Caldo casero con bolitas de maíz y queso."
  },
  {
   "p": "index",
@@ -393,27 +393,7 @@
  },
  {
   "p": "index",
-  "es": "Costilla de ternera hecha despacio en la olla, tierna y dorada."
- },
- {
-  "p": "index",
-  "es": "Soyo"
- },
- {
-  "p": "index",
-  "es": "Soyo <small>con tortillita</small>"
- },
- {
-  "p": "index",
-  "es": "Sopa de carne machacada con tortillita paraguaya y mandioca."
- },
- {
-  "p": "index",
-  "es": "Parrillada <small>al brasero</small>"
- },
- {
-  "p": "index",
-  "es": "Para compartir, con chipa guazú y mandioca."
+  "es": "Ternera hecha despacio en la olla, tierna y dorada."
  },
  {
   "p": "index",
@@ -1885,7 +1865,7 @@
  },
  {
   "p": "domicilio",
-  "es": "<b>22,50 €</b><small>Box de 6 empanadas · el más pedido para compartir</small>"
+  "es": "<b>3,80 €</b><small>Empanada de ternera · la más pedida</small>"
  },
  {
   "p": "domicilio",
@@ -2197,7 +2177,7 @@
  },
  {
   "p": "domicilio",
-  "es": "El vorí vorí, el asado a la olla y el soyo se preparan los fines de semana y en cantidad limitada. Escríbenos por WhatsApp y te decimos si quedan para llevar."
+  "es": "El vorí vorí y el asado a la olla se preparan los viernes, sábados y domingos, en cantidad limitada. Escríbenos por WhatsApp y te decimos si quedan para llevar."
  },
  {
   "p": "domicilio",
@@ -2689,7 +2669,7 @@
  },
  {
   "p": "visitanos",
-  "es": "<span>🥐 Desayunos desde las 9:00</span><span>🍽️ Menú del día</span><span>🌙 Cenas de miércoles a sábado</span>"
+  "es": "<span>🥐 Desayunos desde las 9:00</span><span>🍽️ Menú del día</span><span>🌙 Cenas de martes a sábado</span>"
  },
  {
   "p": "visitanos",
@@ -2721,7 +2701,7 @@
  },
  {
   "p": "visitanos",
-  "es": "Noches · X–S"
+  "es": "Noches · M–S"
  },
  {
   "p": "visitanos",
@@ -2733,7 +2713,7 @@
  },
  {
   "p": "visitanos",
-  "es": "Sáb · Dom"
+  "es": "Vie · Sáb · Dom"
  },
  {
   "p": "visitanos",
@@ -2741,7 +2721,7 @@
  },
  {
   "p": "visitanos",
-  "es": "Vorí vorí, asado a la olla y soyo. Es cuando más se llena: <strong>reserva</strong> y llega con hambre."
+  "es": "Vorí vorí y asado a la olla. Es cuando más se llena: <strong>reserva</strong> y llega con hambre."
  },
  {
   "p": "visitanos",
@@ -2937,7 +2917,7 @@
  },
  {
   "p": "visitanos",
-  "es": "Los fines de semana, en cantidad limitada. Si vienes expresamente a por ellos, reserva y avísanos."
+  "es": "Los viernes, sábados y domingos, en cantidad limitada. Si vienes expresamente a por ellos, reserva y avísanos."
  },
  {
   "p": "visitanos",

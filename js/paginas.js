@@ -63,7 +63,7 @@
       que: "Carne de ternera hecha despacio en la olla, hasta que queda tierna por dentro y dorada por fuera. Un clásico de la cocina casera y ahora uno de nuestros especiales del fin de semana.",
       como: "Costilla de ternera cocinada a fuego lento durante horas en la olla, con mandioca.",
       come: "Con mandioca y un trozo de chipa guazú o sopa paraguaya al lado.", marida: "Mandioca · Chipa guazú · Sopa paraguaya" },
-    { id: "soyo", n: "Soyo", oir: "soyo", pron: "SO-yo", img: "img/redes/ig-soyo.webp", carta: "Soyo con tortillita", finde: true,
+    { id: "soyo", n: "Soyo", oir: "soyo", pron: "SO-yo", img: "img/redes/ig-soyo.webp", carta: null,
       lema: "Viene de «so'o josopy»: carne machacada",
       que: "Una sopa espesa de carne machacada, de las más queridas de la cocina paraguaya. Con el profe de guaraní Mbo'ehára Marce contamos en Instagram el origen de su nombre.",
       como: "Carne machacada, verduras y caldo. Se sirve con tortillita paraguaya y mandioca.",
@@ -73,12 +73,12 @@
       que: "Un salteado de mandioca: el plato estrella de nuestro segundo local y uno de los más pedidos para compartir.",
       como: "Mandioca, patata, queso, jamón, cebolla de verdeo y un huevo frito por encima. También con bacon.",
       come: "Al centro de la mesa, rompiendo el huevo sobre la mandioca.", marida: "Cerveza bien fría · Picada de chorizo" },
-    { id: "empanadas", n: "Empanadas", oir: "empanadas", pron: "carne · pollo · jamón y queso · choclo", img: "img/platos/box-empanadas.webp", carta: "Box de 6 empanadas",
+    { id: "empanadas", n: "Empanadas", oir: "empanadas", pron: "ternera · pollo · jamón y queso · choclo", img: "img/platos/box-empanadas.webp", carta: "Empanada de ternera",
       lema: "Lo más nombrado en nuestras reseñas",
       que: "Masa casera y relleno jugoso. Son el plato que más aparece en nuestras reseñas de Google.",
       como: "La de carne lleva ternera, cebolla, pimiento verde, ajo, huevo duro, comino y pimienta. También de pollo, jamón y queso, y choclo con mozzarella.",
       come: "Con la mano y sin miedo. El box de seis es perfecto para probarlas todas.", marida: "Guaraná · Yuca brava" },
-    { id: "parrillada", n: "Parrillada paraguaya", oir: "parrillada paraguaya", pron: "el asado del domingo", img: "img/platos/parrillada-paraguaya.webp", carta: "Parrillada paraguaya",
+    { id: "parrillada", n: "Parrillada paraguaya", oir: "parrillada paraguaya", pron: "el asado del domingo", img: "img/platos/parrillada-paraguaya.webp", carta: "Picada paraguaya",
       lema: "En Paraguay el asado es un ritual familiar",
       que: "La mesa paraguaya de domingo, servida humeante en brasero.",
       como: "Asado, chorizo, chinchulín y pollo, con mandioca y chipa guazú.",
@@ -86,7 +86,7 @@
     { id: "milanesa", n: "Milanesa", oir: "milanesa a caballo", pron: "a caballo · napolitana · fugazzeta", img: "img/platos/mila-caballo-pro.webp", carta: "Milanesa a caballo",
       lema: "Diez maneras de comer el plato más popular",
       que: "En Paraguay la milanesa es casi un plato nacional. Aquí la empanamos al momento y la servimos en raciones que desbordan el plato.",
-      como: "Ternera o pollo rebozados al momento. A caballo (dos huevos fritos), napolitana, americana, cuatro quesos, fugazzeta, caprese… o en sándwich.",
+      como: "Ternera o pollo rebozados al momento. A caballo (dos huevos fritos), napolitana, americana, ibérica, fugazzeta, de mondongo… o en sándwich.",
       come: "Con patatas fritas, limón y apetito.", marida: "Sopa paraguaya · Coca-Cola fría" }
   ];
   const enciclo = $("#enciclopedia");

@@ -146,3 +146,12 @@
 .lector .hoja-wrap { margin: 0 auto 30px; width: calc(210mm * var(--esc-l, 1)); height: calc(297mm * var(--esc-l, 1)); }
 .lector .hoja { transform: scale(var(--esc-l, 1)); transform-origin: 0 0; height: 297mm; }
 .lector__barra { position: fixed; top: 0; left: 0; right: 0; z-index: 2; display: flex; justify-content: center; gap: 10px; padding: 14px; background: rgba(28,0,9,.9); }
+
+/* Hoja de bebidas: lista compacta en dos columnas */
+.cc .grupo--beb { margin-bottom: 5mm; }
+.cc .grupo--beb h2 { font-size: 14pt; margin-bottom: 2mm; }
+.cc .beb { display: flex; align-items: baseline; gap: 1.6mm; break-inside: avoid; margin-bottom: 1.15mm; font-size: 8.6pt; }
+.cc .beb b { font-family: var(--f-display); font-weight: 600; color: var(--tinta); white-space: nowrap; }
+.cc .beb small { font-size: 6.6pt; color: var(--tinta-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.cc .beb .pts { flex: 1; border-bottom: 1.2px dotted rgba(89,1,29,.4); transform: translateY(-.8mm); min-width: 4mm; }
+.cc .beb .pr { font-family: var(--f-display); font-weight: 700; color: var(--vino); white-space: nowrap; }

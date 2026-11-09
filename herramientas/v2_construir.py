@@ -113,10 +113,11 @@ editar("index.html", [
 
 # --- Carta: fotos propias en lugar de las genéricas ---
 editar("js/data.js", [
-    ('nombre: "Sopa paraguaya", precio: 4.40, img: "img/platos/sopa-paraguaya-pro.webp"', 'nombre: "Sopa paraguaya", precio: 4.40, img: "img/kv/sopa-paraguaya-kv.webp"'),
-    ('nombre: "Empanada de carne", precio: 4.30, img: "img/platos/empanada-carne.webp"', 'nombre: "Empanada de carne", precio: 4.30, img: "img/kv/empanadas-cesta.webp"'),
-    ('nombre: "Parrillada mixta", precio: null, img: "img/platos/parrillada-mixta.webp"', 'nombre: "Parrillada mixta", precio: null, img: "img/kv/parrillada-kv.webp"'),
-    ('nombre: "Milanesa de pollo a la napolitana", precio: 18.90, img: "img/platos/mila-pollo-napo.webp"', 'nombre: "Milanesa de pollo a la napolitana", precio: 18.90, img: "img/kv/mila-napolitana-nueva.webp"'),
+    ('nombre: "Sopa paraguaya", precio: 3.90, img: "img/platos/sopa-paraguaya-pro.webp"', 'nombre: "Sopa paraguaya", precio: 3.90, img: "img/kv/sopa-paraguaya-kv.webp"'),
+    ('nombre: "Empanada de ternera", precio: 3.80, img: "img/platos/empanada-carne.webp"', 'nombre: "Empanada de ternera", precio: 3.80, img: "img/kv/empanadas-cesta.webp"'),
+    ('nombre: "Picada paraguaya", precio: 32.90, img: "img/platos/parrillada-paraguaya.webp"', 'nombre: "Picada paraguaya", precio: 32.90, img: "img/kv/parrillada-kv.webp"'),
+    ('nombre: "Milanesa a la napolitana", precio: 17.90, img: "img/platos/hl-milanesa.webp"', 'nombre: "Milanesa a la napolitana", precio: 17.90, img: "img/kv/mila-napolitana-nueva.webp"'),
+    ('nombre: "Entrecot de ternera con chorizo", precio: 17.90, img: null', 'nombre: "Entrecot de ternera con chorizo", precio: 17.90, img: "img/kv/entrecot-kv.webp"'),
     ('nombre: "Hamburguesa de ternera completa", precio: 12.90, img: "img/platos/hl-hamburguesa.webp"', 'nombre: "Hamburguesa de ternera completa", precio: 12.90, img: "img/kv/hamburguesa-kv.webp"'),
 ])
 

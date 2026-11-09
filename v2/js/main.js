@@ -194,21 +194,21 @@
   };
   pintarEstado(); setInterval(pintarEstado, 60000);
 
-  /* ---------- Cuenta atrás del finde (sábado 10:00 – domingo 17:00) ---------- */
+  /* ---------- Cuenta atrás del finde (viernes 9:00 – domingo 17:00) ---------- */
   const cuenta = $(".finde__cuenta");
   if (cuenta) {
     const est = $(".finde__estado span");
     const tick = () => {
       const now = new Date(), dia = now.getDay(), h = now.getHours() + now.getMinutes() / 60;
-      const enFinde = (dia === 6 && h >= 10) || (dia === 0 && h < 17);
+      const enFinde = (dia === 5 && h >= 9) || dia === 6 || (dia === 0 && h < 17);
       if (enFinde) {
         est.textContent = T("¡Es finde! Hoy hay vorí vorí y asado a la olla");
-        cuenta.innerHTML = `<div><b>🍲</b><span>${T("en la olla")}</span></div><div><b>${T(dia === 6 ? "Sáb" : "Dom")}</b><span>${T("hoy")}</span></div>`;
+        cuenta.innerHTML = `<div><b>🍲</b><span>${T("en la olla")}</span></div><div><b>${T(dia === 5 ? "Vie" : dia === 6 ? "Sáb" : "Dom")}</b><span>${T("hoy")}</span></div>`;
         return;
       }
       const obj = new Date(now);
-      obj.setDate(now.getDate() + ((6 - dia + 7) % 7));
-      obj.setHours(10, 0, 0, 0);
+      obj.setDate(now.getDate() + ((5 - dia + 7) % 7));
+      obj.setHours(9, 0, 0, 0);
       if (obj <= now) obj.setDate(obj.getDate() + 7);
       let s = Math.floor((obj - now) / 1000);
       const D = Math.floor(s / 86400); s -= D * 86400;

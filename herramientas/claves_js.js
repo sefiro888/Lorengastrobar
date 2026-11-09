@@ -19,7 +19,7 @@ for (const f of ["layout.js", "main.js", "paginas.js", "carta.js", "carta-clasic
   for (const m of src.matchAll(RE_COND)) { add(str(m[1])); add(str(m[2])); }
   if (f === "paginas.js") for (const m of src.matchAll(RE_CAMPOS)) add(str(m[1]));
 }
-["Sáb", "Dom", "plato", "bebidas", "platos", "Reservar", "Preguntar", "Consultar · fin de semana", "Consultar",
+["Cervezas", "Cava y vino", "Cócteles y vermut", "Refrescos", "Consumo en terraza: 0,10 € adicionales por consumición.", "Vie", "Sáb", "Dom", "plato", "bebidas", "platos", "Reservar", "Preguntar", "Consultar · fin de semana", "Consultar",
  "Sólo fines de semana", "Reservar para el finde", "Pedirlo ahora", "Clásicos", "Compartir y milanesas", "Platos y postres"].forEach(add);
 const html = fs.readFileSync(path.join(R, "index.html"), "utf8");
 for (const m of html.matchAll(RE_T)) add(str(m[1]));
