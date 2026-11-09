@@ -25,23 +25,23 @@ def editar(f, cambios):
 
 
 FUENTES = ('<link href="https://fonts.googleapis.com/css2?family=Anton&family=Kaushan+Script&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">\n'
-           '  <link rel="stylesheet" href="css/v2.css?v=1">\n  <meta name="robots" content="noindex">\n</head>')
+           '  <link rel="stylesheet" href="css/v2.css?v=2">\n  <meta name="robots" content="noindex">\n</head>')
 
 # --- Todas las páginas (menos la carta para imprimir, que se queda igual) ---
 for f in glob.glob(os.path.join(V, "*.html")):
     n = os.path.basename(f)
     if n == "carta-clasica.html":
         continue
-    cambios = [("</head>", FUENTES), ("</body>", '<script src="js/v2.js?v=1"></script>\n</body>')]
+    cambios = [("</head>", FUENTES), ("</body>", '<script src="js/v2.js?v=2"></script>\n</body>')]
     s = open(f, encoding="utf-8").read()
     if "img/marca/nanduti-aro.webp" in s:
         cambios.append(("img/marca/nanduti-aro.webp", "img/kv/flor-kv.webp"))
     editar(n, cambios)
 
 # --- Inicio: la cocina de Loren (equipo + vídeos), menú del día y dos locales ---
-VIDEOS = [("mbeju", "Mbejú", "de la sartén a la mesa"), ("sopa", "Sopa paraguaya", "la que se come con tenedor"),
-          ("chyryry", "Mandi'ó chyryry", "recién salteado"), ("vori", "Vorí vorí", "bolitas recién hechas"),
-          ("chipa", "Chipa guazú", "esponjosa por dentro")]
+VIDEOS = [("mbeju", "Mbejú", "de la sartén a la mesa"), ("sopa", "Sopa paraguaya", "la sopa que se corta"),
+          ("chyryry", "Mandi'ó chyryry", "yuca salteada"), ("vori", "Vorí vorí de ternera", "bolitas recién hechas"),
+          ("chipa", "Chipa guazú", "costra dorada del horno")]
 videos = "\n".join(
     f'      <figure class="video rv" data-delay="{i % 4 + 1}"><video muted loop playsinline preload="none" poster="video/{v}.jpg" src="video/{v}.mp4" aria-label="{t} en la cocina de Loren"></video>'
     f'<span class="vivo">En cocina</span><figcaption><b>{t}</b><span>{s}</span></figcaption></figure>'
@@ -77,27 +77,29 @@ MDD = '''<!-- ============ MENÚ DEL DÍA (v2) ============ -->
     <div class="mdd__izq rv rv--izq">
       <span class="letrero">Menú del día</span>
       <div class="pergamino">
-        <h3>Platos únicos</h3>
+        <h3>Cambia cada día</h3>
         <ul>
-          <li>Asado a la olla con arroz quesú</li>
-          <li>Milanesa de ternera o de pollo con arroz o ensalada</li>
-          <li>Ñoquis con estofado de carne</li>
-          <li>Tallarín con estofado de carne</li>
+          <li>Primer plato</li>
+          <li>Segundo plato</li>
+          <li>Postre</li>
+          <li>Bebida</li>
         </ul>
-        <span class="precio">11,90 €</span>
-        <small>Incluye una bebida</small>
+        <div class="precios">
+          <div><span class="precio">15,90 €</span><small>miércoles a viernes</small></div>
+          <div><span class="precio">19,90 €</span><small>sábado y domingo</small></div>
+        </div>
       </div>
-      <div class="mdd__local">📍 Exclusivo en el local de <b>Muntanya 115</b></div>
+      <div class="mdd__local">🍽️ Al mediodía, de <b>miércoles a domingo</b></div>
     </div>
     <div class="mdd__der rv rv--der">
-      <span class="eyebrow">Entre semana</span>
+      <span class="eyebrow">Al mediodía</span>
       <h2 class="titulo">Comer como en casa <em>a precio de barrio</em></h2>
-      <p>Un plato único bien servido y una bebida. Perfecto para el mediodía si trabajas o vives por el Camp de l'Arpa.</p>
+      <p>Primero, segundo, postre y bebida, cocinados ese mismo día. Entre semana para la pausa del trabajo y el finde para venir en familia.</p>
       <div class="mdd__foto">
         <img src="img/kv/mila-napolitana-nueva.webp" alt="Milanesa con huevo frito y patatas" loading="lazy">
         <img class="flor" src="img/kv/flor-kv.webp" alt="" aria-hidden="true">
       </div>
-      <p class="mdd__nota">Los platos pueden cambiar según el día: pregúntanos por WhatsApp qué hay hoy.</p>
+      <p class="mdd__nota">Los platos cambian cada día: pregúntanos por WhatsApp qué hay hoy.</p>
       <a href="#" class="btn" data-reserva style="margin-top:10px">Preguntar el menú de hoy</a>
     </div>
   </div>
@@ -106,6 +108,7 @@ MDD = '''<!-- ============ MENÚ DEL DÍA (v2) ============ -->
 <!-- ============ FINDE ============ -->'''
 
 editar("index.html", [
+    ('<img class="plato__encaje" src="img/kv/flor-kv.webp"', '<img class="plato__encaje plato__encaje--bandera" src="img/kv/nanduti-bandera.webp"'),
     ("<!-- ============ HISTORIA ============ -->", COCINA),
     ("<!-- ============ FINDE ============ -->", MDD),
     ('<h2 class="titulo">Te esperamos <em>en Muntanya 115</em></h2>',
@@ -141,8 +144,7 @@ editar("historia.html", [
 
 # --- Pie: los dos locales ---
 editar("js/layout.js", [
-    ('<li><a href="${P}visitanos.html">Carrer de la Muntanya, 115</a></li><li>08026 Barcelona</li>\n        <li><a href="tel:+34602076828">602 07 68 28</a></li>',
-     '<li><a href="${P}visitanos.html">Carrer de la Muntanya, 115</a></li><li><a href="${P}visitanos.html">Carrer de Villarroel, 247</a></li>\n'
-     '        <li><a href="tel:+34602076828">602 07 68 28</a></li><li><a href="tel:+34930068665">930 06 86 65</a></li>'),
+    ('<li>08026 Barcelona</li>', '<li><a href="${P}visitanos.html">Carrer de Villarroel, 247</a></li>'),
+    ('(WhatsApp)</li>', '(WhatsApp)</li><li><a href="tel:+34930068665">930 06 86 65</a></li>'),
 ])
 print("v2 lista")

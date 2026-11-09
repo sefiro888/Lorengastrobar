@@ -890,3 +890,4 @@ html, body { overflow-x: clip; }
 
 /* Aire alrededor del encaje real del plato */
 @media (max-width: 900px) { .hero .plato { margin: 9% auto 13%; width: min(74vw, 400px); } }
+.pie__legal a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }

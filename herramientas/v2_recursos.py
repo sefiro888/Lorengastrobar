@@ -57,6 +57,19 @@ rgb = np.clip(flor / np.maximum(alfa[..., None], 1e-3), 0, 255)
 Image.fromarray(np.dstack([rgb, alfa * 255]).astype(np.uint8), "RGBA").save(os.path.join(O, "flor-kv.webp"), "WEBP", quality=90, method=6)
 print("flor-kv.webp")
 
+# Ñandutí con la bandera y el escudo (de la portada de Facebook) -> disco con borde difuminado
+ban = Image.open(os.path.join(M, "WhatsApp Image 2026-11-09 at 14.27.16.jpeg")).convert("RGB")
+cx, cy, rr = 1195, 303, 300
+disco = ban.crop((cx - rr, cy - rr, cx + rr, cy + rr)).resize((1200, 1200), Image.LANCZOS)
+yy, xx = np.mgrid[0:1200, 0:1200]
+d = np.hypot(xx - 600, yy - 600) / 600
+a = np.clip((1 - d) / 0.2, 0, 1) ** 1.4
+disco.putalpha(Image.fromarray((a * 255).astype(np.uint8)))
+disco.save(os.path.join(O, "nanduti-bandera.webp"), "WEBP", quality=86, method=6)
+print("nanduti-bandera.webp")
+# Fondo de pizarra con chispas (lado izquierdo de la portada de Facebook)
+guardar(ban.crop((0, 0, 340, 607)), "pizarra-chispas.webp", q=78)  # sólo hasta antes del logo
+
 # --- Motivos vectoriales de los carteles: máscaras blancas con transparencia ---
 cartel = fitz.open(os.path.join(M, "cartel290x290.pdf"))[0]
 esc = cartel.rect.width / 5000  # las coordenadas se midieron sobre un render de 5000 px
@@ -91,17 +104,18 @@ if "--sin-videos" in sys.argv:
 # --- Vídeos: H.264 ligero, sin audio, con póster ---
 FF = imageio_ffmpeg.get_ffmpeg_exe()
 videos = {
-    "14.27.02": "mbeju", "14.27.39": "sopa", "14.28.39": "chyryry",
-    "14.33.00": "vori", "14.46.48": "chipa",
+    "14.27.02": "mbeju", "14.46.48": "sopa", "14.28.39": "chyryry",
+    "14.33.00": "vori", "14.27.39": "chipa",
 }
 VO = os.path.join(R, "v2", "video")
-POSTER = {"mbeju": "40", "sopa": "14", "chyryry": "26", "vori": "16", "chipa": "4"}  # segundo del fotograma de portada
+POSTER = {"mbeju": "40", "sopa": "6", "chyryry": "26", "vori": "16", "chipa": "17"}  # segundo del fotograma de portada
 os.makedirs(VO, exist_ok=True)
 for t, n in videos.items():
     src = os.path.join(M, f"WhatsApp Video 2026-11-09 at {t}.mp4")
     dst = os.path.join(VO, f"{n}.mp4")
-    extra = ["-t", "16"] if n == "chipa" else []  # la chipa acaba con el rótulo final: se corta antes
-    subprocess.run([FF, "-y", "-loglevel", "error", "-i", src, *extra, "-an", "-vf", "scale=480:-2", "-c:v", "libx264",
+    # la sopa lleva la pegatina del logo al principio y el rótulo final desde el segundo 10,5: se queda el centro
+    corte = ["-ss", "2", "-t", "8.3"] if n == "sopa" else []
+    subprocess.run([FF, "-y", "-loglevel", "error", *corte, "-i", src, "-an", "-vf", "scale=480:-2", "-c:v", "libx264",
                     "-preset", "slow", "-crf", "27", "-pix_fmt", "yuv420p", "-movflags", "+faststart", dst], check=True)
     subprocess.run([FF, "-y", "-loglevel", "error", "-ss", POSTER.get(n, "3"), "-i", dst, "-frames:v", "1", "-q:v", "4",
                     os.path.join(VO, f"{n}.jpg")], check=True)

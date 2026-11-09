@@ -13,6 +13,14 @@
 }
 .phero::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 6px; background: linear-gradient(90deg, var(--rojo-py) 0 33.3%, #fff 33.3% 66.6%, var(--azul-py) 66.6%); }
 .phero__encaje { position: absolute; width: min(900px, 120vw); right: -18%; top: 50%; translate: 0 -50%; color: var(--crema); opacity: .07; z-index: -1; animation: girar 140s linear infinite; }
+.phero--corto { padding-bottom: clamp(40px, 6vw, 70px); }
+.legal { max-width: 780px; }
+.legal h2 { font-family: var(--f-display); font-size: clamp(1.3rem, 2.4vw, 1.7rem); color: var(--vino); margin: 38px 0 12px; }
+.legal h2:first-child { margin-top: 0; }
+.legal p { margin: 0 0 12px; line-height: 1.7; }
+.legal a { color: var(--vino); text-decoration: underline; text-underline-offset: 3px; }
+.legal__datos { list-style: none; padding: 18px 22px; margin: 16px 0; background: rgba(89,1,29,.05); border-left: 4px solid var(--vino); border-radius: 0 12px 12px 0; display: grid; gap: 6px; }
+.legal__fecha { margin-top: 30px !important; font-size: .9rem; opacity: .7; }
 .phero__grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(30px, 5vw, 70px); align-items: center; }
 .phero__grid--solo { grid-template-columns: 1fr; text-align: center; justify-items: center; }
 .miga { display: flex; gap: 8px; align-items: center; font-size: .82rem; color: rgba(243,238,220,.6); margin-bottom: 22px; }
@@ -301,7 +309,15 @@
 }
 @media (max-width: 900px) {
   .phero__grid, .dos, .capitulo, .entrada, .quiz__res { grid-template-columns: 1fr; }
-  .phero__grid { text-align: center; }
+  .phero--corto { padding-bottom: clamp(40px, 6vw, 70px); }
+.legal { max-width: 780px; }
+.legal h2 { font-family: var(--f-display); font-size: clamp(1.3rem, 2.4vw, 1.7rem); color: var(--vino); margin: 38px 0 12px; }
+.legal h2:first-child { margin-top: 0; }
+.legal p { margin: 0 0 12px; line-height: 1.7; }
+.legal a { color: var(--vino); text-decoration: underline; text-underline-offset: 3px; }
+.legal__datos { list-style: none; padding: 18px 22px; margin: 16px 0; background: rgba(89,1,29,.05); border-left: 4px solid var(--vino); border-radius: 0 12px 12px 0; display: grid; gap: 6px; }
+.legal__fecha { margin-top: 30px !important; font-size: .9rem; opacity: .7; }
+.phero__grid { text-align: center; }
   .phero__grid .phero__txt { margin-inline: auto; }
   .phero__grid .hero__ctas, .phero__grid .phero__datos, .miga { justify-content: center; }
   .phero__media { max-width: 420px; margin-inline: auto; width: 100%; }

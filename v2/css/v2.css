@@ -205,3 +205,15 @@ h3, h4 { font-family: var(--f-display); font-weight: 700; }
 /* La carta: el titular condensado ocupa más; «tembi'u» va debajo, a pincel */
 .ch__tit h1 { font-size: clamp(4rem, 12vw, 9.5rem); letter-spacing: .01em; line-height: .95; }
 .ch__tit .sc { position: static; display: block; margin-top: -.15em; font-size: clamp(2rem, 4.6vw, 3.6rem); }
+
+/* ---------- Portada con la imagen de su Facebook: pizarra con chispas y ñandutí con la bandera ---------- */
+.hero {
+  background:
+    radial-gradient(ellipse 70% 45% at 50% 108%, rgba(255,110,30,.22), transparent 70%),
+    linear-gradient(90deg, rgba(16,11,13,.45), rgba(16,11,13,.78) 70%),
+    url("../img/kv/pizarra-chispas.webp") left center / cover,
+    var(--carbon);
+}
+.hero .plato__encaje--bandera { animation: none; left: -24%; top: -24%; width: 148%; height: 148%; opacity: .96; }
+.pergamino .precios { display: flex; justify-content: center; gap: 26px; flex-wrap: wrap; margin-top: 6px; }
+.pergamino .precios > div { display: grid; justify-items: center; }

@@ -2709,7 +2709,7 @@
  },
  {
   "p": "visitanos",
-  "es": "Mediodía · L–V"
+  "es": "Mediodía · X–D"
  },
  {
   "p": "visitanos",
@@ -2717,7 +2717,7 @@
  },
  {
   "p": "visitanos",
-  "es": "Cocina paraguaya y española casera a precio de barrio. Pregunta por el menú de hoy."
+  "es": "Primero, segundo, postre y bebida, y cambia cada día. <strong>15,90 €</strong> de miércoles a viernes y <strong>19,90 €</strong> el fin de semana."
  },
  {
   "p": "visitanos",
@@ -2978,5 +2978,93 @@
  {
   "p": "carta-clasica",
   "es": "Formato A4 · 3 páginas"
+ },
+ {
+  "p": "aviso-legal",
+  "es": "Aviso legal, privacidad y cookies · Loren Restobar"
+ },
+ {
+  "p": "aviso-legal",
+  "es": "Aviso legal, política de privacidad y política de cookies de la web de Loren Restobar (Grupo Loren Restobar S.L.)."
+ },
+ {
+  "p": "aviso-legal",
+  "es": "<a href=\"index.html\">Inicio</a> / <span>Aviso legal</span>"
+ },
+ {
+  "p": "aviso-legal",
+  "es": "Aviso legal <em>y privacidad</em>"
+ },
+ {
+  "p": "aviso-legal",
+  "es": "1. Titular de la web"
+ },
+ {
+  "p": "aviso-legal",
+  "es": "En cumplimiento de la Ley 34/2002, de servicios de la sociedad de la información y de comercio electrónico (LSSI-CE), estos son los datos del titular de esta web:"
+ },
+ {
+  "p": "aviso-legal",
+  "es": "<b>Razón social:</b> Grupo Loren Restobar S.L."
+ },
+ {
+  "p": "aviso-legal",
+  "es": "<b>CIF:</b> B-93814853"
+ },
+ {
+  "p": "aviso-legal",
+  "es": "<b>Domicilio:</b> Carrer de la Muntanya, 115, local 1 · 08026 Barcelona"
+ },
+ {
+  "p": "aviso-legal",
+  "es": "<b>Teléfono:</b> <a href=\"tel:+34935052491\">935 05 24 91</a> · <a href=\"tel:+34602076828\">602 07 68 28</a>"
+ },
+ {
+  "p": "aviso-legal",
+  "es": "<b>Correo:</b> <a href=\"mailto:grupolorenrestobarsl@gmail.com\">grupolorenrestobarsl@gmail.com</a>"
+ },
+ {
+  "p": "aviso-legal",
+  "es": "2. Uso de la web"
+ },
+ {
+  "p": "aviso-legal",
+  "es": "Esta web informa sobre el restaurante, su carta, sus horarios y sus servicios. Los precios y platos son orientativos y pueden cambiar; los vigentes son los del local. Los pedidos a domicilio se hacen en Glovo y Uber Eats, que tienen sus propias condiciones."
+ },
+ {
+  "p": "aviso-legal",
+  "es": "Los textos, fotografías, logotipos y diseños de esta web pertenecen a Grupo Loren Restobar S.L. o se usan con permiso. No está permitido copiarlos ni reutilizarlos sin autorización."
+ },
+ {
+  "p": "aviso-legal",
+  "es": "3. Privacidad"
+ },
+ {
+  "p": "aviso-legal",
+  "es": "Esta web no tiene formularios ni registro de usuarios. Si nos escribes por WhatsApp, por correo o llamas por teléfono, usaremos tus datos solo para responderte o gestionar tu reserva o encargo, y no los cederemos a nadie salvo obligación legal."
+ },
+ {
+  "p": "aviso-legal",
+  "es": "<b>Responsable:</b> Grupo Loren Restobar S.L. · <b>Finalidad:</b> atender tu consulta, reserva o encargo · <b>Base legal:</b> tu consentimiento y la gestión de lo que nos pides · <b>Conservación:</b> el tiempo necesario para atenderte y cumplir las obligaciones legales."
+ },
+ {
+  "p": "aviso-legal",
+  "es": "Puedes pedir el acceso, la rectificación o la supresión de tus datos, o oponerte a su uso, escribiendo a <a href=\"mailto:grupolorenrestobarsl@gmail.com\">grupolorenrestobarsl@gmail.com</a>. Si crees que no hemos tratado bien tus datos, puedes reclamar ante la Agencia Española de Protección de Datos (aepd.es)."
+ },
+ {
+  "p": "aviso-legal",
+  "es": "4. Cookies"
+ },
+ {
+  "p": "aviso-legal",
+  "es": "Esta web no usa cookies propias de publicidad ni de analítica. Solo guarda en tu navegador, de forma temporal, los platos que vas apuntando en la carta; se borran al cerrar la pestaña."
+ },
+ {
+  "p": "aviso-legal",
+  "es": "El mapa de Google Maps de la página Visítanos y los enlaces a Glovo, Uber Eats, Instagram, TikTok, Facebook, WhatsApp u OpenTable son servicios de terceros que pueden usar sus propias cookies cuando los abres. Puedes consultar sus políticas en sus webs y borrar o bloquear las cookies desde la configuración de tu navegador."
+ },
+ {
+  "p": "aviso-legal",
+  "es": "Última actualización: noviembre de 2026."
  }
 ]

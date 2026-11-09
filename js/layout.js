@@ -77,9 +77,9 @@
         <li><a href="#" data-reserva>${T("Reservar por WhatsApp")}</a></li><li><a href="#" data-link="opentable" target="_blank" rel="noopener">${T("Reservar en OpenTable")}</a></li></ul></div>
       <div><h4>${T("Contacto")}</h4><ul>
         <li><a href="${P}visitanos.html">Carrer de la Muntanya, 115</a></li><li>08026 Barcelona</li>
-        <li><a href="tel:+34602076828">602 07 68 28</a></li><li><a href="mailto:lorenza_vera@hotmail.com">lorenza_vera@hotmail.com</a></li></ul></div>
+        <li><a href="tel:+34935052491">935 05 24 91</a></li><li><a href="tel:+34602076828">602 07 68 28</a> (WhatsApp)</li><li><a href="mailto:grupolorenrestobarsl@gmail.com">grupolorenrestobarsl@gmail.com</a></li></ul></div>
     </div>
-    <div class="pie__legal"><span>© <span data-anio>2026</span> Loren Restobar · ${T("Hecho con ❤️ y mucha chipa")}</span><span><i class="bandera"></i> Paraguay · Barcelona <i class="bandera bandera--es"></i></span></div>
+    <div class="pie__legal"><span>© <span data-anio>2026</span> Grupo Loren Restobar S.L. · CIF B-93814853 · <a href="${P}aviso-legal.html">${T("Aviso legal y privacidad")}</a></span><span><i class="bandera"></i> Paraguay · Barcelona <i class="bandera bandera--es"></i></span></div>
   </div>
 </footer>
 
