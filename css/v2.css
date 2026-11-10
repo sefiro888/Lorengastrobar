@@ -180,7 +180,6 @@ h3, h4 { font-family: var(--f-display); font-weight: 700; }
 }
 .v2-chip b { color: var(--maiz); font-family: var(--f-titular); font-weight: 400; letter-spacing: .04em; font-size: .95rem; }
 .v2-chip a { background: var(--crema); color: var(--carbon); text-decoration: none; padding: 6px 12px; border-radius: 99px; }
-.idiomas { display: none !important; }
 @media (max-width: 900px) {
   .v2-chip { bottom: 84px; right: auto; left: 10px; font-size: .72rem; }
 }

@@ -55,7 +55,7 @@
   <div class="nanduti-bg" data-nanduti></div>
   <div class="wrap">
     <p class="pie__grande">Aguyje<span>!</span></p>
-    <p class="pie__sub">${T("«Gracias» en guaraní. Por venir, por pedir, por volver.")}</p>
+    <p class="pie__sub">${T("“Gracias” en guaraní. Por venir, por pedir, por volver.")}</p>
     <div class="pie__cols">
       <div>
         <img class="pie__logo" src="img/marca/logo-loren.webp" alt="Loren Restobar">

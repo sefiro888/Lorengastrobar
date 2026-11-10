@@ -46,10 +46,4 @@
     vids.forEach((v) => io.observe(v));
   }
 
-  // Distintivo para comparar con la versión 1
-  const pagina = location.pathname.split("/").pop() || "index.html";
-  const chip = document.createElement("div");
-  chip.className = "v2-chip";
-  chip.innerHTML = `<b>VERSIÓN 2</b><span>propuesta</span><a href="../${pagina}">Ver versión 1</a>`;
-  document.body.appendChild(chip);
 })();

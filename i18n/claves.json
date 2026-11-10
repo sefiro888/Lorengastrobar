@@ -109,6 +109,54 @@
  },
  {
   "p": "index",
+  "es": "La cocina de Loren"
+ },
+ {
+  "p": "index",
+  "es": "Así se hace <em>en casa</em>"
+ },
+ {
+  "p": "index",
+  "es": "Aquí nada llega precocinado. El mbejú se tuesta en la sartén con mantequilla, la sopa paraguaya sale del horno con su costra dorada y el vorí vorí se sirve con las bolitas recién hechas. Loren y su equipo lo cocinan cada día, como en Paraguay."
+ },
+ {
+  "p": "index",
+  "es": "Hecho cada día, con las manos"
+ },
+ {
+  "p": "index",
+  "es": "Loren mostrando un plato recién hecho"
+ },
+ {
+  "p": "index",
+  "es": "Loren"
+ },
+ {
+  "p": "index",
+  "es": "En cocina"
+ },
+ {
+  "p": "index",
+  "es": "<b>Mbejú</b><span>de la sartén a la mesa</span>"
+ },
+ {
+  "p": "index",
+  "es": "<b>Sopa paraguaya</b><span>la sopa que se corta</span>"
+ },
+ {
+  "p": "index",
+  "es": "<b>Mandi'ó chyryry</b><span>yuca salteada</span>"
+ },
+ {
+  "p": "index",
+  "es": "<b>Vorí vorí de ternera</b><span>bolitas recién hechas</span>"
+ },
+ {
+  "p": "index",
+  "es": "<b>Chipa guazú</b><span>costra dorada del horno</span>"
+ },
+ {
+  "p": "index",
   "es": "La chef Loren Vera con un plato de vorí vorí"
  },
  {
@@ -129,11 +177,11 @@
  },
  {
   "p": "index",
-  "es": "«Demostrar que la comida paraguaya es tan excelente como las demás.»<small>— LOREN VERA</small>"
+  "es": "“Demostrar que la comida paraguaya es tan excelente como las demás.”<small>— LOREN VERA</small>"
  },
  {
   "p": "index",
-  "es": "Hoy, junto a su familia —su hijo José Manuel es su «mano derecha»— y un equipo que te atiende hasta en guaraní, Loren Restobar es punto de encuentro para paraguayos que echan de menos su tierra y para barceloneses que la descubren por primera vez."
+  "es": "Hoy, junto a su familia —su hijo José Manuel es su “mano derecha”— y un equipo que te atiende hasta en guaraní, Loren Restobar es punto de encuentro para paraguayos que echan de menos su tierra y para barceloneses que la descubren por primera vez."
  },
  {
   "p": "index",
@@ -201,7 +249,7 @@
  },
  {
   "p": "index",
-  "es": "«Guazú» significa grande en guaraní"
+  "es": "“Guazú” significa grande en guaraní"
  },
  {
   "p": "index",
@@ -221,7 +269,7 @@
  },
  {
   "p": "index",
-  "es": "Cuenta la leyenda que nació de un «error» en la cocina del presidente Carlos Antonio López"
+  "es": "Cuenta la leyenda que nació de un “error” en la cocina del presidente Carlos Antonio López"
  },
  {
   "p": "index",
@@ -265,95 +313,67 @@
  },
  {
   "p": "index",
-  "es": "Empanadas"
- },
- {
-  "p": "index",
-  "es": "las más nombradas"
- },
- {
-  "p": "index",
-  "es": "carne · pollo · J&amp;Q · choclo"
- },
- {
-  "p": "index",
-  "es": "Masa casera y relleno jugoso. La de carne lleva huevo duro, comino y pimiento, como manda la tradición."
- },
- {
-  "p": "index",
-  "es": "Lo más mencionado en nuestras reseñas de Google"
- },
- {
-  "p": "index",
-  "es": "Mandioca"
- },
- {
-  "p": "index",
-  "es": "Mandi'ó"
- },
- {
-  "p": "index",
-  "es": "la mandioca"
- },
- {
-  "p": "index",
-  "es": "man-di-Ó"
- },
- {
-  "p": "index",
-  "es": "La yuca. En Paraguay acompaña cada comida como aquí el pan: hervida, frita «brava» o salteada en <em>chyryry</em>."
- },
- {
-  "p": "index",
-  "es": "«Chyryry» imita el chisporroteo de la sartén"
- },
- {
-  "p": "index",
-  "es": "Parrillada paraguaya"
- },
- {
-  "p": "index",
-  "es": "Parrillada"
- },
- {
-  "p": "index",
-  "es": "al brasero"
- },
- {
-  "p": "index",
-  "es": "el asado del domingo"
- },
- {
-  "p": "index",
-  "es": "Asado, chorizo, chinchulín y pollo, con mandioca y chipa guazú, servidos humeantes en brasero."
- },
- {
-  "p": "index",
-  "es": "En Paraguay, el asado es casi un ritual familiar"
- },
- {
-  "p": "index",
-  "es": "Milanesa"
- },
- {
-  "p": "index",
-  "es": "diez maneras"
- },
- {
-  "p": "index",
-  "es": "a caballo · napo · fugazzeta"
- },
- {
-  "p": "index",
-  "es": "Ternera o pollo rebozados al momento, en raciones que desbordan el plato. También en sándwich."
- },
- {
-  "p": "index",
-  "es": "Pídela «a caballo»: con dos huevos fritos encima"
- },
- {
-  "p": "index",
   "es": "<a class=\"btn btn--vino\" href=\"sabores.html\">Descubre todos los sabores de Paraguay</a>"
+ },
+ {
+  "p": "index",
+  "es": "Menú del día"
+ },
+ {
+  "p": "index",
+  "es": "Cambia cada día"
+ },
+ {
+  "p": "index",
+  "es": "Primer plato"
+ },
+ {
+  "p": "index",
+  "es": "Segundo plato"
+ },
+ {
+  "p": "index",
+  "es": "Postre"
+ },
+ {
+  "p": "index",
+  "es": "Bebida"
+ },
+ {
+  "p": "index",
+  "es": "<span class=\"precio\">15,90 €</span><small>miércoles a viernes</small>"
+ },
+ {
+  "p": "index",
+  "es": "<span class=\"precio\">19,90 €</span><small>sábado y domingo</small>"
+ },
+ {
+  "p": "index",
+  "es": "🍽️ Al mediodía, de <b>miércoles a domingo</b>"
+ },
+ {
+  "p": "index",
+  "es": "Al mediodía"
+ },
+ {
+  "p": "index",
+  "es": "Comer como en casa <em>a precio de barrio</em>"
+ },
+ {
+  "p": "index",
+  "es": "Primero, segundo, postre y bebida, cocinados ese mismo día. Entre semana para la pausa del trabajo y el finde para venir en familia."
+ },
+ {
+  "p": "index",
+  "es": "Milanesa con huevo frito y patatas"
+ },
+ {
+  "p": "index",
+  "es": "Los platos cambian cada día: pregúntanos por WhatsApp qué hay hoy."
+ },
+ {
+  "p": "index",
+  "es": "Preguntar el menú de hoy"
  },
  {
   "p": "index",
@@ -569,126 +589,6 @@
  },
  {
   "p": "index",
-  "es": "Bandeja de catering paraguayo"
- },
- {
-  "p": "index",
-  "es": "Bandeja de catering con sándwiches, milanesitas, empanadas y sopa paraguaya"
- },
- {
-  "p": "index",
-  "es": "Catering para llevar"
- },
- {
-  "p": "index",
-  "es": "Mesa preparada para un grupo"
- },
- {
-  "p": "index",
-  "es": "Celebraciones"
- },
- {
-  "p": "index",
-  "es": "Bandeja de empanadas, croquetas y chipas"
- },
- {
-  "p": "index",
-  "es": "Bocaditos"
- },
- {
-  "p": "index",
-  "es": "Eventos y catering <span class=\"gn\">vy'apavẽ</span>"
- },
- {
-  "p": "index",
-  "es": "Tu celebración, <em>a la paraguaya</em>"
- },
- {
-  "p": "index",
-  "es": "Cumpleaños, bautizos, comidas de empresa, afterworks o esa fiesta en casa: preparamos bandejas de bocaditos (empanadas, chipas, croquetas, sándwiches de miga, sopa paraguaya) o te reservamos el local con menú a medida."
- },
- {
-  "p": "index",
-  "es": "<span>🎂 Cumpleaños</span><span>💼 Empresa</span><span>🥂 Afterwork</span><span>👶 Bautizos</span><span>💍 Bodas</span><span>⚽ Partidos</span>"
- },
- {
-  "p": "index",
-  "es": "Tu nombre"
- },
- {
-  "p": "index",
-  "es": "Nombre y apellido"
- },
- {
-  "p": "index",
-  "es": "Tipo de evento"
- },
- {
-  "p": "index",
-  "es": "Cumpleaños"
- },
- {
-  "p": "index",
-  "es": "Comida de empresa"
- },
- {
-  "p": "index",
-  "es": "Afterwork"
- },
- {
-  "p": "index",
-  "es": "Bautizo / comunión"
- },
- {
-  "p": "index",
-  "es": "Boda"
- },
- {
-  "p": "index",
-  "es": "Otro"
- },
- {
-  "p": "index",
-  "es": "Personas"
- },
- {
-  "p": "index",
-  "es": "Fecha"
- },
- {
-  "p": "index",
-  "es": "Formato"
- },
- {
-  "p": "index",
-  "es": "Reservar en el restaurante"
- },
- {
-  "p": "index",
-  "es": "Catering / bandejas para llevar"
- },
- {
-  "p": "index",
-  "es": "Aún no lo sé, aconsejadme"
- },
- {
-  "p": "index",
-  "es": "Algo más"
- },
- {
-  "p": "index",
-  "es": "Platos que os gustaría, alergias, presupuesto…"
- },
- {
-  "p": "index",
-  "es": "Enviar por WhatsApp"
- },
- {
-  "p": "index",
-  "es": "Se abrirá WhatsApp con tu mensaje listo. Respondemos en el día. <a href=\"eventos.html\" style=\"color:var(--vino);font-weight:700\">Ver bandejas y eventos →</a>"
- },
- {
-  "p": "index",
   "es": "Nuestra casa <span class=\"gn\">ko'ápe</span>"
  },
  {
@@ -742,6 +642,10 @@
  {
   "p": "index",
   "es": "Parrillada en plancha de hierro"
+ },
+ {
+  "p": "index",
+  "es": "Parrillada"
  },
  {
   "p": "index",
@@ -977,7 +881,7 @@
  },
  {
   "p": "historia",
-  "es": "«Nuestra intención es que al probar un bocado podamos transportar hasta Paraguay a los comensales.»"
+  "es": "“Nuestra intención es que al probar un bocado podamos transportar hasta Paraguay a los comensales.”"
  },
  {
   "p": "historia",
@@ -1013,7 +917,7 @@
  },
  {
   "p": "historia",
-  "es": "«Cuesta, pero no me arrepiento.»"
+  "es": "“Cuesta, pero no me arrepiento.”"
  },
  {
   "p": "historia",
@@ -1033,7 +937,7 @@
  },
  {
   "p": "historia",
-  "es": "«Mi mano derecha es mi hijo.»"
+  "es": "“Mi mano derecha es mi hijo.”"
  },
  {
   "p": "historia",
@@ -1049,7 +953,7 @@
  },
  {
   "p": "historia",
-  "es": "El streamer Ibai Llanos organizó un «Mundial de Comidas» por votación popular, y el plato elegido para representar a Paraguay fue <strong>el vorí vorí de gallina casera de Loren</strong>, que se enfrentó al chivito uruguayo en octavos de final."
+  "es": "El streamer Ibai Llanos organizó un “Mundial de Comidas” por votación popular, y el plato elegido para representar a Paraguay fue <strong>el vorí vorí de gallina casera de Loren</strong>, que se enfrentó al chivito uruguayo en octavos de final."
  },
  {
   "p": "historia",
@@ -1057,7 +961,7 @@
  },
  {
   "p": "historia",
-  "es": "«Perdimos esta vez, pero estamos preparados para volver.»"
+  "es": "“Perdimos esta vez, pero estamos preparados para volver.”"
  },
  {
   "p": "historia",
@@ -1073,11 +977,11 @@
  },
  {
   "p": "historia",
-  "es": "«Son 6 años de mucha ilusión y lucha constante para brindarles lo mejor de la gastronomía paraguaya en Barcelona». Así lo celebró Loren con quienes hacen posible este rincón: la comunidad paraguaya que encuentra aquí un pedacito de casa y los barceloneses que lo descubren cada día."
+  "es": "“Son 6 años de mucha ilusión y lucha constante para brindarles lo mejor de la gastronomía paraguaya en Barcelona”. Así lo celebró Loren con quienes hacen posible este rincón: la comunidad paraguaya que encuentra aquí un pedacito de casa y los barceloneses que lo descubren cada día."
  },
  {
   "p": "historia",
-  "es": "«Cada paraguayo que pisa el local trae un amigo extranjero.»"
+  "es": "“Cada paraguayo que pisa el local trae un amigo extranjero.”"
  },
  {
   "p": "historia",
@@ -1093,7 +997,7 @@
  },
  {
   "p": "historia",
-  "es": "Para Loren fue mucho más que una votación: <em style=\"color:var(--maiz)\">«Fue Paraguay unido por su gastronomía».</em>"
+  "es": "Para Loren fue mucho más que una votación: <em style=\"color:var(--maiz)\">“Fue Paraguay unido por su gastronomía”.</em>"
  },
  {
   "p": "historia",
@@ -1189,11 +1093,11 @@
  },
  {
   "p": "historia",
-  "es": "Je"
+  "es": "Fanny y Jennifer"
  },
  {
   "p": "historia",
-  "es": "Jennifer y el equipo"
+  "es": "Fanny, Jennifer y José"
  },
  {
   "p": "historia",
@@ -1201,7 +1105,27 @@
  },
  {
   "p": "historia",
-  "es": "Jennifer, Romina y todo el equipo de sala: los nombres que más se repiten en vuestras reseñas."
+  "es": "Fanny y Jennifer en la barra y José en la terraza: los nombres que más se repiten en vuestras reseñas."
+ },
+ {
+  "p": "historia",
+  "es": "Loren con una empanada recién frita"
+ },
+ {
+  "p": "historia",
+  "es": "Loren y sus empanadas"
+ },
+ {
+  "p": "historia",
+  "es": "Fanny y Jennifer en la barra"
+ },
+ {
+  "p": "historia",
+  "es": "José en la terraza"
+ },
+ {
+  "p": "historia",
+  "es": "José, en la terraza"
  },
  {
   "p": "historia",
@@ -1269,7 +1193,7 @@
  },
  {
   "p": "historia",
-  "es": "Y cuando alguien nos dice que la comida «sabe exactamente como la de allá», sabemos que vamos por buen camino."
+  "es": "Y cuando alguien nos dice que la comida “sabe exactamente como la de allá”, sabemos que vamos por buen camino."
  },
  {
   "p": "historia",
@@ -1285,6 +1209,26 @@
  },
  {
   "p": "historia",
+  "es": "Fragmento del informativo <b>24 Horas de SNT Cerro Corá</b> (Paraguay). Imágenes: SNT."
+ },
+ {
+  "p": "historia",
+  "es": "Salimos en la tele <span class=\"gn\">marandu</span>"
+ },
+ {
+  "p": "historia",
+  "es": "Vive y trabaja lejos, <em>pero no olvida su país</em>"
+ },
+ {
+  "p": "historia",
+  "es": "El informativo 24 Horas de SNT, la televisión paraguaya, cruzó el océano para contar la historia de Loren: de San José de los Arroyos a Cataluña, diecisiete años lejos de casa y una cocina que sabe exactamente a Paraguay."
+ },
+ {
+  "p": "historia",
+  "es": "Una historia de sacrificio y de esperanza"
+ },
+ {
+  "p": "historia",
   "es": "En los medios <span class=\"gn\">marandu</span>"
  },
  {
@@ -1293,7 +1237,7 @@
  },
  {
   "p": "historia",
-  "es": "<a class=\"pcard rv\" data-delay=\"1\" href=\"https://www.latribuna.com.py/nacionales/locales/2026/09/03/vori-vori-cae-frente-al-chivito-uruguayo-pero-sigue-siendo-el-favorito-en-espana/\" rel=\"noopener\" target=\"_blank\"><span class=\"medio\">La Tribuna</span><span class=\"tit\">El vorí vorí cae frente al chivito uruguayo, pero sigue siendo el favorito en España</span><span class=\"fecha\"><span>Sep 2026</span><span>Leer →</span></span></a> <a class=\"pcard rv\" data-delay=\"2\" href=\"https://www.lanacion.com.py/lnpop/2026/08/24/mundial-de-comidas-de-ibai-paraguay-gana-en-instagram-pero-uruguay-arrasa-en-tiktok/\" rel=\"noopener\" target=\"_blank\"><span class=\"medio\">La Nación</span><span class=\"tit\">Mundial de Comidas de Ibai: Paraguay gana en Instagram, pero Uruguay arrasa en TikTok</span><span class=\"fecha\"><span>Ago 2026</span><span>Leer →</span></span></a> <a class=\"pcard rv\" data-delay=\"3\" href=\"https://www.extra.com.py/mundo/el-vori-vori-paraguayo-se-enfrenta-al-chivito-uruguayo-en-mundial-de-comidas-y-vos-podes-elegir-al-ganador\" rel=\"noopener\" target=\"_blank\"><span class=\"medio\">Extra</span><span class=\"tit\">El vorí vorí paraguayo se enfrenta al chivito uruguayo en el «Mundial de Comidas»</span><span class=\"fecha\"><span>Ago 2026</span><span>Leer →</span></span></a> <a class=\"pcard rv\" data-delay=\"1\" href=\"https://epa.com.py/el-vori-vori-necesita-nuestro-voto-en-el-mundial-de-comidas-organizado-por-un-influencer-espanol/\" rel=\"noopener\" target=\"_blank\"><span class=\"medio\">EPA!</span><span class=\"tit\">«El vorí vorí» necesita nuestro voto en el Mundial de Comidas</span><span class=\"fecha\"><span>Ago 2026</span><span>Leer →</span></span></a> <a class=\"pcard rv\" data-delay=\"2\" href=\"https://infonegocios.com.py/infogourmet/loren-gastrobar-lleva-la-gastronomia-paraguaya-a-barcelona-la-chef-que-abrio-dos-locales-en-la-ciudad-condal\" rel=\"noopener\" target=\"_blank\"><span class=\"medio\">InfoNegocios</span><span class=\"tit\">Loren lleva la gastronomía paraguaya a Barcelona: la chef que abrió dos locales en la Ciudad Condal</span><span class=\"fecha\"><span>Nov 2022</span><span>Leer →</span></span></a> <a class=\"pcard rv\" data-delay=\"3\" href=\"https://elomnivoro.com/2023/01/20/sin-pausa-loren-paso-del-gastro-al-resto/\" rel=\"noopener\" target=\"_blank\"><span class=\"medio\">El Omnívoro</span><span class=\"tit\">Sin pausa, Loren pasó del Gastro al Resto</span><span class=\"fecha\"><span>Ene 2023</span><span>Leer →</span></span></a>"
+  "es": "<a class=\"pcard rv\" data-delay=\"1\" href=\"https://www.latribuna.com.py/nacionales/locales/2026/09/03/vori-vori-cae-frente-al-chivito-uruguayo-pero-sigue-siendo-el-favorito-en-espana/\" rel=\"noopener\" target=\"_blank\"><span class=\"medio\">La Tribuna</span><span class=\"tit\">El vorí vorí cae frente al chivito uruguayo, pero sigue siendo el favorito en España</span><span class=\"fecha\"><span>Sep 2026</span><span>Leer →</span></span></a> <a class=\"pcard rv\" data-delay=\"2\" href=\"https://www.lanacion.com.py/lnpop/2026/08/24/mundial-de-comidas-de-ibai-paraguay-gana-en-instagram-pero-uruguay-arrasa-en-tiktok/\" rel=\"noopener\" target=\"_blank\"><span class=\"medio\">La Nación</span><span class=\"tit\">Mundial de Comidas de Ibai: Paraguay gana en Instagram, pero Uruguay arrasa en TikTok</span><span class=\"fecha\"><span>Ago 2026</span><span>Leer →</span></span></a> <a class=\"pcard rv\" data-delay=\"3\" href=\"https://www.extra.com.py/mundo/el-vori-vori-paraguayo-se-enfrenta-al-chivito-uruguayo-en-mundial-de-comidas-y-vos-podes-elegir-al-ganador\" rel=\"noopener\" target=\"_blank\"><span class=\"medio\">Extra</span><span class=\"tit\">El vorí vorí paraguayo se enfrenta al chivito uruguayo en el “Mundial de Comidas”</span><span class=\"fecha\"><span>Ago 2026</span><span>Leer →</span></span></a> <a class=\"pcard rv\" data-delay=\"1\" href=\"https://epa.com.py/el-vori-vori-necesita-nuestro-voto-en-el-mundial-de-comidas-organizado-por-un-influencer-espanol/\" rel=\"noopener\" target=\"_blank\"><span class=\"medio\">EPA!</span><span class=\"tit\">“El vorí vorí” necesita nuestro voto en el Mundial de Comidas</span><span class=\"fecha\"><span>Ago 2026</span><span>Leer →</span></span></a> <a class=\"pcard rv\" data-delay=\"2\" href=\"https://infonegocios.com.py/infogourmet/loren-gastrobar-lleva-la-gastronomia-paraguaya-a-barcelona-la-chef-que-abrio-dos-locales-en-la-ciudad-condal\" rel=\"noopener\" target=\"_blank\"><span class=\"medio\">InfoNegocios</span><span class=\"tit\">Loren lleva la gastronomía paraguaya a Barcelona: la chef que abrió dos locales en la Ciudad Condal</span><span class=\"fecha\"><span>Nov 2022</span><span>Leer →</span></span></a> <a class=\"pcard rv\" data-delay=\"3\" href=\"https://elomnivoro.com/2023/01/20/sin-pausa-loren-paso-del-gastro-al-resto/\" rel=\"noopener\" target=\"_blank\"><span class=\"medio\">El Omnívoro</span><span class=\"tit\">Sin pausa, Loren pasó del Gastro al Resto</span><span class=\"fecha\"><span>Ene 2023</span><span>Leer →</span></span></a>"
  },
  {
   "p": "historia",
@@ -1362,6 +1306,10 @@
  {
   "p": "sabores",
   "es": "<span>Chipa guazú</span><span>Sopa paraguaya</span><span>Vorí vorí</span><span>Empanada de choclo</span>"
+ },
+ {
+  "p": "sabores",
+  "es": "Mandi'ó"
  },
  {
   "p": "sabores",
@@ -1462,6 +1410,22 @@
  {
   "p": "sabores",
   "es": "Totales orientativos calculados con los precios de la carta. Bebidas no incluidas salvo indicación."
+ },
+ {
+  "p": "sabores",
+  "es": "Así la hacemos"
+ },
+ {
+  "p": "sabores",
+  "es": "La chipa guazú, <em>paso a paso</em>"
+ },
+ {
+  "p": "sabores",
+  "es": "Maíz, queso, cebolla y huevos, a mano y al horno hasta que sale la costra dorada. Dale al play con el sonido activado y te lo contamos desde la cocina."
+ },
+ {
+  "p": "sabores",
+  "es": "Verla en la carta"
  },
  {
   "p": "sabores",
@@ -1653,7 +1617,7 @@
  },
  {
   "p": "sabores",
-  "es": "«Tela de araña»: el encaje paraguayo que decora esta web."
+  "es": "“Tela de araña”: el encaje paraguayo que decora esta web."
  },
  {
   "p": "sabores",
@@ -1869,10 +1833,6 @@
  },
  {
   "p": "domicilio",
-  "es": "Cesta de empanadas caseras"
- },
- {
-  "p": "domicilio",
   "es": "<b>3,80 €</b><small>Empanada de ternera · la más pedida</small>"
  },
  {
@@ -2013,7 +1973,7 @@
  },
  {
   "p": "domicilio",
-  "es": "Abre Glovo o Uber Eats y busca «Loren Gastrobar», o escríbenos por WhatsApp si vas a recoger."
+  "es": "Abre Glovo o Uber Eats y busca “Loren Gastrobar”, o escríbenos por WhatsApp si vas a recoger."
  },
  {
   "p": "domicilio",
@@ -2050,6 +2010,10 @@
  {
   "p": "domicilio",
   "es": "Nuestros favoritos para pedir a casa y un truco de Loren para que estén perfectos si tardas en comerlos."
+ },
+ {
+  "p": "domicilio",
+  "es": "Empanadas"
  },
  {
   "p": "domicilio",
@@ -2153,7 +2117,7 @@
  },
  {
   "p": "domicilio",
-  "es": "Totales orientativos con precios de la carta. Para pedirlo en Glovo o Uber Eats añade los platos desde la app; con «Encargar» se abre WhatsApp para recogerlo en el local."
+  "es": "Totales orientativos con precios de la carta. Para pedirlo en Glovo o Uber Eats añade los platos desde la app; con “Encargar” se abre WhatsApp para recogerlo en el local."
  },
  {
   "p": "domicilio",
@@ -2245,6 +2209,14 @@
  },
  {
   "p": "eventos",
+  "es": "Eventos y catering <span class=\"gn\">vy'apavẽ</span>"
+ },
+ {
+  "p": "eventos",
+  "es": "Tu celebración, <em>a la paraguaya</em>"
+ },
+ {
+  "p": "eventos",
   "es": "Cumpleaños, bautizos, comidas de empresa, afterworks o esa fiesta en casa. Te preparamos bandejas de bocaditos caseros o te reservamos el local con un menú a tu medida. Tú pones la ocasión; nosotros, el sabor."
  },
  {
@@ -2285,6 +2257,10 @@
  },
  {
   "p": "eventos",
+  "es": "Cumpleaños"
+ },
+ {
+  "p": "eventos",
   "es": "De los 18 a los 80. Reservamos tu mesa, te dejamos traer la tarta y preparamos picadas para que nadie pase hambre."
  },
  {
@@ -2294,6 +2270,10 @@
  {
   "p": "eventos",
   "es": "Comidas de equipo, cenas de Navidad o un cóctel profesional diferente. Sorprende con algo que no han probado nunca."
+ },
+ {
+  "p": "eventos",
+  "es": "Afterwork"
  },
  {
   "p": "eventos",
@@ -2325,11 +2305,19 @@
  },
  {
   "p": "eventos",
+  "es": "Catering para llevar"
+ },
+ {
+  "p": "eventos",
   "es": "Bandejas de <em>bocaditos</em>"
  },
  {
   "p": "eventos",
   "es": "En Paraguay no hay fiesta sin bocaditos. Te preparamos bandejas caseras listas para servir. Estas son orientativas: las montamos a tu gusto y te hacemos presupuesto a medida."
+ },
+ {
+  "p": "eventos",
+  "es": "Bandejas de empanadas y croquetas"
  },
  {
   "p": "eventos",
@@ -2365,7 +2353,7 @@
  },
  {
   "p": "eventos",
-  "es": "Bandeja de sándwiches de miga y milanesitas"
+  "es": "Bandejas de sándwiches de miga"
  },
  {
   "p": "eventos",
@@ -2505,11 +2493,51 @@
  },
  {
   "p": "eventos",
+  "es": "Tu nombre"
+ },
+ {
+  "p": "eventos",
+  "es": "Nombre y apellido"
+ },
+ {
+  "p": "eventos",
+  "es": "Tipo de evento"
+ },
+ {
+  "p": "eventos",
+  "es": "Comida de empresa"
+ },
+ {
+  "p": "eventos",
+  "es": "Bautizo / comunión"
+ },
+ {
+  "p": "eventos",
   "es": "Boda / pedida"
  },
  {
   "p": "eventos",
   "es": "Partido / fiesta"
+ },
+ {
+  "p": "eventos",
+  "es": "Otro"
+ },
+ {
+  "p": "eventos",
+  "es": "Personas"
+ },
+ {
+  "p": "eventos",
+  "es": "Fecha"
+ },
+ {
+  "p": "eventos",
+  "es": "Formato"
+ },
+ {
+  "p": "eventos",
+  "es": "Catering / bandejas para llevar"
  },
  {
   "p": "eventos",
@@ -2573,7 +2601,15 @@
  },
  {
   "p": "eventos",
+  "es": "Algo más"
+ },
+ {
+  "p": "eventos",
   "es": "Alergias, hora de recogida, decoración, sorpresas…"
+ },
+ {
+  "p": "eventos",
+  "es": "Enviar por WhatsApp"
  },
  {
   "p": "eventos",
@@ -2698,10 +2734,6 @@
  {
   "p": "visitanos",
   "es": "Mediodía · X–D"
- },
- {
-  "p": "visitanos",
-  "es": "Menú del día"
  },
  {
   "p": "visitanos",
@@ -2853,7 +2885,7 @@
  },
  {
   "p": "visitanos",
-  "es": "<b>Se habla guaraní</b><span>Y español, claro. Pide «tembi'u» sin miedo.</span>"
+  "es": "<b>Se habla guaraní</b><span>Y español, claro. Pide “tembi'u” sin miedo.</span>"
  },
  {
   "p": "visitanos",
@@ -2882,6 +2914,14 @@
  {
   "p": "visitanos",
   "es": "Así es <em>nuestra casa</em>"
+ },
+ {
+  "p": "visitanos",
+  "es": "José, camarero, en la terraza"
+ },
+ {
+  "p": "visitanos",
+  "es": "Fanny y Jennifer, camareras, en la barra"
  },
  {
   "p": "visitanos",
@@ -2941,7 +2981,7 @@
  },
  {
   "p": "visitanos",
-  "es": "«Ven», en guaraní. Trae hambre y, si quieres, un amigo que aún no conozca Paraguay."
+  "es": "“Ven”, en guaraní. Trae hambre y, si quieres, un amigo que aún no conozca Paraguay."
  },
  {
   "p": "visitanos",
