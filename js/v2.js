@@ -35,7 +35,7 @@
       btn.setAttribute("aria-label", (v.paused ? "Reproducir vídeo: " : "Pausar vídeo: ") + nombre);
     };
     fig.addEventListener("click", () => {
-      if (v.paused) { vids.forEach((o) => o !== v && o.pause()); v.preload = "auto"; v.play().catch(() => {}); }
+      if (v.paused) { vids.forEach((o) => o !== v && o.pause()); v.preload = "auto"; v.muted = false; v.volume = 1; v.play().catch(() => {}); }
       else v.pause();
     });
     v.addEventListener("play", pintar); v.addEventListener("pause", pintar); v.addEventListener("ended", pintar);

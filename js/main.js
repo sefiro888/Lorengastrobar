@@ -367,7 +367,7 @@
     btn.type = "button"; btn.className = "video-play"; btn.innerHTML = PLAY; btn.setAttribute("aria-label", T("Reproducir vídeo"));
     caja.appendChild(btn);
     const pintar = () => { caja.classList.toggle("is-on", !v.paused); btn.innerHTML = v.paused ? PLAY : PAUSA; btn.setAttribute("aria-label", T(v.paused ? "Reproducir vídeo" : "Pausar vídeo")); };
-    const alternar = () => { if (v.paused) { v.preload = "auto"; v.play().catch(() => {}); } else v.pause(); };
+    const alternar = () => { if (v.paused) { v.preload = "auto"; v.muted = false; v.volume = 1; v.play().catch(() => {}); } else v.pause(); };
     btn.addEventListener("click", (e) => { e.stopPropagation(); alternar(); });
     v.addEventListener("click", alternar);
     v.addEventListener("play", pintar); v.addEventListener("pause", pintar);
