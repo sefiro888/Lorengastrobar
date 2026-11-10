@@ -13,7 +13,7 @@ add(window.LOREN.lema);
 const RE_T = /T\("((?:[^"\\]|\\.)*)"/g;
 const RE_COND = /T\([^)]*?\?\s*"((?:[^"\\]|\\.)*)"\s*:\s*"((?:[^"\\]|\\.)*)"/g;
 const RE_CAMPOS = /\b(?:n|pron|lema|que|como|come|marida|t): "((?:[^"\\]|\\.)*)"/g;
-for (const f of ["layout.js", "main.js", "paginas.js", "carta.js", "carta-clasica.js"]) {
+for (const f of ["layout.js", "main.js", "paginas.js", "carta.js", "v2.js"]) {
   const src = fs.readFileSync(path.join(R, "js", f), "utf8");
   for (const m of src.matchAll(RE_T)) add(str(m[1]));
   for (const m of src.matchAll(RE_COND)) { add(str(m[1])); add(str(m[2])); }

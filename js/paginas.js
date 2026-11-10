@@ -121,7 +121,7 @@
   $$("[data-pack]").forEach((el) => {
     const items = el.dataset.pack.split("|").map((x) => { const [n, q] = x.split("*"); return { p: plato(n.trim()), q: parseInt(q || "1", 10) }; }).filter((x) => x.p);
     const total = items.reduce((s, x) => s + (x.p.precio || 0) * x.q, 0);
-    $("ul", el).innerHTML = items.map((x) => `<li>${x.p.img ? `<img src="${x.p.img}" alt="" loading="lazy">` : `<span class="ph"></span>`}<span>${x.q > 1 ? x.q + " × " : ""}${T(x.p.nombre)}</span><span class="p">${euro(x.p.precio * x.q)}</span></li>`).join("");
+    $("ul", el).innerHTML = items.map((x) => `<li>${x.p.img ? `<img src="${x.p.img}" alt="" loading="lazy">` : `<span class="ph"></span>`}<span>${x.q > 1 ? x.q + " × " : ""}${T(x.p.nombre)}</span><span class="p">${x.p.precio == null ? T("Consultar") : euro(x.p.precio * x.q)}</span></li>`).join("");
     const personas = parseInt(el.dataset.personas || "1", 10);
     $(".ruta__total", el).insertAdjacentHTML("afterbegin", `<div><small>${T("Total orientativo")}</small><b>${euro(total)}</b>${personas > 1 ? `<small>≈ ${T("{x} por persona", { x: euro(total / personas) })}</small>` : ""}</div>`);
     const btn = $("[data-pack-wa]", el);

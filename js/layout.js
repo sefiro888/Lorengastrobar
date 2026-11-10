@@ -46,7 +46,7 @@
   ${selector("idiomas--drawer")}
   <div class="drawer__foot">
     <a href="#" class="btn" data-reserva>${T("Reservar mesa")}</a>
-    <a href="${P}carta-clasica.html" class="btn btn--ghost">${T("Carta para imprimir")}</a>
+    <a href="${P}carta.html" class="btn btn--ghost">${T("Ver la carta")}</a>
   </div>
 </nav>`;
 
@@ -69,7 +69,7 @@
       </div>
       <div><h4>${T("Explora")}</h4><ul>
         <li><a href="${P}historia.html">${T("Nuestra historia")}</a></li><li><a href="${P}sabores.html">${T("Sabores de Paraguay")}</a></li>
-        <li><a href="${P}carta.html">${T("La carta")}</a></li><li><a href="${P}carta-clasica.html">${T("Carta para imprimir")}</a></li>
+        <li><a href="${P}carta.html">${T("La carta")}</a></li>
         <li><a href="${P}eventos.html">${T("Eventos y catering")}</a></li></ul></div>
       <div><h4>${T("Pide")}</h4><ul>
         <li><a href="${P}domicilio.html">${T("Cómo pedir a domicilio")}</a></li>

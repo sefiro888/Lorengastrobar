@@ -346,6 +346,10 @@
   $$("[data-wa-recoger]").forEach((a) => (a.href = wa(T("¡Hola Loren! Quería encargar para recoger en el local:") + "\n• \n• \n" + T("Hora aproximada de recogida:") + " ")));
 
   /* ---------- Reserva rápida ---------- */
+  $$("[data-wa-menu]").forEach((a) => {
+    a.href = wa(T("¡Hola Loren! ¿Qué tenéis hoy de menú del día? 🙂"));
+    a.target = "_blank"; a.rel = "noopener";
+  });
   $$("[data-reserva]").forEach((a) => {
     a.href = wa(T("¡Hola Loren! Me gustaría reservar una mesa 🙂") + "\n• " + T("Día") + ": \n• " + T("Hora") + ": \n• " + T("Personas") + ": ");
     a.target = "_blank"; a.rel = "noopener";

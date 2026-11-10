@@ -12,7 +12,7 @@ import json, os, re, sys
 from bs4 import BeautifulSoup, NavigableString, Tag, Comment, Doctype, Declaration
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-PAGINAS = ["index", "historia", "sabores", "carta", "domicilio", "eventos", "visitanos", "carta-clasica", "aviso-legal"]
+PAGINAS = ["index", "historia", "sabores", "carta", "domicilio", "eventos", "visitanos", "aviso-legal"]
 IDIOMAS = {"ca": "ca-ES", "en": "en"}
 INLINE = {"a", "strong", "em", "b", "i", "small", "span", "br", "sup", "sub", "abbr", "mark"}
 SALTAR = {"script", "style", "svg", "noscript", "template", "canvas", "iframe", "video"}
@@ -123,7 +123,7 @@ def construir():
             # i18n.js antes que el resto de scripts
             primero = sopa.find("script", src=True)
             if primero:
-                primero.insert_before(sopa.new_tag("script", src="js/i18n.js?v=13"))
+                primero.insert_before(sopa.new_tag("script", src="js/i18n.js?v=14"))
             html = str(sopa)
             if not html.lower().startswith("<!doctype"):
                 html = "<!doctype html>\n" + html

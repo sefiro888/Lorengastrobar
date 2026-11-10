@@ -18,7 +18,7 @@
   <link rel="icon" href="img/marca/favicon.webp" type="image/webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="css/styles.css?v=13">
+  <link rel="stylesheet" href="css/styles.css?v=14">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -42,12 +42,12 @@
   }
   </script>
   <!-- precarga -->
-  <link rel="preload" href="js/data.js?v=13" as="script">
-  <link rel="preload" href="js/layout.js?v=13" as="script">
-  <link rel="preload" href="js/nanduti.js?v=13" as="script">
-  <link rel="preload" href="js/main.js?v=13" as="script">
+  <link rel="preload" href="js/data.js?v=14" as="script">
+  <link rel="preload" href="js/layout.js?v=14" as="script">
+  <link rel="preload" href="js/nanduti.js?v=14" as="script">
+  <link rel="preload" href="js/main.js?v=14" as="script">
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Kaushan+Script&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/v2.css?v=13">
+  <link rel="stylesheet" href="css/v2.css?v=14">
 </head>
 <body data-page="inicio">
 
@@ -276,7 +276,7 @@
         <img class="flor" src="img/kv/flor-kv.webp" alt="" aria-hidden="true">
       </div>
       <p class="mdd__nota">Los platos cambian cada día: pregúntanos por WhatsApp qué hay hoy.</p>
-      <a href="#" class="btn" data-reserva style="margin-top:10px">Preguntar el menú de hoy</a>
+      <a href="#" class="btn" data-wa-menu style="margin-top:10px">Preguntar el menú de hoy</a>
     </div>
   </div>
 </section>
@@ -317,7 +317,6 @@
       <ul class="sec-carta__top" id="sec-carta-top"></ul>
       <div class="hero__ctas">
         <a href="carta.html" class="btn">Abrir la carta interactiva</a>
-        <a href="carta-clasica.html" class="btn btn--ghost">Imprimir / PDF</a>
       </div>
     </div>
     <div class="carta-local rv rv--der" data-lb-grupo>
@@ -506,9 +505,9 @@
 
 <div id="shell-bottom"></div>
 
-<script src="js/data.js?v=13"></script>
-<script src="js/layout.js?v=13"></script>
-<script src="js/nanduti.js?v=13"></script>
+<script src="js/data.js?v=14"></script>
+<script src="js/layout.js?v=14"></script>
+<script src="js/nanduti.js?v=14"></script>
 <script>
   (function () {
     const slug = (s) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
@@ -521,7 +520,7 @@
     document.getElementById("sc-n3").textContent = CARTA.filter((p) => p.cat === "finde").length;
   })();
 </script>
-<script src="js/main.js?v=13"></script>
-<script src="js/v2.js?v=13"></script>
+<script src="js/main.js?v=14"></script>
+<script src="js/v2.js?v=14"></script>
 </body>
 </html>

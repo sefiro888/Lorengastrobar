@@ -441,7 +441,7 @@
  },
  {
   "p": "index",
-  "es": "<a class=\"btn\" href=\"carta.html\">Abrir la carta interactiva</a> <a class=\"btn btn--ghost\" href=\"carta-clasica.html\">Imprimir / PDF</a>"
+  "es": "<a class=\"btn\" href=\"carta.html\">Abrir la carta interactiva</a>"
  },
  {
   "p": "index",
@@ -1657,7 +1657,7 @@
  },
  {
   "p": "carta",
-  "es": "<a class=\"btn\" href=\"#estrellas\">Ver los imprescindibles</a> <a class=\"btn btn--ghost\" href=\"#carta\">Ir a la carta</a> <a class=\"btn btn--ghost\" href=\"carta-clasica.html\">Carta para imprimir</a>"
+  "es": "<a class=\"btn\" href=\"#estrellas\">Ver los imprescindibles</a> <a class=\"btn btn--ghost\" href=\"#carta\">Ir a la carta</a>"
  },
  {
   "p": "carta",
@@ -1665,7 +1665,7 @@
  },
  {
   "p": "carta",
-  "es": "<b id=\"escap-precio\">4,40 €</b><small>precio</small>"
+  "es": "<b id=\"escap-precio\">3,90 €</b><small>precio</small>"
  },
  {
   "p": "carta",
@@ -2982,26 +2982,6 @@
  {
   "p": "visitanos",
   "es": "<a class=\"btn\" href=\"#reservar\">Reservar mesa</a><a class=\"btn btn--ghost\" href=\"carta.html\">Ver la carta</a>"
- },
- {
-  "p": "carta-clasica",
-  "es": "Carta · Loren Restobar"
- },
- {
-  "p": "carta-clasica",
-  "es": "Carta clásica de Loren Restobar, cocina paraguaya casera en Barcelona."
- },
- {
-  "p": "carta-clasica",
-  "es": "Imprimir / Guardar PDF"
- },
- {
-  "p": "carta-clasica",
-  "es": "← Volver a la web"
- },
- {
-  "p": "carta-clasica",
-  "es": "Formato A4 · 3 páginas"
  },
  {
   "p": "aviso-legal",
