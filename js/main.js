@@ -65,7 +65,7 @@
 
   /* ---------- Plato giratorio del hero ---------- */
   const platos = [
-    { img: "img/platos/plato-vori.webp", nom: "Vorí vorí", sub: T("Caldo de gallina casera · finde") },
+    { img: "img/platos/plato-vori.webp", nom: "Vorí vorí", sub: T("Caldo de ternera o de gallina · finde") },
     { img: "img/platos/plato-mila-caballo.webp", nom: T("Milanesa a caballo"), sub: T("Dos huevos y patatas") },
     { img: "img/platos/plato-mbeju.webp", nom: T("Mbejú con queso"), sub: T("Almidón de mandioca") },
     { img: "img/platos/parrillada-mixta.webp", nom: T("Parrillada"), sub: T("A la brasa, en hierro") },
@@ -176,18 +176,23 @@
   function estadoAhora() {
     const d = new Date(), dia = d.getDay(), h = d.getHours() + d.getMinutes() / 60;
     const hoy = H[dia], ayer = H[(dia + 6) % 7];
-    if (ayer.cierra > 24 && h < ayer.cierra - 24) return { abierto: true, hasta: ayer.cierra };
-    if (h >= hoy.abre && h < hoy.cierra) return { abierto: true, hasta: hoy.cierra };
-    // próxima apertura
-    if (h < hoy.abre) return { abierto: false, abre: T("hoy a las {h}", { h: fmt(hoy.abre) }) };
-    const man = H[(dia + 1) % 7];
-    return { abierto: false, abre: T("mañana a las {h}", { h: fmt(man.abre) }) };
+    if (!ayer.cerrado && ayer.cierra > 24 && h < ayer.cierra - 24) return { abierto: true, hasta: ayer.cierra };
+    if (!hoy.cerrado && h >= hoy.abre && h < hoy.cierra) return { abierto: true, hasta: hoy.cierra };
+    // próxima apertura (se saltan los días que cerramos)
+    if (!hoy.cerrado && h < hoy.abre) return { abierto: false, abre: T("hoy a las {h}", { h: fmt(hoy.abre) }) };
+    for (let k = 1; k <= 7; k++) {
+      const sig = H[(dia + k) % 7];
+      if (sig.cerrado) continue;
+      if (k === 1) return { abierto: false, abre: T("mañana a las {h}", { h: fmt(sig.abre) }) };
+      return { abierto: false, abre: T("el {d} a las {h}", { d: window.IDIOMA === "en" ? T(sig.dia) : T(sig.dia).toLowerCase(), h: fmt(sig.abre) }) };
+    }
+    return { abierto: false, abre: "" };
   }
   const lista = $(".horario");
   if (lista) {
     const hoyIdx = new Date().getDay();
     const orden = [1, 2, 3, 4, 5, 6, 0];
-    lista.innerHTML = orden.map((k) => `<li class="${k === hoyIdx ? "is-hoy" : ""}"><span>${T(H[k].dia)}${k === hoyIdx ? " · " + T("hoy") : ""}</span><span>${fmt(H[k].abre)} – ${fmt(H[k].cierra)}</span></li>`).join("");
+    lista.innerHTML = orden.map((k) => `<li class="${k === hoyIdx ? "is-hoy" : ""}"><span>${T(H[k].dia)}${k === hoyIdx ? " · " + T("hoy") : ""}</span><span>${H[k].cerrado ? T("Cerrado") : fmt(H[k].abre) + " – " + fmt(H[k].cierra)}</span></li>`).join("");
   }
   const pintarEstado = () => {
     const e = estadoAhora();

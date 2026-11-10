@@ -25,7 +25,7 @@
  },
  {
   "p": "index",
-  "es": "Chipa guazú recién horneada, mbejú que estira, vorí vorí de gallina casera y las milanesas más generosas de la ciudad. Recetas de la abuela, cocinadas cada día por la chef <strong>Loren Vera</strong>."
+  "es": "Chipa guazú recién horneada, mbejú que estira, vorí vorí de ternera o de gallina y las milanesas más generosas de la ciudad. Recetas de la abuela, cocinadas cada día por la chef <strong>Loren Vera</strong>."
  },
  {
   "p": "index",
@@ -61,7 +61,7 @@
  },
  {
   "p": "index",
-  "es": "<b>Vorí vorí</b><small>Caldo de gallina casera</small>"
+  "es": "<b>Vorí vorí</b><small>Caldo de ternera o de gallina</small>"
  },
  {
   "p": "index",
@@ -301,7 +301,7 @@
  },
  {
   "p": "index",
-  "es": "Caldo de gallina casera con bolitas de harina de maíz y queso. Abrazo en forma de plato."
+  "es": "Caldo de ternera o de gallina con bolitas de harina de maíz y queso. Abrazo en forma de plato."
  },
  {
   "p": "index",
@@ -937,10 +937,6 @@
  },
  {
   "p": "historia",
-  "es": "Vorí vorí de gallina casera"
- },
- {
-  "p": "historia",
   "es": "AGOSTO 2026"
  },
  {
@@ -949,7 +945,7 @@
  },
  {
   "p": "historia",
-  "es": "El streamer Ibai Llanos organizó un “Mundial de Comidas” por votación popular, y el plato elegido para representar a Paraguay fue <strong>el vorí vorí de gallina casera de Loren</strong>, que se enfrentó al chivito uruguayo en octavos de final."
+  "es": "El streamer Ibai Llanos organizó un “Mundial de Comidas” por votación popular, y el plato elegido para representar a Paraguay fue <strong>el vorí vorí de Loren</strong>, que se enfrentó al chivito uruguayo en octavos de final."
  },
  {
   "p": "historia",
@@ -2709,7 +2705,7 @@
  },
  {
   "p": "visitanos",
-  "es": "<span>🥐 Desayunos desde las 9:00</span><span>🍽️ Menú del día</span><span>🌙 Cenas de martes a sábado</span>"
+  "es": "<span>🥐 Desayunos desde las 9:00</span><span>🍽️ Menú del día</span><span>🌙 Cenas de miércoles a sábado</span>"
  },
  {
   "p": "visitanos",
@@ -2737,7 +2733,7 @@
  },
  {
   "p": "visitanos",
-  "es": "Noches · M–S"
+  "es": "Noches · X–S"
  },
  {
   "p": "visitanos",

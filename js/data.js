@@ -42,11 +42,11 @@ window.LOREN = {
   },
   /* 0 = domingo … 6 = sábado. Horas en formato decimal (24.5 = 00:30) */
   horario: [
-    { dia: "Domingo",   abre: 9, cierra: 17 },
-    { dia: "Lunes",     abre: 9, cierra: 17 },
-    { dia: "Martes",    abre: 9, cierra: 23 },
-    { dia: "Miércoles", abre: 9, cierra: 23 },
-    { dia: "Jueves",    abre: 9, cierra: 23 },
+    { dia: "Domingo",   abre: 10, cierra: 17 },
+    { dia: "Lunes",     cerrado: true },
+    { dia: "Martes",    cerrado: true },
+    { dia: "Miércoles", abre: 9, cierra: 23.5 },
+    { dia: "Jueves",    abre: 9, cierra: 23.5 },
     { dia: "Viernes",   abre: 9, cierra: 24 },
     { dia: "Sábado",    abre: 9, cierra: 24 }
   ]
@@ -111,7 +111,7 @@ window.CARTA = [
 
   /* --- ESPECIALES DEL FINDE (viernes, sábados y domingos) --- */
   { cat: "finde", nombre: "Vorí vorí", precio: 15.90, img: "img/platos/hl-vori-vori.webp", disco: "img/platos/plato-vori.webp",
-    desc: "Caldo casero con bolitas de harina de maíz y queso. El plato con el que Loren representó a Paraguay en el Mundial de Comidas de Ibai.",
+    desc: "Caldo de ternera o de gallina con bolitas de harina de maíz y queso. El plato con el que Loren representó a Paraguay en el Mundial de Comidas de Ibai.",
     gn: "De “bolita” → vorí", tags: ["py", "top", "finde"] },
   { cat: "finde", nombre: "Asado a la olla", precio: 17.90, img: "img/platos/hl-asado-olla.webp",
     desc: "Ternera cocinada lentamente en olla hasta quedar tierna y dorada.",

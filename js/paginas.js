@@ -55,8 +55,8 @@
       come: "Recién hecho. En Paraguay se toma en el desayuno o la merienda con cocido o café con leche.", marida: "Café con leche · Sopa paraguaya" },
     { id: "vori-vori", n: "Vorí vorí", oir: "borí borí", pron: "bo-RÍ bo-RÍ", img: "img/platos/caldo-gallina.webp", carta: "Vorí vorí", finde: true,
       lema: "El plato con el que representamos a Paraguay",
-      que: "Un caldo de gallina casera con bolitas de harina de maíz y queso. El nombre viene de “bolita”. Con este plato Loren llevó a Paraguay al Mundial de Comidas de Ibai Llanos.",
-      como: "Gallina casera cocida a fuego lento, verduras y bolitas de harina de maíz amasadas con queso.",
+      que: "Un caldo de ternera o de gallina con bolitas de harina de maíz y queso. El nombre viene de “bolita”. Con este plato Loren llevó a Paraguay al Mundial de Comidas de Ibai Llanos.",
+      como: "Ternera o gallina cocida a fuego lento, verduras y bolitas de harina de maíz amasadas con queso.",
       come: "Bien caliente, con cuchara grande. En invierno se pide más que nunca.", marida: "Chipa guazú · Mandioca" },
     { id: "asado-olla", n: "Asado a la olla", oir: "asado a la olla", pron: "a-SA-do a la O-lla", img: "img/platos/hl-asado-olla.webp", carta: "Asado a la olla", finde: true,
       lema: "El guiso de los domingos en casa",
@@ -203,9 +203,9 @@
     const now = new Date(), hoy = now.getDay(), ahora = now.getHours() + now.getMinutes() / 60;
     const f = (h) => { const hh = Math.floor(h) % 24, mm = Math.round((h % 1) * 60); return String(hh).padStart(2, "0") + ":" + String(mm).padStart(2, "0"); };
     sem.innerHTML = [1, 2, 3, 4, 5, 6, 0].map((k) => {
-      const d = H[k], l = ((d.abre - ini) / rango) * 100, w = ((d.cierra - d.abre) / rango) * 100;
+      const d = H[k], l = d.cerrado ? 0 : ((d.abre - ini) / rango) * 100, w = d.cerrado ? 0 : ((d.cierra - d.abre) / rango) * 100;
       const marca = k === hoy && ahora >= ini ? `<span class="ahora" style="left:${((ahora - ini) / rango) * 100}%"></span>` : "";
-      return `<div class="dia ${k === hoy ? "hoy" : ""}"><b>${T(d.dia)}${k === hoy ? " · " + T("hoy") : ""}</b><div class="dia__barra"><i style="left:${l}%;width:${w}%"></i>${marca}</div><span>${f(d.abre)} – ${f(d.cierra)}</span></div>`;
+      return `<div class="dia ${k === hoy ? "hoy" : ""}"><b>${T(d.dia)}${k === hoy ? " · " + T("hoy") : ""}</b><div class="dia__barra">${d.cerrado ? "" : `<i style="left:${l}%;width:${w}%"></i>`}${marca}</div><span>${d.cerrado ? T("Cerrado") : f(d.abre) + " – " + f(d.cierra)}</span></div>`;
     }).join("") + `<div class="horas-eje"><span></span><div><span>8h</span><span>12h</span><span>16h</span><span>20h</span><span>24h</span></div><span></span></div>`;
   }
 })();
