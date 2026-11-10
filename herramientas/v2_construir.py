@@ -28,14 +28,14 @@ def editar(f, cambios):
 
 
 FUENTES = ('<link href="https://fonts.googleapis.com/css2?family=Anton&family=Kaushan+Script&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">\n'
-           '  <link rel="stylesheet" href="css/v2.css?v=3">\n  <meta name="robots" content="noindex">\n</head>')
+           '  <link rel="stylesheet" href="css/v2.css?v=4">\n  <meta name="robots" content="noindex">\n</head>')
 
 # --- Todas las páginas (menos la carta para imprimir, que se queda igual) ---
 for f in glob.glob(os.path.join(V, "*.html")):
     n = os.path.basename(f)
     if n == "carta-clasica.html":
         continue
-    cambios = [("</head>", FUENTES), ("</body>", '<script src="js/v2.js?v=2"></script>\n</body>')]
+    cambios = [("</head>", FUENTES), ("</body>", '<script src="js/v2.js?v=3"></script>\n</body>')]
     s = open(f, encoding="utf-8").read()
     if "img/marca/nanduti-aro.webp" in s:
         cambios.append(("img/marca/nanduti-aro.webp", "img/kv/flor-kv.webp"))

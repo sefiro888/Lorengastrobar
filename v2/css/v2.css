@@ -243,3 +243,17 @@ h3, h4 { font-family: var(--f-display); font-weight: 700; }
   .tele__grid, .receta__grid { grid-template-columns: 1fr; }
   .receta__video { width: min(320px, 80%); justify-self: center; }
 }
+
+/* Vídeos de cocina: parados hasta que se pulsa play */
+.video { cursor: pointer; }
+.video__play { position: absolute; left: 50%; top: 44%; translate: -50% -50%; z-index: 3; width: 64px; height: 64px; border-radius: 50%; border: 0; cursor: pointer;
+  display: grid; place-items: center; color: var(--vino); background: rgba(243,238,220,.92); box-shadow: 0 10px 30px rgba(0,0,0,.45), 0 0 0 6px rgba(243,238,220,.25);
+  transition: transform .3s, opacity .3s; }
+.video__play svg { width: 28px; height: 28px; margin-left: 3px; }
+.video:hover .video__play { transform: scale(1.08); }
+.video.is-on .video__play { opacity: 0; }
+.video.is-on:hover .video__play, .video.is-on .video__play:focus-visible { opacity: 1; }
+.video.is-on .video__play svg { margin-left: 0; }
+.video .vivo::before { animation: none; }
+.video.is-on .vivo::before { animation: latido 1.4s infinite; }
+@media (hover: none) { .video.is-on .video__play { opacity: 0; } }
