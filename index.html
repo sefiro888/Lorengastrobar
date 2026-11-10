@@ -19,8 +19,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..800,0..100,0..1;1,9..144,300..800,0..100,0..1&family=Yellowtail&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=8">
-  <link rel="stylesheet" href="css/carta-clasica.css?v=8">
+  <link rel="stylesheet" href="css/styles.css?v=9">
+  <link rel="stylesheet" href="css/carta-clasica.css?v=9">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -36,6 +36,12 @@
     "sameAs": ["https://www.instagram.com/lorenrestobar_/", "https://www.tiktok.com/@lorenrestobar", "https://www.facebook.com/lorenrestobar"]
   }
   </script>
+  <!-- precarga -->
+  <link rel="preload" href="js/data.js?v=9" as="script">
+  <link rel="preload" href="js/layout.js?v=9" as="script">
+  <link rel="preload" href="js/nanduti.js?v=9" as="script">
+  <link rel="preload" href="js/carta-clasica.js?v=9" as="script">
+  <link rel="preload" href="js/main.js?v=9" as="script">
 </head>
 <body data-page="inicio">
 
@@ -324,7 +330,7 @@
 <section class="sec sec--vino vivelo">
   <div class="wrap">
     <div class="movil rv rv--zoom">
-      <video data-auto muted loop playsinline preload="metadata" poster="video/loren-sabores-poster.jpg">
+      <video data-auto muted loop playsinline preload="none" poster="video/loren-sabores-poster.jpg">
         <source src="video/loren-sabores.mp4" type="video/mp4">
       </video>
       <div class="movil__ig"><span class="av"><img src="img/marca/logo-tabla.webp" alt=""></span><div><b>@lorenrestobar_</b><small>30,1 mil seguidores</small></div></div>
@@ -492,10 +498,10 @@
 
 <div id="shell-bottom"></div>
 
-<script src="js/data.js?v=8"></script>
-<script src="js/layout.js?v=8"></script>
-<script src="js/nanduti.js?v=8"></script>
-<script src="js/carta-clasica.js?v=8"></script>
+<script src="js/data.js?v=9"></script>
+<script src="js/layout.js?v=9"></script>
+<script src="js/nanduti.js?v=9"></script>
+<script src="js/carta-clasica.js?v=9"></script>
 <script>
   CartaClasica.visor(document.getElementById("visor-carta"));
   (function () {
@@ -509,6 +515,6 @@
     document.getElementById("sc-n3").textContent = CARTA.filter((p) => p.cat === "finde").length;
   })();
 </script>
-<script src="js/main.js?v=8"></script>
+<script src="js/main.js?v=9"></script>
 </body>
 </html>

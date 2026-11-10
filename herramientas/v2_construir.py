@@ -11,6 +11,9 @@ for f in glob.glob(os.path.join(R, "*.html")):
 for sub in ("css", "js"):
     for f in glob.glob(os.path.join(R, sub, "*.*")):
         shutil.copy(f, os.path.join(V, sub))
+os.makedirs(os.path.join(V, "video"), exist_ok=True)
+for f in glob.glob(os.path.join(R, "video", "*.*")):
+    shutil.copy(f, os.path.join(V, "video"))
 for sub in ("clientes", "local", "marca", "platos", "redes"):
     shutil.copytree(os.path.join(R, "img", sub), os.path.join(V, "img", sub), dirs_exist_ok=True)
 

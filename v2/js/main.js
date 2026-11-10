@@ -31,7 +31,10 @@
   /* ---------- Loader ---------- */
   const loader = $(".loader");
   const quitarLoader = () => loader && loader.classList.add("is-done");
-  window.addEventListener("load", () => setTimeout(quitarLoader, 900));
+  // La bienvenida se quita en cuanto la página está lista para leerse, sin esperar a todas las fotos
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", () => setTimeout(quitarLoader, 600));
+  else setTimeout(quitarLoader, 600);
+  setTimeout(quitarLoader, 2500);
   setTimeout(quitarLoader, 2600);
 
   /* ---------- Nav ---------- */
