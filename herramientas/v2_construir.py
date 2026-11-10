@@ -14,7 +14,7 @@ for sub in ("css", "js"):
 os.makedirs(os.path.join(V, "video"), exist_ok=True)
 for f in glob.glob(os.path.join(R, "video", "*.*")):
     shutil.copy(f, os.path.join(V, "video"))
-for sub in ("clientes", "local", "marca", "platos", "redes"):
+for sub in ("carta", "clientes", "local", "marca", "platos", "redes"):
     shutil.copytree(os.path.join(R, "img", sub), os.path.join(V, "img", sub), dirs_exist_ok=True)
 
 
@@ -28,7 +28,7 @@ def editar(f, cambios):
 
 
 FUENTES = ('<link href="https://fonts.googleapis.com/css2?family=Anton&family=Kaushan+Script&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">\n'
-           '  <link rel="stylesheet" href="css/v2.css?v=4">\n  <meta name="robots" content="noindex">\n</head>')
+           '  <link rel="stylesheet" href="css/v2.css?v=5">\n  <meta name="robots" content="noindex">\n</head>')
 
 # --- Todas las páginas (menos la carta para imprimir, que se queda igual) ---
 for f in glob.glob(os.path.join(V, "*.html")):

@@ -20,7 +20,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..800,0..100,0..1;1,9..144,300..800,0..100,0..1&family=Yellowtail&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css?v=10">
-  <link rel="stylesheet" href="css/carta-clasica.css?v=10">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -40,10 +39,9 @@
   <link rel="preload" href="js/data.js?v=10" as="script">
   <link rel="preload" href="js/layout.js?v=10" as="script">
   <link rel="preload" href="js/nanduti.js?v=10" as="script">
-  <link rel="preload" href="js/carta-clasica.js?v=10" as="script">
   <link rel="preload" href="js/main.js?v=10" as="script">
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Kaushan+Script&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/v2.css?v=4">
+  <link rel="stylesheet" href="css/v2.css?v=5">
   <meta name="robots" content="noindex">
 </head>
 <body data-page="inicio">
@@ -325,7 +323,7 @@
     <div class="sec-carta__txt rv rv--izq">
       <span class="eyebrow">La carta <span class="gn">tembi'u</span></span>
       <h2 class="titulo">La carta de siempre, <em>a la vista</em></h2>
-      <p class="lead">Así es la carta que te damos en la mesa: los clásicos paraguayos, las milanesas, los especiales del finde y hasta un pequeño diccionario guaraní. Pasa las hojas, tócalas para leerlas en grande o llévatela en PDF.</p>
+      <p class="lead">Esta es la carta que te damos en la mesa: los clásicos paraguayos, las milanesas, las parrilladas y los especiales del finde. Tócala para verla en grande, o abre la carta interactiva para buscar platos, ver fotos y pedir.</p>
       <div class="sec-carta__datos">
         <div><b id="sc-n1">61</b><span>platos y bebidas</span></div>
         <div><b id="sc-n2">20</b><span>típicos paraguayos</span></div>
@@ -338,14 +336,10 @@
         <a href="carta-clasica.html" class="btn btn--ghost">Imprimir / PDF</a>
       </div>
     </div>
-    <div class="visor cc rv rv--der" id="visor-carta">
-      <div class="visor__mesa"></div>
-      <div class="visor__ctrl">
-        <button class="flecha" data-prev aria-label="Hoja anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg></button>
-        <div class="visor__dots"></div>
-        <button class="flecha" data-next aria-label="Hoja siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>
-      </div>
-      <p class="visor__ayuda">Toca la hoja para leerla en grande · desliza para pasar</p>
+    <div class="carta-local rv rv--der" data-lb-grupo>
+      <a href="#" class="carta-local__hoja carta-local__hoja--fuera" data-lb="img/carta/carta-exterior.webp" data-cap="La carta del local · bebidas y horario"><img src="img/carta/carta-exterior.webp" alt="Carta de Loren Restobar: bebidas, horario y portada" loading="lazy" width="1429" height="1100"></a>
+      <a href="#" class="carta-local__hoja carta-local__hoja--dentro" data-lb="img/carta/carta-interior.webp" data-cap="La carta del local · platos"><img src="img/carta/carta-interior.webp" alt="Carta de Loren Restobar: platos" loading="lazy" width="1441" height="1091"></a>
+      <p class="carta-local__ayuda">Toca la carta para verla en grande</p>
     </div>
   </div>
 </section>
@@ -562,9 +556,7 @@
 <script src="js/data.js?v=10"></script>
 <script src="js/layout.js?v=10"></script>
 <script src="js/nanduti.js?v=10"></script>
-<script src="js/carta-clasica.js?v=10"></script>
 <script>
-  CartaClasica.visor(document.getElementById("visor-carta"));
   (function () {
     const slug = (s) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
     const top = ["Chipa guazú", "Empanada de ternera", "Milanesa a caballo", "Mbejú relleno de queso", "Picada completa", "Sopa paraguaya"]

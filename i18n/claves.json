@@ -405,7 +405,7 @@
  },
  {
   "p": "index",
-  "es": "Así es la carta que te damos en la mesa: los clásicos paraguayos, las milanesas, los especiales del finde y hasta un pequeño diccionario guaraní. Pasa las hojas, tócalas para leerlas en grande o llévatela en PDF."
+  "es": "Esta es la carta que te damos en la mesa: los clásicos paraguayos, las milanesas, las parrilladas y los especiales del finde. Tócala para verla en grande, o abre la carta interactiva para buscar platos, ver fotos y pedir."
  },
  {
   "p": "index",
@@ -429,15 +429,23 @@
  },
  {
   "p": "index",
-  "es": "Hoja anterior"
+  "es": "La carta del local · bebidas y horario"
  },
  {
   "p": "index",
-  "es": "Hoja siguiente"
+  "es": "Carta de Loren Restobar: bebidas, horario y portada"
  },
  {
   "p": "index",
-  "es": "Toca la hoja para leerla en grande · desliza para pasar"
+  "es": "La carta del local · platos"
+ },
+ {
+  "p": "index",
+  "es": "Carta de Loren Restobar: platos"
+ },
+ {
+  "p": "index",
+  "es": "Toca la carta para verla en grande"
  },
  {
   "p": "index",

@@ -257,3 +257,6 @@ h3, h4 { font-family: var(--f-display); font-weight: 700; }
 .video .vivo::before { animation: none; }
 .video.is-on .vivo::before { animation: latido 1.4s infinite; }
 @media (hover: none) { .video.is-on .video__play { opacity: 0; } }
+
+/* Carta del local en el inicio: ayuda legible sobre fondo oscuro */
+.sec-carta .carta-local__ayuda { color: rgba(243,238,220,.72); }

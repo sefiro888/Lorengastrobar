@@ -21,7 +21,6 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&amp;family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..800,0..100,0..1;1,9..144,300..800,0..100,0..1&amp;family=Yellowtail&amp;display=swap" rel="stylesheet"/>
 <link href="css/styles.css?v=10" rel="stylesheet"/>
-<link href="css/carta-clasica.css?v=10" rel="stylesheet"/>
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -41,7 +40,6 @@
 <link as="script" href="js/data.js?v=10" rel="preload"/>
 <link as="script" href="js/layout.js?v=10" rel="preload"/>
 <link as="script" href="js/nanduti.js?v=10" rel="preload"/>
-<link as="script" href="js/carta-clasica.js?v=10" rel="preload"/>
 <link as="script" href="js/main.js?v=10" rel="preload"/>
 <link href="ca/index.html" hreflang="es" rel="alternate"/><link href="ca/index.html" hreflang="ca" rel="alternate"/><link href="en/index.html" hreflang="en" rel="alternate"/></head>
 <body data-page="inicio">
@@ -236,7 +234,7 @@
 <div class="sec-carta__txt rv rv--izq">
 <span class="eyebrow">La carta <span class="gn">tembi'u</span></span>
 <h2 class="titulo">La carta de sempre, <em>a la vista</em></h2>
-<p class="lead">Així és la carta que et donem a taula: els clàssics paraguaians, les milaneses, els especials del cap de setmana i fins i tot un petit diccionari guaraní. Passa els fulls, toca'ls per llegir-los en gran o emporta-te-la en PDF.</p>
+<p class="lead">Aquesta és la carta que et donem a la taula: els clàssics paraguaians, les milaneses, les graellades i els especials del cap de setmana. Toca-la per veure-la en gran, o obre la carta interactiva per buscar plats, veure fotos i demanar.</p>
 <div class="sec-carta__datos">
 <div><b id="sc-n1">61</b><span>plats i begudes</span></div>
 <div><b id="sc-n2">20</b><span>típics paraguaians</span></div>
@@ -246,14 +244,10 @@
 <ul class="sec-carta__top" id="sec-carta-top"></ul>
 <div class="hero__ctas"><a class="btn" href="ca/carta.html">Obrir la carta interactiva</a> <a class="btn btn--ghost" href="ca/carta-clasica.html">Imprimir / PDF</a></div>
 </div>
-<div class="visor cc rv rv--der" id="visor-carta">
-<div class="visor__mesa"></div>
-<div class="visor__ctrl">
-<button aria-label="Full anterior" class="flecha" data-prev=""><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.4" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6"></path></svg></button>
-<div class="visor__dots"></div>
-<button aria-label="Full següent" class="flecha" data-next=""><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.4" viewbox="0 0 24 24"><path d="M9 6l6 6-6 6"></path></svg></button>
-</div>
-<p class="visor__ayuda">Toca el full per llegir-lo en gran · llisca per passar</p>
+<div class="carta-local rv rv--der" data-lb-grupo="">
+<a class="carta-local__hoja carta-local__hoja--fuera" data-cap="La carta del local · begudes i horari" data-lb="img/carta/carta-exterior.webp" href="#"><img alt="Carta de Loren Restobar: begudes, horari i portada" height="1100" loading="lazy" src="img/carta/carta-exterior.webp" width="1429"/></a>
+<a class="carta-local__hoja carta-local__hoja--dentro" data-cap="La carta del local · plats" data-lb="img/carta/carta-interior.webp" href="#"><img alt="Carta de Loren Restobar: plats" height="1091" loading="lazy" src="img/carta/carta-interior.webp" width="1441"/></a>
+<p class="carta-local__ayuda">Toca la carta per veure-la en gran</p>
 </div>
 </div>
 </section>
@@ -446,9 +440,7 @@
 <script src="js/i18n.js?v=10"></script><script src="js/data.js?v=10"></script>
 <script src="js/layout.js?v=10"></script>
 <script src="js/nanduti.js?v=10"></script>
-<script src="js/carta-clasica.js?v=10"></script>
 <script>
-  CartaClasica.visor(document.getElementById("visor-carta"));
   (function () {
     const slug = (s) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
     const top = ["Chipa guazú", "Empanada de ternera", "Milanesa a caballo", "Mbejú relleno de queso", "Picada completa", "Sopa paraguaya"]
