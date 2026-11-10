@@ -167,7 +167,7 @@ window.CARTA = [
     desc: "Entrecot a la brasa acompañado de chorizo criollo." },
   { cat: "parrilla", nombre: "Entraña con chimichurri", precio: 17.90, img: null,
     desc: "Entraña de ternera con nuestra salsa chimichurri." },
-  { cat: "parrilla", nombre: "Parrillada de verdura", precio: 11.90, img: "img/platos/parrillada-mixta.webp",
+  { cat: "parrilla", nombre: "Parrillada de verdura", precio: 11.90, img: null,
     desc: "Verduras de temporada a la brasa." },
 
   /* --- PASTAS --- */
