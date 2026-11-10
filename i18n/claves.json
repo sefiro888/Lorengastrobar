@@ -2609,7 +2609,7 @@
  },
  {
   "p": "eventos",
-  "es": "Sin compromiso. Te respondemos lo antes posible."
+  "es": "Sin compromiso. Te respondemos lo antes posible. Tus datos se envían por WhatsApp a Loren Restobar sólo para gestionar tu presupuesto. <a href=\"aviso-legal.html\">Privacidad</a>."
  },
  {
   "p": "eventos",
@@ -2861,7 +2861,7 @@
  },
  {
   "p": "visitanos",
-  "es": "Te confirmamos la reserva por el mismo chat."
+  "es": "Te confirmamos la reserva por el mismo chat. Tus datos se envían por WhatsApp a Loren Restobar sólo para gestionar tu reserva. <a href=\"aviso-legal.html\">Privacidad</a>."
  },
  {
   "p": "visitanos",
@@ -3045,15 +3045,39 @@
  },
  {
   "p": "aviso-legal",
-  "es": "Esta web no tiene formularios ni registro de usuarios. Si nos escribes por WhatsApp, por correo o llamas por teléfono, usaremos tus datos solo para responderte o gestionar tu reserva o encargo, y no los cederemos a nadie salvo obligación legal."
+  "es": "Esta web no tiene registro de usuarios ni guarda tus datos en ningún servidor. Los formularios de reserva (Visítanos) y de eventos (Eventos) no envían nada por sí solos: preparan un mensaje de WhatsApp con lo que escribes, y eres tú quien decide enviarlo. También puedes escribirnos por WhatsApp, por correo o llamarnos."
  },
  {
   "p": "aviso-legal",
-  "es": "<b>Responsable:</b> Grupo Loren Restobar S.L. · <b>Finalidad:</b> atender tu consulta, reserva o encargo · <b>Base legal:</b> tu consentimiento y la gestión de lo que nos pides · <b>Conservación:</b> el tiempo necesario para atenderte y cumplir las obligaciones legales."
+  "es": "<b>Responsable:</b> Grupo Loren Restobar S.L. · CIF B-93814853 · Carrer de la Muntanya, 115, local 1 · 08026 Barcelona · <a href=\"mailto:grupolorenrestobarsl@gmail.com\">grupolorenrestobarsl@gmail.com</a>"
  },
  {
   "p": "aviso-legal",
-  "es": "Puedes pedir el acceso, la rectificación o la supresión de tus datos, o oponerte a su uso, escribiendo a <a href=\"mailto:grupolorenrestobarsl@gmail.com\">grupolorenrestobarsl@gmail.com</a>. Si crees que no hemos tratado bien tus datos, puedes reclamar ante la Agencia Española de Protección de Datos (aepd.es)."
+  "es": "<b>Qué datos:</b> los que nos des: nombre, teléfono, fecha, hora, número de personas y lo que nos cuentes en el mensaje."
+ },
+ {
+  "p": "aviso-legal",
+  "es": "<b>Para qué:</b> gestionar tu reserva, tu encargo o tu presupuesto de evento, y responder a tus consultas. No los usamos para publicidad."
+ },
+ {
+  "p": "aviso-legal",
+  "es": "<b>Base legal:</b> la aplicación de medidas precontractuales o la ejecución del servicio que nos pides (art. 6.1.b del RGPD) y, para las consultas, tu consentimiento (art. 6.1.a)."
+ },
+ {
+  "p": "aviso-legal",
+  "es": "<b>Cuánto tiempo:</b> lo necesario para atenderte y, después, el plazo que exijan las obligaciones legales (por ejemplo, fiscales)."
+ },
+ {
+  "p": "aviso-legal",
+  "es": "<b>Quién más los ve:</b> no los cedemos a nadie salvo obligación legal. Los mensajes pasan por WhatsApp, servicio de Meta Platforms, que puede tratarlos fuera de la Unión Europea con las garantías del Marco de Privacidad de Datos UE-EE. UU. Si pides a domicilio, Glovo y Uber Eats tratan tus datos con sus propias condiciones."
+ },
+ {
+  "p": "aviso-legal",
+  "es": "<b>Tus derechos:</b> acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad, y retirar tu consentimiento cuando quieras, escribiendo a <a href=\"mailto:grupolorenrestobarsl@gmail.com\">grupolorenrestobarsl@gmail.com</a>. Si crees que no hemos tratado bien tus datos, puedes reclamar ante la Agencia Española de Protección de Datos (aepd.es)."
+ },
+ {
+  "p": "aviso-legal",
+  "es": "La web está pensada para mayores de 14 años; si eres menor, pide a tu madre, padre o tutor que haga la reserva."
  },
  {
   "p": "aviso-legal",
@@ -3061,11 +3085,23 @@
  },
  {
   "p": "aviso-legal",
-  "es": "Esta web no usa cookies propias de publicidad ni de analítica. Solo guarda en tu navegador, de forma temporal, los platos que vas apuntando en la carta; se borran al cerrar la pestaña."
+  "es": "Esta web no usa cookies propias de publicidad ni de analítica, y las tipografías están alojadas en la propia web (no se cargan de Google)."
  },
  {
   "p": "aviso-legal",
-  "es": "El mapa de Google Maps de la página Visítanos y los enlaces a Glovo, Uber Eats, Instagram, TikTok, Facebook, WhatsApp u OpenTable son servicios de terceros que pueden usar sus propias cookies cuando los abres. Puedes consultar sus políticas en sus webs y borrar o bloquear las cookies desde la configuración de tu navegador."
+  "es": "<b>Necesarias (siempre activas):</b> guardamos en tu navegador tu elección sobre las cookies (12 meses) y, de forma temporal, los platos que vas apuntando en la carta (se borran al cerrar la pestaña). No requieren tu permiso porque sirven para que la web funcione como pides."
+ },
+ {
+  "p": "aviso-legal",
+  "es": "<b>Mapas (Google Maps), sólo si las aceptas:</b> el mapa del inicio y de Visítanos lo sirve Google, que puede instalar sus cookies y recibir datos de tu navegación. Mientras no lo aceptes, el mapa no se carga. Más información en la <a href=\"https://policies.google.com/technologies/cookies?hl=es\" rel=\"noopener\" target=\"_blank\">política de cookies de Google</a>."
+ },
+ {
+  "p": "aviso-legal",
+  "es": "Puedes cambiar tu elección cuando quieras desde <a data-cookies-config=\"\" href=\"#\">Configurar cookies</a> (también en el pie de cada página) o borrarlas desde la configuración de tu navegador."
+ },
+ {
+  "p": "aviso-legal",
+  "es": "Los enlaces a Glovo, Uber Eats, Instagram, TikTok, Facebook, WhatsApp u OpenTable te llevan a sus webs, que tienen sus propias políticas de cookies."
  },
  {
   "p": "aviso-legal",

@@ -17,9 +17,7 @@
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="#59011d" name="theme-color"/>
 <link href="img/marca/favicon.webp" rel="icon" type="image/webp"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="css/styles.css?v=15" rel="stylesheet"/>
+<link href="css/styles.css?v=16" rel="stylesheet"/>
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -43,12 +41,14 @@
   }
   </script>
 <!-- precarga -->
-<link as="script" href="js/data.js?v=15" rel="preload"/>
-<link as="script" href="js/layout.js?v=15" rel="preload"/>
-<link as="script" href="js/nanduti.js?v=15" rel="preload"/>
-<link as="script" href="js/main.js?v=15" rel="preload"/>
-<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Kaushan+Script&amp;family=Montserrat:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="css/v2.css?v=15" rel="stylesheet"/>
+<link as="script" href="js/data.js?v=16" rel="preload"/>
+<link as="script" href="js/layout.js?v=16" rel="preload"/>
+<link as="script" href="js/nanduti.js?v=16" rel="preload"/>
+<link as="script" href="js/main.js?v=16" rel="preload"/>
+<link as="font" crossorigin="" href="fuentes/montserrat-latin-e56e84.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="fuentes/anton-latin-a6f395.woff2" rel="preload" type="font/woff2"/>
+<link href="css/fuentes.css?v=16" rel="stylesheet"/>
+<link href="css/v2.css?v=16" rel="stylesheet"/>
 <link href="en/index.html" hreflang="es" rel="alternate"/><link href="ca/index.html" hreflang="ca" rel="alternate"/><link href="en/index.html" hreflang="en" rel="alternate"/></head>
 <body data-page="inicio">
 <!-- ============ LOADER ============ -->
@@ -444,7 +444,7 @@
 <div class="extras"><a class="btn btn--sm" href="en/visitanos.html" style="margin-right:6px">Directions and bookings</a><span>☀️ Terrace</span><span>🐾 Pet friendly</span><span>💳 Cards accepted</span><span>🥐 Breakfast from 9:00</span><span>🍽️ Set lunch menu</span><span>🗣️ Guaraní spoken</span></div>
 </div>
 <div class="mapa rv rv--der">
-<iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Loren+Restobar,+Carrer+de+la+Muntanya+115,+08026+Barcelona&amp;z=16&amp;output=embed" title="Mapa de Loren Restobar"></iframe>
+<iframe data-src="https://www.google.com/maps?q=Loren+Restobar,+Carrer+de+la+Muntanya+115,+08026+Barcelona&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de Loren Restobar"></iframe>
 <div class="mapa__pin">
 <div><b>Loren Restobar</b><small>Carrer de la Muntanya, 115 · Barcelona</small></div>
 <a class="btn btn--vino btn--sm" data-link="maps" href="#" rel="noopener" target="_blank">Get directions</a>
@@ -454,9 +454,10 @@
 </section>
 </main>
 <div id="shell-bottom"></div>
-<script src="js/i18n.js?v=15"></script><script src="js/data.js?v=15"></script>
-<script src="js/layout.js?v=15"></script>
-<script src="js/nanduti.js?v=15"></script>
+<script src="js/i18n.js?v=16"></script><script src="js/data.js?v=16"></script>
+<script src="js/layout.js?v=16"></script>
+<script src="js/cookies.js?v=16"></script>
+<script src="js/nanduti.js?v=16"></script>
 <script>
   (function () {
     const slug = (s) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
@@ -469,7 +470,7 @@
     document.getElementById("sc-n3").textContent = CARTA.filter((p) => p.cat === "finde").length;
   })();
 </script>
-<script src="js/main.js?v=15"></script>
-<script src="js/v2.js?v=15"></script>
+<script src="js/main.js?v=16"></script>
+<script src="js/v2.js?v=16"></script>
 </body>
 </html>

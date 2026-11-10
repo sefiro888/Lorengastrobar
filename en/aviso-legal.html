@@ -9,16 +9,17 @@
 <meta content="noindex, follow" name="robots"/>
 <meta content="#59011d" name="theme-color"/>
 <link href="img/marca/favicon.webp" rel="icon" type="image/webp"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="css/styles.css?v=15" rel="stylesheet"/>
-<link href="css/paginas.css?v=15" rel="stylesheet"/>
+<link href="css/styles.css?v=16" rel="stylesheet"/>
+<link href="css/paginas.css?v=16" rel="stylesheet"/>
 <!-- precarga -->
-<link as="script" href="js/data.js?v=15" rel="preload"/>
-<link as="script" href="js/layout.js?v=15" rel="preload"/>
-<link as="script" href="js/paginas.js?v=15" rel="preload"/>
-<link as="script" href="js/main.js?v=15" rel="preload"/>
-<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Kaushan+Script&amp;family=Montserrat:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="css/v2.css?v=15" rel="stylesheet"/>
+<link as="script" href="js/data.js?v=16" rel="preload"/>
+<link as="script" href="js/layout.js?v=16" rel="preload"/>
+<link as="script" href="js/paginas.js?v=16" rel="preload"/>
+<link as="script" href="js/main.js?v=16" rel="preload"/>
+<link as="font" crossorigin="" href="fuentes/montserrat-latin-e56e84.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="fuentes/anton-latin-a6f395.woff2" rel="preload" type="font/woff2"/>
+<link href="css/fuentes.css?v=16" rel="stylesheet"/>
+<link href="css/v2.css?v=16" rel="stylesheet"/>
 <link href="en/aviso-legal.html" hreflang="es" rel="alternate"/><link href="ca/aviso-legal.html" hreflang="ca" rel="alternate"/><link href="en/aviso-legal.html" hreflang="en" rel="alternate"/></head>
 <body data-page="legal">
 <div id="shell-top"></div>
@@ -45,21 +46,35 @@
 <p>This website provides information about the restaurant, its menu, opening hours and services. Prices and dishes are for guidance and may change; those in force are the ones at the restaurant. Delivery orders are placed on Glovo and Uber Eats, which have their own terms.</p>
 <p>The texts, photographs, logos and designs on this website belong to Grupo Loren Restobar S.L. or are used with permission. They may not be copied or reused without authorisation.</p>
 <h2>3. Privacy</h2>
-<p>This website has no forms or user accounts. If you message us on WhatsApp, email or call us, we will use your details only to reply or to handle your booking or order, and we will not share them with anyone unless required by law.</p>
-<p><b>Controller:</b> Grupo Loren Restobar S.L. · <b>Purpose:</b> handling your enquiry, booking or order · <b>Legal basis:</b> your consent and handling what you ask of us · <b>Retention:</b> as long as needed to help you and meet legal obligations.</p>
-<p>You can request access to, correction or deletion of your data, or object to its use, by writing to <a href="mailto:grupolorenrestobarsl@gmail.com">grupolorenrestobarsl@gmail.com</a>. If you believe we have not handled your data properly, you can complain to the Spanish Data Protection Agency (aepd.es).</p>
-<h2>4. Cookies</h2>
-<p>This website does not use its own advertising or analytics cookies. It only stores, temporarily in your browser, the dishes you note down on the menu; they are deleted when you close the tab.</p>
-<p>The Google Maps map on the Visit us page and the links to Glovo, Uber Eats, Instagram, TikTok, Facebook, WhatsApp or OpenTable are third-party services that may use their own cookies when you open them. You can read their policies on their websites and delete or block cookies in your browser settings.</p>
+<p>This website has no user accounts and does not store your data on any server. The booking form (Visit us) and the events form (Events) send nothing on their own: they prepare a WhatsApp message with what you write, and you decide whether to send it. You can also message us on WhatsApp, email or call us.</p>
+<ul class="legal__datos">
+<li><b>Controller:</b> Grupo Loren Restobar S.L. · Tax ID B-93814853 · Carrer de la Muntanya, 115, local 1 · 08026 Barcelona · <a href="mailto:grupolorenrestobarsl@gmail.com">grupolorenrestobarsl@gmail.com</a></li>
+<li><b>What data:</b> whatever you give us: name, phone, date, time, number of people and anything you tell us in the message.</li>
+<li><b>What for:</b> to handle your booking, order or event quote, and to answer your questions. We do not use them for advertising.</li>
+<li><b>Legal basis:</b> pre-contractual measures or performance of the service you ask for (art. 6.1.b GDPR) and, for enquiries, your consent (art. 6.1.a).</li>
+<li><b>How long:</b> as long as needed to help you and, after that, for the period required by legal (e.g. tax) obligations.</li>
+<li><b>Who else sees them:</b> we do not share them with anyone unless required by law. Messages go through WhatsApp, a Meta Platforms service, which may process them outside the European Union under the EU-US Data Privacy Framework. If you order delivery, Glovo and Uber Eats process your data under their own terms.</li>
+<li><b>Your rights:</b> access, rectification, erasure, objection, restriction of processing and portability, and withdrawing your consent at any time, by writing to <a href="mailto:grupolorenrestobarsl@gmail.com">grupolorenrestobarsl@gmail.com</a>. If you believe we have not handled your data properly, you can complain to the Spanish Data Protection Agency (aepd.es).</li>
+</ul>
+<p>This website is intended for people aged 14 and over; if you are younger, ask your parent or guardian to make the booking.</p>
+<h2 id="cookies">4. Cookies</h2>
+<p>This website does not use its own advertising or analytics cookies, and its fonts are hosted on the site itself (they are not loaded from Google).</p>
+<ul class="legal__datos">
+<li><b>Necessary (always on):</b> we store in your browser your cookie choice (12 months) and, temporarily, the dishes you note down on the menu (deleted when you close the tab). They don't need your permission because they make the site work as you ask.</li>
+<li><b>Maps (Google Maps), only if you accept them:</b> the map on the home page and on Visit us is served by Google, which may set its cookies and receive data about your browsing. Until you accept, the map is not loaded. More information in <a href="https://policies.google.com/technologies/cookies?hl=en" rel="noopener" target="_blank">Google's cookie policy</a>.</li>
+</ul>
+<p>You can change your choice at any time from <a data-cookies-config="" href="#">Cookie settings</a> (also in the footer of every page) or delete them in your browser settings.</p>
+<p>The links to Glovo, Uber Eats, Instagram, TikTok, Facebook, WhatsApp or OpenTable take you to their websites, which have their own cookie policies.</p>
 <p class="legal__fecha">Last updated: November 2026.</p>
 </div>
 </section>
 </main>
 <div id="shell-bottom"></div>
-<script src="js/i18n.js?v=15"></script><script src="js/data.js?v=15"></script>
-<script src="js/layout.js?v=15"></script>
-<script src="js/paginas.js?v=15"></script>
-<script src="js/main.js?v=15"></script>
-<script src="js/v2.js?v=15"></script>
+<script src="js/i18n.js?v=16"></script><script src="js/data.js?v=16"></script>
+<script src="js/layout.js?v=16"></script>
+<script src="js/cookies.js?v=16"></script>
+<script src="js/paginas.js?v=16"></script>
+<script src="js/main.js?v=16"></script>
+<script src="js/v2.js?v=16"></script>
 </body>
 </html>

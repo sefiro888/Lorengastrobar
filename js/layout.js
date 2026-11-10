@@ -79,7 +79,7 @@
         <li><a href="${P}visitanos.html">Carrer de la Muntanya, 115</a></li><li>08026 Barcelona</li>
         <li><a href="tel:+34935052491">935 05 24 91</a></li><li><a href="tel:+34602076828">602 07 68 28</a> (WhatsApp)</li><li><a href="mailto:grupolorenrestobarsl@gmail.com">grupolorenrestobarsl@gmail.com</a></li></ul></div>
     </div>
-    <div class="pie__legal"><span>© <span data-anio>2026</span> Grupo Loren Restobar S.L. · CIF B-93814853 · <a href="${P}aviso-legal.html">${T("Aviso legal y privacidad")}</a></span><span><i class="bandera"></i> Paraguay · Barcelona <i class="bandera bandera--es"></i></span></div>
+    <div class="pie__legal"><span>© <span data-anio>2026</span> Grupo Loren Restobar S.L. · CIF B-93814853 · <a href="${P}aviso-legal.html">${T("Aviso legal y privacidad")}</a> · <a href="#" data-cookies-config>${T("Configurar cookies")}</a></span><span><i class="bandera"></i> Paraguay · Barcelona <i class="bandera bandera--es"></i></span></div>
   </div>
 </footer>
 

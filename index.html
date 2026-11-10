@@ -16,9 +16,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#59011d">
   <link rel="icon" href="img/marca/favicon.webp" type="image/webp">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="css/styles.css?v=15">
+  <link rel="stylesheet" href="css/styles.css?v=16">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -42,12 +40,14 @@
   }
   </script>
   <!-- precarga -->
-  <link rel="preload" href="js/data.js?v=15" as="script">
-  <link rel="preload" href="js/layout.js?v=15" as="script">
-  <link rel="preload" href="js/nanduti.js?v=15" as="script">
-  <link rel="preload" href="js/main.js?v=15" as="script">
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Kaushan+Script&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/v2.css?v=15">
+  <link rel="preload" href="js/data.js?v=16" as="script">
+  <link rel="preload" href="js/layout.js?v=16" as="script">
+  <link rel="preload" href="js/nanduti.js?v=16" as="script">
+  <link rel="preload" href="js/main.js?v=16" as="script">
+  <link rel="preload" href="fuentes/montserrat-latin-e56e84.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fuentes/anton-latin-a6f395.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/fuentes.css?v=16">
+  <link rel="stylesheet" href="css/v2.css?v=16">
 </head>
 <body data-page="inicio">
 
@@ -492,7 +492,7 @@
     </div>
     <div class="mapa rv rv--der">
       <iframe title="Mapa de Loren Restobar" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps?q=Loren+Restobar,+Carrer+de+la+Muntanya+115,+08026+Barcelona&z=16&output=embed"></iframe>
+        data-src="https://www.google.com/maps?q=Loren+Restobar,+Carrer+de+la+Muntanya+115,+08026+Barcelona&z=16&output=embed"></iframe>
       <div class="mapa__pin">
         <div><b>Loren Restobar</b><small>Carrer de la Muntanya, 115 · Barcelona</small></div>
         <a href="#" data-link="maps" target="_blank" rel="noopener" class="btn btn--vino btn--sm">Cómo llegar</a>
@@ -505,9 +505,10 @@
 
 <div id="shell-bottom"></div>
 
-<script src="js/data.js?v=15"></script>
-<script src="js/layout.js?v=15"></script>
-<script src="js/nanduti.js?v=15"></script>
+<script src="js/data.js?v=16"></script>
+<script src="js/layout.js?v=16"></script>
+<script src="js/cookies.js?v=16"></script>
+<script src="js/nanduti.js?v=16"></script>
 <script>
   (function () {
     const slug = (s) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
@@ -520,7 +521,7 @@
     document.getElementById("sc-n3").textContent = CARTA.filter((p) => p.cat === "finde").length;
   })();
 </script>
-<script src="js/main.js?v=15"></script>
-<script src="js/v2.js?v=15"></script>
+<script src="js/main.js?v=16"></script>
+<script src="js/v2.js?v=16"></script>
 </body>
 </html>
