@@ -31,11 +31,12 @@
   /* ---------- Loader ---------- */
   const loader = $(".loader");
   const quitarLoader = () => loader && loader.classList.add("is-done");
-  // La bienvenida se quita en cuanto la página está lista para leerse, sin esperar a todas las fotos
-  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", () => setTimeout(quitarLoader, 600));
-  else setTimeout(quitarLoader, 600);
-  setTimeout(quitarLoader, 2500);
-  setTimeout(quitarLoader, 2600);
+  // La bienvenida se ve al menos 2 s; se quita cuando la página está lista (sin esperar a todas las fotos) y nunca pasa de 4 s
+  const MIN_BIENVENIDA = 2000;
+  const quitarCuandoToque = () => setTimeout(quitarLoader, Math.max(0, MIN_BIENVENIDA - performance.now()));
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", quitarCuandoToque);
+  else quitarCuandoToque();
+  setTimeout(quitarLoader, 4000);
 
   /* ---------- Nav ---------- */
   const nav = $(".nav");

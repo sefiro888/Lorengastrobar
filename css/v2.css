@@ -119,7 +119,7 @@ h3, h4 { font-family: var(--f-display); font-weight: 700; }
 .polaroid--1 { width: 58%; left: 0; top: 4%; transform: rotate(-5deg); z-index: 2; }
 .polaroid--2 { width: 50%; right: 0; top: 0; transform: rotate(6deg); }
 .polaroid--3 { width: 40%; right: 10%; bottom: -6%; transform: rotate(-2deg); z-index: 3; }
-.videos { display: grid; grid-template-columns: repeat(5, 1fr); gap: clamp(12px, 1.6vw, 22px); }
+.videos { display: grid; grid-template-columns: repeat(4, 1fr); max-width: 1040px; margin-inline: auto; gap: clamp(12px, 1.6vw, 22px); }
 .video {
   position: relative; margin: 0; aspect-ratio: 9 / 16; border-radius: 22px; overflow: hidden; background: #000;
   box-shadow: 0 0 0 1px rgba(243,238,220,.14), 0 30px 60px -24px rgba(0,0,0,.9); transform: translateZ(0);
