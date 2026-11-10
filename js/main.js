@@ -357,9 +357,20 @@
     setTimeout(() => wf.classList.remove("is-hola"), 14000);
   }
 
-  /* ---------- Vídeo: reproducir sólo cuando se ve ---------- */
+  /* ---------- Vídeo del móvil: parado con su portada; se descarga y reproduce al pulsar play ---------- */
   $$("video[data-auto]").forEach((v) => {
-    new IntersectionObserver(([e]) => { e.isIntersecting ? v.play().catch(() => {}) : v.pause(); }, { threshold: 0.3 }).observe(v);
+    const caja = v.parentElement;
+    const PLAY = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg>';
+    const PAUSA = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.6v14H7zM13.4 5H17v14h-3.6z" fill="currentColor"/></svg>';
+    const btn = document.createElement("button");
+    btn.type = "button"; btn.className = "video-play"; btn.innerHTML = PLAY; btn.setAttribute("aria-label", T("Reproducir vídeo"));
+    caja.appendChild(btn);
+    const pintar = () => { caja.classList.toggle("is-on", !v.paused); btn.innerHTML = v.paused ? PLAY : PAUSA; btn.setAttribute("aria-label", T(v.paused ? "Reproducir vídeo" : "Pausar vídeo")); };
+    const alternar = () => { if (v.paused) { v.preload = "auto"; v.play().catch(() => {}); } else v.pause(); };
+    btn.addEventListener("click", (e) => { e.stopPropagation(); alternar(); });
+    v.addEventListener("click", alternar);
+    v.addEventListener("play", pintar); v.addEventListener("pause", pintar);
+    new IntersectionObserver(([e]) => { if (!e.isIntersecting) v.pause(); }, { threshold: 0.2 }).observe(v);
   });
 
   /* ---------- Año footer ---------- */

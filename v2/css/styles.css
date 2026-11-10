@@ -891,3 +891,14 @@ html, body { overflow-x: clip; }
 /* Aire alrededor del encaje real del plato */
 @media (max-width: 900px) { .hero .plato { margin: 9% auto 13%; width: min(74vw, 400px); } }
 .pie__legal a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+
+/* Vídeo del móvil: botón de play */
+.movil video { cursor: pointer; }
+.video-play { position: absolute; left: 50%; top: 50%; translate: -50% -50%; z-index: 3; width: 72px; height: 72px; border-radius: 50%; border: 0; cursor: pointer;
+  display: grid; place-items: center; color: var(--vino); background: rgba(243,238,220,.92); box-shadow: 0 10px 30px rgba(0,0,0,.45), 0 0 0 7px rgba(243,238,220,.25); transition: transform .3s, opacity .3s; }
+.video-play svg { width: 30px; height: 30px; margin-left: 3px; }
+.video-play:hover { transform: scale(1.08); }
+.is-on > .video-play { opacity: 0; }
+.is-on > .video-play svg { margin-left: 0; }
+.is-on:hover > .video-play, .is-on > .video-play:focus-visible { opacity: 1; }
+@media (hover: none) { .is-on:hover > .video-play { opacity: 0; } }
