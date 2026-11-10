@@ -32,7 +32,7 @@
   function paginas() {
     return [
       `<div class="cab"><div class="logo"><img src="img/marca/logo-loren.webp" alt="Loren Restobar"></div>
-        <p class="lema">«${T(L.lema)}»</p><div class="sub">${T("Cocina paraguaya casera · Barcelona")}</div></div>
+        <p class="lema">“${T(L.lema)}”</p><div class="sub">${T("Cocina paraguaya casera · Barcelona")}</div></div>
        <div class="cols">${grupo("paraguayo")}${grupo("empanadas")}${grupo("finde", true)}</div>
        <p class="leyenda"><i style="background:#59011d;color:#f3eedc">PY</i> ${T("típico paraguayo")} &nbsp;·&nbsp; <i style="background:#e8b43a;color:#2a000e">★</i> ${T("favorito de la casa")}</p>`,
       `${mini("Mba'éichapa! " + T("Bienvenidos"))}<div class="cols">${grupo("sandwiches")}${grupo("milanesas")}${grupo("parrilla")}</div>`,
@@ -45,7 +45,7 @@
            <div><dt>Tembi'u</dt><dd>${T("comida")}</dd></div><div><dt>Guazú</dt><dd>${T("grande")}</dd></div>
            <div><dt>Mandi'ó</dt><dd>${T("mandioca")}</dd></div><div><dt>Pira</dt><dd>${T("pez, pescado")}</dd></div>
            <div><dt>Chyryry</dt><dd>${T("el chisporroteo de la sartén")}</dd></div><div><dt>Vy'a</dt><dd>${T("alegría")}</dd></div>
-           <div><dt>Ñandutí</dt><dd>${T("«tela de araña», nuestro encaje")}</dd></div><div><dt>Jaha!</dt><dd>${T("¡vamos!")}</dd></div>
+           <div><dt>Ñandutí</dt><dd>${T("“tela de araña”, nuestro encaje")}</dd></div><div><dt>Jaha!</dt><dd>${T("¡vamos!")}</dd></div>
          </dl></div></div></div>`,
       `${mini(T("Para brindar"))}<div class="cols cols--bebidas">${bebidas()}</div>
        <div class="cpie"><span class="gr">Aguyje!</span>

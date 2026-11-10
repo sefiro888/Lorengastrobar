@@ -40,22 +40,22 @@
   const SABORES = [
     { id: "chipa-guazu", n: "Chipa guazú", oir: "chipa guazú", pron: "chi-pa gua-SÚ", img: "img/platos/chipa-guazu.webp", carta: "Chipa guazú",
       lema: "El orgullo de cualquier asado paraguayo",
-      que: "Un pastel horneado de choclo (maíz tierno) que queda esponjoso por dentro y dorado por fuera. «Guazú» significa «grande» en guaraní: es la versión en fuente de la chipa.",
+      que: "Un pastel horneado de choclo (maíz tierno) que queda esponjoso por dentro y dorado por fuera. “Guazú” significa “grande” en guaraní: es la versión en fuente de la chipa.",
       como: "Maíz tierno, cebolla, huevos, cuajada, queso tierno, grasa de cerdo y sal. Al horno hasta que se dora.",
       come: "Caliente, en porciones, como entrante o acompañando la parrillada.", marida: "Parrillada paraguaya · Vorí vorí · una Guaraná bien fría" },
-    { id: "sopa-paraguaya", n: "Sopa paraguaya", oir: "sopa paraguaya", pron: "so-pa pa-ra-GUA-ya", img: "img/platos/sopa-paraguaya-pro.webp", carta: "Sopa paraguaya",
+    { id: "sopa-paraguaya", n: "Sopa paraguaya", oir: "sopa paraguaya", pron: "so-pa pa-ra-GUA-ya", img: "img/platos/sopa-paraguaya.webp", carta: "Sopa paraguaya",
       lema: "La única sopa del mundo que se come con tenedor",
-      que: "A pesar del nombre, es un bizcocho salado de maíz. Cuenta la leyenda que la cocinera del presidente Carlos Antonio López echó demasiada harina de maíz a una sopa… y el «error» se convirtió en plato nacional.",
+      que: "A pesar del nombre, es un bizcocho salado de maíz. Cuenta la leyenda que la cocinera del presidente Carlos Antonio López echó demasiada harina de maíz a una sopa… y el “error” se convirtió en plato nacional.",
       como: "Harina de maíz, huevos, cuajada, queso tierno, cebolla, leche, grasa de cerdo, un toque de anís y sal.",
       come: "Templada, sola o junto a carnes. Se repite seguro.", marida: "Milanesa a caballo · Picada completa · Chipa guazú" },
     { id: "mbeju", n: "Mbejú", oir: "mbeyú", pron: "mbe-YÚ", img: "img/platos/mbeju-queso.webp", carta: "Mbejú relleno de queso",
       lema: "Crujiente por fuera, el queso estira por dentro",
-      que: "Una torta a la plancha de almidón de mandioca de herencia guaraní. Nuestro reel enseñando cómo lo hacemos superó los 2.400 «me gusta».",
+      que: "Una torta a la plancha de almidón de mandioca de herencia guaraní. Nuestro reel enseñando cómo lo hacemos superó los 2.400 “me gusta”.",
       como: "Almidón de mandioca, harina de maíz, queso rallado, leche, mantequilla y sal. El relleno lleva mozzarella fundida.",
       come: "Recién hecho. En Paraguay se toma en el desayuno o la merienda con cocido o café con leche.", marida: "Café con leche · Sopa paraguaya" },
     { id: "vori-vori", n: "Vorí vorí", oir: "borí borí", pron: "bo-RÍ bo-RÍ", img: "img/platos/caldo-gallina.webp", carta: "Vorí vorí", finde: true,
       lema: "El plato con el que representamos a Paraguay",
-      que: "Un caldo de gallina casera con bolitas de harina de maíz y queso. El nombre viene de «bolita». Con este plato Loren llevó a Paraguay al Mundial de Comidas de Ibai Llanos.",
+      que: "Un caldo de gallina casera con bolitas de harina de maíz y queso. El nombre viene de “bolita”. Con este plato Loren llevó a Paraguay al Mundial de Comidas de Ibai Llanos.",
       como: "Gallina casera cocida a fuego lento, verduras y bolitas de harina de maíz amasadas con queso.",
       come: "Bien caliente, con cuchara grande. En invierno se pide más que nunca.", marida: "Chipa guazú · Mandioca" },
     { id: "asado-olla", n: "Asado a la olla", oir: "asado a la olla", pron: "a-SA-do a la O-lla", img: "img/platos/hl-asado-olla.webp", carta: "Asado a la olla", finde: true,
@@ -64,12 +64,12 @@
       como: "Costilla de ternera cocinada a fuego lento durante horas en la olla, con mandioca.",
       come: "Con mandioca y un trozo de chipa guazú o sopa paraguaya al lado.", marida: "Mandioca · Chipa guazú · Sopa paraguaya" },
     { id: "soyo", n: "Soyo", oir: "soyo", pron: "SO-yo", img: "img/redes/ig-soyo.webp", carta: null,
-      lema: "Viene de «so'o josopy»: carne machacada",
+      lema: "Viene de “so'o josopy”: carne machacada",
       que: "Una sopa espesa de carne machacada, de las más queridas de la cocina paraguaya. Con el profe de guaraní Mbo'ehára Marce contamos en Instagram el origen de su nombre.",
       como: "Carne machacada, verduras y caldo. Se sirve con tortillita paraguaya y mandioca.",
       come: "Caliente, alternando cucharada y trozo de tortillita.", marida: "Mandioca · Tortillita" },
     { id: "chyryry", n: "Mandi'ó chyryry", oir: "mandió chiriri", pron: "man-di-Ó chy-ry-RY", img: null, carta: "Mandi'ó chyryry",
-      lema: "«Chyryry» imita el chisporroteo de la sartén",
+      lema: "“Chyryry” imita el chisporroteo de la sartén",
       que: "Un salteado de mandioca: el plato estrella de nuestro segundo local y uno de los más pedidos para compartir.",
       como: "Mandioca, patata, queso, jamón, cebolla de verdeo y un huevo frito por encima. También con bacon.",
       come: "Al centro de la mesa, rompiendo el huevo sobre la mandioca.", marida: "Cerveza bien fría · Picada de chorizo" },
@@ -126,7 +126,7 @@
     $(".ruta__total", el).insertAdjacentHTML("afterbegin", `<div><small>${T("Total orientativo")}</small><b>${euro(total)}</b>${personas > 1 ? `<small>≈ ${T("{x} por persona", { x: euro(total / personas) })}</small>` : ""}</div>`);
     const btn = $("[data-pack-wa]", el);
     if (btn) {
-      btn.href = wa(T("¡Hola Loren! Quiero pedir «{x}» para recoger:", { x: el.dataset.nombre }) + "\n" + items.map((x) => `• ${x.q} × ${T(x.p.nombre)}`).join("\n") + `\n\n${T("Total orientativo")}: ${euro(total)}`);
+      btn.href = wa(T("¡Hola Loren! Quiero pedir “{x}” para recoger:", { x: el.dataset.nombre }) + "\n" + items.map((x) => `• ${x.q} × ${T(x.p.nombre)}`).join("\n") + `\n\n${T("Total orientativo")}: ${euro(total)}`);
       btn.target = "_blank"; btn.rel = "noopener";
     }
   });

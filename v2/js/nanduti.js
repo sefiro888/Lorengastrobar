@@ -1,6 +1,6 @@
 /* =========================================================
    Ñandutí · encaje tradicional paraguayo generado en SVG
-   «Ñandutí» = tela de araña en guaraní.
+   “Ñandutí” = tela de araña en guaraní.
    ========================================================= */
 (function () {
   const P = (r, a) => [+(r * Math.cos(a)).toFixed(2), +(r * Math.sin(a)).toFixed(2)];
@@ -16,7 +16,7 @@
     circ(97, ' stroke-dasharray="1.5 3"');
     circ(90); circ(72); circ(46); circ(16);
 
-    // rayos (la «tela de araña»)
+    // rayos (la “tela de araña”)
     let d = "";
     for (let i = 0; i < o.rayos; i++) {
       const a = (i / o.rayos) * TAU;

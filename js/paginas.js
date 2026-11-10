@@ -43,7 +43,7 @@
       que: "Un pastel horneado de choclo (maíz tierno) que queda esponjoso por dentro y dorado por fuera. «Guazú» significa «grande» en guaraní: es la versión en fuente de la chipa.",
       como: "Maíz tierno, cebolla, huevos, cuajada, queso tierno, grasa de cerdo y sal. Al horno hasta que se dora.",
       come: "Caliente, en porciones, como entrante o acompañando la parrillada.", marida: "Parrillada paraguaya · Vorí vorí · una Guaraná bien fría" },
-    { id: "sopa-paraguaya", n: "Sopa paraguaya", oir: "sopa paraguaya", pron: "so-pa pa-ra-GUA-ya", img: "img/platos/sopa-paraguaya-pro.webp", carta: "Sopa paraguaya",
+    { id: "sopa-paraguaya", n: "Sopa paraguaya", oir: "sopa paraguaya", pron: "so-pa pa-ra-GUA-ya", img: "img/platos/sopa-paraguaya.webp", carta: "Sopa paraguaya",
       lema: "La única sopa del mundo que se come con tenedor",
       que: "A pesar del nombre, es un bizcocho salado de maíz. Cuenta la leyenda que la cocinera del presidente Carlos Antonio López echó demasiada harina de maíz a una sopa… y el «error» se convirtió en plato nacional.",
       como: "Harina de maíz, huevos, cuajada, queso tierno, cebolla, leche, grasa de cerdo, un toque de anís y sal.",

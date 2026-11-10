@@ -1,6 +1,6 @@
 /* =========================================================
    LOREN RESTOBAR · Carta interactiva
-   La carta es para mirar y elegir. Cada plato tiene «Pedir»: se
+   La carta es para mirar y elegir. Cada plato tiene “Pedir”: se
    suman varios platos y se encargan por WhatsApp (o Glovo / Uber Eats).
    ========================================================= */
 (function () {
@@ -26,7 +26,7 @@
     parrilla: "img/platos/parrillada-paraguaya.webp", ensaladas: "img/platos/ensalada.webp"
   };
 
-  /* ---------- Botón «Pedir» ---------- */
+  /* ---------- Botón “Pedir” ---------- */
   const BOLSA = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l-1 12H7z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg>';
   const pedir = (p) => p.precio == null
     ? `<a class="pedir-btn pedir-btn--wa" href="${wa(p.cat === "finde" ? T("¡Hola Loren! ¿Este finde tenéis {x}? Quería reservar.", { x: p.n }) : T("¡Hola Loren! ¿Hoy tenéis {x}? Me gustaría pedirlo.", { x: p.n }))}" target="_blank" rel="noopener">${T(p.cat === "finde" ? "Reservar" : "Preguntar")}</a>`
@@ -56,7 +56,7 @@
     fab.classList.toggle("on", n > 0 && !pp.classList.contains("on"));
     if (!n) {
       ppCaja.innerHTML = `<button class="qv__x" data-pp-cerrar aria-label="${T("Cerrar")}">${X}</button>
-        <div class="pp__vacio"><span class="pp__eti">${T("Tu pedido")}</span><p>${T("Aún no has añadido nada. Toca «Pedir» en los platos que quieras.")}</p></div>`;
+        <div class="pp__vacio"><span class="pp__eti">${T("Tu pedido")}</span><p>${T("Aún no has añadido nada. Toca “Pedir” en los platos que quieras.")}</p></div>`;
       return;
     }
     const filas = [...pedido].map(([id, c]) => {

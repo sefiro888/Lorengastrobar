@@ -76,25 +76,25 @@ window.CARTA = [
   /* --- PARA PICAR --- */
   { cat: "paraguayo", nombre: "Chipa guazú", precio: 3.90, img: "img/platos/hl-chipa-guazu.webp",
     desc: "Pastel horneado de maíz tierno, cebolla, huevo, cuajada y queso fresco. Esponjoso por dentro y dorado por fuera.",
-    gn: "«Chipa grande» en guaraní", tags: ["py", "top", "sintrigo"] },
-  { cat: "paraguayo", nombre: "Sopa paraguaya", precio: 3.90, img: "img/kv/sopa-paraguaya-kv.webp",
+    gn: "“Chipa grande” en guaraní", tags: ["py", "top", "sintrigo"] },
+  { cat: "paraguayo", nombre: "Sopa paraguaya", precio: 3.90, img: "img/platos/sopa-paraguaya.webp",
     desc: "La única sopa del mundo que se come con tenedor: harina de maíz, huevo, cuajada, queso tierno, cebolla y un toque de anís.",
     gn: "Patrimonio de la mesa paraguaya", tags: ["py", "top", "sintrigo"] },
-  { cat: "paraguayo", nombre: "Yucas bravas", precio: 8.90, img: "img/platos/yuca-brava-pro.webp",
+  { cat: "paraguayo", nombre: "Yucas bravas", precio: 8.90, img: "img/nuevo/yuca-brava.webp",
     desc: "Nuestra respuesta paraguaya a las bravas: mandioca frita crujiente con salsa de la casa.",
     tags: ["py", "comp", "top"] },
   { cat: "paraguayo", nombre: "Mbejú tradicional", precio: 4.50, img: "img/platos/mbeju.webp",
     desc: "Torta crujiente de almidón de mandioca, harina de maíz, queso, leche y mantequilla, hecha a la plancha.",
-    gn: "Se pronuncia «mbeyú»", tags: ["py", "sintrigo"] },
+    gn: "Se pronuncia “mbeyú”", tags: ["py", "sintrigo"] },
   { cat: "paraguayo", nombre: "Mbejú relleno de queso", precio: 5.50, img: "img/platos/hl-mbeju.webp", disco: "img/platos/plato-mbeju.webp",
     desc: "Nuestro mbejú con corazón de mozzarella fundida. El que estira.",
     tags: ["py", "top", "sintrigo"] },
   { cat: "paraguayo", nombre: "Mandi'ó chyryry", precio: 11.50, img: "img/platos/hl-chyryry.webp",
     desc: "Yuca salteada con patata, queso, jamón, cebolla de verdeo y huevo frito por encima.",
-    gn: "«Mandioca que chisporrotea en la sartén»", tags: ["py", "comp"] },
+    gn: "“Mandioca que chisporrotea en la sartén”", tags: ["py", "comp"] },
   { cat: "paraguayo", nombre: "Picada de milanesa con miel y mostaza", precio: 11.90, img: "img/platos/picada-milanesa.webp",
     desc: "Milanesitas crujientes con salsa de miel y mostaza.", tags: ["comp"] },
-  { cat: "paraguayo", nombre: "Picada de chorizo con chimichurri", precio: 11.90, img: "img/platos/hl-chorizo.webp",
+  { cat: "paraguayo", nombre: "Picada de chorizo con chimichurri", precio: 11.90, img: "img/nuevo/chorizo.webp",
     desc: "Chorizo criollo con nuestro chimichurri.", tags: ["comp"] },
 
   /* --- EMPANADAS --- */
@@ -112,7 +112,7 @@ window.CARTA = [
   /* --- ESPECIALES DEL FINDE (viernes, sábados y domingos) --- */
   { cat: "finde", nombre: "Vorí vorí", precio: 15.90, img: "img/platos/hl-vori-vori.webp", disco: "img/platos/plato-vori.webp",
     desc: "Caldo casero con bolitas de harina de maíz y queso. El plato con el que Loren representó a Paraguay en el Mundial de Comidas de Ibai.",
-    gn: "De «bolita» → vorí", tags: ["py", "top", "finde"] },
+    gn: "De “bolita” → vorí", tags: ["py", "top", "finde"] },
   { cat: "finde", nombre: "Asado a la olla", precio: 17.90, img: "img/platos/hl-asado-olla.webp",
     desc: "Ternera cocinada lentamente en olla hasta quedar tierna y dorada.",
     tags: ["py", "finde"] },
@@ -171,8 +171,8 @@ window.CARTA = [
     desc: "Verduras de temporada a la brasa." },
 
   /* --- PASTAS --- */
-  { cat: "platos", nombre: "Ñoquis de ternera", precio: 15.90, img: "img/platos/hl-noquis.webp",
-    desc: "Ñoquis caseros con carne de ternera guisada en su salsa.", tags: ["top"] },
+  { cat: "platos", nombre: "Ñoquis de ternera", precio: 15.90, img: "img/nuevo/noquis.webp",
+    desc: "Ñoquis caseros con estofado de carne de ternera.", tags: ["top"] },
   { cat: "platos", nombre: "Tallarín de ternera", precio: 15.90, img: "img/platos/tallarin.webp",
     desc: "Tallarines con carne de ternera, como los del domingo en casa." },
 

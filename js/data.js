@@ -77,7 +77,7 @@ window.CARTA = [
   { cat: "paraguayo", nombre: "Chipa guazú", precio: 3.90, img: "img/platos/hl-chipa-guazu.webp",
     desc: "Pastel horneado de maíz tierno, cebolla, huevo, cuajada y queso fresco. Esponjoso por dentro y dorado por fuera.",
     gn: "«Chipa grande» en guaraní", tags: ["py", "top", "sintrigo"] },
-  { cat: "paraguayo", nombre: "Sopa paraguaya", precio: 3.90, img: "img/platos/sopa-paraguaya-pro.webp",
+  { cat: "paraguayo", nombre: "Sopa paraguaya", precio: 3.90, img: "img/platos/sopa-paraguaya.webp",
     desc: "La única sopa del mundo que se come con tenedor: harina de maíz, huevo, cuajada, queso tierno, cebolla y un toque de anís.",
     gn: "Patrimonio de la mesa paraguaya", tags: ["py", "top", "sintrigo"] },
   { cat: "paraguayo", nombre: "Yucas bravas", precio: 8.90, img: "img/platos/yuca-brava-pro.webp",
