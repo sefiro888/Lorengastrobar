@@ -298,3 +298,15 @@ h3, h4 { font-family: var(--f-display); font-weight: 700; }
 .form-aviso { display: block; margin-top: 6px; padding: 8px 10px; border-radius: 10px; background: #fde8e4; color: #8a1c0c; font-size: .82rem; font-weight: 600; letter-spacing: 0; text-transform: none; line-height: 1.35; }
 .form-aviso[hidden] { display: none; }
 .form-evento select:disabled { opacity: .5; }
+
+/* ---------- Receta escrita (Sabores) ---------- */
+.receta__texto { position: relative; z-index: 2; display: grid; grid-template-columns: 1fr 1.3fr; gap: clamp(22px, 4vw, 56px); margin-top: clamp(36px, 5vw, 64px); padding: clamp(22px, 3.5vw, 40px); border: 1px solid rgba(243,238,220,.14); border-radius: 22px; background: rgba(243,238,220,.04); }
+.receta__texto h3 { margin: 0 0 10px; font-family: var(--f-display); font-size: clamp(1.4rem, 2.4vw, 1.9rem); color: var(--maiz); line-height: 1.1; }
+.receta__texto h4 { margin: 22px 0 10px; font-family: var(--f-display); font-size: 1.1rem; letter-spacing: .04em; text-transform: uppercase; color: var(--crema); }
+.receta__texto > div:last-child h4 { margin-top: 0; }
+.receta__texto p { margin: 0 0 8px; color: rgba(243,238,220,.78); }
+.receta__texto .receta__meta { font-size: .85rem; font-weight: 700; color: var(--maiz); }
+.receta__texto ul, .receta__texto ol { margin: 0; padding-left: 1.25em; color: rgba(243,238,220,.85); line-height: 1.55; }
+.receta__texto li + li { margin-top: 7px; }
+.receta__texto ol li::marker { color: var(--maiz); font-weight: 800; }
+@media (max-width: 860px) { .receta__texto { grid-template-columns: 1fr; } }

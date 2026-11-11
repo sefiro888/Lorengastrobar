@@ -70,7 +70,7 @@
       come: "Caliente, alternando cucharada y trozo de tortillita.", marida: "Mandioca · Tortillita" },
     { id: "chyryry", n: "Mandi'ó chyryry", oir: "mandió chiriri", pron: "man-di-Ó chy-ry-RY", img: null, carta: "Mandi'ó chyryry",
       lema: "“Chyryry” imita el chisporroteo de la sartén",
-      que: "Un salteado de mandioca: el plato estrella de nuestro segundo local y uno de los más pedidos para compartir.",
+      que: "Un salteado de mandioca, de los platos más pedidos para compartir.",
       como: "Mandioca, patata, queso, jamón, cebolla de verdeo y un huevo frito por encima. También con bacon.",
       come: "Al centro de la mesa, rompiendo el huevo sobre la mandioca.", marida: "Cerveza bien fría · Picada de chorizo" },
     { id: "empanadas", n: "Empanadas", oir: "empanadas", pron: "ternera · pollo · jamón y queso · choclo", img: "img/platos/box-empanadas.webp", carta: "Empanada de ternera",

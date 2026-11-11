@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://lorenrestobar.com/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lorenrestobar.com/"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://lorenrestobar.com/ca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lorenrestobar.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenrestobar.com/"/>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/plato-vori.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/plato-mila-caballo.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/plato-mbeju.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/parrillada-mixta.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mila-americana-pro.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/noquis.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/loren-chef-vori.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/chipa-guazu.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/sopa-paraguaya.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mbeju-queso.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/caldo-gallina.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-asado-olla.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/carta/carta-exterior.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/carta/carta-interior.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/barra.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/sala-pared-verde.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/clientes/mbeju-chipa-guazu.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/yuca-brava-pro.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/sala-entrada.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/clientes/picada-paraguaya.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/sala-sopa.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/sandwich-lomito.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/clientes/chorizo-mandioca-queso.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://lorenrestobar.com/ca/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lorenrestobar.com/"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://lorenrestobar.com/ca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lorenrestobar.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenrestobar.com/"/>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/plato-vori.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/plato-mila-caballo.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/plato-mbeju.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/parrillada-mixta.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mila-americana-pro.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/noquis.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/loren-chef-vori.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/chipa-guazu.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/sopa-paraguaya.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mbeju-queso.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/caldo-gallina.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-asado-olla.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/carta/carta-exterior.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/carta/carta-interior.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/barra.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/sala-pared-verde.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/clientes/mbeju-chipa-guazu.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/yuca-brava-pro.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/sala-entrada.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/clientes/picada-paraguaya.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/sala-sopa.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/sandwich-lomito.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/clientes/chorizo-mandioca-queso.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://lorenrestobar.com/en/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lorenrestobar.com/"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://lorenrestobar.com/ca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lorenrestobar.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenrestobar.com/"/>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/plato-vori.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/plato-mila-caballo.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/plato-mbeju.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/parrillada-mixta.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mila-americana-pro.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/noquis.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/loren-chef-vori.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/chipa-guazu.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/sopa-paraguaya.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mbeju-queso.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/caldo-gallina.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-asado-olla.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/carta/carta-exterior.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/carta/carta-interior.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/barra.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/sala-pared-verde.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/clientes/mbeju-chipa-guazu.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/yuca-brava-pro.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/sala-entrada.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/clientes/picada-paraguaya.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/sala-sopa.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/sandwich-lomito.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/clientes/chorizo-mandioca-queso.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://lorenrestobar.com/historia.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lorenrestobar.com/historia.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://lorenrestobar.com/ca/historia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lorenrestobar.com/en/historia.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenrestobar.com/historia.html"/>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/loren-chef-vori.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/sopa-paraguaya.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/bandeja-chipas-empanadas.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/sala-entrada.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/mesa-grupo.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/caldo-gallina.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/redes/ig-anos.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/nuevo/fanny-jennifer.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/nuevo/loren-empanada.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/nuevo/jose-terraza.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://lorenrestobar.com/ca/historia.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lorenrestobar.com/historia.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://lorenrestobar.com/ca/historia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lorenrestobar.com/en/historia.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenrestobar.com/historia.html"/>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/loren-chef-vori.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/sopa-paraguaya.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/bandeja-chipas-empanadas.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/sala-entrada.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/mesa-grupo.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/caldo-gallina.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/redes/ig-anos.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/nuevo/fanny-jennifer.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/nuevo/loren-empanada.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/nuevo/jose-terraza.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://lorenrestobar.com/en/historia.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lorenrestobar.com/historia.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://lorenrestobar.com/ca/historia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lorenrestobar.com/en/historia.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenrestobar.com/historia.html"/>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/loren-chef-vori.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/sopa-paraguaya.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/bandeja-chipas-empanadas.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/sala-entrada.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/mesa-grupo.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/caldo-gallina.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/redes/ig-anos.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/nuevo/fanny-jennifer.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/nuevo/loren-empanada.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/nuevo/jose-terraza.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://lorenrestobar.com/sabores.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lorenrestobar.com/sabores.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://lorenrestobar.com/ca/sabores.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lorenrestobar.com/en/sabores.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenrestobar.com/sabores.html"/>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/chipa-guazu.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/plato-mbeju.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/plato-vori.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mandioca.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mbeju-queso.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/sopa-paraguaya.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/caldo-gallina.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-asado-olla.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/redes/ig-soyo.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/box-empanadas.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/parrillada-paraguaya.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mila-caballo-pro.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://lorenrestobar.com/ca/sabores.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lorenrestobar.com/sabores.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://lorenrestobar.com/ca/sabores.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lorenrestobar.com/en/sabores.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenrestobar.com/sabores.html"/>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/chipa-guazu.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/plato-mbeju.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/plato-vori.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mandioca.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mbeju-queso.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/sopa-paraguaya.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/caldo-gallina.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-asado-olla.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/redes/ig-soyo.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/box-empanadas.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/parrillada-paraguaya.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mila-caballo-pro.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://lorenrestobar.com/en/sabores.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lorenrestobar.com/sabores.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://lorenrestobar.com/ca/sabores.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lorenrestobar.com/en/sabores.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenrestobar.com/sabores.html"/>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/chipa-guazu.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/plato-mbeju.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/plato-vori.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mandioca.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mbeju-queso.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/sopa-paraguaya.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/caldo-gallina.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-asado-olla.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/redes/ig-soyo.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/box-empanadas.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/parrillada-paraguaya.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mila-caballo-pro.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://lorenrestobar.com/carta.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lorenrestobar.com/carta.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://lorenrestobar.com/ca/carta.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lorenrestobar.com/en/carta.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenrestobar.com/carta.html"/>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-chipa-guazu.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/plato-vori.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/plato-mila-caballo.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/plato-mbeju.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/clientes/picada-paraguaya.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/sopa-paraguaya.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/nuevo/yuca-brava.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mbeju.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-mbeju.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-chyryry.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/picada-milanesa.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/nuevo/chorizo.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/empanada-pollo.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/empanada-jyq.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-empanadas.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mandioca.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-vori-vori.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-asado-olla.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-sandwich-milanesa.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/sandwich-milanesa-pro.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/sandwich-lomito.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mila-americana-pro.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mila-fugazzeta.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mila-caballo-pro.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mila-ternera.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/bife-caballo.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/nuevo/noquis.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/tallarin.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-tapas-espanolas.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-croquetas.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-tequenos.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-alitas.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-bravas.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/huevo-estrellado.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/ensalada.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/tres-leches.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-flan.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-alfajores.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://lorenrestobar.com/ca/carta.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lorenrestobar.com/carta.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://lorenrestobar.com/ca/carta.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lorenrestobar.com/en/carta.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenrestobar.com/carta.html"/>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-chipa-guazu.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/plato-vori.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/plato-mila-caballo.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/plato-mbeju.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/clientes/picada-paraguaya.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/sopa-paraguaya.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/nuevo/yuca-brava.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mbeju.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-mbeju.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-chyryry.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/picada-milanesa.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/nuevo/chorizo.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/empanada-pollo.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/empanada-jyq.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-empanadas.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mandioca.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-vori-vori.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-asado-olla.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-sandwich-milanesa.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/sandwich-milanesa-pro.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/sandwich-lomito.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mila-americana-pro.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mila-fugazzeta.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mila-caballo-pro.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mila-ternera.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/bife-caballo.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/nuevo/noquis.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/tallarin.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-tapas-espanolas.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-croquetas.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-tequenos.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-alitas.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-bravas.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/huevo-estrellado.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/ensalada.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/tres-leches.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-flan.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-alfajores.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://lorenrestobar.com/en/carta.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lorenrestobar.com/carta.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://lorenrestobar.com/ca/carta.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lorenrestobar.com/en/carta.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenrestobar.com/carta.html"/>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-chipa-guazu.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/plato-vori.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/plato-mila-caballo.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/plato-mbeju.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/clientes/picada-paraguaya.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/sopa-paraguaya.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/nuevo/yuca-brava.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mbeju.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-mbeju.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-chyryry.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/picada-milanesa.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/nuevo/chorizo.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/empanada-pollo.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/empanada-jyq.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-empanadas.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mandioca.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-vori-vori.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-asado-olla.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-sandwich-milanesa.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/sandwich-milanesa-pro.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/sandwich-lomito.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mila-americana-pro.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mila-fugazzeta.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mila-caballo-pro.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mila-ternera.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/bife-caballo.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/nuevo/noquis.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/tallarin.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-tapas-espanolas.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-croquetas.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-tequenos.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-alitas.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-bravas.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/huevo-estrellado.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/ensalada.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/tres-leches.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-flan.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-alfajores.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://lorenrestobar.com/domicilio.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lorenrestobar.com/domicilio.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://lorenrestobar.com/ca/domicilio.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lorenrestobar.com/en/domicilio.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenrestobar.com/domicilio.html"/>
+    <image:image><image:loc>https://lorenrestobar.com/img/nuevo/loren-empanada.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/empanada-carne.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/chipa-guazu.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/sopa-paraguaya.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mila-napolitana.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/sandwich-lomito.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mbeju-queso.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://lorenrestobar.com/ca/domicilio.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lorenrestobar.com/domicilio.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://lorenrestobar.com/ca/domicilio.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lorenrestobar.com/en/domicilio.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenrestobar.com/domicilio.html"/>
+    <image:image><image:loc>https://lorenrestobar.com/img/nuevo/loren-empanada.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/empanada-carne.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/chipa-guazu.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/sopa-paraguaya.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mila-napolitana.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/sandwich-lomito.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mbeju-queso.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://lorenrestobar.com/en/domicilio.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lorenrestobar.com/domicilio.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://lorenrestobar.com/ca/domicilio.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lorenrestobar.com/en/domicilio.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenrestobar.com/domicilio.html"/>
+    <image:image><image:loc>https://lorenrestobar.com/img/nuevo/loren-empanada.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/empanada-carne.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/chipa-guazu.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/sopa-paraguaya.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mila-napolitana.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/sandwich-lomito.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/mbeju-queso.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://lorenrestobar.com/eventos.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lorenrestobar.com/eventos.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://lorenrestobar.com/ca/eventos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lorenrestobar.com/en/eventos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenrestobar.com/eventos.html"/>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/catering-bandeja.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/chipa-guazu.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/sala-pared-verde.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/mesa-grupo.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/barra.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/bandeja-chipas-empanadas.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://lorenrestobar.com/ca/eventos.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lorenrestobar.com/eventos.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://lorenrestobar.com/ca/eventos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lorenrestobar.com/en/eventos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenrestobar.com/eventos.html"/>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/catering-bandeja.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/chipa-guazu.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/sala-pared-verde.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/mesa-grupo.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/barra.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/bandeja-chipas-empanadas.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://lorenrestobar.com/en/eventos.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lorenrestobar.com/eventos.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://lorenrestobar.com/ca/eventos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lorenrestobar.com/en/eventos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenrestobar.com/eventos.html"/>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/catering-bandeja.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/chipa-guazu.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/sala-pared-verde.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/mesa-grupo.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/barra.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/bandeja-chipas-empanadas.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://lorenrestobar.com/visitanos.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lorenrestobar.com/visitanos.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://lorenrestobar.com/ca/visitanos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lorenrestobar.com/en/visitanos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenrestobar.com/visitanos.html"/>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/barra.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/nuevo/jose-terraza.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/nuevo/fanny-jennifer.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/sala-pared-verde.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/mesa-grupo.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/sala-entrada.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/sala-sopa.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/clientes/mbeju-chipa-guazu.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://lorenrestobar.com/ca/visitanos.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lorenrestobar.com/visitanos.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://lorenrestobar.com/ca/visitanos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lorenrestobar.com/en/visitanos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenrestobar.com/visitanos.html"/>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/barra.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/nuevo/jose-terraza.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/nuevo/fanny-jennifer.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/sala-pared-verde.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/mesa-grupo.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/sala-entrada.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/sala-sopa.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/clientes/mbeju-chipa-guazu.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://lorenrestobar.com/en/visitanos.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lorenrestobar.com/visitanos.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://lorenrestobar.com/ca/visitanos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lorenrestobar.com/en/visitanos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenrestobar.com/visitanos.html"/>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/barra.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/nuevo/jose-terraza.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/nuevo/fanny-jennifer.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/sala-pared-verde.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/mesa-grupo.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/sala-entrada.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/local/sala-sopa.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/clientes/mbeju-chipa-guazu.webp</image:loc></image:image>
+  </url>
+</urlset>

@@ -6,7 +6,7 @@
 (function () {
   const pagina = document.body.dataset.page || "inicio";
   const P = window.PREF || "", L = window.IDIOMA || "es";
-  const archivo = (pagina === "inicio" ? "index" : pagina === "carta-clasica" ? "carta-clasica" : pagina) + ".html";
+  const archivo = ({ inicio: "index", legal: "aviso-legal", error: "index" }[pagina] || pagina) + ".html";
   const IDIOMAS = [["es", "ES", "Español", ""], ["ca", "CA", "Català", "ca/"], ["en", "EN", "English", "en/"]];
   const selector = (cls) => `<div class="idiomas ${cls}" role="group" aria-label="Idioma / Language">${IDIOMAS.map(([c, t, n, pre]) => `<a href="${pre}${archivo}" hreflang="${c}" lang="${c}" title="${n}" class="${c === L ? "on" : ""}" ${c === L ? 'aria-current="true"' : ""}>${t}</a>`).join("")}</div>`;
   const PAGS = [
@@ -114,6 +114,7 @@
   <button class="lb-next" aria-label="${T("Siguiente")}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>
 </div>`;
 
+  window.__SHELL = { top, bottom };
   const t = document.getElementById("shell-top"), b = document.getElementById("shell-bottom");
   if (t) t.outerHTML = top;
   if (b) b.outerHTML = bottom;

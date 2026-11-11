@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /herramientas/
+Disallow: /i18n/
+Disallow: /tarjeta/
+
+Sitemap: https://lorenrestobar.com/sitemap.xml

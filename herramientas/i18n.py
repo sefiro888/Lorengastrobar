@@ -46,7 +46,7 @@ def recorrer(el, fn):
                 post = t[len(t.rstrip()):]
                 fn(k, lambda v, h=hijo, pre=pre, post=post: h.replace_with(NavigableString(pre + v + post)))
             continue
-        if not isinstance(hijo, Tag) or hijo.name in SALTAR or hijo.has_attr("data-no-t"):
+        if not isinstance(hijo, Tag) or hijo.name in SALTAR or hijo.has_attr("data-no-t") or hijo.has_attr("data-pre"):
             continue
         for a in ATRIBUTOS:
             if hijo.has_attr(a) and LETRAS.search(hijo[a]):
@@ -117,13 +117,11 @@ def construir():
             cfg = sopa.new_tag("script")
             cfg.string = f'window.IDIOMA="{lang}";window.PREF="{lang}/";'
             base.insert_after(cfg)
-            for alt, href in (("es", ""), ("ca", "ca/"), ("en", "en/")):
-                head.append(sopa.new_tag("link", rel="alternate", hreflang=alt, href=href + p + ".html"))
             reescribir_enlaces(sopa, lang)
             # i18n.js antes que el resto de scripts
             primero = sopa.find("script", src=True)
             if primero:
-                primero.insert_before(sopa.new_tag("script", src="js/i18n.js?v=18"))
+                primero.insert_before(sopa.new_tag("script", src="js/i18n.js?v=19"))
             html = str(sopa)
             if not html.lower().startswith("<!doctype"):
                 html = "<!doctype html>\n" + html
