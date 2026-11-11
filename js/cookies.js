@@ -48,7 +48,7 @@
   aviso.innerHTML = `<div class="cookies__caja">
     <div class="cookies__txt">
       <b>${T("Usamos cookies de terceros")} 🍪</b>
-      <p>${T("Esta web no usa cookies propias de publicidad ni de analítica. Sólo el mapa de Google Maps usa cookies de Google, y únicamente si lo aceptas.")} <a href="${P}aviso-legal.html#cookies">${T("Más información")}</a></p>
+      <p>${T("Esta web no usa cookies propias de publicidad ni de analítica. Sólo el mapa de Google Maps usa cookies de Google, y únicamente si lo aceptas.")} <a href="${P}aviso-legal.html#cookies">${T("Política de cookies")}</a></p>
       <label class="cookies__op" hidden><input type="checkbox" checked disabled> <span><b>${T("Necesarias")}</b> · ${T("recordar tu elección de cookies y los platos que apuntas en la carta. Siempre activas.")}</span></label>
       <label class="cookies__op" hidden><input type="checkbox" data-op="mapas"> <span><b>${T("Mapas (Google Maps)")}</b> · ${T("ver el mapa del local dentro de la web.")}</span></label>
     </div>

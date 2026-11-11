@@ -97,7 +97,7 @@ def grafo(lang, p, d):
         "@type": "Restaurant", "@id": rest_id, "name": "Loren Restobar",
         "alternateName": "Loren Gastrobar",
         "url": url(lang, "index"),
-        "image": [f"{BASE}/img/redes/og-loren.jpg", f"{BASE}/img/platos/chipa-guazu.webp", f"{BASE}/img/platos/sopa-paraguaya.webp"],
+        "image": [f"{BASE}/img/redes/og-index-es.jpg", f"{BASE}/img/platos/chipa-guazu.webp", f"{BASE}/img/platos/sopa-paraguaya.webp"],
         "logo": f"{BASE}/img/marca/logo-loren.webp",
         "telephone": "+" + L["tel"], "email": L["email"],
         "address": {"@type": "PostalAddress", "streetAddress": L["dir"] + ", local 1", "postalCode": L["cp"].split()[0],
@@ -168,6 +168,14 @@ def bloque_seo(lang, p, d):
         lineas.append(f'<link rel="alternate" hreflang="{l}" href="{url(l, p)}">')
     lineas.append(f'<link rel="alternate" hreflang="x-default" href="{url("es", p)}">')
     lineas.append(f'<meta property="og:url" content="{u}">')
+    img = f"img/redes/og-{p}-{lang}.jpg"
+    if not os.path.exists(os.path.join(RAIZ, img)):
+        img = f"img/redes/og-index-{lang}.jpg"
+    lineas.append(f'<meta property="og:image" content="{BASE}/{img}">')
+    lineas.append('<meta property="og:image:width" content="1200">')
+    lineas.append('<meta property="og:image:height" content="630">')
+    lineas.append(f'<meta property="og:image:alt" content="{d["titulo"].replace(chr(34), "")}">')
+    lineas.append(f'<meta name="twitter:image" content="{BASE}/{img}">')
     lineas.append(f'<meta property="og:locale" content="{LOCALES[lang]}">')
     for l in IDIOMAS:
         if l != lang:

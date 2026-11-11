@@ -24,7 +24,7 @@
     const b = e.target.closest("[data-oir]");
     if (b) { e.preventDefault(); e.stopPropagation(); decir(b.dataset.oir); }
   });
-  $$("[data-oir]").forEach((b) => { if (!b.innerHTML.trim()) b.innerHTML = ALTAVOZ; b.setAttribute("aria-label", "Escuchar pronunciación"); });
+  $$("[data-oir]").forEach((b) => { if (!b.innerHTML.trim()) b.innerHTML = ALTAVOZ; b.setAttribute("aria-label", T("Escuchar pronunciación")); });
 
   /* ---------- Barras de votación ---------- */
   const votos = $(".votos");
@@ -100,7 +100,7 @@
         <div class="entrada__foto"><div class="enc" data-nanduti data-sw="0.5"></div>${foto}<span class="num">${String(i + 1).padStart(2, "0")}</span></div>
         <div>
           <h3>${T(s.n)}</h3>
-          <div class="pron"><button class="oir" data-oir="${s.oir}"></button>${T(s.pron)}</div>
+          <div class="pron"><button class="oir" data-oir="${s.oir}" aria-label="${T("Escuchar pronunciación")}"></button>${T(s.pron)}</div>
           <div class="lema-e">${T(s.lema)}</div>
           <p>${T(s.que)}</p>
           <dl class="ficha">

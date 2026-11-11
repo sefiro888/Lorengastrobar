@@ -65,12 +65,12 @@ h3, h4 { font-family: var(--f-display); font-weight: 700; }
   content: ""; position: absolute; z-index: -1; pointer-events: none; aspect-ratio: 1;
   width: clamp(220px, 32vw, 420px); right: clamp(-140px, -8vw, -60px); top: clamp(-120px, -6vw, -40px);
   background: var(--vino); opacity: .07;
-  -webkit-mask: url("../img/kv/motivo-roseta.png") center / contain no-repeat;
-  mask: url("../img/kv/motivo-roseta.png") center / contain no-repeat;
+  -webkit-mask: url("../img/kv/motivo-roseta.webp") center / contain no-repeat;
+  mask: url("../img/kv/motivo-roseta.webp") center / contain no-repeat;
   animation: girar 160s linear infinite;
 }
 .sec--crema:nth-of-type(even)::after, .bienvenida::after {
-  -webkit-mask-image: url("../img/kv/motivo-pavo.png"); mask-image: url("../img/kv/motivo-pavo.png");
+  -webkit-mask-image: url("../img/kv/motivo-pavo.webp"); mask-image: url("../img/kv/motivo-pavo.webp");
   right: auto; left: clamp(-120px, -6vw, -40px); top: auto; bottom: clamp(-100px, -5vw, -30px); animation: none; transform: rotate(-8deg);
 }
 

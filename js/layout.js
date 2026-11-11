@@ -67,15 +67,15 @@
           <a href="#" data-link="whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">${WA}</a>
         </div>
       </div>
-      <div><h4>${T("Explora")}</h4><ul>
+      <div><h4 aria-level="2">${T("Explora")}</h4><ul>
         <li><a href="${P}historia.html">${T("Nuestra historia")}</a></li><li><a href="${P}sabores.html">${T("Sabores de Paraguay")}</a></li>
         <li><a href="${P}carta.html">${T("La carta")}</a></li>
         <li><a href="${P}eventos.html">${T("Eventos y catering")}</a></li></ul></div>
-      <div><h4>${T("Pide")}</h4><ul>
+      <div><h4 aria-level="2">${T("Pide")}</h4><ul>
         <li><a href="${P}domicilio.html">${T("Cómo pedir a domicilio")}</a></li>
         <li><a href="#" data-link="glovo" target="_blank" rel="noopener">Glovo</a></li><li><a href="#" data-link="uber" target="_blank" rel="noopener">Uber Eats</a></li>
         <li><a href="#" data-reserva>${T("Reservar por WhatsApp")}</a></li><li><a href="#" data-link="opentable" target="_blank" rel="noopener">${T("Reservar en OpenTable")}</a></li></ul></div>
-      <div><h4>${T("Contacto")}</h4><ul>
+      <div><h4 aria-level="2">${T("Contacto")}</h4><ul>
         <li><a href="${P}visitanos.html">Carrer de la Muntanya, 115</a></li><li>08026 Barcelona</li>
         <li><a href="tel:+34935052491">935 05 24 91</a></li><li><a href="tel:+34602076828">602 07 68 28</a> (WhatsApp)</li><li><a href="mailto:grupolorenrestobarsl@gmail.com">grupolorenrestobarsl@gmail.com</a></li></ul></div>
     </div>

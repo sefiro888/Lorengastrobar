@@ -111,25 +111,36 @@
       vida: Math.random() * 0.6 + 0.4, hue: 18 + Math.random() * 30
     });
     for (let k = 0; k < N; k++) chispas.push(nueva(true));
-    let visible = true;
-    new IntersectionObserver(([e]) => (visible = e.isIntersecting)).observe(cv);
-    const tick = () => {
-      if (visible) {
-        ctx.clearRect(0, 0, W, H);
-        ctx.globalCompositeOperation = "lighter";
-        chispas.forEach((c, k) => {
-          c.y -= c.v; c.w += c.ws; c.x += Math.sin(c.w) * 0.5;
-          const a = Math.max(0, Math.min(1, c.y / H)) * c.vida;
-          const g = ctx.createRadialGradient(c.x, c.y, 0, c.x, c.y, c.r * 4);
-          g.addColorStop(0, `hsla(${c.hue},100%,70%,${a})`);
-          g.addColorStop(1, `hsla(${c.hue},100%,50%,0)`);
-          ctx.fillStyle = g; ctx.beginPath(); ctx.arc(c.x, c.y, c.r * 4, 0, Math.PI * 2); ctx.fill();
-          if (c.y < -10) chispas[k] = nueva(false);
-        });
-      }
-      requestAnimationFrame(tick);
+    // cada tono de chispa se dibuja una sola vez y luego se estampa (mucho más ligero en móvil)
+    const SPR = {}, R = 32;
+    const sprite = (hue) => {
+      const h = Math.round(hue / 3) * 3;
+      if (SPR[h]) return SPR[h];
+      const s = document.createElement("canvas"); s.width = s.height = R * 2;
+      const c2 = s.getContext("2d"), g = c2.createRadialGradient(R, R, 0, R, R, R);
+      g.addColorStop(0, `hsla(${h},100%,70%,1)`); g.addColorStop(1, `hsla(${h},100%,50%,0)`);
+      c2.fillStyle = g; c2.fillRect(0, 0, R * 2, R * 2);
+      return (SPR[h] = s);
     };
-    tick();
+    let visible = true, enMarcha = false;
+    new IntersectionObserver(([e]) => (visible = e.isIntersecting)).observe(cv);
+    const pintar = () => {
+      ctx.clearRect(0, 0, W, H);
+      ctx.globalCompositeOperation = "lighter";
+      chispas.forEach((c, k) => {
+        c.y -= c.v; c.w += c.ws; c.x += Math.sin(c.w) * 0.5;
+        const a = Math.max(0, Math.min(1, c.y / H)) * c.vida, d = c.r * 4;
+        if (a > 0.01) { ctx.globalAlpha = a; ctx.drawImage(sprite(c.hue), c.x - d, c.y - d, d * 2, d * 2); }
+        if (c.y < -10) chispas[k] = nueva(false);
+      });
+      ctx.globalAlpha = 1;
+    };
+    const tick = () => { if (visible && !document.hidden) pintar(); requestAnimationFrame(tick); };
+    pintar();
+    // la animación arranca cuando la página ya ha cargado, para no competir con la carga
+    const arrancar = () => { if (enMarcha) return; enMarcha = true; requestAnimationFrame(tick); };
+    const tras = () => ("requestIdleCallback" in window ? requestIdleCallback(arrancar, { timeout: 1500 }) : setTimeout(arrancar, 600));
+    document.readyState === "complete" ? tras() : window.addEventListener("load", tras, { once: true });
   }
 
   /* ---------- Reveal + contadores ---------- */
@@ -429,7 +440,10 @@
   function arrancar() { if (!raf && !quieto) raf = requestAnimationFrame(bucle); }
   medir(); pintar(2);
   let rt; window.addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(() => { medir(); pintar(2); }, 150); });
-  new IntersectionObserver(([e]) => { visible = e.isIntersecting; if (visible) arrancar(); }).observe(cv);
-  document.addEventListener("visibilitychange", arrancar);
-  arrancar();
+  let listo = false;
+  const empezar = () => { listo = true; arrancar(); };
+  new IntersectionObserver(([e]) => { visible = e.isIntersecting; if (visible && listo) arrancar(); }).observe(cv);
+  document.addEventListener("visibilitychange", () => listo && arrancar());
+  const tras = () => ("requestIdleCallback" in window ? requestIdleCallback(empezar, { timeout: 1500 }) : setTimeout(empezar, 600));
+  document.readyState === "complete" ? tras() : window.addEventListener("load", tras, { once: true });
 })();
