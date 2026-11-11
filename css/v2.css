@@ -293,3 +293,8 @@ h3, h4 { font-family: var(--f-display); font-weight: 700; }
 .mapa__bloqueo p { margin: 0; max-width: 340px; font-size: .88rem; color: rgba(243,238,220,.78); }
 .mapa__bloqueo a { color: rgba(243,238,220,.7); font-size: .8rem; text-decoration: underline; }
 .mapa__pin { z-index: 2; }
+
+/* Formulario de reserva: aviso de día cerrado */
+.form-aviso { display: block; margin-top: 6px; padding: 8px 10px; border-radius: 10px; background: #fde8e4; color: #8a1c0c; font-size: .82rem; font-weight: 600; letter-spacing: 0; text-transform: none; line-height: 1.35; }
+.form-aviso[hidden] { display: none; }
+.form-evento select:disabled { opacity: .5; }

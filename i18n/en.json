@@ -1432,5 +1432,8 @@
  "Un caldo de ternera o de gallina con bolitas de harina de maíz y queso. El nombre viene de “bolita”. Con este plato Loren llevó a Paraguay al Mundial de Comidas de Ibai Llanos.": "A beef or chicken broth with little balls of cornmeal and cheese. The name comes from \"bolita\" (little ball). With this dish Loren took Paraguay to Ibai Llanos' Food World Cup.",
  "Ternera o gallina cocida a fuego lento, verduras y bolitas de harina de maíz amasadas con queso.": "Beef or chicken simmered slowly, vegetables and little cornmeal balls kneaded with cheese.",
  "Cerrado": "Closed",
- "el {d} a las {h}": "on {d} at {h}"
+ "el {d} a las {h}": "on {d} at {h}",
+ "Ese día estamos cerrados. Abrimos de miércoles a domingo: elige otro día.": "We're closed that day. We open Wednesday to Sunday: please choose another day.",
+ "Hoy ya no quedan horas": "No times left today",
+ "Hoy ya no quedan horas para reservar: elige otro día.": "There are no booking times left today: please choose another day."
 }

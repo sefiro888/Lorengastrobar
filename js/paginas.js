@@ -186,9 +186,39 @@
   const fr = $("#form-reserva");
   if (fr) {
     const fecha = $("input[name=fecha]", fr);
-    if (fecha) fecha.min = new Date().toISOString().slice(0, 10);
+    const hora = $("select[name=hora]", fr);
+    const hoyISO = () => { const d = new Date(); return new Date(d - d.getTimezoneOffset() * 6e4).toISOString().slice(0, 10); };
+    if (fecha) fecha.min = hoyISO();
+    // Horas según el día elegido: nada los días que cerramos, y sólo dentro del horario (última reserva 1 h antes de cerrar)
+    const HORAS = hora ? [...hora.options].map((o) => o.value) : [];
+    const aDec = (t) => { const [h, m] = t.split(":").map(Number); return h + m / 60; };
+    const aviso = document.createElement("small");
+    aviso.className = "form-aviso"; aviso.setAttribute("role", "alert"); aviso.hidden = true;
+    if (fecha) fecha.parentElement.appendChild(aviso);
+    const ajustarHoras = () => {
+      if (!fecha || !hora || !fecha.value) return;
+      const dia = new Date(fecha.value + "T12:00").getDay(), h = L.horario[dia];
+      if (h.cerrado) {
+        const abiertos = L.horario.map((x, i) => [x, i]).filter(([x]) => !x.cerrado);
+        aviso.textContent = T("Ese día estamos cerrados. Abrimos de miércoles a domingo: elige otro día.");
+        aviso.hidden = false;
+        fecha.setCustomValidity(aviso.textContent);
+        hora.disabled = true;
+        return abiertos;
+      }
+      aviso.hidden = true; fecha.setCustomValidity(""); hora.disabled = false;
+      const ahora = new Date(), esHoy = fecha.value === hoyISO(), yaH = ahora.getHours() + ahora.getMinutes() / 60;
+      const validas = HORAS.filter((t) => { const x = aDec(t); return x >= h.abre && x <= h.cierra - 1 && (!esHoy || x > yaH + 0.5); });
+      const antes = hora.value;
+      hora.innerHTML = validas.length ? validas.map((t) => `<option>${t}</option>`).join("") : `<option value="">${T("Hoy ya no quedan horas")}</option>`;
+      if (validas.includes(antes)) hora.value = antes;
+      if (!validas.length) { aviso.textContent = T("Hoy ya no quedan horas para reservar: elige otro día."); aviso.hidden = false; fecha.setCustomValidity(aviso.textContent); }
+    };
+    if (fecha) { fecha.addEventListener("change", ajustarHoras); fecha.addEventListener("input", ajustarHoras); }
     fr.addEventListener("submit", (e) => {
       e.preventDefault();
+      ajustarHoras();
+      if (!fr.reportValidity()) return;
       const f = new FormData(fr);
       const d = f.get("fecha") ? new Date(f.get("fecha") + "T12:00").toLocaleDateString(LOCALE, { weekday: "long", day: "numeric", month: "long" }) : "";
       const msg = T("¡Hola Loren! Me gustaría reservar mesa 🙂") + `\n• ${T("Nombre")}: ${f.get("nombre")}\n• ${T("Día")}: ${d}\n• ${T("Hora")}: ${f.get("hora")}\n• ${T("Personas")}: ${f.get("personas")}\n• ${T("Zona")}: ${f.get("zona")}\n${f.get("nota") ? "• " + T("Nota") + ": " + f.get("nota") : ""}`;
