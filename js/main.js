@@ -361,6 +361,13 @@
   $$("[data-link]").forEach((a) => { const u = L.links[a.dataset.link]; if (u) a.href = u; });
   $$("[data-wa-recoger]").forEach((a) => (a.href = wa(T("¡Hola Loren! Quería encargar para recoger en el local:") + "\n• \n• \n" + T("Hora aproximada de recogida:") + " ")));
 
+  /* ---------- Eventos: presupuesto por WhatsApp ---------- */
+  $$("[data-wa-evento]").forEach((a) => {
+    const combo = a.dataset.waEvento;
+    a.href = wa(T("¡Mba'éichapa, Loren! Quiero organizar un evento:") + (combo ? "\n• " + T("Me interesa") + ": " + T(combo) : "") +
+      "\n• " + T("Tipo") + ": \n• " + T("Personas") + ": \n• " + T("Fecha") + ": ");
+  });
+
   /* ---------- Reserva rápida ---------- */
   $$("[data-wa-menu]").forEach((a) => {
     a.href = wa(T("¡Hola Loren! ¿Qué tenéis hoy de menú del día? 🙂"));

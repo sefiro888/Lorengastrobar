@@ -1489,5 +1489,22 @@
  "La bebida nacional es el tereré: yerba mate con agua bien fría, que se comparte a todas horas. Con la comida, en Loren triunfan la Guaraná y la Pilsen, la cerveza de Paraguay.": "La beguda nacional és el tereré: herba mate amb aigua ben freda, que es comparteix a totes hores. Amb el menjar, a Loren triomfen la Guaraná i la Pilsen, la cervesa del Paraguai.",
  "Política de cookies": "Política de galetes",
  "Escuchar pronunciación": "Escolta la pronunciació",
- "Hoy": "Avui"
+ "Hoy": "Avui",
+ "<b>4,6</b><span><span class=\"estrellas\">★★★★★</span>más de 700 reseñas en Google</span>": "<b>4,6</b><span><span class=\"estrellas\">★★★★★</span>més de 700 ressenyes a Google</span>",
+ "<b data-count=\"4.6\" data-suf=\"★\">0</b><span>media en más de 700 reseñas de Google</span>": "<b data-count=\"4.6\" data-suf=\"★\">0</b><span>de mitjana en més de 700 ressenyes de Google</span>",
+ "Más de 700 reseñas <em>no se equivocan</em>": "Més de 700 ressenyes <em>no s'equivoquen</em>",
+ "<b>4,6</b><small>+700 reseñas · Google</small>": "<b>4,6</b><small>+700 ressenyes · Google</small>",
+ "4,6 ★ en Google (+700)": "4,6 ★ a Google (+700)",
+ "<a class=\"btn\" data-wa-evento=\"\" href=\"#\" rel=\"noopener\" target=\"_blank\">Pedir presupuesto</a><a class=\"btn btn--ghost\" href=\"#bandejas\">Ver bandejas</a>": "<a class=\"btn\" data-wa-evento=\"\" href=\"#\" rel=\"noopener\" target=\"_blank\">Demanar pressupost</a><a class=\"btn btn--ghost\" href=\"#bandejas\">Veure safates</a>",
+ "<a class=\"btn\" data-wa-evento=\"\" href=\"#\" rel=\"noopener\" target=\"_blank\">Pedir presupuesto</a><a class=\"btn btn--line\" href=\"tel:+34602076828\">Llamar: 602 07 68 28</a>": "<a class=\"btn\" data-wa-evento=\"\" href=\"#\" rel=\"noopener\" target=\"_blank\">Demanar pressupost</a><a class=\"btn btn--line\" href=\"tel:+34602076828\">Trucar: 602 07 68 28</a>",
+ "<b>Horario amplio</b><span>Viernes y sábados, hasta medianoche.</span>": "<b>Horari ampli</b><span>Divendres i dissabtes, fins a mitjanit.</span>",
+ "<b>Trae tu tarta</b><span>¿Cumpleaños? Puedes traer tu tarta y nosotros la sacamos con velas. Si ponemos nosotros los platos y cubiertos, hay un suplemento de 10 € en total.</span>": "<b>Porta el teu pastís</b><span>Aniversari? Pots portar el teu pastís i nosaltres el traiem amb espelmes. Si posem nosaltres els plats i coberts, hi ha un suplement de 10 € en total.</span>",
+ "Con al menos 24 horas de antelación, ajustamos cantidades y hora de recogida o de reserva.": "Amb almenys 24 hores d'antelació, ajustem quantitats i hora de recollida o de reserva.",
+ "Escríbenos por WhatsApp: tipo de evento, personas, fecha y lo que te apetece.": "Escriu-nos per WhatsApp: tipus d'esdeveniment, persones, data i el que et ve de gust.",
+ "Fachada de Loren Restobar en Carrer de la Muntanya 115": "Façana de Loren Restobar al Carrer de la Muntanya 115",
+ "Sí, puedes traer tu tarta de cumpleaños. Avísanos al reservar y la tenemos lista para el momento de las velas. Si necesitas que pongamos platos y cubiertos, hay un suplemento de 10 € en total.": "Sí, pots portar el teu pastís d'aniversari. Avisa'ns en reservar i el tenim a punt per al moment de les espelmes. Si necessites que posem plats i coberts, hi ha un suplement de 10 € en total.",
+ "Todos los combos se encargan con al menos 24 horas de antelación. Para eventos grandes, bodas o fechas señaladas, cuanto antes mejor: así aseguramos día y cantidades.": "Tots els combos s'encarreguen amb almenys 24 hores d'antelació. Per a esdeveniments grans, casaments o dates assenyalades, com més aviat millor: així assegurem dia i quantitats.",
+ "⏰ Todos los combos se encargan con al menos 24 horas de antelación.": "⏰ Tots els combos s'encarreguen amb almenys 24 hores d'antelació.",
+ "Me interesa": "M'interessa",
+ "Muchos bocaditos paraguayos se pueden adaptar y varios clásicos se elaboran sin trigo. Indícalo al escribirnos y te asesoramos.": "Molts bocadets paraguaians es poden adaptar i diversos clàssics s'elaboren sense blat. Indica-ho quan ens escriguis i t'assessorem."
 }

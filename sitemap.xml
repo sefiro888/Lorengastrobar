@@ -21,7 +21,6 @@
     <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-asado-olla.webp</image:loc></image:image>
     <image:image><image:loc>https://lorenrestobar.com/img/carta/carta-exterior.webp</image:loc></image:image>
     <image:image><image:loc>https://lorenrestobar.com/img/carta/carta-interior.webp</image:loc></image:image>
-    <image:image><image:loc>https://lorenrestobar.com/img/local/barra.webp</image:loc></image:image>
     <image:image><image:loc>https://lorenrestobar.com/img/local/sala-pared-verde.webp</image:loc></image:image>
     <image:image><image:loc>https://lorenrestobar.com/img/clientes/mbeju-chipa-guazu.webp</image:loc></image:image>
     <image:image><image:loc>https://lorenrestobar.com/img/platos/yuca-brava-pro.webp</image:loc></image:image>
@@ -52,7 +51,6 @@
     <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-asado-olla.webp</image:loc></image:image>
     <image:image><image:loc>https://lorenrestobar.com/img/carta/carta-exterior.webp</image:loc></image:image>
     <image:image><image:loc>https://lorenrestobar.com/img/carta/carta-interior.webp</image:loc></image:image>
-    <image:image><image:loc>https://lorenrestobar.com/img/local/barra.webp</image:loc></image:image>
     <image:image><image:loc>https://lorenrestobar.com/img/local/sala-pared-verde.webp</image:loc></image:image>
     <image:image><image:loc>https://lorenrestobar.com/img/clientes/mbeju-chipa-guazu.webp</image:loc></image:image>
     <image:image><image:loc>https://lorenrestobar.com/img/platos/yuca-brava-pro.webp</image:loc></image:image>
@@ -83,7 +81,6 @@
     <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-asado-olla.webp</image:loc></image:image>
     <image:image><image:loc>https://lorenrestobar.com/img/carta/carta-exterior.webp</image:loc></image:image>
     <image:image><image:loc>https://lorenrestobar.com/img/carta/carta-interior.webp</image:loc></image:image>
-    <image:image><image:loc>https://lorenrestobar.com/img/local/barra.webp</image:loc></image:image>
     <image:image><image:loc>https://lorenrestobar.com/img/local/sala-pared-verde.webp</image:loc></image:image>
     <image:image><image:loc>https://lorenrestobar.com/img/clientes/mbeju-chipa-guazu.webp</image:loc></image:image>
     <image:image><image:loc>https://lorenrestobar.com/img/platos/yuca-brava-pro.webp</image:loc></image:image>
@@ -398,11 +395,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://lorenrestobar.com/en/eventos.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenrestobar.com/eventos.html"/>
     <image:image><image:loc>https://lorenrestobar.com/img/local/catering-bandeja.webp</image:loc></image:image>
-    <image:image><image:loc>https://lorenrestobar.com/img/platos/chipa-guazu.webp</image:loc></image:image>
     <image:image><image:loc>https://lorenrestobar.com/img/local/sala-pared-verde.webp</image:loc></image:image>
     <image:image><image:loc>https://lorenrestobar.com/img/local/mesa-grupo.webp</image:loc></image:image>
-    <image:image><image:loc>https://lorenrestobar.com/img/local/barra.webp</image:loc></image:image>
-    <image:image><image:loc>https://lorenrestobar.com/img/local/bandeja-chipas-empanadas.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lorenrestobar.com/ca/eventos.html</loc>
@@ -412,11 +406,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://lorenrestobar.com/en/eventos.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenrestobar.com/eventos.html"/>
     <image:image><image:loc>https://lorenrestobar.com/img/local/catering-bandeja.webp</image:loc></image:image>
-    <image:image><image:loc>https://lorenrestobar.com/img/platos/chipa-guazu.webp</image:loc></image:image>
     <image:image><image:loc>https://lorenrestobar.com/img/local/sala-pared-verde.webp</image:loc></image:image>
     <image:image><image:loc>https://lorenrestobar.com/img/local/mesa-grupo.webp</image:loc></image:image>
-    <image:image><image:loc>https://lorenrestobar.com/img/local/barra.webp</image:loc></image:image>
-    <image:image><image:loc>https://lorenrestobar.com/img/local/bandeja-chipas-empanadas.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lorenrestobar.com/en/eventos.html</loc>
@@ -426,11 +417,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://lorenrestobar.com/en/eventos.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenrestobar.com/eventos.html"/>
     <image:image><image:loc>https://lorenrestobar.com/img/local/catering-bandeja.webp</image:loc></image:image>
-    <image:image><image:loc>https://lorenrestobar.com/img/platos/chipa-guazu.webp</image:loc></image:image>
     <image:image><image:loc>https://lorenrestobar.com/img/local/sala-pared-verde.webp</image:loc></image:image>
     <image:image><image:loc>https://lorenrestobar.com/img/local/mesa-grupo.webp</image:loc></image:image>
-    <image:image><image:loc>https://lorenrestobar.com/img/local/barra.webp</image:loc></image:image>
-    <image:image><image:loc>https://lorenrestobar.com/img/local/bandeja-chipas-empanadas.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lorenrestobar.com/visitanos.html</loc>
@@ -439,7 +427,7 @@
     <xhtml:link rel="alternate" hreflang="ca" href="https://lorenrestobar.com/ca/visitanos.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://lorenrestobar.com/en/visitanos.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenrestobar.com/visitanos.html"/>
-    <image:image><image:loc>https://lorenrestobar.com/img/local/barra.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-fachada.webp</image:loc></image:image>
     <image:image><image:loc>https://lorenrestobar.com/img/nuevo/jose-terraza.webp</image:loc></image:image>
     <image:image><image:loc>https://lorenrestobar.com/img/nuevo/fanny-jennifer.webp</image:loc></image:image>
     <image:image><image:loc>https://lorenrestobar.com/img/local/sala-pared-verde.webp</image:loc></image:image>
@@ -455,7 +443,7 @@
     <xhtml:link rel="alternate" hreflang="ca" href="https://lorenrestobar.com/ca/visitanos.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://lorenrestobar.com/en/visitanos.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenrestobar.com/visitanos.html"/>
-    <image:image><image:loc>https://lorenrestobar.com/img/local/barra.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-fachada.webp</image:loc></image:image>
     <image:image><image:loc>https://lorenrestobar.com/img/nuevo/jose-terraza.webp</image:loc></image:image>
     <image:image><image:loc>https://lorenrestobar.com/img/nuevo/fanny-jennifer.webp</image:loc></image:image>
     <image:image><image:loc>https://lorenrestobar.com/img/local/sala-pared-verde.webp</image:loc></image:image>
@@ -471,7 +459,7 @@
     <xhtml:link rel="alternate" hreflang="ca" href="https://lorenrestobar.com/ca/visitanos.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://lorenrestobar.com/en/visitanos.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lorenrestobar.com/visitanos.html"/>
-    <image:image><image:loc>https://lorenrestobar.com/img/local/barra.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-fachada.webp</image:loc></image:image>
     <image:image><image:loc>https://lorenrestobar.com/img/nuevo/jose-terraza.webp</image:loc></image:image>
     <image:image><image:loc>https://lorenrestobar.com/img/nuevo/fanny-jennifer.webp</image:loc></image:image>
     <image:image><image:loc>https://lorenrestobar.com/img/local/sala-pared-verde.webp</image:loc></image:image>
