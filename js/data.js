@@ -98,13 +98,13 @@ window.CARTA = [
     desc: "Chorizo criollo con nuestro chimichurri.", tags: ["comp"] },
 
   /* --- EMPANADAS --- */
-  { cat: "empanadas", nombre: "Empanada de ternera", precio: 3.80, img: "img/kv/empanadas-cesta.webp",
+  { cat: "empanadas", nombre: "Empanada de ternera", precio: 3.80, img: "img/platos/empanada-ternera.webp",
     desc: "Ternera, cebolla, pimiento, ajo, huevo duro, comino y pimienta. La más pedida.", tags: ["top"] },
   { cat: "empanadas", nombre: "Empanada de pollo", precio: 3.60, img: "img/platos/empanada-pollo.webp",
     desc: "Pechuga de pollo con cebolla, pimiento verde y rojo, ajo y huevo duro." },
   { cat: "empanadas", nombre: "Empanada de jamón y queso", precio: 3.40, img: "img/platos/empanada-jyq.webp",
     desc: "Jamón dulce y mozzarella fundida." },
-  { cat: "empanadas", nombre: "Empanada de choclo", precio: 3.40, img: "img/platos/hl-empanadas.webp",
+  { cat: "empanadas", nombre: "Empanada de choclo", precio: 3.40, img: "img/platos/empanada-choclo.webp",
     desc: "Maíz tierno y mozzarella. Dulce, suave y muy paraguaya.", tags: ["py"] },
   { cat: "empanadas", nombre: "Suplemento de mandioca", precio: 1.90, img: "img/platos/mandioca.webp",
     desc: "Mandioca (yuca) hervida, el pan de cada día en Paraguay. Para acompañar.", tags: ["py", "sintrigo"] },
@@ -165,7 +165,7 @@ window.CARTA = [
   /* --- PASTAS --- */
   { cat: "platos", nombre: "Ñoquis de ternera", precio: 15.90, img: "img/nuevo/noquis.webp",
     desc: "Ñoquis caseros con estofado de carne de ternera.", tags: ["top"] },
-  { cat: "platos", nombre: "Tallarín de ternera", precio: 15.90, img: "img/platos/tallarin.webp",
+  { cat: "platos", nombre: "Tallarín de ternera", precio: 15.90, img: "img/platos/tallarin-ternera.webp",
     desc: "Tallarines con carne de ternera, como los del domingo en casa." },
 
   /* --- LAS TAPAS DE SIEMPRE --- */
