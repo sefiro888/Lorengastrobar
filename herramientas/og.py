@@ -19,9 +19,9 @@ PAGINAS = {
         "ca": ("Cuina casolana des del 2020", "Restaurant paraguaià", "a Barcelona"),
         "en": ("Homemade cooking since 2020", "Paraguayan restaurant", "in Barcelona")}),
     "carta": ("img/platos/plato-mila-caballo.webp", "50% 50%", {
-        "es": ("Precios y pedidos", "La carta", "111 platos y bebidas"),
-        "ca": ("Preus i comandes", "La carta", "111 plats i begudes"),
-        "en": ("Prices and orders", "The menu", "111 dishes and drinks")}),
+        "es": ("Precios y pedidos", "La carta", "107 platos y bebidas"),
+        "ca": ("Preus i comandes", "La carta", "107 plats i begudes"),
+        "en": ("Prices and orders", "The menu", "107 dishes and drinks")}),
     "sabores": ("img/platos/hl-chipa-guazu.webp", "50% 50%", {
         "es": ("Platos típicos y receta", "Comida paraguaya", "explicada"),
         "ca": ("Plats típics i recepta", "Cuina paraguaiana", "explicada"),
