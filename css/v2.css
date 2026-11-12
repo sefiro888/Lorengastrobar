@@ -358,3 +358,16 @@ h3, h4 { font-family: var(--f-display); font-weight: 700; }
 .collage--uno { max-width: 500px; }
 .collage--uno .c0 { width: 66%; aspect-ratio: 1; left: 17%; top: 17%; }
 .collage--uno .enc { left: -4%; top: -4%; width: 108%; height: 108%; }
+
+/* Han venido a probar nuestra comida (Inicio): reels de creadores, se cargan al pulsar play */
+.vistos__grid { display: flex; flex-wrap: wrap; justify-content: center; gap: clamp(20px, 4vw, 48px); margin-top: 10px; }
+.visto { margin: 0; width: min(300px, 100%); display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.visto__btn { position: relative; width: 100%; aspect-ratio: 9 / 16; border: 0; border-radius: 22px; overflow: hidden; cursor: pointer; background: radial-gradient(circle at 50% 35%, var(--vino-500, #7a1a3a), var(--vino-900, #2a000e) 75%); box-shadow: 0 30px 60px -22px rgba(0,0,0,.8), 0 0 0 5px rgba(243,238,220,.9); display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 6px; padding: 0 16px 26px; color: var(--crema, #f3eedc); text-align: center; }
+.visto__enc { position: absolute; inset: 8% -12% auto; aspect-ratio: 1; color: var(--crema, #f3eedc); opacity: .22; animation: girar 90s linear infinite; pointer-events: none; }
+.visto__h { position: relative; font-family: var(--f-display, serif); font-size: 1.7rem; line-height: 1.1; word-break: break-word; }
+.visto__l { position: relative; font-size: .85rem; color: var(--maiz, #e8b23a); font-weight: 700; }
+.visto__btn .ig-video__play { inset: 0 0 25% 0; transition: transform .3s; }
+.visto__btn:hover .ig-video__play { transform: scale(1.1); }
+.visto figcaption a { color: var(--crema, #f3eedc); font-size: .85rem; text-decoration: underline; opacity: .85; }
+.visto .ig-video__frame { flex: none; width: min(340px, 100%); height: 600px; }
+.vistos__nota { text-align: center; margin-top: 26px; font-size: .78rem; color: rgba(243,238,220,.6); }
