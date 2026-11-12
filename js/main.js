@@ -394,6 +394,17 @@
     new IntersectionObserver(([e]) => { if (!e.isIntersecting) v.pause(); }, { threshold: 0.2 }).observe(v);
   });
 
+  /* ---------- Menú del día: se destaca el precio de hoy ---------- */
+  const hoyMdd = String(new Date().getDay());
+  const gruposMdd = [...document.querySelectorAll(".precios [data-dias]")];
+  if (gruposMdd.some((x) => x.dataset.dias.split(",").includes(hoyMdd))) { // lunes y martes: sin menú, no se destaca nada
+    gruposMdd.forEach((el) => {
+      const es = el.dataset.dias.split(",").includes(hoyMdd);
+      el.classList.add(es ? "es-hoy" : "no-hoy");
+      if (es) el.insertAdjacentHTML("afterbegin", '<span class="hoy-eti">' + T("Hoy") + "</span>");
+    });
+  }
+
   /* ---------- Año footer ---------- */
   $$("[data-anio]").forEach((el) => (el.textContent = new Date().getFullYear()));
 })();

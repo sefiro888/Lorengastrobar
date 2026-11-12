@@ -310,3 +310,9 @@ h3, h4 { font-family: var(--f-display); font-weight: 700; }
 .receta__texto li + li { margin-top: 7px; }
 .receta__texto ol li::marker { color: var(--maiz); font-weight: 800; }
 @media (max-width: 860px) { .receta__texto { grid-template-columns: 1fr; } }
+
+/* ---------- Menú del día: precio de hoy ---------- */
+.pergamino .precios > div.no-hoy { opacity: .45; }
+.pergamino .precios > div.no-hoy .precio { box-shadow: none; }
+.pergamino .precios .hoy-eti { font: 400 1.5rem/1 var(--f-script); color: var(--vino); transform: rotate(-4deg); margin: 14px 0 -16px; }
+.pergamino .precios { align-items: flex-end; }
