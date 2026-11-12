@@ -318,4 +318,19 @@ h3, h4 { font-family: var(--f-display); font-weight: 700; }
 .pergamino .precios { align-items: flex-end; }
 
 /* Eventos: los combos se centran sea cual sea su número */
-.bandejas-grid { grid-template-columns: repeat(auto-fit, minmax(260px, 360px)); justify-content: center; }
+
+/* Combos de bocaditos (Eventos): 4 combos con precio + lista por unidad */
+.bandejas-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; justify-content: center; }
+.bandejas-grid > * { min-width: 0; }
+.combo-precios { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 0 0 18px; }
+.combo-precios > div { background: #fbf4e4; border-radius: 14px; padding: 10px 6px; text-align: center; display: flex; flex-direction: column; gap: 2px; }
+.combo-precios span { font-size: .74rem; color: var(--tinta-2); }
+.combo-precios b { font-size: 1.05rem; white-space: nowrap; color: var(--vino-900); }
+.combo-unidad { margin: 34px auto 0; max-width: 960px; background: #fff; border-radius: var(--r-l); box-shadow: var(--sombra-s); padding: 24px 28px 28px; }
+.combo-unidad h3 { font-size: 1.4rem; text-align: center; margin-bottom: 16px; }
+.combo-unidad__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.combo-unidad__grid > div { display: flex; flex-direction: column; gap: 6px; text-align: center; }
+.combo-unidad__grid span { font-size: .9rem; color: var(--tinta-2); flex: 1; }
+.combo-unidad__grid em { font-style: normal; font-weight: 800; color: var(--vino-900); font-size: 1.15rem; }
+@media (max-width: 1100px) { .bandejas-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .bandejas-grid { grid-template-columns: 1fr; } .combo-unidad__grid { grid-template-columns: 1fr; } }
