@@ -373,3 +373,16 @@ h3, h4 { font-family: var(--f-display); font-weight: 700; }
 .vistos__nota { text-align: center; margin-top: 26px; font-size: .78rem; color: rgba(243,238,220,.6); }
 .vistos__aviso { text-align: center; margin: 26px auto 0; max-width: 560px; font-size: .95rem; color: var(--crema, #f3eedc); font-weight: 600; }
 .vistos__aviso + .vistos__nota { margin-top: 10px; }
+
+/* Vídeos de creadores: marco de móvil, se ven enteros y se reproducen en la propia web */
+.movil-v { position: relative; width: 100%; padding: 11px; border-radius: 42px; background: #0b0b0c; box-shadow: 0 30px 60px -22px rgba(0,0,0,.85), 0 0 0 2px #2a2a2e, 0 0 0 5px rgba(243,238,220,.14); }
+.movil-v::before { content: ""; position: absolute; top: 19px; left: 50%; translate: -50% 0; width: 74px; height: 20px; border-radius: 12px; background: #0b0b0c; z-index: 3; pointer-events: none; }
+.movil-v video { display: block; width: 100%; aspect-ratio: 9 / 16; object-fit: cover; border-radius: 32px; background: #000; }
+.movil-v__play { position: absolute; inset: 11px; border: 0; border-radius: 32px; background: linear-gradient(to top, rgba(0,0,0,.35), rgba(0,0,0,0) 45%); cursor: pointer; display: grid; place-items: center; z-index: 2; transition: opacity .25s; }
+.movil-v__play span { width: 64px; height: 64px; border-radius: 50%; background: var(--maiz, #e8b23a); box-shadow: 0 6px 22px rgba(0,0,0,.5); position: relative; transition: transform .25s; }
+.movil-v__play span::after { content: ""; position: absolute; left: 25px; top: 19px; border-left: 19px solid var(--vino-900, #2a000e); border-top: 13px solid transparent; border-bottom: 13px solid transparent; }
+.movil-v__play:hover span { transform: scale(1.1); }
+.movil-v.is-playing .movil-v__play { opacity: 0; pointer-events: none; }
+.visto figcaption { display: flex; flex-direction: column; align-items: center; gap: 2px; text-align: center; }
+.visto figcaption b { font-family: var(--f-display, serif); font-size: 1.25rem; color: var(--crema, #f3eedc); font-weight: 600; }
+.visto figcaption span { font-size: .82rem; color: var(--maiz, #e8b23a); font-weight: 700; }

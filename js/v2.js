@@ -47,3 +47,35 @@
   }
 
 })();
+
+/* Vídeo de Instagram: no se carga nada de Instagram hasta que el visitante pulsa «play». */
+document.addEventListener("click", (e) => {
+  const b = e.target.closest("[data-ig]");
+  if (!b) return;
+  const f = document.createElement("iframe");
+  f.src = "https://www.instagram.com/reel/" + b.dataset.ig + "/embed/";
+  f.title = "Instagram";
+  f.setAttribute("allowfullscreen", "");
+  f.setAttribute("loading", "lazy");
+  f.className = "ig-video__frame";
+  b.closest(".ig-video")?.classList.add("ig-video--on");
+  b.replaceWith(f);
+});
+
+/* Vídeos de creadores en marco de móvil: play propio y sólo uno sonando a la vez. */
+document.addEventListener("click", (e) => {
+  const b = e.target.closest(".movil-v__play");
+  if (!b) return;
+  const v = b.parentElement.querySelector("video");
+  if (v) v.play();
+});
+document.addEventListener("play", (e) => {
+  const v = e.target;
+  if (!v.closest || !v.closest(".movil-v")) return;
+  document.querySelectorAll(".movil-v video").forEach((o) => { if (o !== v) o.pause(); });
+  v.parentElement.classList.add("is-playing");
+}, true);
+document.addEventListener("ended", (e) => {
+  const v = e.target;
+  if (v.closest && v.closest(".movil-v")) v.parentElement.classList.remove("is-playing");
+}, true);

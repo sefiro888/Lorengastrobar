@@ -243,17 +243,3 @@
     }).join("") + `<div class="horas-eje"><span></span><div><span>8h</span><span>12h</span><span>16h</span><span>20h</span><span>24h</span></div><span></span></div>`;
   }
 })();
-
-/* Vídeo de Instagram: no se carga nada de Instagram hasta que el visitante pulsa «play». */
-document.addEventListener("click", (e) => {
-  const b = e.target.closest("[data-ig]");
-  if (!b) return;
-  const f = document.createElement("iframe");
-  f.src = "https://www.instagram.com/reel/" + b.dataset.ig + "/embed/";
-  f.title = "Instagram";
-  f.setAttribute("allowfullscreen", "");
-  f.setAttribute("loading", "lazy");
-  f.className = "ig-video__frame";
-  b.closest(".ig-video")?.classList.add("ig-video--on");
-  b.replaceWith(f);
-});
