@@ -121,7 +121,7 @@ def construir():
             # i18n.js antes que el resto de scripts
             primero = sopa.find("script", src=True)
             if primero:
-                primero.insert_before(sopa.new_tag("script", src="js/i18n.js?v=25"))
+                primero.insert_before(sopa.new_tag("script", src="js/i18n.js?v=26"))
             html = str(sopa)
             if not html.lower().startswith("<!doctype"):
                 html = "<!doctype html>\n" + html

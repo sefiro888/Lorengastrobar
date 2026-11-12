@@ -334,3 +334,7 @@ h3, h4 { font-family: var(--f-display); font-weight: 700; }
 .combo-unidad__grid em { font-style: normal; font-weight: 800; color: var(--vino-900); font-size: 1.15rem; }
 @media (max-width: 1100px) { .bandejas-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 640px) { .bandejas-grid { grid-template-columns: 1fr; } .combo-unidad__grid { grid-template-columns: 1fr; } }
+
+/* Equipo de Historia: 5 fichas en una fila; en 2 columnas la última queda centrada */
+@media (min-width: 1101px) { .equipo { grid-template-columns: repeat(5, 1fr); gap: 14px; } }
+@media (min-width: 641px) and (max-width: 1100px) { .equipo > :last-child:nth-child(odd) { grid-column: 1 / -1; max-width: 50%; justify-self: center; } }
