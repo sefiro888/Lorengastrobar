@@ -1542,5 +1542,10 @@
  "Griselda te enseña cómo preparamos las de jamón y queso": "Griselda shows you how we make the ham and cheese ones",
  "Al reproducirlo se carga el vídeo desde Instagram, que puede usar cookies de Meta.": "Playing it loads the video from Instagram, which may use Meta cookies.",
  "Verlo en Instagram": "Watch it on Instagram",
- "Cesta de empanadas caseras de Loren Restobar": "Basket of homemade empanadas from Loren Restobar"
+ "Cesta de empanadas caseras de Loren Restobar": "Basket of homemade empanadas from Loren Restobar",
+ "<a class=\"btn\" data-wa-evento=\"\" href=\"#\" rel=\"noopener\" target=\"_blank\">Pedir presupuesto</a><a class=\"btn btn--ghost\" href=\"#bandejas\">Ver combos</a>": "<a class=\"btn\" data-wa-evento=\"\" href=\"#\" rel=\"noopener\" target=\"_blank\">Request a quote</a><a class=\"btn btn--ghost\" href=\"#bandejas\">See combos</a>",
+ "<b>Vídeos de Instagram, sólo si pulsas «play»:</b> algunos vídeos (por ejemplo, el de Sabores) se alojan en Instagram (Meta). Hasta que pulsas el botón de reproducir sólo se muestra una imagen de la propia web y no se contacta con Instagram; al pulsarlo, Instagram puede instalar sus cookies y recibir datos de tu navegación. Más información en la <a href=\"https://privacycenter.instagram.com/policy/cookies\" rel=\"noopener\" target=\"_blank\">política de cookies de Instagram</a>.": "<b>Instagram videos, only if you press play:</b> some videos (for example, the one in Flavours) are hosted on Instagram (Meta). Until you press the play button only an image from this site is shown and Instagram is not contacted; once pressed, Instagram may set its cookies and receive data about your browsing. More information in <a href=\"https://privacycenter.instagram.com/policy/cookies\" rel=\"noopener\" target=\"_blank\">Instagram's cookie policy</a>.",
+ "Combos de <em>bocaditos</em>": "<em>Party bites</em> combos",
+ "Esta web no usa cookies propias de publicidad ni de analítica. Sólo el mapa de Google Maps y los vídeos de Instagram usan cookies de terceros, y únicamente si los aceptas o pulsas «play».": "This website uses no first-party advertising or analytics cookies. Only the Google Maps map and Instagram videos use third-party cookies, and only if you accept them or press play.",
+ "Cantidad (50 o 100 unidades)": "Quantity (50 or 100 pieces)"
 }

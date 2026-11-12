@@ -1,7 +1,8 @@
 /* =========================================================
    LOREN RESTOBAR · Aviso de cookies y servicios de terceros
    - Nada de terceros se carga sin permiso: el mapa de Google Maps
-     (iframe con data-src) espera a que el visitante acepte.
+     (iframe con data-src) espera a que el visitante acepte, y los vídeos de
+     Instagram sólo se cargan cuando el visitante pulsa «play» (js/paginas.js).
    - «Aceptar» y «Rechazar» con el mismo peso; se puede cambiar
      en cualquier momento desde «Configurar cookies» (pie de página).
    - La elección se guarda en el navegador 12 meses (es técnica, no necesita permiso).
@@ -48,7 +49,7 @@
   aviso.innerHTML = `<div class="cookies__caja">
     <div class="cookies__txt">
       <b>${T("Usamos cookies de terceros")} 🍪</b>
-      <p>${T("Esta web no usa cookies propias de publicidad ni de analítica. Sólo el mapa de Google Maps usa cookies de Google, y únicamente si lo aceptas.")} <a href="${P}aviso-legal.html#cookies">${T("Política de cookies")}</a></p>
+      <p>${T("Esta web no usa cookies propias de publicidad ni de analítica. Sólo el mapa de Google Maps y los vídeos de Instagram usan cookies de terceros, y únicamente si los aceptas o pulsas «play».")} <a href="${P}aviso-legal.html#cookies">${T("Política de cookies")}</a></p>
       <label class="cookies__op" hidden><input type="checkbox" checked disabled> <span><b>${T("Necesarias")}</b> · ${T("recordar tu elección de cookies y los platos que apuntas en la carta. Siempre activas.")}</span></label>
       <label class="cookies__op" hidden><input type="checkbox" data-op="mapas"> <span><b>${T("Mapas (Google Maps)")}</b> · ${T("ver el mapa del local dentro de la web.")}</span></label>
     </div>

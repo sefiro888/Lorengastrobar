@@ -364,7 +364,7 @@
   /* ---------- Eventos: presupuesto por WhatsApp ---------- */
   $$("[data-wa-evento]").forEach((a) => {
     const combo = a.dataset.waEvento;
-    a.href = wa(T("¡Mba'éichapa, Loren! Quiero organizar un evento:") + (combo ? "\n• " + T("Me interesa") + ": " + T(combo) : "") +
+    a.href = wa(T("¡Mba'éichapa, Loren! Quiero organizar un evento:") + (combo ? "\n• " + T("Me interesa") + ": " + T(combo) + "\n• " + T("Cantidad (50 o 100 unidades)") + ": " : "") +
       "\n• " + T("Tipo") + ": \n• " + T("Personas") + ": \n• " + T("Fecha") + ": ");
   });
 
