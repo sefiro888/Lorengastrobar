@@ -280,10 +280,12 @@ h3, h4 { font-family: var(--f-display); font-weight: 700; }
 .cookies__btns [hidden] { display: none; }
 @media (max-width: 720px) {
   .cookies { left: 10px; right: 10px; bottom: 10px; }
-  .cookies__caja { flex-direction: column; align-items: stretch; gap: 14px; padding: 16px; }
-  .cookies__btns { max-width: none; justify-content: stretch; }
-  .cookies__btns .btn { flex: 1; }
-  .cookies__conf { width: 100%; text-align: center; }
+  .cookies__caja { flex-direction: column; align-items: stretch; gap: 10px; padding: 12px 14px; }
+  .cookies__txt { font-size: .78rem; line-height: 1.4; }
+  .cookies__txt > b { font-size: 1.05rem; margin-bottom: 2px; }
+  .cookies__btns { max-width: none; justify-content: stretch; gap: 8px; }
+  .cookies__btns .btn { flex: 1; min-width: 0; padding: .55em .9em; font-size: .85rem; }
+  .cookies__conf { width: 100%; text-align: center; padding: 4px; }
 }
 /* Mapa bloqueado hasta aceptar */
 .mapa__bloqueo { position: absolute; inset: 0; z-index: 1; display: grid; place-content: center; justify-items: center; gap: 8px; padding: 24px 24px 110px; text-align: center;
@@ -386,3 +388,17 @@ h3, h4 { font-family: var(--f-display); font-weight: 700; }
 .visto figcaption { display: flex; flex-direction: column; align-items: center; gap: 2px; text-align: center; }
 .visto figcaption b { font-family: var(--f-display, serif); font-size: 1.25rem; color: var(--crema, #f3eedc); font-weight: 600; }
 .visto figcaption span { font-size: .82rem; color: var(--maiz, #e8b23a); font-weight: 700; }
+
+/* Páginas de cada plato (chipa guazú, sopa paraguaya, mbejú, vorí vorí, empanadas) */
+.pgplato { display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(30px, 5vw, 70px); align-items: center; }
+.pgplato > * { min-width: 0; }
+.pgplato__pron { font-size: .95rem; letter-spacing: .14em; text-transform: uppercase; color: var(--tinta-2); margin: 4px 0 14px; }
+.pgplato__video { margin: 0; width: min(300px, 100%); justify-self: center; }
+.pgplato__foto { margin: 0; width: min(420px, 100%); justify-self: center; }
+.pgplato__foto img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 26px; box-shadow: 0 30px 60px -25px rgba(42,0,14,.55); display: block; }
+.otros { display: flex; flex-wrap: wrap; justify-content: center; gap: 22px; }
+.otro { width: 150px; text-align: center; font-weight: 700; color: var(--vino-900); }
+.otro img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 5px solid rgba(243,238,220,.95); box-shadow: 0 18px 36px -16px rgba(42,0,14,.55); display: block; transition: transform .4s var(--ease, ease); }
+.otro:hover img { transform: scale(1.06); }
+.otro span { display: block; margin-top: 10px; }
+@media (max-width: 860px) { .pgplato { grid-template-columns: 1fr; } .otro, .otro img { width: 120px; } .otro img { height: 120px; } }

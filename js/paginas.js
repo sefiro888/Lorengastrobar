@@ -114,6 +114,7 @@
           </figure>` : ""}
           <div class="entrada__pie">${precio}
             ${s.finde ? `<a class="btn btn--sm" href="${wa(T("¡Hola Loren! ¿Este finde tenéis {x}? Quería reservar.", { x: T(s.n) }))}" target="_blank" rel="noopener">${T("Reservar para el finde")}</a>` : `<a class="btn btn--sm btn--vino" href="${PREF}carta.html">${T("Ver en la carta")}</a><a class="btn btn--sm btn--glovo" href="${L.links.glovo}" target="_blank" rel="noopener">${T("Pedir en Glovo")}</a>`}
+            ${["chipa-guazu", "sopa-paraguaya", "mbeju", "vori-vori", "empanadas"].includes(s.id) ? `<a class="btn btn--sm btn--ghost btn--vino" href="${PREF}${s.id}.html">${T("Leer más")}</a>` : ""}
           </div>
         </div></article>`;
     }).join("");

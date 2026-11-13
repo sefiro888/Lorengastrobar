@@ -11,6 +11,7 @@ español en la raíz, catalán en `ca/` y inglés en `en/`.
 | Ruta | Qué es |
 |---|---|
 | `index.html`, `carta.html`, `sabores.html`, `historia.html`, `domicilio.html`, `eventos.html`, `visitanos.html`, `aviso-legal.html` | Páginas en español (**son la fuente**: se editan éstas) |
+| `chipa-guazu.html`, `sopa-paraguaya.html`, `mbeju.html`, `vori-vori.html`, `empanadas.html` | Una página por plato estrella (SEO). Para añadir otra: copiar una de éstas, añadir su nombre a `PAGINAS` en `herramientas/i18n.py`, `herramientas/seo.py` y su entrada en `herramientas/og.py`, y enlazarla desde `js/paginas.js` (lista de "Leer más") |
 | `ca/`, `en/` | Páginas traducidas. **Se generan**, no se editan a mano |
 | `404.html` | Página de error (sólo ES, `<base href="/">`) |
 | `resena/index.html` | Redirige a "Escribir reseña" de Google. Es el destino de los QR impresos: si cambia el enlace de Google, se cambia aquí |

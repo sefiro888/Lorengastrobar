@@ -23,7 +23,7 @@ from playwright.sync_api import sync_playwright
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = "https://lorenrestobar.com"
 PUERTO = 8791
-PAGINAS = ["index", "historia", "sabores", "carta", "domicilio", "eventos", "visitanos", "aviso-legal"]
+PAGINAS = ["index", "historia", "sabores", "carta", "domicilio", "eventos", "visitanos", "aviso-legal", "chipa-guazu", "sopa-paraguaya", "mbeju", "vori-vori", "empanadas"]
 SIN_INDEXAR = {"aviso-legal"}
 IDIOMAS = {"es": "", "ca": "ca/", "en": "en/"}
 LOCALES = {"es": "es_ES", "ca": "ca_ES", "en": "en_GB"}

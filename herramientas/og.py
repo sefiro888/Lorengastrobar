@@ -42,6 +42,26 @@ PAGINAS = {
         "es": ("Horario y reservas", "Visítanos", "en Camp de l'Arpa"),
         "ca": ("Horari i reserves", "Visita'ns", "a Camp de l'Arpa"),
         "en": ("Opening hours and bookings", "Visit us", "in Camp de l'Arpa")}),
+    "chipa-guazu": ("img/platos/hl-chipa-guazu.webp", "50% 50%", {
+        "es": ("Sabores de Paraguay", "Chipa guazú", "qué es y cómo la hacemos"),
+        "ca": ("Sabors del Paraguai", "Chipa guazú", "què és i com la fem"),
+        "en": ("Flavours of Paraguay", "Chipa guazú", "what it is, how we make it")}),
+    "sopa-paraguaya": ("img/platos/sopa-paraguaya.webp", "50% 50%", {
+        "es": ("Sabores de Paraguay", "Sopa paraguaya", "la que se come con tenedor"),
+        "ca": ("Sabors del Paraguai", "Sopa paraguaiana", "la que es menja amb forquilla"),
+        "en": ("Flavours of Paraguay", "Sopa paraguaya", "the one you eat with a fork")}),
+    "mbeju": ("img/platos/mbeju-queso.webp", "50% 50%", {
+        "es": ("Sabores de Paraguay", "Mbejú", "el queso estira por dentro"),
+        "ca": ("Sabors del Paraguai", "Mbejú", "el formatge s'estira per dins"),
+        "en": ("Flavours of Paraguay", "Mbejú", "stretchy cheese inside")}),
+    "vori-vori": ("img/platos/hl-vori-vori.webp", "50% 50%", {
+        "es": ("Sabores de Paraguay", "Vorí vorí", "el caldo de bolitas de maíz"),
+        "ca": ("Sabors del Paraguai", "Vorí vorí", "el brou de boletes de blat de moro"),
+        "en": ("Flavours of Paraguay", "Vorí vorí", "the corn-dumpling broth")}),
+    "empanadas": ("img/platos/empanada-ternera.webp", "50% 50%", {
+        "es": ("Cocina casera", "Empanadas paraguayas", "ternera, pollo, jamón y queso, choclo"),
+        "ca": ("Cuina casolana", "Empanades paraguaianes", "vedella, pollastre, pernil i formatge, choclo"),
+        "en": ("Homemade cooking", "Paraguayan empanadas", "beef, chicken, ham and cheese, corn")}),
 }
 
 PLANTILLA = """<!doctype html><html><head><meta charset="utf-8">
