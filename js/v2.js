@@ -79,3 +79,8 @@ document.addEventListener("ended", (e) => {
   const v = e.target;
   if (v.closest && v.closest(".movil-v")) v.parentElement.classList.remove("is-playing");
 }, true);
+
+/* Vídeos de cabecera: si el visitante prefiere menos movimiento, quedan parados en su portada. */
+document.querySelectorAll("video[data-hero]").forEach((v) => {
+  if (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) { v.removeAttribute("autoplay"); v.pause(); }
+});

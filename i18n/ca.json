@@ -1669,5 +1669,6 @@
  "<span>Su nombre</span><b>Viene de “bolita”</b>": "<span>El seu nom</span><b>Ve de “boleta”</b>",
  "<span>Precio</span><b>desde 3,40 €</b>": "<span>Preu</span><b>des de 3,40 €</b>",
  "<span>Sabores</span><b>Ternera, pollo, jamón y queso, choclo</b>": "<span>Sabors</span><b>Vedella, pollastre, pernil i formatge, choclo</b>",
- "<span>Masa</span><b>Casera</b>": "<span>Massa</span><b>Casolana</b>"
+ "<span>Masa</span><b>Casera</b>": "<span>Massa</span><b>Casolana</b>",
+ "El local de Loren Restobar: el comedor, los platos y las bebidas": "El local de Loren Restobar: el menjador, els plats i les begudes"
 }
