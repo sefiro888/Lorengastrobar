@@ -267,9 +267,11 @@
     <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-bravas.webp</image:loc></image:image>
     <image:image><image:loc>https://lorenrestobar.com/img/platos/huevo-estrellado.webp</image:loc></image:image>
     <image:image><image:loc>https://lorenrestobar.com/img/platos/ensalada.webp</image:loc></image:image>
-    <image:image><image:loc>https://lorenrestobar.com/img/platos/tres-leches.webp</image:loc></image:image>
-    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-flan.webp</image:loc></image:image>
-    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-alfajores.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/postre-tarta-tres-leches.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/postre-flan-casero.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/postre-alfajor-cafe.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/postre-tarta-chocolate.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/postre-tarta-queso.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lorenrestobar.com/ca/carta.html</loc>
@@ -316,9 +318,11 @@
     <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-bravas.webp</image:loc></image:image>
     <image:image><image:loc>https://lorenrestobar.com/img/platos/huevo-estrellado.webp</image:loc></image:image>
     <image:image><image:loc>https://lorenrestobar.com/img/platos/ensalada.webp</image:loc></image:image>
-    <image:image><image:loc>https://lorenrestobar.com/img/platos/tres-leches.webp</image:loc></image:image>
-    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-flan.webp</image:loc></image:image>
-    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-alfajores.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/postre-tarta-tres-leches.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/postre-flan-casero.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/postre-alfajor-cafe.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/postre-tarta-chocolate.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/postre-tarta-queso.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lorenrestobar.com/en/carta.html</loc>
@@ -365,9 +369,11 @@
     <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-bravas.webp</image:loc></image:image>
     <image:image><image:loc>https://lorenrestobar.com/img/platos/huevo-estrellado.webp</image:loc></image:image>
     <image:image><image:loc>https://lorenrestobar.com/img/platos/ensalada.webp</image:loc></image:image>
-    <image:image><image:loc>https://lorenrestobar.com/img/platos/tres-leches.webp</image:loc></image:image>
-    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-flan.webp</image:loc></image:image>
-    <image:image><image:loc>https://lorenrestobar.com/img/platos/hl-alfajores.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/postre-tarta-tres-leches.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/postre-flan-casero.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/postre-alfajor-cafe.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/postre-tarta-chocolate.webp</image:loc></image:image>
+    <image:image><image:loc>https://lorenrestobar.com/img/platos/postre-tarta-queso.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lorenrestobar.com/domicilio.html</loc>

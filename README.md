@@ -16,7 +16,7 @@ español en la raíz, catalán en `ca/` y inglés en `en/`.
 | `404.html` | Página de error (sólo ES, `<base href="/">`) |
 | `resena/index.html` | Redirige a "Escribir reseña" de Google. Es el destino de los QR impresos: si cambia el enlace de Google, se cambia aquí |
 | `carta-clasica.html`, `v2/` | Sólo redirecciones de versiones antiguas |
-| `js/data.js` | **Datos**: carta (`window.CARTA`, 107 platos y bebidas), categorías, horario, teléfonos y enlaces (`window.LOREN`) |
+| `js/data.js` | **Datos**: carta (`window.CARTA`, 109 platos y bebidas), categorías, horario, teléfonos y enlaces (`window.LOREN`) |
 | `js/layout.js` | Cabecera, menú móvil, pie y modales comunes (se inyectan en `#shell-top` / `#shell-bottom`) |
 | `js/main.js` | Lógica común: loader, brasas, horario y "abierto ahora", vídeos, reservas, WhatsApp |
 | `js/paginas.js` | Lógica por página: enciclopedia de sabores, combos, quiz, formulario de reservas |

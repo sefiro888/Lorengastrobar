@@ -193,12 +193,16 @@ window.CARTA = [
     desc: "Nuestra versión de la clásica césar." },
 
   /* --- POSTRES (no salen en la carta impresa: precio a consultar) --- */
-  { cat: "postres", nombre: "Tarta tres leches", precio: null, img: "img/platos/tres-leches.webp",
+  { cat: "postres", nombre: "Tarta tres leches", precio: null, img: "img/platos/postre-tarta-tres-leches.webp",
     desc: "Bizcocho empapado en tres leches, suave y fresquito.", tags: ["top"] },
-  { cat: "postres", nombre: "Flan casero", precio: null, img: "img/platos/hl-flan.webp",
+  { cat: "postres", nombre: "Flan casero", precio: null, img: "img/platos/postre-flan-casero.webp",
     desc: "Flan de la casa con caramelo. Irresistible.", tags: ["top"] },
-  { cat: "postres", nombre: "Alfajores Loren", precio: null, img: "img/platos/hl-alfajores.webp",
+  { cat: "postres", nombre: "Alfajores Loren", precio: null, img: "img/platos/postre-alfajor-cafe.webp",
     desc: "Alfajores caseros de dulce de leche con coco.", tags: ["py"] },
+  { cat: "postres", nombre: "Tarta de chocolate", precio: null, img: "img/platos/postre-tarta-chocolate.webp",
+    desc: "Intensa tarta de chocolate.", tags: [] },
+  { cat: "postres", nombre: "Tarta de queso", precio: null, img: "img/platos/postre-tarta-queso.webp",
+    desc: "Tarta de queso cremosa, con su salsa.", tags: [] },
 
   /* --- BEBIDAS --- */
   ...[
