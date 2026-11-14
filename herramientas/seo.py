@@ -68,6 +68,13 @@ CAPTURA = """() => {
     poster: (document.querySelector('.receta__video video') || {}).getAttribute?.('poster') || '',
     videoNombre: (document.querySelector('.receta__video video') || {}).getAttribute?.('aria-label') || ''
   } : null;
+  const pl = document.querySelector('.pgplato[data-plato]');
+  const vid = pl ? pl.querySelector('video') : null;
+  const plato = pl ? {
+    nombre: pl.dataset.plato, precio: (pl.dataset.precio.match(/[0-9]+,[0-9]+/) || [''])[0].replace(',', '.'),
+    img: (document.querySelector('.phero .c0 img') || {}).getAttribute?.('src') || '',
+    video: vid ? { src: vid.getAttribute('src'), poster: vid.getAttribute('poster'), nombre: vid.getAttribute('aria-label') || '' } : null
+  } : null;
   const miga = txt(document.querySelector('.miga span'));
   const imgs = [...new Set([...document.querySelectorAll('main img[alt]')].filter((i) => i.alt.trim() && !i.src.includes('/kv/') && !i.src.includes('/marca/')).map((i) => i.getAttribute('src')))];
   const L = window.LOREN;
@@ -75,7 +82,7 @@ CAPTURA = """() => {
     n: c.n, items: window.CARTA.filter((p) => p.cat === c.id).map((p) => ({ n: p.n, d: p.d, precio: p.precio, img: p.img }))
   })) : null;
   return {
-    pre, faq, receta, miga, imgs, carta,
+    pre, faq, receta, plato, miga, imgs, carta,
     titulo: document.title,
     desc: (document.querySelector('meta[name=description]') || {}).content || '',
     noindex: !!document.querySelector('meta[name=robots][content*=noindex]'),
@@ -158,6 +165,19 @@ def grafo(lang, p, d):
             receta["video"] = {"@type": "VideoObject", "name": r["videoNombre"] or r["nombre"], "description": r["intro"],
                                "thumbnailUrl": absoluta(r["poster"]), "contentUrl": absoluta(r["video"]), "uploadDate": "2026-11-10"}
         g.append(receta)
+    pl = d.get("plato")
+    if pl:
+        item = {"@type": "MenuItem", "@id": u + "#plato", "name": pl["nombre"], "description": d["desc"],
+                "image": absoluta(pl["img"]), "suitableForDiet": None}
+        item.pop("suitableForDiet")
+        if pl["precio"]:
+            item["offers"] = {"@type": "Offer", "price": pl["precio"], "priceCurrency": "EUR", "seller": {"@id": rest_id}}
+        g.append(item)
+        pagina["mainEntity"] = {"@id": u + "#plato"}
+        if pl["video"]:
+            g.append({"@type": "VideoObject", "@id": u + "#video", "name": pl["video"]["nombre"] or pl["nombre"], "description": d["desc"],
+                      "thumbnailUrl": absoluta(pl["video"]["poster"]), "contentUrl": absoluta(pl["video"]["src"]),
+                      "uploadDate": "2026-11-10", "inLanguage": lang})
     return {"@context": "https://schema.org", "@graph": g}
 
 
