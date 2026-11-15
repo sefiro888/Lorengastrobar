@@ -431,3 +431,9 @@ h3, h4 { font-family: var(--f-display); font-weight: 700; }
 
 /* Diccionario guaraní: la palabra larga ocupa dos huecos para cuadrar la rejilla */
 .palabra--doble { grid-column: span 2; }
+
+/* Vídeo de Griselda en el recuadro de Empanadas (Sabores): marco de móvil */
+.vid-entrada { margin: 22px 0 6px; display: flex; gap: 18px; align-items: center; }
+.vid-entrada .movil-v { width: 190px; flex: none; }
+.vid-entrada figcaption { font-size: .98rem; color: var(--vino-900); font-weight: 700; line-height: 1.35; }
+@media (max-width: 640px) { .vid-entrada { flex-direction: column; align-items: flex-start; } .vid-entrada .movil-v { width: 220px; } }

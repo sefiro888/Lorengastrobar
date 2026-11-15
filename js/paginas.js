@@ -89,7 +89,7 @@
       lema: "Lo más nombrado en nuestras reseñas",
       que: "Masa casera y relleno jugoso. Son el plato que más aparece en nuestras reseñas de Google.",
       como: "La de carne lleva ternera, cebolla, pimiento verde, ajo, huevo duro, comino y pimienta. También de pollo, jamón y queso, y choclo con mozzarella.",
-      come: "Con la mano y sin miedo. El box de seis es perfecto para probarlas todas.", marida: "Guaraná · Yuca brava", ig: "DTxJW41DBgE" },
+      come: "Con la mano y sin miedo. El box de seis es perfecto para probarlas todas.", marida: "Guaraná · Yuca brava", video: "griselda-empanadas" },
     { id: "parrillada", n: "Parrillada paraguaya", oir: "parrillada paraguaya", pron: "el asado del domingo", img: "img/platos/parrillada-paraguaya.webp", carta: "Picada paraguaya",
       lema: "En Paraguay el asado es un ritual familiar",
       que: "La mesa paraguaya de domingo, servida humeante en brasero.",
@@ -120,9 +120,12 @@
             <div><dt>${T("Cómo se come")}</dt><dd>${T(s.come)}</dd></div>
             <div><dt>${T("Va genial con")}</dt><dd>${T(s.marida)}</dd></div>
           </dl>
-          ${s.ig ? `<figure class="ig-video">
-            <button type="button" class="ig-video__btn" data-ig="${s.ig}" aria-label="${T("Ver el vídeo de Griselda en Instagram")}"><img src="img/nuevo/griselda-video.webp" alt="${T("Griselda en la cocina de Loren")}" loading="lazy"><span class="ig-video__play" aria-hidden="true"></span></button>
-            <figcaption><b>${T("Griselda te enseña cómo preparamos las de jamón y queso")}</b><small>${T("Al reproducirlo se carga el vídeo desde Instagram, que puede usar cookies de Meta.")} <a href="https://www.instagram.com/reels/${s.ig}/" target="_blank" rel="noopener">${T("Verlo en Instagram")}</a></small></figcaption>
+          ${s.video ? `<figure class="vid-entrada">
+            <div class="movil-v">
+              <video preload="none" playsinline controls poster="video/${s.video}.jpg" src="video/${s.video}.mp4" aria-label="${T("Vídeo de Griselda con las empanadas de jamón y queso")}"></video>
+              <button type="button" class="movil-v__play" aria-label="${T("Reproducir el vídeo")}"><span aria-hidden="true"></span></button>
+            </div>
+            <figcaption><b>${T("Griselda te enseña cómo preparamos las de jamón y queso")}</b></figcaption>
           </figure>` : ""}
           <div class="entrada__pie">${precio}
             ${s.finde ? `<a class="btn btn--sm" href="${wa(T("¡Hola Loren! ¿Este finde tenéis {x}? Quería reservar.", { x: T(s.n) }))}" target="_blank" rel="noopener">${T("Reservar para el finde")}</a>` : `<a class="btn btn--sm btn--vino" href="${PREF}carta.html">${T("Ver en la carta")}</a><a class="btn btn--sm btn--glovo" href="${L.links.glovo}" target="_blank" rel="noopener">${T("Pedir en Glovo")}</a>`}
