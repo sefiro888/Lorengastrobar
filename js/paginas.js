@@ -20,9 +20,21 @@
     if (v) u.voice = v;
     speechSynthesis.speak(u);
   }
+  /* Si el botón lleva data-audio, suena la voz de Loren; si no, la voz del navegador. */
+  let sonando = null;
+  function reproducir(b) {
+    if (sonando) { sonando.pause(); sonando = null; }
+    if ("speechSynthesis" in window) speechSynthesis.cancel();
+    const a = new Audio(b.dataset.audio);
+    sonando = a;
+    a.addEventListener("error", () => { if (sonando === a) { sonando = null; decir(b.dataset.oir); } });
+    a.play().catch(() => decir(b.dataset.oir));
+  }
   document.addEventListener("click", (e) => {
     const b = e.target.closest("[data-oir]");
-    if (b) { e.preventDefault(); e.stopPropagation(); decir(b.dataset.oir); }
+    if (!b) return;
+    e.preventDefault(); e.stopPropagation();
+    if (b.dataset.audio) reproducir(b); else decir(b.dataset.oir);
   });
   $$("[data-oir]").forEach((b) => { if (!b.innerHTML.trim()) b.innerHTML = ALTAVOZ; b.setAttribute("aria-label", T("Escuchar pronunciación")); });
 
