@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<title>Capas gráficas · reel de la empanada</title>
+<link rel="stylesheet" href="../../css/fuentes.css">
+<style>
+  :root { --vino:#59011d; --vino9:#2a000e; --vino5:#7d0b2e; --crema:#f3eedc; --maiz:#e8b43a; --carbon:#151012; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; height: 1920px; overflow: hidden; background: transparent; }
+  #l { position: relative; width: 1080px; height: 1920px; overflow: hidden; font-family: Montserrat, sans-serif; color: var(--crema); }
+  #l > div, #l > img, #hook > *, #lt > *, #fin > * { position: absolute; }
+  .centro { left: 0; right: 0; text-align: center; }
+  .anton { font-family: Anton, sans-serif; text-transform: uppercase; line-height: 1; }
+  .kau { font-family: "Kaushan Script", cursive; color: var(--maiz); line-height: 1.05; }
+  .sombra { text-shadow: 0 4px 28px rgba(0,0,0,.8), 0 2px 6px rgba(0,0,0,.65); }
+  .velo { inset: 0; background: linear-gradient(rgba(14,6,9,.7), transparent 32%, transparent 60%, rgba(14,6,9,.55)); }
+  .marco { inset: 38px; border: 3px solid rgba(232,180,58,.85); border-radius: 44px; box-shadow: 0 0 40px rgba(232,180,58,.25); }
+  .banda { left: 0; background: linear-gradient(90deg, rgba(42,0,14,.92), rgba(89,1,29,.88)); border-right: 8px solid var(--maiz); padding: 22px 50px 22px 70px; border-radius: 0 60px 60px 0; box-shadow: 0 20px 50px -15px rgba(0,0,0,.7); }
+  .fondo { inset: 0; background: var(--carbon) url("../../img/kv/textura-oscura.webp") center / cover; }
+  .fondo::before { content: ""; position: absolute; inset: 0; background: linear-gradient(rgba(21,16,18,.6), rgba(21,16,18,.6)), radial-gradient(75% 55% at 50% 40%, rgba(125,11,46,.65), transparent 70%); }
+  .enc { left: 50%; top: 50%; width: 1700px; height: 1700px; margin: -850px 0 0 -850px; object-fit: contain; opacity: .14; }
+  .pill { display: inline-block; background: var(--maiz); color: var(--vino9); font-weight: 800; font-size: 46px; padding: 24px 58px; border-radius: 999px; box-shadow: 0 20px 44px -10px rgba(232,180,58,.6); }
+  #cubre { left: 50%; top: 50%; width: 1000px; height: 1000px; margin: -500px 0 0 -500px; border-radius: 50%; background: radial-gradient(circle, var(--vino5), var(--vino9) 72%); box-shadow: 0 0 0 16px var(--crema), 0 0 0 30px rgba(232,180,58,.9); overflow: hidden; display: none; }
+  #cubre img { position: absolute; left: 50%; top: 50%; width: 1100px; height: 1100px; margin: -550px 0 0 -550px; opacity: .5; }
+</style></head>
+<body>
+<div id="l">
+  <!-- gancho -->
+  <div id="hook" style="inset:0">
+    <div class="velo" style="position:absolute"></div><div class="marco" style="position:absolute" id="hm"></div>
+    <div class="centro anton sombra" id="h1" style="top:300px;font-size:128px;line-height:.98">Empanada de<br><span style="color:var(--maiz)">jamón y queso</span></div>
+    <div class="centro kau sombra" id="h2" style="top:1180px;font-size:100px">mira cómo la hacemos</div>
+  </div>
+  <!-- título mientras habla -->
+  <div id="lt" style="inset:0">
+    <div class="banda" id="lt1" style="top:300px"><div class="anton" style="font-size:54px">Empanada de jamón y queso</div><div class="kau" style="font-size:44px;margin-top:6px">hecha en casa, en Loren Restobar</div></div>
+  </div>
+  <!-- cierre -->
+  <div id="fin" style="inset:0">
+    <div class="fondo" id="fb"></div>
+    <img class="enc" id="fe" src="../../img/kv/flor-kv.webp" alt="">
+    <img id="fl" src="../../img/marca/logo-loren.webp" style="left:290px;top:330px;width:500px" alt="">
+    <div class="centro kau" id="f1" style="top:690px;font-size:120px">Pruébalas en</div>
+    <div class="centro anton" id="f2" style="top:850px;font-size:150px;line-height:.95">Loren<br>Restobar</div>
+    <div class="centro" id="f3" style="top:1190px"><span class="pill">lorenrestobar.com</span></div>
+    <div class="centro" id="f4" style="top:1340px;font-size:40px;font-weight:600;line-height:1.35;left:40px;right:40px">Carrer de la Muntanya 115 · Barcelona<br>También a domicilio</div>
+  </div>
+  <div id="cubre"><img id="cf" src="../../img/kv/flor-kv.webp" alt=""></div>
+</div>
+<script>
+const clamp = (x) => Math.max(0, Math.min(1, x));
+const eo = (x) => 1 - Math.pow(1 - clamp(x), 3);
+const eio = (x) => { x = clamp(x); return x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2; };
+const eb = (x) => { x = clamp(x); const c = 1.6; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
+const $ = (s) => document.querySelector(s);
+const CAPA = new URLSearchParams(location.search).get("capa") || "hook";
+["hook", "lt", "fin"].forEach((c) => ($("#" + c).style.display = c === CAPA || (c === "fin" && CAPA === "fin") ? "block" : "none"));
+$("#cubre").style.display = "none";
+function render(t) {
+  if (CAPA === "hook") {   // 0–3 s
+    const o = clamp(t / 0.3) * (1 - clamp((t - 2.75) / 0.25));
+    $("#hook").style.opacity = o;
+    $("#h1").style.transform = `translateY(${(1 - eb(t / 0.7)) * 90}px) scale(${1 + 0.03 * t})`;
+    $("#h2").style.transform = `translateY(${(1 - eb((t - 0.6) / 0.7)) * 70}px)`; $("#h2").style.opacity = clamp((t - 0.6) / 0.4);
+    $("#hm").style.opacity = clamp((t - 0.3) / 0.5);
+  }
+  if (CAPA === "lt") {      // 0–4 s
+    const e = eb(t / 0.8), s = clamp((t - 3.4) / 0.5);
+    const b = $("#lt1"); b.style.transform = `translateX(${(-1 + e) * 800 - s * 900}px)`; b.style.opacity = 1 - s;
+  }
+  if (CAPA === "fin") {     // 0–4.4 s: el ñandutí cubre en 0.45 s y deja ver la tarjeta
+    const c = $("#cubre"), p = t / 0.9;
+    $("#fb").style.opacity = t >= 0.45 ? 1 : 0; $("#fe").style.opacity = t >= 0.45 ? 0.14 : 0;
+    $("#fe").style.transform = `rotate(${t * 6}deg)`;
+    ["#fl", "#f1", "#f2", "#f3", "#f4"].forEach((id, k) => { const q = t - 0.7 - k * 0.22, e = eb(q / 0.7); const el = $(id); el.style.opacity = t >= 0.45 ? clamp(q / 0.4) : 0; el.style.transform = id === "#fl" ? `scale(${0.5 + 0.5 * e})` : `translateY(${(1 - e) * 70}px)`; });
+    if (p >= 0 && p <= 1) { const s = (p < .5 ? eio(p / .5) : 1 - eio((p - .5) / .5)) * 2.7; c.style.display = "block"; c.style.transform = `scale(${s}) rotate(${p * 70}deg)`; $("#cf").style.transform = `rotate(${-p * 140}deg)`; } else c.style.display = "none";
+  }
+}
+window.render = render;
+document.fonts.ready.then(() => { window.LISTO = true; render(0); });
+</script>
+</body></html>
