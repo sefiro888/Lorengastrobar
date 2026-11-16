@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<title>Promo Instagram · Loren Restobar</title>
+<link rel="stylesheet" href="../../css/fuentes.css">
+<style>
+  :root { --vino:#59011d; --vino9:#2a000e; --vino5:#7d0b2e; --crema:#f3eedc; --maiz:#e8b43a; --maiz2:#f4d27a; --brasa:#ea6a26; --carbon:#151012; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; height: 1920px; overflow: hidden; background: #000; }
+  #lienzo { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: var(--carbon) url("../../img/kv/textura-oscura.webp") center / cover; font-family: Montserrat, sans-serif; color: var(--crema); }
+  #lienzo::before { content: ""; position: absolute; inset: 0; background: linear-gradient(rgba(21,16,18,.62), rgba(21,16,18,.62)), radial-gradient(75% 55% at 50% 38%, rgba(125,11,46,.55), transparent 70%), radial-gradient(60% 40% at 50% 100%, rgba(234,106,38,.22), transparent 70%); }
+  .enc { position: absolute; left: 50%; top: 50%; width: 1500px; height: 1500px; margin: -750px 0 0 -750px; opacity: .13; object-fit: contain; }
+  .brasas i { position: absolute; width: 8px; height: 8px; border-radius: 50%; background: var(--maiz); box-shadow: 0 0 14px 4px rgba(244,210,122,.7); opacity: 0; }
+  .sc { position: absolute; inset: 0; opacity: 0; }
+  .sc > * { position: absolute; }
+  .centro { left: 0; right: 0; text-align: center; }
+  .anton { font-family: Anton, sans-serif; text-transform: uppercase; letter-spacing: .01em; line-height: 1; }
+  .kau { font-family: "Kaushan Script", cursive; color: var(--maiz); line-height: 1.05; }
+  .eyebrow { font-weight: 700; font-size: 34px; letter-spacing: .26em; text-transform: uppercase; color: var(--maiz); }
+  .txt { font-size: 40px; line-height: 1.35; color: rgba(243,238,220,.9); font-weight: 500; }
+  .pill { display: inline-block; background: var(--maiz); color: var(--vino9); font-weight: 800; font-size: 44px; padding: 22px 54px; border-radius: 999px; box-shadow: 0 18px 40px -10px rgba(232,180,58,.55); }
+  .pill.ghost { background: transparent; color: var(--crema); box-shadow: inset 0 0 0 4px rgba(243,238,220,.7); }
+  .logo { width: 560px; filter: drop-shadow(0 24px 40px rgba(0,0,0,.6)); }
+  /* móvil */
+  .movil { width: 520px; height: 1060px; border-radius: 74px; background: #0b0b0c; padding: 18px; box-shadow: 0 0 0 4px #2b2b30, 0 60px 90px -30px rgba(0,0,0,.9), 0 0 120px rgba(232,180,58,.16); }
+  .movil .pan { position: relative; width: 100%; height: 100%; overflow: hidden; border-radius: 58px; background: #151012; }
+  .movil .pan img { position: absolute; left: 0; top: 0; width: 484px; display: block; }
+  .movil::before { content: ""; position: absolute; top: 30px; left: 50%; width: 130px; height: 34px; margin-left: -65px; border-radius: 20px; background: #0b0b0c; z-index: 3; }
+  /* círculos de platos */
+  .disco { width: 330px; height: 330px; border-radius: 50%; overflow: hidden; box-shadow: 0 0 0 10px rgba(243,238,220,.92), 0 40px 70px -20px rgba(0,0,0,.85); }
+  .disco img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .tarjeta { background: var(--crema); color: var(--vino9); border-radius: 36px; box-shadow: 0 40px 80px -25px rgba(0,0,0,.8); }
+  .estrella { font-family: Anton; font-size: 110px; color: var(--maiz); line-height: 1; }
+  .linea { height: 6px; width: 120px; background: var(--maiz); border-radius: 3px; }
+  .barra { position: absolute; left: 0; bottom: 0; height: 12px; background: linear-gradient(90deg, #d52b1e 33.3%, #fff 33.3% 66.6%, #0038a8 66.6%); width: 100%; z-index: 9; }
+  .barra b { position: absolute; inset: 0; background: rgba(21,16,18,.85); transform-origin: right; }
+</style></head>
+<body>
+<div id="lienzo">
+  <img class="enc" id="flor" src="../../img/kv/flor-kv.webp" alt="">
+  <div class="brasas" id="brasas"></div>
+
+  <!-- 1 · Apertura -->
+  <section class="sc" id="s1" data-a="0" data-b="4.6">
+    <img class="logo" data-in="0.3" data-fx="zoom" style="left:260px;top:560px" src="../../img/marca/logo-loren.webp" alt="">
+    <div class="centro anton" data-in="1.2" data-fx="up" style="top:900px;font-size:168px;color:var(--crema)">Mba'éichapa!</div>
+    <div class="centro kau" data-in="1.9" data-fx="up" style="top:1130px;font-size:84px">¿Qué tal? Tenemos novedades</div>
+  </section>
+
+  <!-- 2 · Anuncio -->
+  <section class="sc" id="s2" data-a="4.6" data-b="10.2">
+    <div class="centro eyebrow" data-in="0.2" data-fx="up" style="top:520px">Loren Restobar · Barcelona</div>
+    <div class="centro anton" data-in="0.5" data-fx="up" style="top:610px;font-size:210px;line-height:.95">Estrenamos<br>web nueva</div>
+    <div class="centro kau" data-in="1.2" data-fx="up" style="top:1060px;font-size:92px">el sabor de Paraguay, ahora en tu móvil</div>
+    <div class="centro" data-in="2.1" data-fx="zoom" style="top:1300px"><span class="pill">lorenrestobar.com</span></div>
+  </section>
+
+  <!-- 3 · La carta -->
+  <section class="sc" id="s3" data-a="10.2" data-b="17.6">
+    <div class="centro eyebrow" data-in="0.1" data-fx="up" style="top:300px">La carta</div>
+    <div class="centro anton" data-in="0.3" data-fx="up" style="top:360px;font-size:118px">110 platos<br><span style="color:var(--maiz)">con foto y precio</span></div>
+    <div class="movil" data-in="0.6" data-fx="rise" style="left:280px;top:680px"><div class="pan"><img src="../../para-loren/promo/pantalla_carta.jpg" data-scroll="0,2300,1.2,5.4"></div></div>
+    <div class="disco" data-in="1.2" data-fx="left" style="left:-70px;top:900px"><img src="../../img/platos/mila-caballo-pro.webp"></div>
+    <div class="disco" data-in="1.6" data-fx="right" style="left:820px;top:1080px"><img src="../../img/platos/tallarin-ternera.webp"></div>
+    <div class="disco" data-in="2.0" data-fx="left" style="left:-60px;top:1280px;width:290px;height:290px"><img src="../../img/platos/postre-tarta-queso.webp"></div>
+  </section>
+
+  <!-- 4 · Sabores y voz de Loren -->
+  <section class="sc" id="s4" data-a="17.6" data-b="25.2">
+    <div class="centro eyebrow" data-in="0.1" data-fx="up" style="top:300px">Sabores de Paraguay</div>
+    <div class="centro anton" data-in="0.3" data-fx="up" style="top:360px;font-size:118px">Cada plato,<br><span style="color:var(--maiz)">explicado</span></div>
+    <div class="tarjeta" data-in="1.0" data-fx="zoom" style="left:130px;top:760px;width:820px;height:560px;padding:56px;text-align:center">
+      <div style="font-weight:700;font-size:30px;letter-spacing:.24em;text-transform:uppercase;color:var(--vino5)">Diccionario guaraní</div>
+      <div class="anton" style="font-size:190px;margin-top:26px;color:var(--vino)">Tuicha</div>
+      <div style="font-size:44px;margin-top:10px;color:#6b5458">Grande. Como la chipa guazú.</div>
+      <div id="altavoz" style="margin:30px auto 0;width:110px;height:110px;border-radius:50%;background:var(--maiz);display:grid;place-items:center">
+        <svg viewBox="0 0 24 24" width="62" height="62" fill="none" stroke="#2a000e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></svg>
+      </div>
+    </div>
+    <div class="centro txt" data-in="2.2" data-fx="up" style="top:1380px;font-size:46px">Escucha cómo se dice,<br><b style="color:var(--maiz)">con la voz de Loren</b></div>
+  </section>
+
+  <!-- 5 · Eventos -->
+  <section class="sc" id="s5" data-a="25.2" data-b="31.4">
+    <div class="centro eyebrow" data-in="0.1" data-fx="up" style="top:300px">Eventos y catering</div>
+    <div class="centro anton" data-in="0.3" data-fx="up" style="top:360px;font-size:118px">Tu celebración,<br><span class="kau" style="font-size:120px;text-transform:none">a la paraguaya</span></div>
+    <div class="disco" data-in="0.9" data-fx="left" style="left:90px;top:780px;width:420px;height:420px"><img src="../../img/kv/bocaditos-empanadas.webp"></div>
+    <div class="disco" data-in="1.2" data-fx="right" style="left:570px;top:860px;width:420px;height:420px"><img src="../../img/kv/combo-bocaditos-surtidos.webp"></div>
+    <div class="tarjeta" data-in="1.8" data-fx="up" style="left:140px;top:1330px;width:800px;padding:34px 20px;text-align:center">
+      <div style="font-weight:800;font-size:36px">Combos de bocaditos · 50 o 100 uds.</div>
+      <div class="anton" style="font-size:96px;color:var(--vino);margin-top:8px">desde 49,50 €</div>
+    </div>
+  </section>
+
+  <!-- 6 · La familia -->
+  <section class="sc" id="s6" data-a="31.4" data-b="38.0">
+    <div class="centro eyebrow" data-in="0.1" data-fx="up" style="top:300px">Nuestra historia</div>
+    <div class="centro anton" data-in="0.3" data-fx="up" style="top:360px;font-size:118px">Las manos <span style="color:var(--maiz)">detrás<br>de cada plato</span></div>
+    <div class="disco" data-in="0.8" data-fx="zoom" style="left:330px;top:830px;width:420px;height:420px"><img src="../../img/local/loren-chef-vori.webp" style="object-position:50% 18%"></div>
+    <div class="disco" data-in="1.4" data-fx="left" style="left:50px;top:1130px;width:300px;height:300px"><img src="../../img/nuevo/griselda.webp"></div>
+    <div class="disco" data-in="1.8" data-fx="right" style="left:730px;top:1130px;width:300px;height:300px"><img src="../../img/nuevo/fanny-jennifer.webp" style="object-position:50% 26%"></div>
+    <div class="centro txt" data-in="2.4" data-fx="up" style="top:1470px;font-size:42px">Vídeos, historia, equipo y la receta<br>de la chipa guazú, <b style="color:var(--maiz)">paso a paso</b></div>
+  </section>
+
+  <!-- 7 · Cierre -->
+  <section class="sc" id="s7" data-a="38.0" data-b="45.0">
+    <img class="logo" data-in="0.2" data-fx="zoom" style="left:310px;top:420px;width:460px" src="../../img/marca/logo-loren.webp" alt="">
+    <div class="centro anton" data-in="0.7" data-fx="up" style="top:760px;font-size:150px">Ya puedes<br>visitarnos</div>
+    <div class="centro" data-in="1.3" data-fx="zoom" style="top:1110px"><span class="pill">lorenrestobar.com</span></div>
+    <div class="centro txt" data-in="1.9" data-fx="up" style="top:1250px;font-size:40px">Reserva · Pide en Glovo · WhatsApp</div>
+    <div class="centro kau" data-in="2.5" data-fx="up" style="top:1350px;font-size:110px">Aguyje!</div>
+    <div class="centro txt" data-in="3.1" data-fx="up" style="top:1480px;font-size:34px;opacity:.8">Carrer de la Muntanya 115 · Camp de l'Arpa · Barcelona</div>
+  </section>
+
+  <div class="barra"><b id="progreso"></b></div>
+</div>
+<script>
+const $ = (s, r = document) => [...r.querySelectorAll(s)];
+const clamp = (x) => Math.max(0, Math.min(1, x));
+const eo = (x) => 1 - Math.pow(1 - clamp(x), 3);
+const eb = (x) => { x = clamp(x); const c = 1.7; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
+// brasas: posiciones fijas (sin azar) para que cada fotograma sea reproducible
+const B = $("#brasas")[0];
+for (let i = 0; i < 26; i++) { const e = document.createElement("i"); e.dataset.x = (i * 137.5) % 1080; e.dataset.v = 60 + (i * 53) % 90; e.dataset.f = (i * 0.37) % 6; B.appendChild(e); }
+const DUR = 45;
+function render(t) {
+  $("#flor")[0].style.transform = `rotate(${t * 2.2}deg) scale(${1 + 0.05 * Math.sin(t / 3)})`;
+  $("#progreso")[0].style.transform = `scaleX(${1 - t / DUR})`;
+  $("#brasas i").forEach((e) => { const ph = ((t + +e.dataset.f) % 6) / 6; e.style.left = (+e.dataset.x + Math.sin(ph * 9 + +e.dataset.f) * 40) + "px"; e.style.top = (1960 - ph * (700 + +e.dataset.v * 8)) + "px"; e.style.opacity = Math.sin(ph * Math.PI) * 0.8; });
+  $(".sc").forEach((s) => {
+    const a = +s.dataset.a, b = +s.dataset.b, l = t - a;
+    if (l < -0.01 || t > b) { s.style.opacity = 0; s.style.visibility = "hidden"; return; }
+    s.style.visibility = "visible";
+    s.style.opacity = Math.min(clamp(l / 0.35), clamp((b - t) / 0.4));
+    $("[data-in]", s).forEach((e) => {
+      const d = +e.dataset.in, p = l - d, k = eb(p / 0.75), o = clamp(p / 0.45);
+      const fx = e.dataset.fx; let tf = "none";
+      if (fx === "up") tf = `translateY(${(1 - k) * 70}px)`;
+      if (fx === "zoom") tf = `scale(${0.55 + 0.45 * k})`;
+      if (fx === "left") tf = `translateX(${(1 - eo(p / 0.9)) * -520}px)`;
+      if (fx === "right") tf = `translateX(${(1 - eo(p / 0.9)) * 520}px)`;
+      if (fx === "rise") tf = `translateY(${(1 - eo(p / 0.9)) * 420}px)`;
+      e.style.transform = tf; e.style.opacity = o;
+    });
+    $("[data-scroll]", s).forEach((e) => {
+      const [y0, y1, st, du] = e.dataset.scroll.split(",").map(Number);
+      const q = eo((l - st) / du); e.style.transform = `translateY(${-(y0 + (y1 - y0) * q)}px)`;
+    });
+  });
+  // altavoz que "late" mientras suena la voz (escena 4, a partir de 18.6 s)
+  const al = $("#altavoz")[0]; const ts = t - 18.6;
+  al.style.transform = ts > 0 && ts < 4 ? `scale(${1 + 0.12 * Math.abs(Math.sin(ts * 7))})` : "scale(1)";
+}
+window.render = render; window.DUR = DUR;
+document.fonts.ready.then(() => { window.LISTO = true; render(0); });
+</script>
+</body></html>
