@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<title>Promo Instagram 2 · Loren Restobar (capa gráfica)</title>
+<link rel="stylesheet" href="../../css/fuentes.css">
+<style>
+  :root { --vino:#59011d; --vino9:#2a000e; --vino5:#7d0b2e; --crema:#f3eedc; --maiz:#e8b43a; --maiz2:#f4d27a; --brasa:#ea6a26; --carbon:#151012; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; height: 1920px; overflow: hidden; background: transparent; }
+  #lienzo { position: relative; width: 1080px; height: 1920px; overflow: hidden; font-family: Montserrat, sans-serif; color: var(--crema); background: transparent; }
+  .fondo { position: absolute; inset: 0; background: var(--carbon) url("../../img/kv/textura-oscura.webp") center / cover; opacity: 0; }
+  .fondo::before { content: ""; position: absolute; inset: 0; background: linear-gradient(rgba(21,16,18,.55), rgba(21,16,18,.55)), radial-gradient(75% 55% at 50% 40%, rgba(125,11,46,.65), transparent 70%), radial-gradient(60% 40% at 50% 100%, rgba(234,106,38,.28), transparent 70%); }
+  .enc { position: absolute; left: 50%; top: 50%; width: 1700px; height: 1700px; margin: -850px 0 0 -850px; object-fit: contain; opacity: .14; }
+  .sc { position: absolute; inset: 0; visibility: hidden; }
+  .sc > * { position: absolute; }
+  .centro { left: 0; right: 0; text-align: center; }
+  .anton { font-family: Anton, sans-serif; text-transform: uppercase; letter-spacing: .01em; line-height: 1; }
+  .kau { font-family: "Kaushan Script", cursive; color: var(--maiz); line-height: 1.05; }
+  .eyebrow { font-weight: 700; font-size: 34px; letter-spacing: .28em; text-transform: uppercase; color: var(--maiz); }
+  .txt { font-size: 42px; line-height: 1.35; color: rgba(243,238,220,.92); font-weight: 500; }
+  .sombra { text-shadow: 0 4px 28px rgba(0,0,0,.75), 0 2px 6px rgba(0,0,0,.6); }
+  .pill { display: inline-block; background: var(--maiz); color: var(--vino9); font-weight: 800; font-size: 46px; padding: 24px 58px; border-radius: 999px; box-shadow: 0 20px 44px -10px rgba(232,180,58,.6); }
+  .logo { filter: drop-shadow(0 24px 40px rgba(0,0,0,.6)); }
+  /* capas sobre vídeo */
+  .velo { position: absolute; inset: 0; background: linear-gradient(rgba(14,6,9,.62), transparent 30%, transparent 52%, rgba(14,6,9,.78)); }
+  .marco { position: absolute; inset: 38px; border: 3px solid rgba(232,180,58,.85); border-radius: 44px; box-shadow: 0 0 40px rgba(232,180,58,.25), inset 0 0 60px rgba(0,0,0,.35); }
+  .luz { position: absolute; width: 1300px; height: 1300px; border-radius: 50%; background: radial-gradient(circle, rgba(244,210,122,.32), transparent 62%); mix-blend-mode: screen; }
+  .brasas i { position: absolute; width: 9px; height: 9px; border-radius: 50%; background: var(--maiz2); box-shadow: 0 0 16px 5px rgba(244,210,122,.75); opacity: 0; }
+  /* móvil 3D */
+  .escena3d { perspective: 2200px; }
+  .movil { width: 540px; height: 1100px; border-radius: 76px; background: #0b0b0c; padding: 18px; box-shadow: 0 0 0 4px #2b2b30, 0 70px 110px -30px rgba(0,0,0,.95), 0 0 140px rgba(232,180,58,.2); transform-style: preserve-3d; }
+  .movil::before { content: ""; position: absolute; top: 30px; left: 50%; width: 130px; height: 34px; margin-left: -65px; border-radius: 20px; background: #0b0b0c; z-index: 3; }
+  .movil .pan { position: relative; width: 100%; height: 100%; overflow: hidden; border-radius: 60px; background: #151012; }
+  .movil .pan img { position: absolute; left: 0; top: 0; width: 504px; display: block; }
+  .disco { width: 330px; height: 330px; border-radius: 50%; overflow: hidden; box-shadow: 0 0 0 10px rgba(243,238,220,.94), 0 40px 70px -20px rgba(0,0,0,.85); }
+  .disco img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .etiqueta { background: var(--crema); color: var(--vino9); border-radius: 30px; padding: 26px 40px; font-weight: 800; font-size: 44px; box-shadow: 0 30px 60px -20px rgba(0,0,0,.85); text-align: center; line-height: 1.2; }
+  .etiqueta small { display: block; font-weight: 600; font-size: 30px; color: #6b5458; margin-top: 4px; }
+  /* transición ñandutí */
+  #cubre { position: absolute; left: 50%; top: 50%; width: 1000px; height: 1000px; margin: -500px 0 0 -500px; border-radius: 50%; background: radial-gradient(circle, var(--vino5), var(--vino9) 72%); box-shadow: 0 0 0 16px var(--crema), 0 0 0 30px rgba(232,180,58,.9); overflow: hidden; display: none; z-index: 20; }
+  #cubre img { position: absolute; left: 50%; top: 50%; width: 1100px; height: 1100px; margin: -550px 0 0 -550px; opacity: .5; }
+  #flash { position: absolute; inset: 0; background: #fff; opacity: 0; z-index: 25; pointer-events: none; }
+</style></head>
+<body>
+<div id="lienzo">
+
+  <!-- fondos opacos para las escenas gráficas -->
+  <div class="fondo" id="fondoGr"><img class="enc" id="flor" src="../../img/kv/flor-kv.webp" alt=""></div>
+  <div class="brasas" id="brasas"></div>
+
+  <!-- 0 · Apertura (gráfica) -->
+  <section class="sc" id="s0" data-a="0" data-b="6" data-gr="1">
+    <div class="luz" data-in="0.2" data-fx="fade" style="left:-110px;top:310px"></div>
+    <img class="enc" id="floreIntro" src="../../img/kv/flor-kv.webp" style="opacity:.55;width:1300px;height:1300px;margin:-650px 0 0 -650px" alt="">
+    <img class="logo" data-in="1.4" data-fx="zoom" style="left:230px;top:640px;width:620px" src="../../img/marca/logo-loren.webp" alt="">
+    <div class="centro eyebrow" data-in="2.6" data-fx="spread" style="top:1000px;font-size:38px">Cocina paraguaya · Barcelona</div>
+    <div class="centro kau" data-in="3.4" data-fx="up" style="top:1130px;font-size:104px">Hoy estrenamos web</div>
+  </section>
+
+  <!-- 1 · Local (vídeo 6–13.5) -->
+  <section class="sc" id="s1" data-a="6" data-b="13.5">
+    <div class="velo"></div><div class="marco" data-in="0.6" data-fx="fade"></div>
+    <div class="centro eyebrow sombra" data-in="0.7" data-fx="up" style="top:300px">Loren Restobar</div>
+    <div class="centro anton sombra" data-in="0.9" data-fx="up" style="top:370px;font-size:96px">Un pedacito de</div>
+    <div class="centro kau sombra" data-in="1.2" data-fx="zoom" style="top:470px;font-size:210px">Paraguay</div>
+    <div class="centro anton sombra" data-in="1.7" data-fx="up" style="top:760px;font-size:96px;color:var(--crema)">en Barcelona</div>
+  </section>
+
+  <!-- 2 · Chipa guazú (vídeo 13.5–21) -->
+  <section class="sc" id="s2" data-a="13.5" data-b="21">
+    <div class="velo"></div><div class="marco" data-in="0.4" data-fx="fade"></div>
+    <div class="centro eyebrow sombra" data-in="0.6" data-fx="up" style="top:300px">Sabores de Paraguay</div>
+    <div class="centro anton sombra" data-in="0.8" data-fx="up" style="top:370px;font-size:170px">Chipa guazú</div>
+    <div class="centro kau sombra" data-in="1.5" data-fx="up" style="top:1260px;font-size:84px">el orgullo del asado paraguayo</div>
+    <div class="centro" data-in="2.3" data-fx="zoom" style="top:1400px"><span class="pill" style="font-size:38px;padding:18px 44px">Pastel de choclo · 3,90 €</span></div>
+  </section>
+
+  <!-- 3 · Vorí vorí (vídeo 21–29) -->
+  <section class="sc" id="s3" data-a="21" data-b="29">
+    <div class="velo"></div><div class="marco" data-in="0.4" data-fx="fade"></div>
+    <div class="centro eyebrow sombra" data-in="0.6" data-fx="up" style="top:300px">Fines de semana</div>
+    <div class="centro anton sombra" data-in="0.8" data-fx="up" style="top:370px;font-size:170px">Vorí vorí</div>
+    <div class="centro kau sombra" data-in="1.5" data-fx="up" style="top:1250px;font-size:80px">el caldo con el que Loren<br>representó a Paraguay</div>
+  </section>
+
+  <!-- 4 · Ambiente (vídeo 29–35.5) -->
+  <section class="sc" id="s4" data-a="29" data-b="35.5">
+    <div class="velo"></div><div class="marco" data-in="0.4" data-fx="fade"></div>
+    <div class="centro anton sombra" data-in="0.7" data-fx="up" style="top:300px;font-size:120px">Cocina casera</div>
+    <div class="centro kau sombra" data-in="1.3" data-fx="up" style="top:440px;font-size:120px">con sabor a casa</div>
+    <div class="centro txt sombra" data-in="2.2" data-fx="up" style="top:1330px;font-size:40px;font-weight:700">Carrer de la Muntanya 115 · Camp de l'Arpa</div>
+  </section>
+
+  <!-- 5 · La web (gráfica 35.5–55) -->
+  <section class="sc escena3d" id="s5" data-a="35.5" data-b="55" data-gr="1">
+    <div class="centro eyebrow" data-in="0.2" data-fx="up" style="top:250px">lorenrestobar.com</div>
+    <div class="centro anton" data-in="0.4" data-fx="up" style="top:310px;font-size:108px;line-height:.95">Nuestra <span style="color:var(--maiz)">web nueva</span></div>
+    <div class="movil" id="mov" style="left:270px;top:640px"><div class="pan"><img id="pantalla" src="../../para-loren/promo/pantalla_carta.jpg"></div></div>
+    <div class="etiqueta" id="et" style="left:90px;top:1540px;width:900px"></div>
+  </section>
+
+  <!-- 6 · Familia (gráfica 55–63) -->
+  <section class="sc" id="s6" data-a="55" data-b="63" data-gr="1">
+    <div class="centro eyebrow" data-in="0.2" data-fx="up" style="top:270px">Nuestra historia</div>
+    <div class="centro anton" data-in="0.4" data-fx="up" style="top:330px;font-size:112px;line-height:.98">La familia <span style="color:var(--maiz)">detrás<br>de cada plato</span></div>
+    <div class="disco" data-in="0.9" data-fx="zoom" style="left:300px;top:740px;width:480px;height:480px"><img src="../../img/local/loren-chef-vori.webp" style="object-position:50% 18%"></div>
+    <div class="centro txt" data-in="1.5" data-fx="up" style="top:1250px;font-size:46px"><b style="color:var(--maiz)">Loren Vera</b> · chef y fundadora</div>
+    <div class="disco" data-in="2.0" data-fx="left" style="left:60px;top:1330px;width:300px;height:300px"><img src="../../img/nuevo/griselda.webp"></div>
+    <div class="disco" data-in="2.4" data-fx="right" style="left:720px;top:1330px;width:300px;height:300px"><img src="../../img/nuevo/fanny-jennifer.webp" style="object-position:50% 26%"></div>
+    <div class="centro txt" data-in="3.0" data-fx="up" style="top:1650px;font-size:34px;line-height:1.3;left:40px;right:40px"><b style="color:var(--maiz)">Griselda</b> · mano derecha en la cocina<br><b style="color:var(--maiz)">Fanny, Jennifer y José</b> · en sala</div>
+  </section>
+
+  <!-- 7 · Receta (vídeo 63–69.5) -->
+  <section class="sc" id="s7" data-a="63" data-b="69.5">
+    <div class="velo"></div><div class="marco" data-in="0.4" data-fx="fade"></div>
+    <div class="centro eyebrow sombra" data-in="0.5" data-fx="up" style="top:300px">En la web</div>
+    <div class="centro anton sombra" data-in="0.7" data-fx="up" style="top:370px;font-size:120px;line-height:.98">La receta de<br>la chipa guazú</div>
+    <div class="centro kau sombra" data-in="1.5" data-fx="up" style="top:1280px;font-size:92px">paso a paso, con Loren</div>
+  </section>
+
+  <!-- 8 · Cierre (gráfica 69.5–78) -->
+  <section class="sc" id="s8" data-a="69.5" data-b="78" data-gr="1">
+    <div class="luz" data-in="0.2" data-fx="fade" style="left:-110px;top:230px"></div>
+    <img class="logo" data-in="0.3" data-fx="zoom" style="left:290px;top:300px;width:500px" src="../../img/marca/logo-loren.webp" alt="">
+    <div class="centro anton" data-in="0.9" data-fx="up" style="top:660px;font-size:172px;line-height:.95">Ya puedes<br>visitarnos</div>
+    <div class="centro" data-in="1.7" data-fx="zoom" style="top:1090px"><span class="pill">lorenrestobar.com</span></div>
+    <div class="centro txt" data-in="2.3" data-fx="up" style="top:1240px;font-size:42px">Reserva · Pide a domicilio · Eventos</div>
+    <div class="centro kau" data-in="3.0" data-fx="zoom" style="top:1330px;font-size:130px">Aguyje!</div>
+    <div class="centro txt" data-in="3.8" data-fx="up" style="top:1500px;font-size:34px;opacity:.85">Carrer de la Muntanya 115 · Camp de l'Arpa · Barcelona</div>
+  </section>
+
+  <div id="cubre"><img id="florCubre" src="../../img/kv/flor-kv.webp" alt=""></div>
+  <div id="flash"></div>
+</div>
+<script>
+const $ = (s, r = document) => [...r.querySelectorAll(s)];
+const clamp = (x) => Math.max(0, Math.min(1, x));
+const eo = (x) => 1 - Math.pow(1 - clamp(x), 3);
+const eio = (x) => { x = clamp(x); return x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2; };
+const eb = (x) => { x = clamp(x); const c = 1.6; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
+const CORTES = [6, 13.5, 21, 29, 35.5, 55, 63, 69.5];
+const B = $("#brasas")[0];
+for (let i = 0; i < 34; i++) { const e = document.createElement("i"); e.dataset.x = (i * 137.5) % 1080; e.dataset.v = 60 + (i * 53) % 90; e.dataset.f = (i * 0.41) % 6; B.appendChild(e); }
+// la web: 4 pantallas con su etiqueta
+const PANT = [
+  { img: "pantalla_carta", t: "110 platos con foto y precio", s: "La carta, siempre al día", a: 36.2, b: 40.9, sc: [0, 2300] },
+  { img: "pantalla_sabores", t: "Cada plato, explicado", s: "Y con la voz de Loren", a: 40.9, b: 45.4, sc: [0, 1900] },
+  { img: "pantalla_eventos", t: "Combos para celebrar", s: "Bocaditos desde 49,50 €", a: 45.4, b: 50.0, sc: [300, 2500] },
+  { img: "pantalla_vori", t: "Vídeos y recetas", s: "Cocina de Loren paso a paso", a: 50.0, b: 55, sc: [0, 1500] },
+];
+const imgs = {}; PANT.forEach((p) => { const i = new Image(); i.src = `../../para-loren/promo/${p.img}.jpg`; imgs[p.img] = i; });
+function render(t) {
+  const gr = t < 6 || (t >= 35.5 && t < 63) || t >= 69.5 ? 1 : 0;
+  const F = $("#fondoGr")[0]; F.style.opacity = gr;
+  $("#flor")[0].style.transform = `rotate(${t * 2.6}deg) scale(${1 + 0.05 * Math.sin(t / 2.5)})`;
+  $("#floreIntro")[0].style.transform = `rotate(${-t * 14}deg) scale(${0.3 + 0.7 * eo(t / 2.2)})`;
+  $("#floreIntro")[0].style.opacity = t < 6 ? Math.min(.6, t / 1.2) * (t > 4.6 ? 1 - (t - 4.6) / 1.4 * .55 : 1) : 0;
+  $("#brasas i").forEach((e) => { const ph = ((t + +e.dataset.f) % 6) / 6; e.style.left = (+e.dataset.x + Math.sin(ph * 9 + +e.dataset.f) * 40) + "px"; e.style.top = (1980 - ph * (760 + +e.dataset.v * 8)) + "px"; e.style.opacity = gr * Math.sin(ph * Math.PI) * 0.85; });
+  $(".sc").forEach((s) => {
+    const a = +s.dataset.a, b = +s.dataset.b, l = t - a;
+    if (t < a || t >= b) { s.style.visibility = "hidden"; return; }
+    s.style.visibility = "visible";
+    $("[data-in]", s).forEach((e) => {
+      const d = +e.dataset.in, p = l - d, k = eb(p / 0.8), o = clamp(p / 0.45), fx = e.dataset.fx; let tf = "none";
+      if (fx === "up") tf = `translateY(${(1 - k) * 80}px)`;
+      if (fx === "zoom") tf = `scale(${0.5 + 0.5 * k})`;
+      if (fx === "left") tf = `translateX(${(1 - eo(p / 0.9)) * -560}px)`;
+      if (fx === "right") tf = `translateX(${(1 - eo(p / 0.9)) * 560}px)`;
+      if (fx === "spread") { e.style.letterSpacing = (0.5 - 0.22 * eo(p / 1.2)) + "em"; }
+      e.style.transform = tf; e.style.opacity = o;
+    });
+  });
+  // la web: móvil 3D que gira entre pantallas
+  if (t >= 35.5 && t < 55) {
+    const l = t - 35.5, m = $("#mov")[0], et = $("#et")[0], pa = $("#pantalla")[0];
+    let cur = PANT.find((p) => t >= p.a && t < p.b) || PANT[PANT.length - 1];
+    if (pa.dataset.k !== cur.img) { pa.src = imgs[cur.img].src; pa.dataset.k = cur.img; et.innerHTML = `${cur.t}<small>${cur.s}</small>`; }
+    const q = (t - cur.a) / (cur.b - cur.a);
+    const ent = eo((t - cur.a) / 0.7), sal = clamp((t - (cur.b - 0.45)) / 0.45);
+    const idx = PANT.indexOf(cur);
+    const ry = (1 - ent) * (idx % 2 ? -70 : 70) + sal * (idx % 2 ? 60 : -60) + Math.sin(t * 0.9) * 5;
+    const rise = (1 - eo(l / 1.2)) * 700;
+    m.style.transform = `translateY(${rise}px) rotateY(${ry}deg) rotateX(${Math.sin(t * 0.7) * 2.5}deg) scale(${0.96 + 0.06 * q})`;
+    m.style.opacity = clamp(l / 0.5) * (1 - sal * .9);
+    pa.style.transform = `translateY(${-(cur.sc[0] + (cur.sc[1] - cur.sc[0]) * eio(q * 1.15 - 0.05))}px)`;
+    et.style.opacity = clamp((t - cur.a - 0.5) / 0.4) * (1 - sal); et.style.transform = `translateY(${(1 - eo((t - cur.a - 0.5) / 0.6)) * 60}px) scale(${1})`;
+  }
+  // transición con el ñandutí que se abre y se cierra
+  const cu = $("#cubre")[0]; let hay = false;
+  for (const c of CORTES) { const p = (t - (c - 0.5)) / 1.0; if (p >= 0 && p <= 1) { const s = (p < .5 ? eio(p / .5) : 1 - eio((p - .5) / .5)) * 2.7; cu.style.display = "block"; cu.style.transform = `scale(${s}) rotate(${p * 70}deg)`; hay = true; $("#florCubre")[0].style.transform = `rotate(${-p * 140}deg)`; } }
+  if (!hay) cu.style.display = "none";
+  // destello breve al llegar al logo final
+  const fl = t - 72.9; $("#flash")[0].style.opacity = fl > 0 && fl < 0.35 ? 0.55 * (1 - fl / 0.35) : 0;
+}
+window.render = render; window.DUR = 78;
+document.fonts.ready.then(() => Promise.all(Object.values(imgs).map((i) => i.decode().catch(() => {})))).then(() => { window.LISTO = true; render(0); });
+</script>
+</body></html>
