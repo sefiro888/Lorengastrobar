@@ -80,7 +80,7 @@
       que: "Una sopa espesa de carne machacada, de las más queridas de la cocina paraguaya. Con el profe de guaraní Mbo'ehára Marce contamos en Instagram el origen de su nombre.",
       como: "Carne machacada, verduras y caldo. Se sirve con tortillita paraguaya y mandioca.",
       come: "Caliente, alternando cucharada y trozo de tortillita.", marida: "Mandioca · Tortillita" },
-    { id: "chyryry", audio: "platos/chyryry", n: "Mandi'ó chyryry", oir: "mandió chiriri", pron: "man-di-Ó chy-ry-RY", img: null, carta: "Mandi'ó chyryry",
+    { id: "chyryry", audio: "platos/chyryry", n: "Mandi'ó chyryry", oir: "mandió chiriri", pron: "man-di-Ó chy-ry-RY", img: "img/platos/hl-chyryry.webp", carta: "Mandi'ó chyryry",
       lema: "“Chyryry” imita el chisporroteo de la sartén",
       que: "Un salteado de mandioca, de los platos más pedidos para compartir.",
       como: "Mandioca, patata, queso, jamón, cebolla de verdeo y un huevo frito por encima. También con bacon.",
