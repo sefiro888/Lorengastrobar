@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<title>Reel 4 · receta en ñandutí</title>
+<link rel="stylesheet" href="../../css/fuentes.css">
+<style>
+  :root { --vino:#59011d; --vino9:#2a000e; --vino5:#7d0b2e; --crema:#f3eedc; --maiz:#e8b43a; --maiz2:#f4d27a; --brasa:#ea6a26; --carbon:#151012; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; height: 1920px; overflow: hidden; background: #000; }
+  #l { position: relative; width: 1080px; height: 1920px; overflow: hidden; font-family: Montserrat, sans-serif; color: var(--crema); background: var(--carbon); }
+  .sc { position: absolute; inset: 0; visibility: hidden; overflow: hidden; background: var(--carbon) url("../../img/kv/textura-oscura.webp") center / cover; will-change: transform, clip-path; }
+  .sc::before { content: ""; position: absolute; inset: 0; background: linear-gradient(rgba(21,16,18,.58), rgba(21,16,18,.58)), radial-gradient(75% 55% at 50% 42%, rgba(125,11,46,.7), transparent 70%), radial-gradient(60% 40% at 50% 100%, rgba(234,106,38,.3), transparent 70%); }
+  .sc > * { position: absolute; }
+  .flor { left: 50%; top: 50%; width: 1800px; height: 1800px; margin: -900px 0 0 -900px; opacity: .13; object-fit: contain; }
+  .centro { left: 0; right: 0; text-align: center; }
+  .anton { font-family: Anton, sans-serif; text-transform: uppercase; line-height: 1; }
+  .kau { font-family: "Kaushan Script", cursive; color: var(--maiz); line-height: 1.05; }
+  .eyebrow { font-weight: 800; font-size: 36px; letter-spacing: .3em; text-transform: uppercase; color: var(--maiz); }
+  .sombra { text-shadow: 0 6px 30px rgba(0,0,0,.8), 0 2px 6px rgba(0,0,0,.6); }
+  .brasas i { position: absolute; width: 9px; height: 9px; border-radius: 50%; background: var(--maiz2); box-shadow: 0 0 16px 5px rgba(244,210,122,.75); opacity: 0; }
+  /* círculo de vídeo con encaje */
+  .encaje { left: 50%; width: 1240px; height: 1240px; margin-left: -620px; opacity: .55; object-fit: contain; filter: drop-shadow(0 30px 60px rgba(0,0,0,.6)); }
+  .aro { left: 50%; border-radius: 50%; overflow: hidden; background: #000; box-shadow: 0 0 0 12px rgba(243,238,220,.96), 0 0 0 22px rgba(232,180,58,.95), 0 50px 90px -20px rgba(0,0,0,.9); }
+  .aro img.vf { position: absolute; max-width: none; image-rendering: auto; }
+  .chip { left: 50%; transform: translateX(-50%); background: var(--crema); color: var(--vino9); border-radius: 70px; padding: 26px 56px; font-weight: 800; font-size: 46px; white-space: nowrap; box-shadow: 0 30px 60px -20px rgba(0,0,0,.9); text-align: center; line-height: 1.15; }
+  .chip small { display: block; font-weight: 600; font-size: 28px; color: #6b5458; margin-top: 4px; }
+  .num { width: 200px; height: 200px; border-radius: 50%; background: var(--maiz); color: var(--vino9); font-family: Anton; font-size: 150px; display: grid; place-items: center; line-height: 1; box-shadow: 0 24px 50px -10px rgba(232,180,58,.6), 0 0 0 10px rgba(21,16,18,.5); }
+  .pasos { left: 0; right: 0; display: flex; gap: 14px; justify-content: center; }
+  .pasos b { width: 74px; height: 10px; border-radius: 6px; background: rgba(243,238,220,.28); }
+  .pasos b.on { background: var(--maiz); box-shadow: 0 0 16px rgba(232,180,58,.9); }
+  .pill { display: inline-block; background: var(--maiz); color: var(--vino9); font-weight: 800; font-size: 46px; padding: 24px 58px; border-radius: 999px; box-shadow: 0 20px 44px -10px rgba(232,180,58,.6); }
+  .chispa { width: 14px; height: 14px; border-radius: 50%; background: var(--maiz2); box-shadow: 0 0 24px 8px rgba(244,210,122,.9); opacity: 0; }
+  #anillo { position: absolute; left: 50%; top: 50%; border-radius: 50%; box-shadow: 0 0 0 14px var(--crema), 0 0 0 28px var(--maiz), 0 0 120px 40px rgba(232,180,58,.55); display: none; z-index: 30; pointer-events: none; }
+  #barra { position: absolute; inset: 0; background: linear-gradient(100deg, transparent 0 46%, var(--maiz) 46% 54%, transparent 54%); display: none; z-index: 30; pointer-events: none; }
+  #flash { position: absolute; inset: 0; background: #fff; opacity: 0; z-index: 40; pointer-events: none; }
+</style></head>
+<body>
+<div id="l">
+
+  <!-- 0 · Gancho -->
+  <section class="sc" id="s0">
+    <img class="flor" data-rot="30" src="../../img/kv/flor-kv.webp" alt="">
+    <div class="centro anton sombra" data-in="0.15" data-fx="slam" style="top:250px;font-size:210px">Empanada</div>
+    <div class="centro kau sombra" data-in="0.45" data-fx="up" style="top:470px;font-size:120px">de jamón y queso</div>
+    <img class="encaje" data-rot="-40" src="../../img/kv/flor-kv.webp" style="top:530px;width:1300px;height:1300px;margin-left:-650px" alt="">
+    <div class="aro" data-in="0.1" data-fx="zoom" data-clip="hook" data-cz="2.1" data-cx="0.50" data-cy="0.46" style="width:920px;height:920px;margin-left:-460px;top:690px"><img class="vf"></div>
+  </section>
+
+  <!-- 1 · Presenta Griselda -->
+  <section class="sc" id="s1">
+    <img class="flor" data-rot="-24" src="../../img/kv/flor-kv.webp" alt="">
+    <div class="centro eyebrow sombra" data-in="0.1" data-fx="up" style="top:250px">Receta paso a paso</div>
+    <div class="centro anton sombra" data-in="0.25" data-fx="slam" style="top:320px;font-size:150px;line-height:.95">Así la<br><span style="color:var(--maiz)">hacemos</span></div>
+    <img class="encaje" data-rot="35" src="../../img/kv/flor-kv.webp" style="top:510px;width:1300px;height:1300px;margin-left:-650px" alt="">
+    <div class="aro" data-in="0.2" data-fx="zoom" data-clip="griselda" data-cz="1.9" data-cx="0.50" data-cy="0.30" style="width:880px;height:880px;margin-left:-440px;top:690px"><img class="vf"></div>
+    <div class="chip" data-in="0.7" data-fx="up" style="top:1470px">Griselda<small>cocinera de Loren Restobar</small></div>
+  </section>
+
+  <!-- 2..7 · Pasos -->
+  <section class="sc paso" id="s2" data-n="1" data-pal="JAMÓN" data-det="Jamón dulce en cubitos" data-clip="jamon" data-cx="0.50" data-cy="0.36" data-cz="1.9"></section>
+  <section class="sc paso" id="s3" data-n="2" data-pal="BECHAMEL" data-det="Mantequilla, harina y leche" data-clip="bechamel" data-cx="0.50" data-cy="0.34" data-cz="1.9"></section>
+  <section class="sc paso" id="s4" data-n="3" data-pal="MASA" data-det="Casera, hecha en el día" data-clip="masa" data-cx="0.50" data-cy="0.36" data-cz="1.9"></section>
+  <section class="sc paso" id="s5" data-n="4" data-pal="RELLENO" data-det="Bien cargadito de jamón y queso" data-clip="relleno" data-cx="0.55" data-cy="0.38" data-cz="1.9"></section>
+  <section class="sc paso" id="s6" data-n="5" data-pal="CERRAR" data-det="Con el rodillo, a mano" data-clip="cerrar" data-cx="0.52" data-cy="0.36" data-cz="1.9"></section>
+  <section class="sc paso" id="s7" data-n="6" data-pal="FRITA" data-det="Dorada en aceite bien caliente" data-clip="frita" data-cx="0.50" data-cy="0.40" data-cz="1.9"></section>
+
+  <!-- 8 · El queso -->
+  <section class="sc" id="s8">
+    <img class="flor" data-rot="26" src="../../img/kv/flor-kv.webp" alt="">
+    <div class="centro eyebrow sombra" data-in="0.2" data-fx="up" style="top:230px">¡Y ahora lo mejor!</div>
+    <div class="centro anton sombra" data-in="0.35" data-fx="slam" style="top:300px;font-size:170px;line-height:.95">El queso<br><span style="color:var(--maiz)">que se estira</span></div>
+    <img class="encaje" data-rot="-30" src="../../img/kv/flor-kv.webp" style="top:460px;width:1400px;height:1400px;margin-left:-700px" alt="">
+    <div class="aro" data-in="0.25" data-fx="zoom" data-clip="queso" data-cz="2.05" data-cx="0.50" data-cy="0.42" style="width:980px;height:980px;margin-left:-490px;top:690px"><img class="vf"></div>
+    <div class="chip" data-in="1.2" data-fx="up" style="top:1540px;font-size:40px;padding:22px 46px">Empanada de jamón y queso · 3,40 €</div>
+    <div id="chispas"></div>
+  </section>
+
+  <!-- 9 · Cierre -->
+  <section class="sc" id="s9">
+    <img class="flor" data-rot="20" src="../../img/kv/flor-kv.webp" style="opacity:.2" alt="">
+    <img data-in="0.3" data-fx="zoom" src="../../img/marca/logo-loren.webp" style="left:270px;top:300px;width:540px;filter:drop-shadow(0 24px 40px rgba(0,0,0,.6))" alt="">
+    <div class="centro kau sombra" data-in="0.9" data-fx="up" style="top:660px;font-size:128px">Pruébalas en</div>
+    <div class="centro anton" data-in="1.2" data-fx="slam" style="top:830px;font-size:200px;line-height:.92">Loren<br>Restobar</div>
+    <div class="centro" data-in="2.0" data-fx="zoom" style="top:1260px"><span class="pill">lorenrestobar.com</span></div>
+    <div class="centro" data-in="2.6" data-fx="up" style="top:1410px;font-size:40px;font-weight:600;line-height:1.4;left:40px;right:40px">Carrer de la Muntanya 115 · Barcelona<br>También a domicilio</div>
+    <div class="centro kau" data-in="3.4" data-fx="zoom" style="top:1560px;font-size:110px">Aguyje!</div>
+  </section>
+
+  <div id="anillo"></div><div id="barra"></div><div id="flash"></div>
+  <div class="brasas" id="brasas" style="position:absolute;inset:0;z-index:5;pointer-events:none"></div>
+</div>
+<script>
+const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const clamp = (x) => Math.max(0, Math.min(1, x));
+const eo = (x) => 1 - Math.pow(1 - clamp(x), 3);
+const eio = (x) => { x = clamp(x); return x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2; };
+const eb = (x) => { x = clamp(x); const c = 1.7; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
+// --- construir las 6 escenas de pasos
+$$(".paso").forEach((s) => {
+  const n = +s.dataset.n;
+  s.innerHTML = `
+    <img class="flor" data-rot="${n % 2 ? 22 : -22}" src="../../img/kv/flor-kv.webp" alt="">
+    <div class="pasos" style="top:200px">${[1, 2, 3, 4, 5, 6].map((k) => `<b class="${k <= n ? "on" : ""}"></b>`).join("")}</div>
+    <div class="centro eyebrow sombra" data-in="0.1" data-fx="up" style="top:262px">Paso ${n}</div>
+    <div class="centro anton sombra" data-in="0.2" data-fx="slam" style="top:330px;font-size:230px">${s.dataset.pal}</div>
+    <img class="encaje" data-rot="${n % 2 ? 40 : -40}" src="../../img/kv/flor-kv.webp" style="top:460px;width:1300px;height:1300px;margin-left:-650px" alt="">
+    <div class="aro" data-in="0.15" data-fx="zoom" data-clip="${s.dataset.clip}" data-cz="${s.dataset.cz}" data-cx="${s.dataset.cx}" data-cy="${s.dataset.cy}" style="width:880px;height:880px;margin-left:-440px;top:640px"><img class="vf"></div>
+    <div class="num" data-in="0.3" data-fx="zoom" style="left:60px;top:620px">${n}</div>
+    <div class="chip" data-in="0.55" data-fx="up" style="top:1440px">${s.dataset.det}</div>`;
+});
+// brasas y chispas fijas (reproducibles)
+const BR = $("#brasas"); for (let i = 0; i < 30; i++) { const e = document.createElement("i"); e.dataset.x = (i * 137.5) % 1080; e.dataset.v = 60 + (i * 53) % 90; e.dataset.f = (i * 0.41) % 6; BR.appendChild(e); }
+const CH = $("#chispas"); for (let i = 0; i < 24; i++) { const e = document.createElement("div"); e.className = "chispa"; e.style.position = "absolute"; e.style.left = "540px"; e.style.top = "1150px"; e.dataset.a = (i / 24) * Math.PI * 2; e.dataset.r = 420 + (i * 71) % 260; CH.appendChild(e); }
+// --- escenas, tiempos (8 tiempos de la polca = 2,787 s) y transiciones
+const P = 0.3483 * 8;
+const T = [0, 2.4, 2.4 + P, 2.4 + 2 * P, 2.4 + 3 * P, 2.4 + 4 * P, 2.4 + 5 * P, 2.4 + 6 * P, 2.4 + 7 * P, 2.4 + 7 * P + 5.57, 35.0];
+const SC = $$(".sc");   // 10 escenas: s0..s9, en orden del DOM
+const TIPO = ["circulo", "whip", "zoom", "arriba", "diagonal", "giro", "whip", "circulo", "zoom"];  // 9 cortes
+const TR = 0.5;
+const FR = 30;
+window.imgs = {};
+function cargar(clip, i) { const k = clip + i; if (!window.imgs[k]) { const im = new Image(); im.src = `../../para-loren/promo/frames4/${clip}/${String(i).padStart(4, "0")}.jpg`; window.imgs[k] = im; } return window.imgs[k]; }
+function render(t) {
+  // fondo: flor que gira, brasas
+  $$(".flor,.encaje").forEach((f) => { f.style.transform = `rotate(${t * (+f.dataset.rot || 12)}deg)`; });
+  $$("#brasas i").forEach((e) => { const ph = ((t + +e.dataset.f) % 6) / 6; e.style.left = (+e.dataset.x + Math.sin(ph * 9 + +e.dataset.f) * 40) + "px"; e.style.top = (1980 - ph * (760 + +e.dataset.v * 8)) + "px"; e.style.opacity = Math.sin(ph * Math.PI) * .85; });
+  const anillo = $("#anillo"), barra = $("#barra"), flash = $("#flash"); anillo.style.display = "none"; barra.style.display = "none"; flash.style.opacity = 0;
+  SC.forEach((s, j) => {
+    const a = T[j], b = T[j + 1], l = t - a;
+    const entra = j > 0 && t >= a - TR / 2 && t < a + TR / 2, sale = j < SC.length - 1 && t >= b - TR / 2 && t < b + TR / 2;
+    const visible = (t >= a - TR / 2) && (t < b + TR / 2);
+    s.style.visibility = visible ? "visible" : "hidden";
+    s.style.transform = "none"; s.style.opacity = 1; s.style.filter = "none"; s.style.clipPath = "none"; s.style.zIndex = j;
+    if (!visible) return;
+    // animación interna
+    $$("[data-in]", s).forEach((e) => {
+      const d = +e.dataset.in, p = l + 0.3 - d, k = eb(p / 0.7), o = clamp(p / 0.35), fx = e.dataset.fx;
+      let tf = "";
+      if (fx === "up") tf = `translateY(${(1 - k) * 90}px)`;
+      if (fx === "zoom") tf = `scale(${0.4 + 0.6 * k})`;
+      if (fx === "slam") tf = `scale(${1 + (1 - clamp(p / 0.35)) * 1.6})`;
+      e.style.opacity = o;
+      e.style.transform = e.classList.contains("chip") ? `translateX(-50%) ${tf}` : tf;
+    });
+    // vídeo dentro del círculo
+    $$("[data-clip]", s).forEach((c) => {
+      const clip = c.dataset.clip, im = $("img.vf", c);
+      const idx = Math.max(1, Math.min(Math.floor(Math.max(0, l + 0.0) * FR) + 1, window.MAXF[clip]));
+      im.src = cargar(clip, idx).src;
+      const D = c.offsetWidth, z = +c.dataset.cz, cx = +c.dataset.cx, cy = +c.dataset.cy;
+      const w = 576 * z * (D / 576) * 0 + 576 * (D / 576) * z * (1 + 0.07 * clamp(l / 3));   // ancho mostrado
+      const sc = w / 576; im.style.width = w + "px"; im.style.height = (1024 * sc) + "px";
+      im.style.left = (D / 2 - cx * w) + "px"; im.style.top = (D / 2 - cy * 1024 * sc) + "px";
+    });
+    // chispas del queso
+    if (s.id === "s8") $$(".chispa", s).forEach((e) => { const q = l - 0.5 - (+e.dataset.a % 1) * 0.6, ph = clamp(q / 1.4), r = +e.dataset.r * eo(ph); e.style.opacity = ph > 0 && ph < 1 ? Math.sin(ph * Math.PI) : 0; e.style.transform = `translate(${Math.cos(+e.dataset.a) * r}px, ${Math.sin(+e.dataset.a) * r * .8}px) scale(${1.4 - ph})`; });
+    // --- transición
+    if (entra || sale) {
+      const k = entra ? j - 1 : j;                          // corte k une escena k con k+1
+      const tipo = TIPO[k], p = clamp((t - (T[k + 1] - TR / 2)) / TR), blur = Math.sin(p * Math.PI) * 16;
+      const esSalida = sale && !entra ? true : (j === k);
+      if (tipo === "whip") { s.style.transform = `translateX(${esSalida ? -p * 1200 : (1 - p) * 1200}px)`; s.style.filter = `blur(${blur}px)`; }
+      if (tipo === "arriba") { s.style.transform = `translateY(${esSalida ? -p * 2000 : (1 - p) * 2000}px)`; s.style.filter = `blur(${blur}px)`; }
+      if (tipo === "zoom") { if (esSalida) { s.style.transform = `scale(${1 + p * 2.2})`; s.style.opacity = 1 - p; } else { s.style.transform = `scale(${0.55 + 0.45 * p})`; s.style.opacity = p; } s.style.filter = `blur(${blur * .8}px)`; flash.style.opacity = Math.sin(p * Math.PI) * .75; }
+      if (tipo === "giro") { if (esSalida) { s.style.transform = `rotate(${p * 140}deg) scale(${1 - p * .75})`; s.style.opacity = 1 - p; } else { s.style.transform = `rotate(${-(1 - p) * 140}deg) scale(${0.35 + 0.65 * p})`; s.style.opacity = p; } }
+      if (tipo === "diagonal") { if (!esSalida) { const x = p * 170 - 35; s.style.clipPath = `polygon(0 0, ${x + 35}% 0, ${x}% 100%, 0 100%)`; barra.style.display = "block"; barra.style.transform = `translateX(${(p * 1.7 - .6 - .0) * 1080 - 540 + 0}px) skewX(-14deg)`; } }
+      if (tipo === "circulo") { if (!esSalida) { const R = eio(p) * 1700; s.style.clipPath = `circle(${R}px at 50% 50%)`; anillo.style.display = "block"; anillo.style.width = anillo.style.height = (R * 2) + "px"; anillo.style.margin = `${-R}px 0 0 ${-R}px`; anillo.style.opacity = 1 - clamp((p - .8) / .2); } }
+    }
+  });
+}
+// cuántos fotogramas hay en cada tramo (se rellena desde Python)
+window.MAXF = { hook: 77, griselda: 102, jamon: 102, bechamel: 102, masa: 102, relleno: 102, cerrar: 102, frita: 102, queso: 167 };
+window.esperar = async () => { await Promise.all($$("img.vf").map((im) => im.decode().catch(() => {}))); };
+window.render = render; window.DUR = 35;
+document.fonts.ready.then(async () => { Object.keys(window.MAXF).forEach((c) => cargar(c, 1)); await new Promise((r) => setTimeout(r, 500)); window.LISTO = true; render(0); });
+</script>
+</body></html>

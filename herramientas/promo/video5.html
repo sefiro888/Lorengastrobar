@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<title>Reel A · explosivo, pantalla completa</title>
+<link rel="stylesheet" href="../../css/fuentes.css">
+<style>
+  :root { --vino:#59011d; --vino9:#2a000e; --vino5:#7d0b2e; --crema:#f3eedc; --maiz:#e8b43a; --maiz2:#f4d27a; --carbon:#151012; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; height: 1920px; overflow: hidden; background: #000; }
+  #l { position: relative; width: 1080px; height: 1920px; overflow: hidden; font-family: Montserrat, sans-serif; color: var(--crema); background: var(--carbon); }
+  .sc { position: absolute; inset: 0; visibility: hidden; overflow: hidden; background: var(--carbon); will-change: transform, clip-path; }
+  .sc > * { position: absolute; }
+  .full { left: 0; top: 0; width: 1080px; height: 1920px; transform-origin: 50% 40%; filter: contrast(1.1) saturate(1.22) brightness(.97); }
+  .vin { inset: 0; background: radial-gradient(120% 85% at 50% 45%, transparent 55%, rgba(8,2,4,.72)), linear-gradient(rgba(10,4,6,.62), transparent 26%, transparent 60%, rgba(10,4,6,.75)); }
+  .banda { left: 0; right: 0; top: 1230px; height: 480px; background: linear-gradient(90deg, rgba(42,0,14,.94), rgba(89,1,29,.9) 60%, rgba(42,0,14,.94)); border-top: 8px solid var(--maiz); border-bottom: 8px solid var(--maiz); box-shadow: 0 0 80px rgba(0,0,0,.75); }
+  .centro { left: 0; right: 0; text-align: center; }
+  .anton { font-family: Anton, sans-serif; text-transform: uppercase; line-height: 1; }
+  .kau { font-family: "Kaushan Script", cursive; color: var(--maiz); line-height: 1.05; }
+  .eyebrow { font-weight: 800; font-size: 38px; letter-spacing: .3em; text-transform: uppercase; color: var(--maiz); }
+  .sombra { text-shadow: 0 6px 30px rgba(0,0,0,.85), 0 2px 6px rgba(0,0,0,.7); }
+  .pasos { left: 0; right: 0; display: flex; gap: 14px; justify-content: center; }
+  .pasos b { width: 74px; height: 10px; border-radius: 6px; background: rgba(243,238,220,.3); }
+  .pasos b.on { background: var(--maiz); box-shadow: 0 0 16px rgba(232,180,58,.9); }
+  .pill { display: inline-block; background: var(--maiz); color: var(--vino9); font-weight: 800; font-size: 46px; padding: 24px 58px; border-radius: 999px; box-shadow: 0 20px 44px -10px rgba(232,180,58,.6); }
+  .chispa { width: 14px; height: 14px; border-radius: 50%; background: var(--maiz2); box-shadow: 0 0 24px 8px rgba(244,210,122,.9); opacity: 0; }
+  .fondo { inset: 0; background: var(--carbon) url("../../img/kv/textura-oscura.webp") center / cover; }
+  .fondo::before { content: ""; position: absolute; inset: 0; background: linear-gradient(rgba(21,16,18,.6), rgba(21,16,18,.6)), radial-gradient(75% 55% at 50% 42%, rgba(125,11,46,.7), transparent 70%); }
+  .flor { left: 50%; top: 50%; width: 1800px; height: 1800px; margin: -900px 0 0 -900px; opacity: .16; object-fit: contain; }
+  #anillo { position: absolute; left: 50%; top: 50%; border-radius: 50%; box-shadow: 0 0 0 14px var(--crema), 0 0 0 28px var(--maiz), 0 0 120px 40px rgba(232,180,58,.55); display: none; z-index: 30; pointer-events: none; }
+  #barra { position: absolute; inset: 0; background: linear-gradient(100deg, transparent 0 46%, var(--maiz) 46% 54%, transparent 54%); display: none; z-index: 30; pointer-events: none; }
+  #flash { position: absolute; inset: 0; background: #fff; opacity: 0; z-index: 40; pointer-events: none; }
+</style></head>
+<body>
+<div id="l">
+  <section class="sc" id="s0" data-clip="hook" data-cx="0.5" data-cy="0.45">
+    <img class="full vf" alt=""><div class="vin"></div>
+    <div class="centro anton sombra" data-in="0.1" data-fx="slam" style="top:260px;font-size:230px;line-height:.92">¡Mira<br><span style="color:var(--maiz)">ese queso!</span></div>
+    <div class="banda" style="top:1280px;height:430px"></div>
+    <div class="centro anton sombra" data-in="0.5" data-fx="up" style="top:1410px;font-size:84px">Empanada de jamón y queso</div>
+  </section>
+  <section class="sc" id="s1" data-clip="griselda" data-cx="0.5" data-cy="0.42">
+    <img class="full vf" alt=""><div class="vin"></div>
+    <div class="centro eyebrow sombra" data-in="0.1" data-fx="up" style="top:250px">Receta paso a paso</div>
+    <div class="centro anton sombra" data-in="0.2" data-fx="slam" style="top:320px;font-size:200px;line-height:.92">Así la<br><span style="color:var(--maiz)">hacemos</span></div>
+    <div class="banda" style="top:1280px;height:430px"></div>
+    <div class="centro anton sombra" data-in="0.5" data-fx="up" style="top:1370px;font-size:110px">Griselda</div>
+    <div class="centro kau sombra" data-in="0.7" data-fx="up" style="top:1500px;font-size:66px">cocinera de Loren Restobar</div>
+  </section>
+  <section class="sc paso" id="s2" data-n="1" data-pal="JAMÓN" data-det="Jamón dulce en cubitos" data-clip="jamon" data-cy="0.40"></section>
+  <section class="sc paso" id="s3" data-n="2" data-pal="BECHAMEL" data-det="Mantequilla, harina y leche" data-clip="bechamel" data-cy="0.38"></section>
+  <section class="sc paso" id="s4" data-n="3" data-pal="MASA" data-det="Casera, hecha en el día" data-clip="masa" data-cy="0.40"></section>
+  <section class="sc paso" id="s5" data-n="4" data-pal="RELLENO" data-det="Bien cargadito de jamón y queso" data-clip="relleno" data-cy="0.42"></section>
+  <section class="sc paso" id="s6" data-n="5" data-pal="CERRAR" data-det="Con el rodillo, a mano" data-clip="cerrar" data-cy="0.40"></section>
+  <section class="sc paso" id="s7" data-n="6" data-pal="FRITA" data-det="Dorada en aceite bien caliente" data-clip="frita" data-cy="0.44"></section>
+  <section class="sc" id="s8" data-clip="queso" data-cx="0.5" data-cy="0.42">
+    <img class="full vf" alt=""><div class="vin"></div>
+    <div class="centro eyebrow sombra" data-in="0.2" data-fx="up" style="top:250px">¡Y ahora lo mejor!</div>
+    <div class="centro anton sombra" data-in="0.3" data-fx="slam" style="top:320px;font-size:210px;line-height:.92">El queso<br><span style="color:var(--maiz)">que se estira</span></div>
+    <div class="banda" style="top:1320px;height:390px"></div>
+    <div class="centro anton sombra" data-in="1.0" data-fx="up" style="top:1440px;font-size:70px">Empanada de jamón y queso · 3,40 €</div>
+    <div id="chispas"></div>
+  </section>
+  <section class="sc" id="s9">
+    <div class="fondo"></div><img class="flor" data-rot="20" src="../../img/kv/flor-kv.webp" alt="">
+    <img data-in="0.3" data-fx="zoom" src="../../img/marca/logo-loren.webp" style="left:270px;top:300px;width:540px;filter:drop-shadow(0 24px 40px rgba(0,0,0,.6))" alt="">
+    <div class="centro kau sombra" data-in="0.9" data-fx="up" style="top:660px;font-size:128px">Pruébalas en</div>
+    <div class="centro anton" data-in="1.2" data-fx="slam" style="top:830px;font-size:200px;line-height:.92">Loren<br>Restobar</div>
+    <div class="centro" data-in="2.0" data-fx="zoom" style="top:1260px"><span class="pill">lorenrestobar.com</span></div>
+    <div class="centro" data-in="2.6" data-fx="up" style="top:1410px;font-size:40px;font-weight:600;line-height:1.4;left:40px;right:40px">Carrer de la Muntanya 115 · Barcelona<br>También a domicilio</div>
+    <div class="centro kau" data-in="3.4" data-fx="zoom" style="top:1560px;font-size:110px">Aguyje!</div>
+  </section>
+  <div id="anillo"></div><div id="barra"></div><div id="flash"></div>
+</div>
+<script>
+const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const clamp = (x) => Math.max(0, Math.min(1, x));
+const eo = (x) => 1 - Math.pow(1 - clamp(x), 3);
+const eio = (x) => { x = clamp(x); return x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2; };
+const eb = (x) => { x = clamp(x); const c = 1.7; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
+$$(".paso").forEach((s) => {
+  const n = +s.dataset.n, c = n % 2 ? "var(--maiz)" : "var(--crema)";
+  s.dataset.cx = "0.5";
+  s.innerHTML = `
+    <img class="full vf" alt=""><div class="vin"></div>
+    <div class="pasos" style="top:190px">${[1,2,3,4,5,6].map((k) => `<b class="${k <= n ? "on" : ""}"></b>`).join("")}</div>
+    <div class="centro eyebrow sombra" data-in="0.05" data-fx="up" style="top:250px;font-size:44px">Paso ${n}</div>
+    <div class="banda"></div>
+    <div class="centro anton sombra" data-in="0.1" data-fx="slam" style="top:1275px;font-size:260px;color:${c}">${s.dataset.pal}</div>
+    <div class="centro kau sombra" data-in="0.45" data-fx="up" style="top:1560px;font-size:68px">${s.dataset.det}</div>`;
+});
+const CH = $("#chispas"); for (let i = 0; i < 28; i++) { const e = document.createElement("div"); e.className = "chispa"; e.style.position = "absolute"; e.style.left = "540px"; e.style.top = "1000px"; e.dataset.a = (i / 28) * Math.PI * 2; e.dataset.r = 380 + (i * 71) % 360; CH.appendChild(e); }
+const P = 0.3483 * 8, B2 = 0.3483 * 2;        // 8 tiempos de la polca por paso; cada 2 tiempos un corte
+const T = [0, 2.4, 2.4 + P, 2.4 + 2 * P, 2.4 + 3 * P, 2.4 + 4 * P, 2.4 + 5 * P, 2.4 + 6 * P, 2.4 + 7 * P, 2.4 + 7 * P + 5.57, 35.0];
+const SC = $$(".sc"), TIPO = ["circulo", "whip", "zoom", "arriba", "diagonal", "giro", "whip", "circulo", "zoom"], TR = 0.5, FR = 30;
+window.imgs = {};
+function cargar(clip, i) { const k = clip + i; if (!window.imgs[k]) { const im = new Image(); im.src = `../../para-loren/promo/frames4/${clip}/${String(i).padStart(4, "0")}.jpg`; window.imgs[k] = im; } return window.imgs[k]; }
+window.MAXF = { hook: 77, griselda: 102, jamon: 102, bechamel: 102, masa: 102, relleno: 102, cerrar: 102, frita: 102, queso: 167 };
+const OFF = [0, 0.9, 1.8, 2.6], ZOOM = [1.0, 1.28, 1.04, 1.4];     // saltos de plano dentro de cada paso
+function render(t) {
+  const anillo = $("#anillo"), barra = $("#barra"), flash = $("#flash"); anillo.style.display = "none"; barra.style.display = "none"; let fl = 0;
+  $$(".flor").forEach((f) => (f.style.transform = `rotate(${t * (+f.dataset.rot || 12)}deg)`));
+  SC.forEach((s, j) => {
+    const a = T[j], b = T[j + 1], l = t - a, lt = l + 0.3;
+    const entra = j > 0 && t >= a - TR / 2 && t < a + TR / 2, sale = j < SC.length - 1 && t >= b - TR / 2 && t < b + TR / 2, visible = t >= a - TR / 2 && t < b + TR / 2;
+    s.style.visibility = visible ? "visible" : "hidden"; s.style.transform = "none"; s.style.opacity = 1; s.style.filter = "none"; s.style.clipPath = "none"; s.style.zIndex = j;
+    if (!visible) return;
+    $$("[data-in]", s).forEach((e) => {
+      const d = +e.dataset.in, p = lt - d, k = eb(p / 0.65), o = clamp(p / 0.3), fx = e.dataset.fx; let tf = "";
+      if (fx === "up") tf = `translateY(${(1 - k) * 90}px)`;
+      if (fx === "zoom") tf = `scale(${0.4 + 0.6 * k})`;
+      if (fx === "slam") tf = `scale(${1 + (1 - clamp(p / 0.3)) * 1.8})`;
+      e.style.opacity = o; e.style.transform = tf;
+    });
+    const im = $("img.vf", s);
+    if (im) {
+      const clip = s.dataset.clip, esPaso = s.classList.contains("paso");
+      let src, z = 1, sx = 0, sy = 0, punch = 0;
+      if (esPaso) {      // cortes rápidos cada 2 tiempos con salto de plano, zoom y golpe
+        const lc = Math.max(0, l), sh = Math.min(3, Math.floor(lc / B2)), ls = lc - sh * B2;
+        src = Math.max(1, Math.min(Math.floor((OFF[sh] + ls) * FR) + 1, window.MAXF[clip]));
+        punch = Math.exp(-ls * 14); z = ZOOM[sh] * (1 + 0.06 * (ls / B2)) + 0.07 * punch;
+        if (ls < 0.07 && sh > 0) fl = Math.max(fl, 0.45 * (1 - ls / 0.07));
+        sx = Math.sin(lc * 90) * 7 * punch; sy = Math.cos(lc * 80) * 7 * punch;
+      } else {            // planos únicos con empuje lento
+        src = Math.max(1, Math.min(Math.floor(Math.max(0, l) * FR) + 1, window.MAXF[clip])); z = 1.02 + 0.2 * clamp(l / (b - a));
+      }
+      im.src = cargar(clip, src).src;
+      const cy = +s.dataset.cy;
+      im.style.transform = `translate(${sx}px,${sy}px) scale(${z})`; im.style.transformOrigin = esPaso ? `50% 100%` : `50% ${cy * 100}%`;
+    }
+    if (s.id === "s8") $$(".chispa", s).forEach((e) => { const q = l - 0.4 - (+e.dataset.a % 1) * 0.6, ph = clamp(q / 1.4), r = +e.dataset.r * eo(ph); e.style.opacity = ph > 0 && ph < 1 ? Math.sin(ph * Math.PI) : 0; e.style.transform = `translate(${Math.cos(+e.dataset.a) * r}px, ${Math.sin(+e.dataset.a) * r * .8}px) scale(${1.4 - ph})`; });
+    if (entra || sale) {
+      const k = entra ? j - 1 : j, tipo = TIPO[k], p = clamp((t - (T[k + 1] - TR / 2)) / TR), blur = Math.sin(p * Math.PI) * 18, esSalida = !(entra && !sale) && (j === k);
+      if (tipo === "whip") { s.style.transform = `translateX(${esSalida ? -p * 1200 : (1 - p) * 1200}px)`; s.style.filter = `blur(${blur}px)`; }
+      if (tipo === "arriba") { s.style.transform = `translateY(${esSalida ? -p * 2000 : (1 - p) * 2000}px)`; s.style.filter = `blur(${blur}px)`; }
+      if (tipo === "zoom") { if (esSalida) { s.style.transform = `scale(${1 + p * 2.2})`; s.style.opacity = 1 - p; } else { s.style.transform = `scale(${0.55 + 0.45 * p})`; s.style.opacity = p; } s.style.filter = `blur(${blur * .8}px)`; fl = Math.max(fl, Math.sin(p * Math.PI) * .8); }
+      if (tipo === "giro") { if (esSalida) { s.style.transform = `rotate(${p * 140}deg) scale(${1 - p * .75})`; s.style.opacity = 1 - p; } else { s.style.transform = `rotate(${-(1 - p) * 140}deg) scale(${0.35 + 0.65 * p})`; s.style.opacity = p; } }
+      if (tipo === "diagonal" && !esSalida) { const x = p * 170 - 35; s.style.clipPath = `polygon(0 0, ${x + 35}% 0, ${x}% 100%, 0 100%)`; barra.style.display = "block"; barra.style.transform = `translateX(${(p * 1.7 - .6) * 1080 - 540}px) skewX(-14deg)`; }
+      if (tipo === "circulo" && !esSalida) { const R = eio(p) * 1700; s.style.clipPath = `circle(${R}px at 50% 50%)`; anillo.style.display = "block"; anillo.style.width = anillo.style.height = (R * 2) + "px"; anillo.style.margin = `${-R}px 0 0 ${-R}px`; anillo.style.opacity = 1 - clamp((p - .8) / .2); }
+    }
+  });
+  flash.style.opacity = fl;
+}
+window.esperar = async () => { await Promise.all($$("img.vf").map((im) => im.decode().catch(() => {}))); };
+window.render = render; window.DUR = 35;
+document.fonts.ready.then(async () => { Object.keys(window.MAXF).forEach((c) => cargar(c, 1)); await new Promise((r) => setTimeout(r, 500)); window.LISTO = true; render(0); });
+</script>
+</body></html>
