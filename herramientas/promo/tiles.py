@@ -85,12 +85,12 @@ lg = lg.resize((lw, int(lg.size[1] * lw / lg.size[0])), Image.LANCZOS)
 pad = 60; lienzo = Image.new("RGBA", (lg.size[0] + 2 * pad, lg.size[1] + 2 * pad), (0, 0, 0, 0))
 sombra = Image.new("RGBA", lienzo.size, (0, 0, 0, 0)); sombra.paste((0, 0, 0, 200), (pad, pad + 8), lg.split()[3]); sombra = sombra.filter(ImageFilter.GaussianBlur(14))
 lienzo.alpha_composite(sombra); lienzo.alpha_composite(lg, (pad, pad))
-la = np.array(lienzo).astype(np.float32); LOGO = (la[..., :3][..., ::-1], la[..., 3:] / 255.0); LX, LY = (W - lienzo.size[0]) // 2, 70
+la = np.array(lienzo).astype(np.float32); LOGO = (la[..., :3][..., ::-1], la[..., 3:] / 255.0); LX, LY = (W - lienzo.size[0]) // 2, 235
 
 # sombreado fijo (arriba y abajo) para que se lea siempre
 yy = np.linspace(0, 1, H)[:, None]
 top = np.clip(1 - (1 - yy / 0.24) * 0.62, 0.38, 1) * (yy < 0.24) + (yy >= 0.24)
-bot = np.where(yy > 0.62, 1 - np.clip((yy - 0.62) / 0.38, 0, 1) ** 1.4 * 0.66, 1)
+bot = np.where(yy > 0.50, 1 - np.clip((yy - 0.50) / 0.30, 0, 1) ** 1.2 * 0.62, 1)   # sombreado más arriba: el texto vive en la zona segura (y 250-1560)
 SCRIM = np.clip(np.minimum(np.where(yy < 0.24, 0.38 + 0.62 * (yy / 0.24) ** 0.8, 1), bot), 0, 1)
 SCRIM = np.broadcast_to(SCRIM[:, :, None], (H, W, 3)).copy()
 SCRIM_U8 = (SCRIM * 255).astype(np.uint8)
@@ -184,7 +184,7 @@ def componer(t):
         t_ini = (TB[kk] + 0.02) if kk > 0 else 0.15; t_fin = TB[kk + 1] - TW / 2 if kk + 1 <= N else 1e9
         a = min(1, max(0, (t - t_ini) / 0.28)) * min(1, max(0, (t_fin + 0.22 - t) / 0.22))
         if a > 0.01:
-            rgb, al = CAPS[kk]; y = H - rgb.shape[0] - 10
+            rgb, al = CAPS[kk]; y = 1570 - rgb.shape[0]      # el texto termina en y≈1500 (zona segura de Instagram)
             roi = out[y:y + rgb.shape[0], 0:W].astype(np.float32); out[y:y + rgb.shape[0], 0:W] = (roi * (1 - al * a) + rgb * al * a).astype(np.uint8)
     # cierre
     if cur_sig == N:
