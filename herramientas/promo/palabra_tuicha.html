@@ -1,0 +1,104 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><title>Palabra guaraní</title>
+<link rel="stylesheet" href="../../css/fuentes.css">
+<style>
+:root{--vino:#59011d;--vino9:#2a000e;--vino5:#7d0b2e;--crema:#f3eedc;--maiz:#e8b43a;--maiz2:#f4d27a;--carbon:#151012}
+*{box-sizing:border-box;margin:0;padding:0}html,body{width:1080px;height:1920px;overflow:hidden;background:#000}
+#l{position:relative;width:1080px;height:1920px;overflow:hidden;font-family:Montserrat,sans-serif;color:var(--crema);background:var(--carbon) url("../../img/kv/textura-oscura.webp") center/cover}
+#l::before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(21,16,18,.58),rgba(21,16,18,.58)),radial-gradient(75% 55% at 50% 42%,rgba(125,11,46,.75),transparent 70%),radial-gradient(60% 40% at 50% 100%,rgba(234,106,38,.3),transparent 70%)}
+#l>*{position:absolute}
+.flor{left:50%;top:50%;width:1800px;height:1800px;margin:-900px 0 0 -900px;object-fit:contain;opacity:.15}
+.c{left:0;right:0;text-align:center}.anton{font-family:Anton,sans-serif;text-transform:uppercase;line-height:1}
+.kau{font-family:"Kaushan Script",cursive;color:var(--maiz);line-height:1.05}
+.eye{font-weight:800;font-size:36px;letter-spacing:.3em;text-transform:uppercase;color:var(--maiz)}
+.sh{text-shadow:0 6px 30px rgba(0,0,0,.85),0 2px 6px rgba(0,0,0,.65)}
+.badge{width:170px;height:170px;border-radius:50%;background:var(--maiz);color:var(--vino9);display:grid;place-items:center;box-shadow:0 20px 40px -10px rgba(232,180,58,.6),0 0 0 10px rgba(21,16,18,.5);font-family:Anton;line-height:1}
+.badge small{font-family:Montserrat;font-weight:800;font-size:22px;letter-spacing:.2em;display:block;text-align:center}.badge b{font-size:92px;display:block;text-align:center;margin-top:-6px}
+.altavoz{left:50%;top:1100px;width:250px;height:250px;margin:-125px 0 0 -125px;border-radius:50%;background:var(--maiz);display:grid;place-items:center;box-shadow:0 30px 60px -10px rgba(232,180,58,.55)}
+.barra{position:absolute;left:540px;top:1085px;width:16px;border-radius:8px;background:var(--maiz2);transform-origin:0 0;box-shadow:0 0 18px rgba(244,210,122,.8)}
+.cap{left:60px;right:60px;top:1430px;background:rgba(42,0,14,.88);border:3px solid var(--maiz);border-radius:34px;padding:30px 36px;font-weight:700;font-size:44px;line-height:1.3;text-align:center;box-shadow:0 30px 60px -20px rgba(0,0,0,.9)}
+.cap em{font-style:normal;color:var(--maiz)}
+.disco{left:50%;width:560px;height:560px;margin-left:-280px;border-radius:50%;overflow:hidden;box-shadow:0 0 0 12px rgba(243,238,220,.96),0 0 0 24px rgba(232,180,58,.95),0 50px 90px -20px rgba(0,0,0,.9)}
+.disco img{width:100%;height:100%;object-fit:cover;display:block}
+.enc{left:50%;width:900px;height:900px;margin-left:-450px;object-fit:contain;opacity:.55}
+.chip{left:50%;background:var(--crema);color:var(--vino9);border-radius:70px;padding:24px 52px;font-weight:800;font-size:42px;white-space:nowrap;box-shadow:0 30px 60px -20px rgba(0,0,0,.9)}
+.pill{display:inline-block;background:var(--maiz);color:var(--vino9);font-weight:800;font-size:46px;padding:24px 58px;border-radius:999px;box-shadow:0 20px 44px -10px rgba(232,180,58,.6)}
+.chispa{width:12px;height:12px;border-radius:50%;background:var(--maiz2);box-shadow:0 0 20px 7px rgba(244,210,122,.85);opacity:0}
+#flash{inset:0;background:#fff;opacity:0}#fin{inset:0;opacity:0;visibility:hidden}
+#finfondo{inset:0;background:var(--carbon) url("../../img/kv/textura-oscura.webp") center/cover}
+#finfondo::before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(21,16,18,.62),rgba(21,16,18,.62)),radial-gradient(75% 55% at 50% 42%,rgba(125,11,46,.75),transparent 70%)}
+#fin>*{position:absolute}
+.brasas i{position:absolute;width:9px;height:9px;border-radius:50%;background:var(--maiz2);box-shadow:0 0 16px 5px rgba(244,210,122,.75);opacity:0}
+</style></head><body><div id="l">
+<img class="flor" id="flor" src="../../img/kv/flor-kv.webp" alt="">
+<div class="brasas" id="brasas" style="inset:0"></div>
+
+<div class="badge" id="badge" style="left:455px;top:150px"><div><small>SEMANA</small><b>1</b></div></div>
+<div class="c eye sh" id="eye" style="top:360px">Palabra guaraní de la semana</div>
+
+<div class="c anton sh" id="pal" style="top:470px;font-size:330px;color:var(--crema)">Tuicha</div>
+<div class="c kau sh" id="pron" style="top:816px;font-size:86px">tui-CHA</div>
+
+<div class="altavoz" id="alt"><svg viewBox="0 0 24 24" width="140" height="140" fill="none" stroke="#2a000e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></svg></div>
+<div id="ondas"></div>
+<div class="cap" id="cap">«<em>Tuicha</em>, grande, como la chipa guazú»</div>
+
+<div class="c eye sh" id="sig1" style="top:760px;opacity:0">Significa</div>
+<div class="c anton sh" id="sig2" style="top:830px;font-size:250px;color:var(--maiz);opacity:0">Grande</div>
+<img class="enc" id="enc" data-r="30" style="top:1015px;opacity:0" src="../../img/kv/flor-kv.webp" alt="">
+<div class="disco" id="disco" style="top:1130px;opacity:0"><img src="../../img/platos/hl-chipa-guazu.webp"></div>
+<div class="chip" id="chip" style="top:1730px;opacity:0">Como la chipa guazú</div>
+<div id="chispas"></div>
+
+<div id="fin"><div id="finfondo"></div>
+  <img class="flor" id="florf" src="../../img/kv/flor-kv.webp" alt="" style="position:absolute">
+  <img id="flogo" src="../../img/marca/logo-loren.webp" style="left:270px;top:250px;width:540px;filter:drop-shadow(0 24px 40px rgba(0,0,0,.6))">
+  <div class="c kau sh" id="f1" style="top:620px;font-size:116px">¿La repites?</div>
+  <div class="c anton" id="f2" style="top:790px;font-size:150px;line-height:.95">Dilo en<br>los comentarios</div>
+  <div class="c" id="f3" style="top:1170px"><span class="pill">lorenrestobar.com</span></div>
+  <div class="c" id="f4" style="top:1320px;font-size:40px;font-weight:600;line-height:1.4;left:40px;right:40px">Pruébala en Loren Restobar<br>Carrer de la Muntanya 115 · Barcelona</div>
+  <div class="c kau" id="f5" style="top:1500px;font-size:110px">Aguyje!</div>
+</div>
+<div id="flash"></div></div>
+<script>
+const $=(s)=>document.querySelector(s),cl=(x)=>Math.max(0,Math.min(1,x));
+const eo=(x)=>1-Math.pow(1-cl(x),3);
+const eb=(x)=>{x=cl(x);const c=1.7;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+const ENV=[0.018, 0.059, 0.081, 0.069, 0.101, 0.094, 0.092, 0.113, 0.213, 0.186, 0.185, 0.17, 0.182, 0.686, 1.0, 0.906, 0.813, 0.733, 0.75, 0.504, 0.154, 0.169, 0.164, 0.143, 0.169, 0.177, 0.16, 0.818, 0.868, 0.787, 0.742, 0.565, 0.384, 0.209, 0.079, 0.045, 0.031, 0.03, 0.028, 0.026, 0.039, 0.035, 0.035, 0.037, 0.045, 0.001, 0.01, 0.012, 0.037, 0.054, 0.056, 0.052, 0.055, 0.05, 0.039, 0.063, 0.043, 0.232, 0.234, 0.202, 0.254, 0.774, 0.724, 0.857, 0.788, 0.662, 0.612, 0.454, 0.461, 0.429, 0.38, 0.298, 0.323, 0.422, 0.311, 0.262, 0.131, 0.062, 0.046, 0.05, 0.045, 0.052, 0.052, 0.066, 0.053, 0.052, 0.067, 0.053, 0.049, 0.288, 0.526, 0.528, 0.486, 0.494, 0.507, 0.427, 0.205, 0.052, 0.066, 0.382, 0.367, 0.054, 0.473, 0.804, 0.646, 0.525, 0.64, 0.725, 0.439, 0.097, 0.102, 0.11, 0.154, 0.32, 0.207, 0.044, 0.062, 0.044, 0.048, 0.046, 0.048, 0.055, 0.054, 0.084, 0.09, 0.061, 0.074, 1.0],V0=2.7,DURA=4.225,TS=7.275,TF=11.575,FPS=30;
+const BR=$("#brasas");for(let i=0;i<30;i++){const e=document.createElement("i");e.dataset.x=(i*137.5)%1080;e.dataset.v=60+(i*53)%90;e.dataset.f=(i*0.41)%6;BR.appendChild(e)}
+const ON=$("#ondas");const NB=56;for(let i=0;i<NB;i++){const b=document.createElement("div");b.className="barra";b.dataset.a=(i/NB)*Math.PI*2;ON.appendChild(b)}
+const CH=$("#chispas");for(let i=0;i<22;i++){const e=document.createElement("div");e.className="chispa";e.style.cssText="position:absolute;left:540px;top:1410px";e.dataset.a=(i/22)*Math.PI*2;e.dataset.r=300+(i*71)%260;CH.appendChild(e)}
+function render(t){
+  $("#flor").style.transform=`rotate(${t*3}deg)`;$("#florf").style.transform=`rotate(${t*4}deg)`;
+  document.querySelectorAll("#brasas i").forEach(e=>{const ph=((t+ +e.dataset.f)%6)/6;e.style.left=(+e.dataset.x+Math.sin(ph*9+ +e.dataset.f)*40)+"px";e.style.top=(1980-ph*(760+ +e.dataset.v*8))+"px";e.style.opacity=Math.sin(ph*Math.PI)*.85});
+  // gancho
+  $("#eye").style.opacity=cl((t-.2)/.4)*(1-cl((t-TS)/.3));$("#eye").style.transform=`translateY(${(1-eb((t-.2)/.7))*70}px)`;
+  $("#badge").style.opacity=cl((t-.1)/.3);$("#badge").style.transform=`scale(${.3+.7*eb((t-.1)/.8)}) rotate(${(1-eb((t-.1)/.8))*-40}deg)`;
+  // la palabra golpea la pantalla
+  const pw=t-1.2;$("#pal").style.opacity=cl(pw/.15);$("#pal").style.transform=`scale(${1+(1-cl(pw/.3))*1.9})`;
+  const pr=t-1.9;$("#pron").style.opacity=cl(pr/.4);$("#pron").style.transform=`translateY(${(1-eb(pr/.7))*60}px)`;
+  let fl=0;if(pw>0&&pw<.25)fl=.5*(1-pw/.25);
+  // la voz de Loren: altavoz y ondas
+  const va=t-(V0-.4),dentro=t>=V0&&t<V0+DURA,idx=Math.max(0,Math.min(ENV.length-1,Math.floor((t-V0)*FPS))),amp=dentro?ENV[idx]:0;
+  const sal=cl((t-TS)/.4);
+  $("#alt").style.opacity=cl(va/.4)*(1-sal);$("#alt").style.transform=`scale(${(.4+.6*eb(va/.6))*(1+.1*amp)})`;
+  document.querySelectorAll(".barra").forEach(b=>{const a=+b.dataset.a,h=14+amp*170*(.55+.45*Math.sin(a*5+t*18));b.style.opacity=cl(va/.4)*(1-sal);b.style.height=h+"px";b.style.transform=`rotate(${a*180/Math.PI-90}deg) translate(0,${-(135+0)}px) rotate(0deg)`;b.style.left=(540+Math.cos(a)*165)+"px";b.style.top=(1100+Math.sin(a)*165)+"px";b.style.transformOrigin="0 0";b.style.transform=`rotate(${a*180/Math.PI+90}deg)`;});
+  $("#cap").style.opacity=cl((t-V0+.1)/.3)*(1-sal);$("#cap").style.transform=`translateY(${(1-eb((t-V0+.1)/.6))*80}px)`;
+  // significado
+  const ps=t-TS;
+  $("#pal").style.top=(470-sal*120)+"px";$("#pal").style.fontSize=(330*(1-.35*sal))+"px";
+  $("#pron").style.top=(816-sal*210)+"px";$("#pron").style.fontSize=(86-26*sal)+"px";
+  $("#sig1").style.opacity=cl(ps/.3);$("#sig1").style.transform=`translateY(${(1-eb(ps/.6))*60}px)`;
+  $("#sig2").style.opacity=cl((ps-.1)/.2);$("#sig2").style.transform=`scale(${1+(1-cl((ps-.1)/.35))*1.8})`;
+  if(ps>.1&&ps<.35)fl=Math.max(fl,.45*(1-(ps-.1)/.25));
+  $("#enc").style.opacity=.55*cl((ps-.6)/.5);$("#enc").style.transform=`rotate(${t*30}deg) scale(${.6+.4*eo((ps-.6)/.8)})`;
+  $("#disco").style.opacity=cl((ps-.6)/.3);$("#disco").style.transform=`scale(${.3+.7*eb((ps-.6)/.8)})`;
+  $("#chip").style.opacity=cl((ps-1.4)/.3);$("#chip").style.transform=`translateX(-50%) translateY(${(1-eb((ps-1.4)/.6))*70}px)`;
+  document.querySelectorAll(".chispa").forEach(e=>{const q=ps-.7-(+e.dataset.a%1)*.5,p=cl(q/1.4),r=+e.dataset.r*eo(p);e.style.opacity=p>0&&p<1?Math.sin(p*Math.PI):0;e.style.transform=`translate(${Math.cos(+e.dataset.a)*r}px,${Math.sin(+e.dataset.a)*r*.8}px) scale(${1.4-p})`});
+  // tarjeta final
+  const pf=t-TF,fin=$("#fin");fin.style.visibility=pf>-.3?"visible":"hidden";fin.style.opacity=cl((pf+.3)/.3);
+  ["#flogo","#f1","#f2","#f3","#f4","#f5"].forEach((id,k)=>{const q=pf-.1-k*.22,e=eb(q/.7),el=$(id);el.style.opacity=cl(q/.4);el.style.transform=id==="#flogo"?`scale(${.5+.5*e})`:`translateY(${(1-e)*70}px)`});
+  if(pf>-.3&&pf<0)fl=Math.max(fl,.5*(1+pf/.3));
+  $("#flash").style.opacity=fl;
+}
+window.render=render;document.fonts.ready.then(()=>{window.LISTO=true;render(0)});
+</script></body></html>
