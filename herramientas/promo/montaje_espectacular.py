@@ -9,7 +9,7 @@ RAIZ = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 TMP, SAL = sys.argv[1], sys.argv[2]
 FONT = "C\\:/Windows/Fonts/arialbd.ttf"
 FPS = 30
-XF = 0.5                      # duración de cada transición (s)
+XF = 0.35                     # duración de cada transición (s)
 os.makedirs(TMP, exist_ok=True)
 
 # (archivo, inicio en origen, duración, texto)
@@ -72,14 +72,41 @@ entradas = []
 for p, _ in segs:
     entradas += ["-i", p]
 filtros, prev, acumulado = [], "[0:v]", segs[0][1]
+cortes_t = []
 for i in range(1, len(segs)):
     tr = TRANSICIONES[(i - 1) % len(TRANSICIONES)]
     off = acumulado - XF
-    salida = f"[x{i}]" if i < len(segs) - 1 else "[v]"
+    salida = f"[x{i}]" if i < len(segs) - 1 else "[vx]"
     filtros.append(f"{prev}[{i}:v]xfade=transition={tr}:duration={XF}:offset={off:.2f}{salida}")
     prev = salida
+    cortes_t.append(off)
     acumulado += segs[i][1] - XF
 total = acumulado
+
+# 3b) estilo de la referencia: líneas blancas que barren el encuadre + destello en cada corte
+from PIL import Image
+BARV = os.path.join(TMP, "barra_v.png"); BARH = os.path.join(TMP, "barra_h.png")
+Image.new("RGBA", (7, 1920), (255, 255, 255, 255)).save(BARV)
+Image.new("RGBA", (1080, 5), (255, 255, 255, 255)).save(BARH)
+MUS_IDX = len(segs) + len(VOZ_INICIO) + 1          # índice de la polca (ver sección 4)
+IDX_V, IDX_H = MUS_IDX + 1, MUS_IDX + 2             # barras añadidas al final de las entradas
+nC = len(cortes_t)
+filtros.append(f"[{IDX_V}:v]format=rgba,split={nC}" + "".join(f"[bv{k}]" for k in range(nC)))
+filtros.append(f"[{IDX_H}:v]format=rgba,split={nC}" + "".join(f"[bh{k}]" for k in range(nC)))
+prev = "[vx]"
+for k, off in enumerate(cortes_t):
+    o1 = f"[l{k}]"
+    filtros.append(f"{prev}[bv{k}]overlay=x='(t-{off:.2f})/{XF}*1100-40':y=0:eval=frame:"
+                   f"enable='between(t,{off:.2f},{off+XF:.2f})'{o1}")
+    prev = o1
+    o2 = f"[h{k}]"
+    filtros.append(f"{prev}[bh{k}]overlay=x=0:y='(t-{off+0.1:.2f})/{XF}*1920':eval=frame:"
+                   f"enable='between(t,{off+0.1:.2f},{off+XF+0.1:.2f})'{o2}")
+    prev = o2
+    o3 = f"[e{k}]"
+    filtros.append(f"{prev}eq=brightness=0.18:enable='between(t,{off:.2f},{off+0.12:.2f})'{o3}")
+    prev = o3
+filtros.append(f"{prev}null[v]")
 
 # 4) audio: voces de Loren en cada inicio + cierre, polca de fondo
 mezcla = []
@@ -99,6 +126,8 @@ for j, (a, t0) in enumerate(voces, start=len(segs)):
     mezcla.append(f"[v{j}]")
 mus = len(segs) + len(voces)
 entradas_a += ["-stream_loop", "-1", "-i", MUSICA]
+entradas_a += ["-loop", "1", "-framerate", str(FPS), "-i", BARV]
+entradas_a += ["-loop", "1", "-framerate", str(FPS), "-i", BARH]
 filtros.append(f"[{mus}:a]atrim=0:{total:.2f},asetpts=PTS-STARTPTS,volume=0.25,"
                f"afade=t=out:st={total-1.5:.2f}:d=1.5[m]")
 mezcla.append("[m]")
