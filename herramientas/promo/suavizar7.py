@@ -36,15 +36,26 @@ cambia("  const gr = GR(t);", "  const gr = Math.max(0, ...PLAN.filter((x) => do
 cambia('    if (t < a || t >= b) { s.style.visibility = "hidden"; return; }\n    s.style.visibility = "visible";',
        '    const fo = fadeDe(a, b, t);\n    if (fo <= 0) { s.style.visibility = "hidden"; return; }\n    s.style.visibility = "visible"; s.style.opacity = fo;')
 
-# ---- 4) transición: aro dorado que se abre despacio (sin tapar la imagen)
+# ---- 4) transición: el ñandutí florece (disco granate con encaje + halo de encaje), movimiento continuo y suave
 t = re.sub(r"  // transición con el ñandutí que se abre y se cierra.*?if \(!hay\) cu\.style\.display = \"none\";",
-           '''  // transición suave: un aro dorado que se abre despacio mientras una escena se disuelve en la siguiente
-  const cu = $("#cubre")[0]; let hay = false;
-  for (const c of CORTES) { const p = (t - (c - 0.8)) / 1.6; if (p >= 0 && p <= 1) { const e = Math.sin(p * Math.PI / 2); cu.style.display = "block"; cu.style.background = "transparent"; cu.style.overflow = "visible"; cu.style.boxShadow = "0 0 0 7px rgba(243,238,220,.9), 0 0 0 16px rgba(232,180,58,.85), 0 0 90px 20px rgba(232,180,58,.35)"; cu.style.transform = `scale(${0.25 + 2.3 * e})`; cu.style.opacity = Math.sin(p * Math.PI) * 0.7; hay = true; } }
-  if (!hay) cu.style.display = "none";''', t, count=1, flags=re.S)
-assert "aro dorado" in t
+           '''  // transición del ñandutí: florece hasta cubrir la pantalla y se retira dejando ver la escena siguiente (2,0 s, curva de seno: sin tirones)
+  const cu = $("#cubre")[0], en = $("#encCubre")[0]; let hay = false;
+  for (const c of CORTES) {
+    const p = (t - (c - 1.0)) / 2.0;
+    if (p >= 0 && p <= 1) {
+      const m = p < .5 ? 0.5 - 0.5 * Math.cos(Math.PI * (p / .5)) : 0.5 + 0.5 * Math.cos(Math.PI * ((p - .5) / .5));
+      cu.style.display = "block"; en.style.display = "block";
+      cu.style.transform = `scale(${m * 2.55}) rotate(${p * 40}deg)`;
+      en.style.transform = `scale(${m * 2.4}) rotate(${-p * 70}deg)`; en.style.opacity = 0.95 * Math.min(1, m * 3);
+      $("#florCubre")[0].style.transform = `rotate(${-p * 120}deg)`; $("#florCubre2")[0].style.transform = `rotate(${p * 160}deg)`;
+      hay = true;
+    }
+  }
+  if (!hay) { cu.style.display = "none"; en.style.display = "none"; }''', t, count=1, flags=re.S)
+assert "florece" in t
+cambia('<div id="cubre"><img id="florCubre" src="../../img/kv/flor-kv.webp" alt=""></div>', '<img id="encCubre" src="../../img/kv/flor-kv.webp" alt="" style="position:absolute;left:50%;top:50%;width:1400px;height:1400px;margin:-700px 0 0 -700px;display:none;z-index:19;filter:drop-shadow(0 30px 70px rgba(0,0,0,.65))">\n  <div id="cubre"><img id="florCubre" src="../../img/kv/flor-kv.webp" alt=""><img id="florCubre2" src="../../img/kv/flor-kv.webp" alt="" style="position:absolute;left:50%;top:50%;width:640px;height:640px;margin:-320px 0 0 -320px;opacity:.4;mix-blend-mode:screen"></div>')
+cambia("box-shadow: 0 0 0 16px var(--crema), 0 0 0 30px rgba(232,180,58,.9);", "box-shadow: 0 0 0 16px var(--crema), 0 0 0 30px rgba(232,180,58,.95), 0 0 150px 50px rgba(232,180,58,.42);")
 cambia('$("#flash")[0].style.opacity = fl > 0 && fl < 0.35 ? 0.55 * (1 - fl / 0.35) : 0;', '$("#flash")[0].style.opacity = 0;')
-cambia("  #flash {", "  #cubre img { display: none; }\n  #flash {")
 
 # ---- 5) textos legibles: dorado más claro, contorno oscuro, sombras fuertes y velos más oscuros
 cambia('.kau { font-family: "Kaushan Script", cursive; color: var(--maiz); line-height: 1.05; }',

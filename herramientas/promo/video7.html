@@ -36,9 +36,8 @@
   .etiqueta { background: var(--crema); color: var(--vino9); border-radius: 30px; padding: 26px 40px; font-weight: 800; font-size: 44px; box-shadow: 0 30px 60px -20px rgba(0,0,0,.85); text-align: center; line-height: 1.2; }
   .etiqueta small { display: block; font-weight: 600; font-size: 30px; color: #6b5458; margin-top: 4px; }
   /* transición ñandutí */
-  #cubre { position: absolute; left: 50%; top: 50%; width: 1000px; height: 1000px; margin: -500px 0 0 -500px; border-radius: 50%; background: radial-gradient(circle, var(--vino5), var(--vino9) 72%); box-shadow: 0 0 0 16px var(--crema), 0 0 0 30px rgba(232,180,58,.9); overflow: hidden; display: none; z-index: 20; }
+  #cubre { position: absolute; left: 50%; top: 50%; width: 1000px; height: 1000px; margin: -500px 0 0 -500px; border-radius: 50%; background: radial-gradient(circle, var(--vino5), var(--vino9) 72%); box-shadow: 0 0 0 16px var(--crema), 0 0 0 30px rgba(232,180,58,.95), 0 0 150px 50px rgba(232,180,58,.42); overflow: hidden; display: none; z-index: 20; }
   #cubre img { position: absolute; left: 50%; top: 50%; width: 1100px; height: 1100px; margin: -550px 0 0 -550px; opacity: .5; }
-  #cubre img { display: none; }
   #flash { position: absolute; inset: 0; background: #fff; opacity: 0; z-index: 25; pointer-events: none; }
 </style></head>
 <body>
@@ -164,7 +163,8 @@
     <div class="centro txt" data-in="3.3" data-fx="up" style="top:1560px;font-size:36px;opacity:.9">También a domicilio y para eventos</div>
   </section>
 
-  <div id="cubre"><img id="florCubre" src="../../img/kv/flor-kv.webp" alt=""></div>
+  <img id="encCubre" src="../../img/kv/flor-kv.webp" alt="" style="position:absolute;left:50%;top:50%;width:1400px;height:1400px;margin:-700px 0 0 -700px;display:none;z-index:19;filter:drop-shadow(0 30px 70px rgba(0,0,0,.65))">
+  <div id="cubre"><img id="florCubre" src="../../img/kv/flor-kv.webp" alt=""><img id="florCubre2" src="../../img/kv/flor-kv.webp" alt="" style="position:absolute;left:50%;top:50%;width:640px;height:640px;margin:-320px 0 0 -320px;opacity:.4;mix-blend-mode:screen"></div>
   <div id="flash"></div>
 </div>
 <script>
@@ -234,10 +234,20 @@ function render(t) {
     pa.style.transform = `translateY(${-(cur.sc[0] + (cur.sc[1] - cur.sc[0]) * eio(q * 1.15 - 0.05))}px)`;
     et.style.opacity = clamp((t - cur.a - 0.5) / 0.4) * (1 - sal); et.style.transform = `translateY(${(1 - eo((t - cur.a - 0.5) / 0.6)) * 60}px) scale(${1})`;
   }
-  // transición suave: un aro dorado que se abre despacio mientras una escena se disuelve en la siguiente
-  const cu = $("#cubre")[0]; let hay = false;
-  for (const c of CORTES) { const p = (t - (c - 0.8)) / 1.6; if (p >= 0 && p <= 1) { const e = Math.sin(p * Math.PI / 2); cu.style.display = "block"; cu.style.background = "transparent"; cu.style.overflow = "visible"; cu.style.boxShadow = "0 0 0 7px rgba(243,238,220,.9), 0 0 0 16px rgba(232,180,58,.85), 0 0 90px 20px rgba(232,180,58,.35)"; cu.style.transform = `scale(${0.25 + 2.3 * e})`; cu.style.opacity = Math.sin(p * Math.PI) * 0.7; hay = true; } }
-  if (!hay) cu.style.display = "none";
+  // transición del ñandutí: florece hasta cubrir la pantalla y se retira dejando ver la escena siguiente (2,0 s, curva de seno: sin tirones)
+  const cu = $("#cubre")[0], en = $("#encCubre")[0]; let hay = false;
+  for (const c of CORTES) {
+    const p = (t - (c - 1.0)) / 2.0;
+    if (p >= 0 && p <= 1) {
+      const m = p < .5 ? 0.5 - 0.5 * Math.cos(Math.PI * (p / .5)) : 0.5 + 0.5 * Math.cos(Math.PI * ((p - .5) / .5));
+      cu.style.display = "block"; en.style.display = "block";
+      cu.style.transform = `scale(${m * 2.55}) rotate(${p * 40}deg)`;
+      en.style.transform = `scale(${m * 2.4}) rotate(${-p * 70}deg)`; en.style.opacity = 0.95 * Math.min(1, m * 3);
+      $("#florCubre")[0].style.transform = `rotate(${-p * 120}deg)`; $("#florCubre2")[0].style.transform = `rotate(${p * 160}deg)`;
+      hay = true;
+    }
+  }
+  if (!hay) { cu.style.display = "none"; en.style.display = "none"; }
   // destello breve al llegar al logo final
   const fl = t - (FIN - 5.1); $("#flash")[0].style.opacity = 0;
 }
