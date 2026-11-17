@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><title>Galería</title>
+<link rel="stylesheet" href="../../css/fuentes.css">
+<style>
+  :root { --maiz:#e8b43a; --maiz2:#f4d27a; --crema:#f3eedc; --vino:#2a000e; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1080px; height:1920px; overflow:hidden; background:#120a0c; }
+  #lienzo { position:relative; width:1080px; height:1920px; overflow:hidden; font-family:Montserrat,sans-serif; color:var(--crema);
+    background:#151012 url("../../img/kv/textura-oscura.webp") center/cover; }
+  #lienzo::before { content:""; position:absolute; inset:0; background:radial-gradient(80% 55% at 50% 38%, rgba(125,11,46,.55), transparent 72%), linear-gradient(rgba(21,16,18,.5), rgba(21,16,18,.5)); }
+  .esc { position:absolute; inset:0; visibility:hidden; }
+  .fondo { position:absolute; inset:-140px; background-size:cover; background-position:center; filter:blur(46px) saturate(1.35) brightness(.55); }
+  .flor { position:absolute; left:50%; top:790px; width:1500px; height:1500px; margin:-750px 0 0 -750px; opacity:.2; mix-blend-mode:screen; }
+  .marco { position:absolute; border-radius:44px; overflow:hidden; box-shadow:0 0 0 10px var(--crema), 0 0 0 22px rgba(232,180,58,.95), 0 40px 90px rgba(0,0,0,.65), 0 0 140px 30px rgba(232,180,58,.28); background:#000; }
+  .marco img { width:100%; height:100%; display:block; object-fit:cover; }
+  .brillo { position:absolute; top:-20%; bottom:-20%; width:34%; left:-50%; background:linear-gradient(100deg, transparent, rgba(255,255,255,.55), transparent); transform:skewX(-18deg); }
+  .anillo { position:absolute; left:50%; top:790px; width:760px; height:760px; margin:-380px 0 0 -380px; border-radius:50%; border:8px solid var(--maiz2); box-shadow:0 0 50px rgba(244,210,122,.7); opacity:0; }
+  .txt { position:absolute; left:0; right:0; top:1390px; height:430px; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; }
+  .nom { font-family:Anton; text-transform:uppercase; color:var(--crema); font-size:112px; line-height:1.02; padding:0 40px; text-shadow:0 6px 30px rgba(0,0,0,.9), 0 2px 6px rgba(0,0,0,.8); }
+  .rayita { width:190px; height:7px; border-radius:4px; background:var(--maiz); margin:22px 0 16px; box-shadow:0 0 20px rgba(232,180,58,.75); }
+  .pre { font-family:"Kaushan Script"; color:var(--maiz2); font-size:92px; line-height:1; -webkit-text-stroke:2px rgba(42,0,14,.55); paint-order:stroke fill; text-shadow:0 4px 24px rgba(0,0,0,.95), 0 0 40px rgba(0,0,0,.8); }
+  .eyebrow { font-weight:800; font-size:38px; letter-spacing:.3em; text-transform:uppercase; color:var(--maiz2); text-shadow:0 0 30px rgba(0,0,0,.95), 0 3px 14px rgba(0,0,0,.9); }
+  .anton { font-family:Anton; text-transform:uppercase; color:var(--crema); line-height:.95; text-shadow:0 8px 40px rgba(0,0,0,.9); }
+  .kau { font-family:"Kaushan Script"; color:var(--maiz2); -webkit-text-stroke:2px rgba(42,0,14,.55); paint-order:stroke fill; text-shadow:0 4px 30px rgba(0,0,0,.95), 0 0 40px rgba(0,0,0,.8); }
+  .centro { position:absolute; left:0; right:0; text-align:center; }
+  .pill { display:inline-block; background:var(--maiz); color:var(--vino); font-weight:800; font-size:50px; padding:26px 62px; border-radius:999px; box-shadow:0 20px 44px -10px rgba(232,180,58,.6); }
+  #logo { position:absolute; left:50%; top:62px; width:340px; margin-left:-170px; z-index:30; filter:drop-shadow(0 8px 18px rgba(0,0,0,.7)); }
+  #brasas { position:absolute; inset:0; z-index:20; pointer-events:none; }
+  #brasas i { position:absolute; left:0; top:0; border-radius:50%; background:var(--maiz2); box-shadow:0 0 16px 5px rgba(244,210,122,.8); }
+</style></head><body>
+<div id="lienzo"><div id="brasas"></div><img id="logo" src="../../img/marca/logo-loren.webp" alt=""></div>
+<script>
+const P = (a) => "../../img/" + a;
+const TEMAS = {
+  milanesas: {
+    titulo: ["Las milanesas", "la reina de la casa"],
+    platos: [
+      ["platos/mila-ternera.webp", "Milanesa clásica", "15,90 €"],
+      ["platos/mila-caballo-pro.webp", "Milanesa a caballo", "16,90 €"],
+      ["platos/bife-caballo.webp", "Bife a caballo", "15,90 €"],
+      ["kv/mila-napolitana-nueva.webp", "Milanesa napolitana", "17,90 €"],
+      ["platos/mila-americana-pro.webp", "Milanesa americana", "17,90 €"],
+      ["platos/mila-fugazzeta.webp", "Milanesa fugazzeta", "17,90 €"],
+      ["platos/hl-sandwich-milanesa.webp", "Sándwich de milanesa completo", "13,90 €"],
+      ["platos/sandwich-milanesa-pro.webp", "Sándwich de milanesa clásico", "12,90 €"]
+    ],
+    cierre: "Elige la tuya"
+  },
+  raices: {
+    titulo: ["Raíces paraguayas", "maíz, mandioca y queso"],
+    platos: [
+      ["platos/sopa-paraguaya-pro.webp", "Sopa paraguaya", "3,90 €"],
+      ["platos/chipa-caja.webp", "Chipa rellena de queso", ""],
+      ["platos/mbeju-queso.webp", "Mbejú relleno de queso", "5,50 €"],
+      ["platos/empanada-choclo.webp", "Empanada de choclo", "3,40 €"],
+      ["platos/empanada-ternera.webp", "Empanada de ternera", "3,80 €"],
+      ["platos/yuca-brava-pro.webp", "Yucas bravas", "8,90 €"],
+      ["platos/picada-milanesa.webp", "Picada de milanesa con miel y mostaza", "11,90 €"]
+    ],
+    cierre: "Sabe a casa"
+  }
+};
+const TEMA = TEMAS[new URLSearchParams(location.search).get("v") || "milanesas"];
+const INTRO = 3.0, S = 2.7, SAL = 0.55, CTA_D = 4.2;
+const N = TEMA.platos.length;
+const TB = (k) => INTRO + k * S;
+const TOTAL = TB(N) + CTA_D;
+window.DUR = TOTAL;
+const L = document.getElementById("lienzo");
+const clamp = (x) => Math.max(0, Math.min(1, x));
+const eo = (x) => 1 - Math.pow(1 - clamp(x), 3);
+const ei = (x) => Math.pow(clamp(x), 2.2);
+const eio = (x) => 0.5 - 0.5 * Math.cos(Math.PI * clamp(x));
+function el(h) { const d = document.createElement("div"); d.innerHTML = h.trim(); return d.firstChild; }
+
+// brasas flotando (continuas y deterministas)
+const br = document.getElementById("brasas"); const BR = [];
+for (let i = 0; i < 42; i++) {
+  const r = (n) => { const x = Math.sin(i * 91.7 + n * 17.3) * 43758.5453; return x - Math.floor(x); };
+  const s = 5 + r(1) * 9; const e = document.createElement("i"); e.style.width = e.style.height = s + "px"; br.appendChild(e);
+  BR.push({ e, x: r(2) * 1080, v: 70 + r(3) * 130, ph: r(4) * 2000, w: 15 + r(5) * 40, f: 1 + r(6) * 2 });
+}
+
+const ESC = [];
+function nueva(html, ini, dur) { const s = el('<div class="esc">' + html + '</div>'); L.insertBefore(s, br); const o = { s, ini, dur }; ESC.push(o); return o; }
+// intro
+const introE = nueva(`<img class="flor" style="top:960px;opacity:.5">
+  <div class="centro eyebrow" id="i_e" style="top:760px">Loren Restobar</div>
+  <div class="centro anton" id="i_t" style="top:830px;font-size:170px;padding:0 30px">${TEMA.titulo[0]}</div>
+  <div class="centro kau" id="i_s" style="top:1130px;font-size:104px">${TEMA.titulo[1]}</div>`, 0, INTRO);
+introE.s.querySelector(".flor").src = P("kv/flor-kv.webp");
+introE.tipo = "intro";
+// platos
+const imgs = [];
+TEMA.platos.forEach((p, k) => {
+  const o = nueva(`<div class="fondo"></div><img class="flor"><div class="anillo"></div>
+    <div class="marco"><img><div class="brillo"></div></div>
+    <div class="txt"><div class="nom">${p[1]}</div><div class="rayita"></div>${p[2] ? '<div class="pre">' + p[2] + '</div>' : ""}</div>`, TB(k), S);
+  o.tipo = "plato"; o.k = k; o.dir = k % 2 ? -1 : 1;
+  o.s.querySelector(".fondo").style.backgroundImage = "url(" + P(p[0]) + ")";
+  o.s.querySelector(".flor").src = P("kv/flor-kv.webp");
+  const im = o.s.querySelector(".marco img"); im.src = P(p[0]); imgs.push(im);
+  o.im = im; o.marco = o.s.querySelector(".marco");
+  const nom = o.s.querySelector(".nom"); if (p[1].length > 22) nom.style.fontSize = "92px";
+});
+// cierre
+const cierreE = nueva(`<img class="flor" style="top:900px;opacity:.45">
+  <div class="centro anton" id="c_v" style="top:560px;font-size:230px">Visítanos</div>
+  <div class="centro kau" id="c_k" style="top:830px;font-size:104px">${TEMA.cierre}</div>
+  <div class="centro" id="c_d" style="top:1020px;font-weight:700;font-size:48px;line-height:1.4;text-shadow:0 4px 24px rgba(0,0,0,.9)">Carrer de la Muntanya 115<br>Camp de l'Arpa · Barcelona</div>
+  <div class="centro" id="c_p" style="top:1260px"><span class="pill">lorenrestobar.com</span></div>
+  <div class="centro" id="c_h" style="top:1420px;font-weight:600;font-size:36px;text-shadow:0 4px 20px rgba(0,0,0,.9)">Miércoles a domingo · También a domicilio</div>`, TB(N), CTA_D);
+cierreE.s.querySelector(".flor").src = P("kv/flor-kv.webp"); cierreE.tipo = "cierre";
+
+function ajusta(o) {   // encaja la foto ENTERA (sin recortar) en una caja de 960 x 1180
+  const im = o.im, w = im.naturalWidth, h = im.naturalHeight; const esc = Math.min(960 / w, 1180 / h);
+  const W = Math.round(w * esc), H = Math.round(h * esc);
+  Object.assign(o.marco.style, { width: W + "px", height: H + "px", left: ((1080 - W) / 2) + "px", top: (790 - H / 2) + "px" });
+  o.W = W; o.H = H;
+}
+
+function render(t) {
+  BR.forEach((b) => {
+    const y = 1960 - ((t * b.v + b.ph) % 2000); const x = b.x + Math.sin(t * 0.9 + b.ph) * b.w;
+    const o = (0.25 + 0.6 * Math.abs(Math.sin(t * b.f + b.ph))) * clamp(Math.min(y, 1900 - y) / 260 + 0.1);
+    b.e.style.transform = "translate(" + x + "px," + y + "px)"; b.e.style.opacity = o;
+  });
+  ESC.forEach((o) => {
+    const l = t - o.ini; const fin = o.tipo === "cierre" ? 1e9 : o.dur + SAL;
+    if (l < -0.01 || l > fin) { o.s.style.visibility = "hidden"; return; }
+    o.s.style.visibility = "visible";
+    const fl = o.s.querySelector(".flor"); fl.style.transform = "rotate(" + ((t * 9) % 360) + "deg) scale(" + (0.85 + 0.15 * eo(l / 1.6)) + ")";
+    if (o.tipo === "plato") {
+      if (!o.W) ajusta(o);
+      const d = o.dir, pe = eo(l / 0.8), ps = ei((l - o.dur) / SAL);
+      const x = (1 - pe) * d * 1100 - ps * d * 1300, rot = (1 - pe) * d * -9 + ps * d * 7, sc = 0.86 + 0.14 * pe + 0.04 * clamp(l / o.dur);
+      o.marco.style.transform = "translateX(" + x + "px) rotate(" + rot + "deg) scale(" + sc + ")";
+      o.s.querySelector(".fondo").style.opacity = clamp(l / 0.6) * (1 - ps);
+      const b = clamp((l - 0.55) / 0.7); o.s.querySelector(".brillo").style.left = (-50 + 190 * eio(b)) + "%";
+      const a = clamp((l - 0.05) / 0.8); const an = o.s.querySelector(".anillo"); an.style.opacity = a > 0 && a < 1 ? 0.9 * (1 - a) : 0; an.style.transform = "scale(" + (0.7 + 1.1 * eo(a)) + ")";
+      const tx = o.s.querySelector(".txt"), pt = eo((l - 0.4) / 0.6), pto = clamp((l - o.dur) / (SAL * 0.8));
+      tx.style.opacity = pt * (1 - pto); tx.style.transform = "translateY(" + ((1 - pt) * 70 + pto * -40) + "px)";
+      const pr = o.s.querySelector(".pre"); if (pr) pr.style.transform = "scale(" + (0.6 + 0.4 * eo((l - 0.75) / 0.5)) + ")";
+    } else if (o.tipo === "intro") {
+      const ps = ei((l - o.dur) / SAL); o.s.style.opacity = 1 - ps;
+      fl.style.transform = "rotate(" + ((t * 12) % 360) + "deg) scale(" + (0.25 + 0.85 * eo(l / 2.2)) + ")";
+      [["i_e", 0.2], ["i_t", 0.45], ["i_s", 1.1]].forEach(([id, dl]) => { const e = document.getElementById(id), p = eo((l - dl) / 0.8); e.style.opacity = p; e.style.transform = "translateY(" + ((1 - p) * 60) + "px)"; });
+    } else {
+      o.s.style.opacity = eo(l / 0.7); fl.style.transform = "rotate(" + ((t * 9) % 360) + "deg) scale(" + (0.5 + 0.5 * eo(l / 1.8)) + ")";
+      [["c_v", 0.3], ["c_k", 0.75], ["c_d", 1.2], ["c_p", 1.6], ["c_h", 2.0]].forEach(([id, dl]) => { const e = document.getElementById(id), p = eo((l - dl) / 0.7); e.style.opacity = p; e.style.transform = "translateY(" + ((1 - p) * 50) + "px)"; });
+    }
+  });
+  document.getElementById("logo").style.opacity = t < 0.4 ? 0 : 1;
+}
+window.render = render;
+Promise.all([document.fonts.ready, ...imgs.map((i) => i.decode().catch(() => {}))]).then(() => { render(0); window.LISTO = true; });
+</script></body></html>
