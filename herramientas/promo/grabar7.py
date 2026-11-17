@@ -4,7 +4,7 @@ from playwright.sync_api import sync_playwright
 FF = os.path.join(os.path.dirname(sys.executable), "Lib", "site-packages", "imageio_ffmpeg", "binaries", "ffmpeg-win-x86_64-v7.1.exe")
 PARTE, BASE, TMP, MUS, INI, SAL = sys.argv[1:7]
 FPS = 24
-DUR = {"1": 48, "2": 42}[PARTE]; N = FPS * DUR
+DUR = {"1": 45.5, "2": 42}[PARTE]; N = int(FPS * DUR)
 if len(glob.glob(os.path.join(TMP, "*.png"))) < N:
     shutil.rmtree(TMP, ignore_errors=True); os.makedirs(TMP)
     with sync_playwright() as pw:

@@ -14,14 +14,14 @@
   .sc > * { position: absolute; }
   .centro { left: 0; right: 0; text-align: center; }
   .anton { font-family: Anton, sans-serif; text-transform: uppercase; letter-spacing: .01em; line-height: 1; }
-  .kau { font-family: "Kaushan Script", cursive; color: var(--maiz); line-height: 1.05; }
-  .eyebrow { font-weight: 700; font-size: 34px; letter-spacing: .28em; text-transform: uppercase; color: var(--maiz); }
+  .kau { font-family: "Kaushan Script", cursive; color: var(--maiz2); line-height: 1.05; -webkit-text-stroke: 2px rgba(42,0,14,.6); paint-order: stroke fill; text-shadow: 0 0 40px rgba(0,0,0,.95), 0 4px 22px rgba(0,0,0,.9); }
+  .eyebrow { font-weight: 800; font-size: 38px; letter-spacing: .28em; text-transform: uppercase; color: var(--maiz2); text-shadow: 0 0 30px rgba(0,0,0,.95), 0 3px 14px rgba(0,0,0,.9); }
   .txt { font-size: 42px; line-height: 1.35; color: rgba(243,238,220,.92); font-weight: 500; }
-  .sombra { text-shadow: 0 4px 28px rgba(0,0,0,.75), 0 2px 6px rgba(0,0,0,.6); }
+  .sombra { text-shadow: 0 0 44px rgba(0,0,0,.95), 0 4px 22px rgba(0,0,0,.9), 0 2px 5px rgba(0,0,0,.85); }
   .pill { display: inline-block; background: var(--maiz); color: var(--vino9); font-weight: 800; font-size: 46px; padding: 24px 58px; border-radius: 999px; box-shadow: 0 20px 44px -10px rgba(232,180,58,.6); }
   .logo { filter: drop-shadow(0 24px 40px rgba(0,0,0,.6)); }
   /* capas sobre vídeo */
-  .velo { position: absolute; inset: 0; background: linear-gradient(rgba(14,6,9,.62), transparent 30%, transparent 52%, rgba(14,6,9,.78)); }
+  .velo { position: absolute; inset: 0; background: linear-gradient(rgba(14,6,9,.86), rgba(14,6,9,.45) 36%, rgba(14,6,9,.12) 58%, rgba(14,6,9,.86)); }
   .marco { position: absolute; inset: 38px; border: 3px solid rgba(232,180,58,.85); border-radius: 44px; box-shadow: 0 0 40px rgba(232,180,58,.25), inset 0 0 60px rgba(0,0,0,.35); }
   .luz { position: absolute; width: 1300px; height: 1300px; border-radius: 50%; background: radial-gradient(circle, rgba(244,210,122,.32), transparent 62%); mix-blend-mode: screen; }
   .brasas i { position: absolute; width: 9px; height: 9px; border-radius: 50%; background: var(--maiz2); box-shadow: 0 0 16px 5px rgba(244,210,122,.75); opacity: 0; }
@@ -38,6 +38,7 @@
   /* transición ñandutí */
   #cubre { position: absolute; left: 50%; top: 50%; width: 1000px; height: 1000px; margin: -500px 0 0 -500px; border-radius: 50%; background: radial-gradient(circle, var(--vino5), var(--vino9) 72%); box-shadow: 0 0 0 16px var(--crema), 0 0 0 30px rgba(232,180,58,.9); overflow: hidden; display: none; z-index: 20; }
   #cubre img { position: absolute; left: 50%; top: 50%; width: 1100px; height: 1100px; margin: -550px 0 0 -550px; opacity: .5; }
+  #cubre img { display: none; }
   #flash { position: absolute; inset: 0; background: #fff; opacity: 0; z-index: 25; pointer-events: none; }
 </style></head>
 <body>
@@ -132,10 +133,11 @@
   <!-- Parte 1 · apertura de comida -->
   <section class="sc" id="s0f" data-gr="1">
     <div class="luz" data-in="0.2" data-fx="fade" style="left:-110px;top:310px"></div>
-    <img class="enc introflor" src="../../img/kv/flor-kv.webp" style="opacity:.55;width:1300px;height:1300px;margin:-650px 0 0 -650px" alt="">
+    <img class="enc introflor" src="../../img/kv/flor-kv.webp" style="opacity:.22;width:1300px;height:1300px;margin:-650px 0 0 -650px" alt="">
+    <div style="left:0;right:0;top:640px;height:760px;background:radial-gradient(62% 52% at 50% 50%, rgba(8,3,5,.82), transparent 78%)"></div>
     <img class="logo" data-in="1.2" data-fx="zoom" style="left:260px;top:360px;width:560px" src="../../img/marca/logo-loren.webp" alt="">
     <div class="centro eyebrow" data-in="2.2" data-fx="spread" style="top:760px;font-size:38px">Cocina paraguaya · Barcelona</div>
-    <div class="centro kau" data-in="2.9" data-fx="up" style="top:900px;font-size:118px;line-height:1.08;left:40px;right:40px">Hay sabores<br>que nos hacen<br>sentir en casa</div>
+    <div class="centro kau" data-in="2.9" data-fx="up" style="top:880px;font-size:118px;line-height:1.1;left:40px;right:40px;color:var(--crema)">Hay sabores<br>que nos hacen<br><span style="color:var(--maiz2);font-size:140px">sentir en casa</span></div>
   </section>
 
   <!-- Parte 2 · mosaico de platos -->
@@ -168,13 +170,13 @@
 <script>
 const $ = (s, r = document) => [...r.querySelectorAll(s)];
 const clamp = (x) => Math.max(0, Math.min(1, x));
-const eo = (x) => 1 - Math.pow(1 - clamp(x), 3);
-const eio = (x) => { x = clamp(x); return x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2; };
-const eb = (x) => { x = clamp(x); const c = 1.6; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
+const eo = (x) => Math.sin(clamp(x) * Math.PI / 2);
+const eio = (x) => 0.5 - 0.5 * Math.cos(Math.PI * clamp(x));
+const eb = (x) => Math.sin(clamp(x) * Math.PI / 2);
 
 const PARTE = new URLSearchParams(location.search).get("p") || "1";
 const PLAN = {
-  "1": [["s0f", 0, 6], ["s1", 6, 13.5], ["s2", 13.5, 21], ["s3", 21, 29], ["s4", 29, 35.5], ["s7", 35.5, 42], ["s8f", 42, 48]],
+  "1": [["s0f", 0, 6.5], ["s1", 6.5, 13], ["s2", 13, 19.5], ["s3", 19.5, 26], ["s4", 26, 32.5], ["s7", 32.5, 39], ["s8f", 39, 45.5]],
   "2": [["s0d", 0, 6], ["s5", 6, 25.5], ["s6", 25.5, 33.5], ["s8", 33.5, 42]]
 }[PARTE];
 [...document.querySelectorAll(".sc")].forEach((s) => { const e = PLAN.find((x) => x[0] === s.id); s.dataset.a = e ? e[1] : -1; s.dataset.b = e ? e[2] : -1; });
@@ -194,22 +196,25 @@ const PANT = [
 ];
 PANT.forEach((p) => { p.a += WA - 35.5; p.b += WA - 35.5; });
 const imgs = {}; PANT.forEach((p) => { const i = new Image(); i.src = `../../para-loren/promo/${p.img}.jpg`; imgs[p.img] = i; });
+const XF = 1.2;
+const fadeDe = (a, b, t) => { const d = a <= 0.01 ? a : a - XF / 2, h = b >= FIN - 0.01 ? b + 1 : b + XF / 2; if (t < d || t >= h) return 0; return Math.max(0.001, Math.min(a <= 0.01 ? 1 : clamp((t - d) / XF), b >= FIN - 0.01 ? 1 : clamp((h - t) / XF))); };
 function render(t) {
-  const gr = GR(t);
+  const gr = Math.max(0, ...PLAN.filter((x) => document.getElementById(x[0]).dataset.gr === "1").map((x) => fadeDe(x[1], x[2], t)));
   const F = $("#fondoGr")[0]; F.style.opacity = gr;
   $("#flor")[0].style.transform = `rotate(${t * 2.6}deg) scale(${1 + 0.05 * Math.sin(t / 2.5)})`;
   $(".introflor").forEach((f) => { const s = f.closest(".sc"), l = t - (+s.dataset.a), vis = l >= 0 && t < +s.dataset.b; f.style.transform = `rotate(${-l * 14}deg) scale(${0.3 + 0.7 * eo(l / 2.2)})`; f.style.opacity = vis ? Math.min(.6, l / 1.2) * (l > 4.6 ? 1 - (l - 4.6) / 1.4 * .55 : 1) : 0; });
   $("#brasas i").forEach((e) => { const ph = ((t + +e.dataset.f) % 6) / 6; e.style.left = (+e.dataset.x + Math.sin(ph * 9 + +e.dataset.f) * 40) + "px"; e.style.top = (1980 - ph * (760 + +e.dataset.v * 8)) + "px"; e.style.opacity = gr * Math.sin(ph * Math.PI) * 0.85; });
   $(".sc").forEach((s) => {
     const a = +s.dataset.a, b = +s.dataset.b, l = t - a;
-    if (t < a || t >= b) { s.style.visibility = "hidden"; return; }
-    s.style.visibility = "visible";
+    const fo = fadeDe(a, b, t);
+    if (fo <= 0) { s.style.visibility = "hidden"; return; }
+    s.style.visibility = "visible"; s.style.opacity = fo;
     $("[data-in]", s).forEach((e) => {
-      const d = +e.dataset.in, p = l - d, k = eb(p / 0.8), o = clamp(p / 0.45), fx = e.dataset.fx; let tf = "none";
-      if (fx === "up") tf = `translateY(${(1 - k) * 80}px)`;
-      if (fx === "zoom") tf = `scale(${0.5 + 0.5 * k})`;
-      if (fx === "left") tf = `translateX(${(1 - eo(p / 0.9)) * -560}px)`;
-      if (fx === "right") tf = `translateX(${(1 - eo(p / 0.9)) * 560}px)`;
+      const d = +e.dataset.in, p = l - d, k = eb(p / 1.2), o = clamp(p / 0.9), fx = e.dataset.fx; let tf = "none";
+      if (fx === "up") tf = `translateY(${(1 - k) * 46}px)`;
+      if (fx === "zoom") tf = `scale(${0.88 + 0.12 * k})`;
+      if (fx === "left") tf = `translateX(${(1 - eo(p / 1.4)) * -560}px)`;
+      if (fx === "right") tf = `translateX(${(1 - eo(p / 1.4)) * 560}px)`;
       if (fx === "spread") { e.style.letterSpacing = (0.5 - 0.22 * eo(p / 1.2)) + "em"; }
       e.style.transform = tf; e.style.opacity = o;
     });
@@ -229,12 +234,12 @@ function render(t) {
     pa.style.transform = `translateY(${-(cur.sc[0] + (cur.sc[1] - cur.sc[0]) * eio(q * 1.15 - 0.05))}px)`;
     et.style.opacity = clamp((t - cur.a - 0.5) / 0.4) * (1 - sal); et.style.transform = `translateY(${(1 - eo((t - cur.a - 0.5) / 0.6)) * 60}px) scale(${1})`;
   }
-  // transición con el ñandutí que se abre y se cierra
+  // transición suave: un aro dorado que se abre despacio mientras una escena se disuelve en la siguiente
   const cu = $("#cubre")[0]; let hay = false;
-  for (const c of CORTES) { const p = (t - (c - 0.5)) / 1.0; if (p >= 0 && p <= 1) { const s = (p < .5 ? eio(p / .5) : 1 - eio((p - .5) / .5)) * 2.7; cu.style.display = "block"; cu.style.transform = `scale(${s}) rotate(${p * 70}deg)`; hay = true; $("#florCubre")[0].style.transform = `rotate(${-p * 140}deg)`; } }
+  for (const c of CORTES) { const p = (t - (c - 0.8)) / 1.6; if (p >= 0 && p <= 1) { const e = Math.sin(p * Math.PI / 2); cu.style.display = "block"; cu.style.background = "transparent"; cu.style.overflow = "visible"; cu.style.boxShadow = "0 0 0 7px rgba(243,238,220,.9), 0 0 0 16px rgba(232,180,58,.85), 0 0 90px 20px rgba(232,180,58,.35)"; cu.style.transform = `scale(${0.25 + 2.3 * e})`; cu.style.opacity = Math.sin(p * Math.PI) * 0.7; hay = true; } }
   if (!hay) cu.style.display = "none";
   // destello breve al llegar al logo final
-  const fl = t - (FIN - 5.1); $("#flash")[0].style.opacity = fl > 0 && fl < 0.35 ? 0.55 * (1 - fl / 0.35) : 0;
+  const fl = t - (FIN - 5.1); $("#flash")[0].style.opacity = 0;
 }
 window.render = render; window.DUR = FIN;
 document.fonts.ready.then(() => Promise.all(Object.values(imgs).map((i) => i.decode().catch(() => {})))).then(() => { window.LISTO = true; render(0); });
