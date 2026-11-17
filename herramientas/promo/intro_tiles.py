@@ -23,6 +23,6 @@ filt = ("[0:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:192
 subprocess.run([FF, "-y", "-loglevel", "error", "-loop", "1", "-framerate", "30", "-t", str(DUR), "-i", fondo, "-framerate", str(FPS), "-i", os.path.join(TMP, "%05d.png"),
                 "-filter_complex", filt, "-map", "[v]", "-c:v", "libx264", "-crf", "16", "-preset", "medium", "-r", "30", "-t", str(DUR), intro], check=True)
 filt2 = f"[0:v]settb=AVTB,fps=30,format=yuv420p[a];[1:v]settb=AVTB,fps=30,format=yuv420p[b];[a][b]xfade=transition=fade:duration={XF}:offset={DUR - XF}[v]"
-subprocess.run([FF, "-y", "-loglevel", "error", "-i", intro, "-i", TILES, "-filter_complex", filt2, "-map", "[v]", "-an", "-c:v", "libx264", "-crf", "18",
+subprocess.run([FF, "-y", "-loglevel", "error", "-i", intro, "-i", TILES, "-filter_complex", filt2, "-map", "[v]", "-an", "-c:v", "libx264", "-pix_fmt", "yuv420p", "-crf", "18",
                 "-preset", "medium", "-movflags", "+faststart", SAL], check=True)
 print("hecho", SAL, round(os.path.getsize(SAL) / 1e6, 1), "MB")

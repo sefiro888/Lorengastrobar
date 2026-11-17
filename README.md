@@ -58,6 +58,7 @@ python herramientas/seo.py              # prerender + canonical/hreflang + JSON-
 | `herramientas/seo.py` | SEO: prerender, etiquetas, datos estructurados, sitemap y robots |
 | `herramientas/og.py` | Imágenes para compartir (1200×630) por página e idioma → `img/redes/og-*.jpg` |
 | `herramientas/resenas.py` | Material impreso con QR de reseñas (sale en una carpeta local, no en la web) |
+| `herramientas/promo/` | Generadores de **vídeos para redes** (Instagram/TikTok): barrido de rectángulos, galería de fotos en marco dorado, reseñas, palabra guaraní, fichas de grabación. Necesitan `python -m http.server 8123` en la raíz y Playwright + ffmpeg. Las salidas van a `para-loren/promo/` (privada). Instrucciones, reglas y pendientes en `para-loren/GUIA-VIDEOS.md` (local) |
 | `herramientas/claves_js.js` | Extrae los textos `T("…")` de los JS para traducirlos |
 | `herramientas/archivo/` | Scripts antiguos, ya no se usan |
 

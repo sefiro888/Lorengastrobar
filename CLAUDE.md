@@ -20,3 +20,10 @@ están en `para-loren/ESTADO-PROYECTO.md` (carpeta local, no está en GitHub).
 - No publiques alérgenos en la carta hasta tener la lista completa confirmada por Loren
   (`para-loren/alergenos-confirmados.md`).
 - Cuando falte un dato (precio, foto, contenido de un combo…), pregunta; no lo inventes.
+
+## Vídeos para redes (herramientas/promo/)
+Antes de hacer o cambiar un vídeo lee `para-loren/GUIA-VIDEOS.md` (local, privado): reglas del usuario, catálogo de plantillas y siguientes pasos.
+- Sin música por defecto; **nada de material de otros influencers**; no repetir imágenes ya usadas; fotos enteras y bien visibles (nada de zoom excesivo).
+- Exporta siempre H.264 `yuv420p` (con 4:4:4 Windows no lo abre) a 1080x1920, 30 fps, y guarda las salidas en `para-loren/promo/` (no se sube).
+- No puedes oír el audio ni ver el movimiento: dilo y revisa fotogramas sueltos.
+
