@@ -58,8 +58,25 @@ const TEMAS = {
       ["platos/picada-milanesa.webp", "Picada de milanesa con miel y mostaza", "11,90 €"]
     ],
     cierre: "Sabe a casa"
+  },
+  clips: {
+    titulo: ["Del fuego a la mesa", "así se cocina en Loren"],
+    platos: [
+      ["clip:chipa", "Chipa guazú", "3,90 €"],
+      ["clip:mbeju", "Mbejú relleno de queso", "5,50 €"],
+      ["clip:chyryry", "Mandi'ó chyryry", "11,50 €"],
+      ["clip:vori", "Vorí vorí", "15,90 €"],
+      ["clip:mila", "Milanesa a caballo", "16,90 €"],
+      ["clip:sopa", "Sopa paraguaya", "3,90 €"],
+      ["clip:empanada", "Empanada de jamón y queso", "3,40 €"],
+      ["clip:mbeju2", "Mbejú tradicional", "4,50 €"]
+    ],
+    cierre: "Ven a probarlo"
   }
 };
+const CLIP_N = 105;     // fotogramas por clip (3,5 s a 30 fps), extraídos por galeria.py en _clips/<id>/
+const CLIP_URL = (id, n) => "_clips/" + id + "/" + String(n).padStart(4, "0") + ".jpg";
+window._pend = [];
 const TEMA = TEMAS[new URLSearchParams(location.search).get("v") || "milanesas"];
 const INTRO = 3.0, S = 2.7, SAL = 0.55, CTA_D = 4.2;
 const N = TEMA.platos.length;
@@ -93,13 +110,16 @@ introE.tipo = "intro";
 // platos
 const imgs = [];
 TEMA.platos.forEach((p, k) => {
+  const clip = p[0].startsWith("clip:") ? p[0].slice(5) : null;
+  const srcImg = clip ? CLIP_URL(clip, 1) : P(p[0]);
   const o = nueva(`<div class="fondo"></div><img class="flor"><div class="anillo"></div>
     <div class="marco"><img><div class="brillo"></div></div>
     <div class="txt"><div class="nom">${p[1]}</div><div class="rayita"></div>${p[2] ? '<div class="pre">' + p[2] + '</div>' : ""}</div>`, TB(k), S);
   o.tipo = "plato"; o.k = k; o.dir = k % 2 ? -1 : 1;
-  o.s.querySelector(".fondo").style.backgroundImage = "url(" + P(p[0]) + ")";
+  o.clip = clip;
+  o.s.querySelector(".fondo").style.backgroundImage = "url(" + srcImg + ")";
   o.s.querySelector(".flor").src = P("kv/flor-kv.webp");
-  const im = o.s.querySelector(".marco img"); im.src = P(p[0]); imgs.push(im);
+  const im = o.s.querySelector(".marco img"); im.src = srcImg; imgs.push(im);
   o.im = im; o.marco = o.s.querySelector(".marco");
   const nom = o.s.querySelector(".nom"); if (p[1].length > 22) nom.style.fontSize = "84px";
 });
@@ -114,7 +134,8 @@ cierreE.s.querySelector(".flor").src = P("kv/flor-kv.webp"); cierreE.tipo = "cie
 
 function ajusta(o) {   // encaja la foto ENTERA (sin recortar) en una caja de 960 x 860 (zona segura de Instagram)
   const im = o.im, w = im.naturalWidth, h = im.naturalHeight; const esc = Math.min(960 / w, 860 / h);
-  const W = Math.round(w * esc), H = Math.round(h * esc);
+  let W = Math.round(w * esc), H = Math.round(h * esc);
+  if (o.clip) { W = 688; H = 860; im.style.objectPosition = "50% 42%"; }   // los clips verticales se encajan en un marco 4:5
   Object.assign(o.marco.style, { width: W + "px", height: H + "px", left: ((1080 - W) / 2) + "px", top: (800 - H / 2) + "px" });
   o.W = W; o.H = H;
 }
@@ -132,6 +153,10 @@ function render(t) {
     const fl = o.s.querySelector(".flor"); fl.style.transform = "rotate(" + ((t * 9) % 360) + "deg) scale(" + (0.85 + 0.15 * eo(l / 1.6)) + ")";
     if (o.tipo === "plato") {
       if (!o.W) ajusta(o);
+      if (o.clip) {
+        const n = Math.max(1, Math.min(CLIP_N, Math.floor(Math.max(0, l) * 30) + 1));
+        if (o.cur !== n) { o.cur = n; o.im.src = CLIP_URL(o.clip, n); window._pend.push(o.im); if (n % 6 === 1) o.s.querySelector(".fondo").style.backgroundImage = "url(" + CLIP_URL(o.clip, n) + ")"; }
+      }
       const d = o.dir, pe = eo(l / 0.8), ps = ei((l - o.dur) / SAL);
       const x = (1 - pe) * d * 1100 - ps * d * 1300, rot = (1 - pe) * d * -9 + ps * d * 7, sc = 0.86 + 0.14 * pe + 0.04 * clamp(l / o.dur);
       o.marco.style.transform = "translateX(" + x + "px) rotate(" + rot + "deg) scale(" + sc + ")";
