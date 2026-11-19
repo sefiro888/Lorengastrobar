@@ -49,15 +49,26 @@ html, body { background:#151012; -webkit-print-color-adjust:exact; print-color-a
 .lz::before { content:""; position:absolute; inset:0; background:radial-gradient(70% 45% at 50% 50%, rgba(125,11,46,.55), transparent 75%), linear-gradient(rgba(21,16,18,.35), rgba(21,16,18,.6)); }
 .lz > * { position:relative; z-index:2; }
 .deco { position:absolute !important; z-index:1 !important; pointer-events:none; }
-.copo { opacity:.16; }
+.copo { opacity:.45; filter:drop-shadow(0 0 6px rgba(255,248,225,.9)) drop-shadow(0 0 14px rgba(244,210,122,.5)); }
+.bokeh { border-radius:50%; filter:blur(6px); }
 .estrella { color:var(--maiz2); text-shadow:0 0 18px rgba(244,210,122,.95), 0 0 4px #fff; line-height:1; }
-.colg { top:0; display:flex; flex-direction:column; align-items:center; }
-.colg .hilo { width:2px; flex:1; background:linear-gradient(rgba(244,210,122,.1), var(--maiz2)); }
+.guirnalda { left:0; top:0; }
+.bombilla { border-radius:50%; }
+.colg { display:flex; flex-direction:column; align-items:center; }
+.colg .hilo { width:2px; flex:1; background:linear-gradient(rgba(244,210,122,.5), var(--maiz2)); }
+.colg .tapa { flex:none; width:24%; height:9px; border-radius:3px 3px 1px 1px; background:linear-gradient(90deg, #8a5a10, #f4d27a 45%, #8a5a10); margin-bottom:-2px; position:relative; z-index:2; }
 .colg .bola { border-radius:50%; position:relative; overflow:hidden; flex:none;
   background:radial-gradient(circle at 34% 30%, #fff7dc 0, #f4d27a 22%, #c98e1e 62%, #6e4308 100%);
   box-shadow:0 0 34px rgba(244,210,122,.55), 0 10px 24px rgba(0,0,0,.5); }
 .colg .bola img { position:absolute; inset:9%; width:82%; height:82%; opacity:.6; mix-blend-mode:multiply; }
-.colg .bola::before { content:""; position:absolute; left:50%; top:-6%; width:22%; height:14%; margin-left:-11%; background:#a77418; border-radius:3px; }
+.colg .bola.vino { background:radial-gradient(circle at 34% 30%, #ffd0d8 0, #b0405f 20%, #59011d 60%, #1c0009 100%); box-shadow:0 0 30px rgba(176,64,95,.55), 0 10px 24px rgba(0,0,0,.5); }
+.colg .bola.vino img { mix-blend-mode:screen; opacity:.55; filter:sepia(1) saturate(2.5) hue-rotate(5deg) brightness(1.1); }
+.colg .bola::after { content:""; position:absolute; left:18%; top:12%; width:30%; height:20%; border-radius:50%; background:rgba(255,255,255,.55); filter:blur(3px); }
+.cinta { display:inline-block; position:relative; font-family:"Kaushan Script", cursive; color:var(--vino9); background:linear-gradient(90deg, #c98e1e, #f4d27a 30%, #fff1c2 50%, #f4d27a 70%, #c98e1e);
+  padding:.18em 1.1em .26em; box-shadow:0 10px 26px -8px rgba(0,0,0,.7), 0 0 26px rgba(244,210,122,.35); transform:rotate(-2deg); }
+.cinta::before, .cinta::after { content:""; position:absolute; top:22%; width:.9em; height:76%; background:#a9761c; z-index:-1; }
+.cinta::before { left:-.55em; clip-path:polygon(0 0, 100% 0, 100% 100%, 0 100%, 40% 50%); }
+.cinta::after { right:-.55em; clip-path:polygon(0 0, 100% 0, 60% 50%, 100% 100%, 0 100%); }
 .logo { filter:drop-shadow(0 6px 16px rgba(0,0,0,.6)); }
 .eyebrow { font-weight:800; letter-spacing:.28em; text-transform:uppercase; color:var(--maiz2); text-shadow:0 2px 14px rgba(0,0,0,.9); text-align:center; }
 .anton { font-family:Anton, Impact, sans-serif; font-weight:400; text-transform:uppercase; line-height:.98; text-align:center; text-shadow:0 8px 34px rgba(0,0,0,.85); }
@@ -83,21 +94,39 @@ html, body { background:#151012; -webkit-print-color-adjust:exact; print-color-a
 
 
 def decoracion(W, H, colgantes, estrellas, copos, semilla=1):
-    """Bolas de ñandutí colgando, estrellas doradas y copos (encaje) de fondo. Posiciones deterministas."""
+    """Navidad: luces desenfocadas, guirnalda de bombillas, bolas doradas y burdeos de ñandutí colgando de ella,
+    copos de ñandutí y destellos. Posiciones deterministas (misma semilla = mismo dibujo)."""
+    import math
     def r(n):
-        import math
         x = math.sin(semilla * 97.3 + n * 31.7) * 43758.5453
         return x - math.floor(x)
+    sag = max(46, H * .045)
+    gy = lambda x: 14 + sag * abs(math.sin(math.pi * x / (W / 2)))       # dos guirnaldas colgando
     h = []
-    for i, (x, largo, d) in enumerate(colgantes):
-        h.append(f'<div class="deco colg" style="left:{x - d / 2}px;width:{d}px;height:{largo + d}px"><span class="hilo"></span>'
-                 f'<span class="bola" style="width:{d}px;height:{d}px"><img src="img/kv/flor-kv.webp"></span></div>')
-    for i in range(estrellas):
-        x, y, s = r(i) * W, r(i + 50) * H, 18 + r(i + 90) * 30
-        h.append(f'<div class="deco estrella" style="left:{x:.0f}px;top:{y:.0f}px;font-size:{s:.0f}px;opacity:{.35 + r(i + 7) * .6:.2f}">✦</div>')
-    for i in range(copos):
-        x, y, s = r(i + 200) * W, r(i + 300) * H, 120 + r(i + 400) * 260
-        h.append(f'<img class="deco copo" src="img/kv/flor-kv.webp" style="left:{x - s / 2:.0f}px;top:{y - s / 2:.0f}px;width:{s:.0f}px;transform:rotate({r(i + 500) * 360:.0f}deg)">')
+    for i in range(18):                                                    # luces desenfocadas (bokeh)
+        x, y, d = r(i + 600) * W, r(i + 700) * H, 50 + r(i + 800) * 170
+        col = ("244,210,122", "255,170,80", "255,236,190", "176,64,95")[i % 4]
+        h.append(f'<div class="deco bokeh" style="left:{x - d / 2:.0f}px;top:{y - d / 2:.0f}px;width:{d:.0f}px;height:{d:.0f}px;'
+                 f'background:radial-gradient(circle, rgba({col},.5) 0, rgba({col},.18) 45%, rgba({col},0) 70%);opacity:{.35 + r(i + 900) * .5:.2f}"></div>')
+    for i in range(copos * 3):                                             # copos de ñandutí nítidos y pequeños
+        x, y, d = r(i + 200) * W, 120 + r(i + 300) * (H - 160), 26 + r(i + 400) * 48
+        h.append(f'<img class="deco copo" src="img/kv/flor-kv.webp" style="left:{x - d / 2:.0f}px;top:{y - d / 2:.0f}px;width:{d:.0f}px;'
+                 f'opacity:{.22 + r(i + 450) * .38:.2f};transform:rotate({r(i + 500) * 360:.0f}deg)">')
+    for i in range(estrellas):                                             # destellos
+        x, y, d = r(i) * W, 120 + r(i + 50) * (H - 160), 16 + r(i + 90) * 30
+        h.append(f'<div class="deco estrella" style="left:{x:.0f}px;top:{y:.0f}px;font-size:{d:.0f}px;opacity:{.35 + r(i + 7) * .6:.2f}">{"✦✧"[i % 5 == 0]}</div>')
+    pts = " ".join(f"{x:.0f},{gy(x):.1f}" for x in range(-10, W + 11, 6))   # guirnalda
+    h.append(f'<svg class="deco guirnalda" width="{W}" height="{sag + 60:.0f}"><polyline points="{pts}" fill="none" stroke="#f4d27a" stroke-width="2.5" '
+             f'style="filter:drop-shadow(0 0 4px rgba(244,210,122,.9))"/></svg>')
+    cols = ("#fff3c4", "#f4d27a", "#ffb347", "#fff3c4", "#ffd27a")
+    for k, x in enumerate(range(18, W, 54)):
+        y, d, c = gy(x) + 4, 11 + (k % 3) * 2, cols[k % len(cols)]
+        h.append(f'<div class="deco bombilla" style="left:{x - d / 2}px;top:{y - 2:.0f}px;width:{d}px;height:{d * 1.25:.0f}px;background:{c};'
+                 f'box-shadow:0 0 10px 3px {c}, 0 0 26px 8px rgba(255,190,90,.45)"></div>')
+    for i, (x, largo, d) in enumerate(colgantes):                          # bolas que cuelgan de la guirnalda
+        top = gy(x)
+        h.append(f'<div class="deco colg" style="left:{x - d / 2}px;top:{top:.0f}px;width:{d}px;height:{largo + d + 8}px"><span class="hilo"></span><span class="tapa"></span>'
+                 f'<span class="bola{" vino" if i % 2 else ""}" style="width:{d}px;height:{d}px"><img src="img/kv/flor-kv.webp"></span></div>')
     return "".join(h)
 
 
@@ -125,17 +154,18 @@ def portada(W, H, alto):
     fotos = [c for c in COMBOS if c["foto"]]
     f = lambda c: foto(c)
     sy = 1 if alto else 0
-    return decoracion(W, H, [(110, 150 + 260 * sy, 92), (270, 60 + 160 * sy, 62), (W - 270, 90 + 170 * sy, 70), (W - 105, 190 + 250 * sy, 96)], 22, 5, 3) + f"""
+    return decoracion(W, H, [(90, 90 + 150 * sy, 84 + 6 * sy), (260, 20 + 110 * sy, 60), (W - 260, 20 + 130 * sy, 64), (W - 90, 110 + 110 * sy, 90 + 6 * sy)], 22, 5, 3) + f"""
 <img class="logo" src="img/marca/logo-loren.webp" style="width:{210 if not alto else 260}px;margin-top:{70 if not alto else 290}px">
 <div class="eyebrow" style="font-size:30px;margin-top:30px">Nochebuena 24 · Fin de Año 31</div>
 <div class="anton" style="font-size:{150 if not alto else 170}px;margin-top:18px">Bocaditos<br>de Navidad</div>
 <div class="kau" style="font-size:{92 if not alto else 104}px;margin-top:6px">a la paraguaya</div>
-<div style="position:relative;width:1000px;height:{470 if not alto else 560}px;margin-top:{34 if not alto else 50}px">
+<div style="margin-top:{10 if not alto else 26}px"><span class="cinta" style="font-size:{38 if not alto else 44}px">¡Vy'apavẽ Navidad!</span></div>
+<div style="position:relative;width:1000px;height:{430 if not alto else 540}px;margin-top:{26 if not alto else 44}px">
   <div style="position:absolute;left:40px;top:40px;transform:rotate(-8deg)">{marco(COMBOS[2], 330, 400, "50% 50%")}</div>
   <div style="position:absolute;right:40px;top:40px;transform:rotate(8deg)">{marco(COMBOS[0], 330, 400)}</div>
-  <div style="position:absolute;left:290px;top:0;z-index:3">{marco(COMBOS[1], 420, {450 if not alto else 520}, "50% 55%")}</div>
+  <div style="position:absolute;left:290px;top:0;z-index:3">{marco(COMBOS[1], 420, {410 if not alto else 500}, "50% 55%")}</div>
 </div>
-<div style="margin-top:{40 if not alto else 70}px"><span class="pill" style="font-size:38px;padding:20px 50px">Desde 42,90 € · Encarga por WhatsApp</span></div>
+<div style="margin-top:{34 if not alto else 64}px"><span class="pill" style="font-size:38px;padding:20px 50px">Desde 42,90 € · Encarga por WhatsApp</span></div>
 """
 
 
@@ -202,7 +232,7 @@ def fila(c, fs, fw, fh):
 def resumen(W, H, con_qr, alto_extra=0, fs=21, fw=250, fh=205, fila_gap=26, fila_top=28, pad=60, titulo=92):
     qr_html = (f'<div style="background:#fffdf6;padding:16px;border-radius:18px;box-shadow:0 0 0 5px var(--maiz)"><img src="{qr.as_uri()}" style="width:150px;height:150px;display:block"></div>'
                if con_qr else "")
-    return decoracion(W, H, [(90, 110 + alto_extra, 74), (230, 40 + alto_extra, 54), (W - 230, 60 + alto_extra, 58), (W - 90, 130 + alto_extra, 80)], 26, 6, 5) + f"""
+    return decoracion(W, H, [(80, 80 + alto_extra, 70), (190, 20 + alto_extra * .6, 50), (W - 190, 26 + alto_extra * .6, 54), (W - 80, 100 + alto_extra, 76)], 26, 6, 5) + f"""
 <img class="logo" src="img/marca/logo-loren.webp" style="width:{150 if H < 1500 else 190}px;margin-top:{40 + alto_extra}px">
 <div class="eyebrow" style="font-size:24px;margin-top:16px">Nochebuena 24 · Fin de Año 31</div>
 <div class="anton" style="font-size:{titulo}px;margin-top:8px">Bocaditos de Navidad</div>
@@ -249,7 +279,12 @@ def main():
                 pg.evaluate(f"document.querySelector('.lz').style.zoom = {zoom}")
                 pg.pdf(path=str(d / f"{nombre}-imprenta.pdf"), width=f"{mm[0]}mm", height=f"{mm[1]}mm", print_background=True)
                 pg.evaluate("document.querySelector('.lz').style.zoom = ''")
-            pg.locator(".lz").screenshot(path=str(d / f"{nombre}.png"))
+            tmp_png = TMP / f"{carpeta}-{nombre}.png"
+            pg.locator(".lz").screenshot(path=str(tmp_png))
+            try:
+                shutil.copyfile(tmp_png, d / f"{nombre}.png")
+            except OSError:
+                print(f"   ⚠ {nombre}.png está abierto en otro programa: ciérralo y vuelve a ejecutar")
             if not mm:  # versión JPG ligera para mandar por WhatsApp / subir
                 Image.open(d / f"{nombre}.png").convert("RGB").save(d / f"{nombre}.jpg", quality=92)
                 (d / f"{nombre}.png").unlink()
