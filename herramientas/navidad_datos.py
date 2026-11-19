@@ -19,7 +19,7 @@ COMBOS = [
     {"id": "embutidos", "titulo": "Embutidos", "sub": "tabla surtida", "foto": "tabla-embutidos",
      "items": ["Salchichón ibérico", "Fuet", "Jamón ibérico", "Lomo ibérico", "Chorizo ibérico", "Longaniza", "Frutos secos"],
      "cantidad": "Para 8 a 10 personas", "precio": "44,90 €"},
-    {"id": "quesos", "titulo": "Quesos", "sub": "tabla surtida", "foto": None,
+    {"id": "quesos", "titulo": "Quesos", "sub": "tabla surtida", "foto": "tabla-quesos",
      "items": ["Queso manchego", "Queso brie", "Queso de cabra", "Queso gouda curado", "Frutos secos, uvas, fresas y picos de pan"],
      "cantidad": "Para 8 a 10 personas", "precio": "42,90 €"},
 ]
