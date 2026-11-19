@@ -437,3 +437,22 @@ h3, h4 { font-family: var(--f-display); font-weight: 700; }
 .vid-entrada .movil-v { width: 190px; flex: none; }
 .vid-entrada figcaption { font-size: .98rem; color: var(--vino-900); font-weight: 700; line-height: 1.35; }
 @media (max-width: 640px) { .vid-entrada { flex-direction: column; align-items: flex-start; } .vid-entrada .movil-v { width: 220px; } }
+
+/* ---------- Navidad (temporal) ---------- */
+.aviso-nav { position: relative; overflow: hidden; background: linear-gradient(110deg, #2a000e, #59011d 55%, #2a000e); padding: clamp(26px, 4vw, 40px) 0; color: var(--crema); border-block: 2px solid rgba(232,180,58,.55); }
+.aviso-nav__in { display: flex; align-items: center; gap: clamp(18px, 3vw, 40px); position: relative; }
+.aviso-nav__flor { width: clamp(70px, 9vw, 120px); flex: none; animation: girar 40s linear infinite; filter: drop-shadow(0 0 18px rgba(244,210,122,.5)); }
+.aviso-nav__txt { flex: 1; }
+.aviso-nav__txt .eyebrow { color: var(--maiz-2); }
+.aviso-nav h2 { font-family: var(--f-titular); font-weight: 400; text-transform: uppercase; font-size: clamp(1.7rem, 3.4vw, 2.6rem); line-height: 1.05; margin: 6px 0 6px; color: var(--crema); }
+.aviso-nav h2 em { font-family: var(--f-script); text-transform: none; font-style: normal; color: var(--maiz); display: inline-block; transform: rotate(-3deg); }
+.aviso-nav p { margin: 0; color: rgba(243,238,220,.82); font-size: .95rem; }
+.aviso-nav .btn { flex: none; }
+@media (max-width: 760px) { .aviso-nav__in { flex-direction: column; text-align: center; } }
+.nav-sub { display: block; font-family: var(--f-script); font-weight: 400; color: var(--maiz); font-size: 1.05rem; margin-top: 2px; }
+.nav-precio { font-family: var(--f-titular); font-size: 2.1rem; color: var(--vino); margin: 0 0 14px; line-height: 1; }
+.bandeja-card__img--sin { background: radial-gradient(circle at 50% 45%, #59011d, #1c0009); display: grid; place-items: center; }
+.bandeja-card__img .nav-sinfoto { width: 46%; height: auto; object-fit: contain; opacity: .8; filter: drop-shadow(0 0 20px rgba(244,210,122,.4)); }
+.bandeja-card:hover .bandeja-card__img .nav-sinfoto { transform: rotate(20deg); }
+.nav-pasos { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 760px) { .nav-pasos { grid-template-columns: 1fr; } }

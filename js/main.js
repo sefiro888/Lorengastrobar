@@ -412,6 +412,9 @@
     });
   }
 
+  /* ---------- Avisos temporales (p. ej. Navidad): desaparecen solos a partir de data-hasta ---------- */
+  $$("[data-hasta]").forEach((e) => { if (new Date() >= new Date(e.dataset.hasta + "T00:00:00")) e.remove(); });
+
   /* ---------- Año footer ---------- */
   $$("[data-anio]").forEach((el) => (el.textContent = new Date().getFullYear()));
 })();

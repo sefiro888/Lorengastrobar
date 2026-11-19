@@ -14,6 +14,8 @@ SALIDA = RAIZ / "img" / "redes"
 
 # página: (foto, encuadre, {idioma: (antetítulo, titular, acento a pincel)})
 PAGINAS = {
+    "navidad": ("img/navidad/bandeja-variada-combo2.webp", "50% 55%", {
+        "es": ("Nochebuena 24 · Fin de Año 31", "Bocaditos de Navidad", "a la paraguaya")}),
     "index": ("img/platos/plato-vori.webp", "50% 50%", {
         "es": ("Cocina casera desde 2020", "Restaurante paraguayo", "en Barcelona"),
         "ca": ("Cuina casolana des del 2020", "Restaurant paraguaià", "a Barcelona"),

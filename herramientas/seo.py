@@ -237,6 +237,9 @@ def mapa_y_robots(datos):
             for src in datos[(lang, p)]["imgs"][:60]:
                 x.append(f"    <image:image><image:loc>{absoluta(src)}</image:loc></image:image>")
             x.append("  </url>")
+    for extra in ("navidad",):          # páginas sólo en español, fuera de i18n
+        if os.path.exists(os.path.join(RAIZ, extra + ".html")):
+            x += ["  <url>", f"    <loc>{BASE}/{extra}</loc>", f"    <lastmod>{HOY}</lastmod>", "  </url>"]
     x.append("</urlset>")
     open(os.path.join(RAIZ, "sitemap.xml"), "w", encoding="utf-8").write("\n".join(x) + "\n")
     open(os.path.join(RAIZ, "robots.txt"), "w", encoding="utf-8").write(
