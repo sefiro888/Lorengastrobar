@@ -163,7 +163,7 @@ def grafo(lang, p, d):
                   "recipeInstructions": [{"@type": "HowToStep", "position": i + 1, "text": t} for i, t in enumerate(r["pasos"])]}
         if r["video"]:
             receta["video"] = {"@type": "VideoObject", "name": r["videoNombre"] or r["nombre"], "description": r["intro"],
-                               "thumbnailUrl": absoluta(r["poster"]), "contentUrl": absoluta(r["video"]), "uploadDate": "2026-11-10"}
+                               "thumbnailUrl": absoluta(r["poster"]), "contentUrl": absoluta(r["video"]), "uploadDate": "2026-11-10T12:00:00+01:00"}
         g.append(receta)
     pl = d.get("plato")
     if pl:
@@ -177,7 +177,7 @@ def grafo(lang, p, d):
         if pl["video"]:
             g.append({"@type": "VideoObject", "@id": u + "#video", "name": pl["video"]["nombre"] or pl["nombre"], "description": d["desc"],
                       "thumbnailUrl": absoluta(pl["video"]["poster"]), "contentUrl": absoluta(pl["video"]["src"]),
-                      "uploadDate": "2026-11-10", "inLanguage": lang})
+                      "uploadDate": "2026-11-10T12:00:00+01:00", "inLanguage": lang})
     return {"@context": "https://schema.org", "@graph": g}
 
 

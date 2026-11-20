@@ -57,8 +57,9 @@ def tarjeta(c, i):
 ld = {"@context": "https://schema.org", "@type": "WebPage", "url": URL, "name": TIT, "description": DESC, "inLanguage": "es",
       "about": {"@id": "https://lorenrestobar.com/#restaurante"},
       "mainEntity": {"@type": "OfferCatalog", "name": "Bocaditos para Nochebuena y Nochevieja", "itemListElement": [
-          {"@type": "Offer", "price": c["precio"].replace(" €", "").replace(",", "."), "priceCurrency": "EUR",
-           "itemOffered": {"@type": "Product", "name": f"{c['titulo']} · {c['sub']}", "description": ", ".join(c["items"])}} for c in COMBOS]}}
+          {"@type": "Product", "name": f"{c['titulo']} · {c['sub']}", "description": ", ".join(c["items"]),
+           "offers": {"@type": "Offer", "price": c["precio"].replace(" €", "").replace(",", "."), "priceCurrency": "EUR",
+                      "priceValidUntil": "2026-12-31", "seller": {"@id": "https://lorenrestobar.com/#restaurante"}}} for c in COMBOS]}}
 
 CSS = r"""
 /* ====== Navidad (sólo esta página) ====== */
