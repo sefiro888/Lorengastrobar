@@ -94,6 +94,12 @@ def reescribir_enlaces(sopa, lang):
         h = a["href"]
         if pagina_re.match(h):
             a["href"] = lang + "/" + h
+    # Los vídeos con ruta relativa (video/xxx.mp4) los buscaba Google en /ca/video/ y /en/video/ (404): se dejan absolutos
+    for t in sopa.find_all(["video", "source"]):
+        for atr in ("src", "poster"):
+            v = t.get(atr)
+            if v and not re.match(r"^(https?:)?//|^/|^data:", v):
+                t[atr] = "https://lorenrestobar.com/" + v
 
 
 def construir():
