@@ -10,6 +10,16 @@ RAIZ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(RAIZ / "herramientas"))
 from navidad_datos import COMBOS, WHATSAPP, WA_LINK
 
+# publicaciones del carrusel (versión 1) para verlas en grande en la web
+from PIL import Image
+PUB_SRC = RAIZ / "para-loren" / "navidad" / "1-instagram-carrusel"
+PUB_DST = RAIZ / "img" / "navidad" / "publicaciones"
+PUBS = [("01-portada", "Bocaditos para Nochebuena y Nochevieja")] + [(f"0{i + 2}-{c['id']}", f"{c['titulo']} · {c['sub']} · {c['precio']}") for i, c in enumerate(COMBOS)] + [("06-como-encargar", "¿Cómo lo encargo?")]
+PUB_DST.mkdir(parents=True, exist_ok=True)
+for nombre, _ in PUBS:
+    if (PUB_SRC / f"{nombre}.jpg").exists():
+        Image.open(PUB_SRC / f"{nombre}.jpg").convert("RGB").save(PUB_DST / f"{nombre}.webp", "WEBP", quality=84, method=6)
+
 V = re.search(r"\?v=(\d+)", (RAIZ / "index.html").read_text(encoding="utf-8")).group(1)
 URL = "https://lorenrestobar.com/navidad"
 wa = lambda texto: WA_LINK + "?text=" + urllib.parse.quote(texto)
@@ -31,7 +41,7 @@ DESC = ("Combos de bocaditos paraguayos para Nochebuena (24) y Nochevieja (31) e
 def tarjeta(c, i):
     items = "".join(f"<li>{x}</li>" for x in c["items"])
     return f"""      <article class="nv-combo rv" data-delay="{i % 2 + 1}">
-        <div class="nv-combo__foto"><img src="img/navidad/{c['foto']}.webp" alt="{c['titulo']} de Navidad: {', '.join(c['items'][:3]).lower()}" loading="lazy">
+        <div class="nv-combo__foto" data-nv-ver="{i + 1}" role="button" tabindex="0" aria-label="Ver la publicación del {c['titulo']} en grande"><span class="nv-lupa">🔍 Ver en grande</span><img src="img/navidad/{c['foto']}.webp" alt="{c['titulo']} de Navidad: {', '.join(c['items'][:3]).lower()}" loading="lazy">
           <span class="nv-combo__cant">{c['cantidad']}</span><span class="nv-combo__precio">{c['precio']}</span></div>
         <div class="nv-combo__cuerpo">
           <h3>{c['titulo']} <em>{c['sub']}</em></h3>
@@ -185,6 +195,49 @@ CSS = r"""
   .nv-trad { grid-template-columns:1fr; }
   .nv-guir { height:110px; }
 }
+/* ---------- visor de publicaciones ---------- */
+.nv-combo__foto { cursor:zoom-in; }
+.nv-lupa { position:absolute; left:50%; top:50%; z-index:2; transform:translate(-50%,-50%) scale(.9); opacity:0; background:rgba(21,16,18,.82); color:#fff; font-weight:800; font-size:.85rem;
+  padding:.6em 1.1em; border-radius:999px; transition:.35s var(--ease); pointer-events:none; white-space:nowrap; }
+.nv-combo__foto:hover .nv-lupa, .nv-combo__foto:focus-visible .nv-lupa { opacity:1; transform:translate(-50%,-50%) scale(1); }
+@media (hover:none) { .nv-lupa { opacity:.92; transform:translate(-50%,-50%) scale(1); top:auto; bottom:12px; left:12px; transform:none; font-size:.75rem; } .nv-combo__precio { bottom:auto; top:12px; right:12px; } .nv-combo__cant { display:none; } }
+.lightbox img { max-height:84vh; }
+.nv-ver-todo { display:flex; justify-content:center; margin-top:26px; }
+/* ---------- intro: el regalo que se abre ---------- */
+#nv-intro { position:fixed; inset:0; z-index:20000; display:grid; place-items:center; overflow:hidden; color:var(--crema);
+  background:radial-gradient(700px 520px at 50% 45%, #5b0a26, transparent 70%), #0e0a0b; transition:opacity .7s ease, visibility .7s; }
+#nv-intro.fuera { opacity:0; visibility:hidden; }
+#nv-intro .escena { position:relative; width:260px; height:260px; }
+#nv-intro .caja { position:absolute; left:30px; right:30px; bottom:0; height:170px; border-radius:10px;
+  background:linear-gradient(90deg, #3d0014, #7d0b2e 30%, #9c1840 50%, #7d0b2e 70%, #3d0014); box-shadow:0 30px 60px -20px rgba(0,0,0,.8); animation:nv-cae .7s cubic-bezier(.2,1.4,.4,1) both; }
+#nv-intro .tapa { position:absolute; left:16px; right:16px; bottom:160px; height:46px; border-radius:8px; z-index:2;
+  background:linear-gradient(90deg, #4a0019, #8a1038 30%, #ad2050 50%, #8a1038 70%, #4a0019); box-shadow:0 10px 20px -8px rgba(0,0,0,.7);
+  animation:nv-cae .7s cubic-bezier(.2,1.4,.4,1) both, nv-tapa .9s 1.5s cubic-bezier(.5,0,.3,1) forwards; }
+#nv-intro .cinta-v { position:absolute; left:50%; width:30px; margin-left:-15px; background:linear-gradient(90deg, #a9761c, #f4d27a 45%, #fff1c2 50%, #f4d27a 55%, #a9761c); }
+#nv-intro .caja .cinta-v { top:0; bottom:0; }
+#nv-intro .tapa .cinta-v { top:0; bottom:0; }
+#nv-intro .lazo { position:absolute; left:50%; bottom:192px; width:150px; margin-left:-75px; z-index:3; filter:drop-shadow(0 8px 12px rgba(0,0,0,.5));
+  animation:nv-cae .7s cubic-bezier(.2,1.4,.4,1) both, nv-desata .6s 1.0s ease-in forwards; transform-origin:50% 70%; }
+#nv-intro .luz { position:absolute; left:50%; bottom:150px; width:30px; height:30px; margin-left:-15px; border-radius:50%; opacity:0; z-index:1;
+  background:radial-gradient(circle, #fff8dc 0, #f4d27a 30%, rgba(244,210,122,0) 70%); animation:nv-luz 1.2s 1.7s ease-out forwards; }
+#nv-intro .copo { position:absolute; left:50%; bottom:170px; width:34px; margin-left:-17px; opacity:0; z-index:4; animation:nv-sale 1.6s ease-out forwards; }
+#nv-intro .txt { position:absolute; left:0; right:0; top:calc(50% + 160px); text-align:center; padding:0 20px; }
+#nv-intro .txt b { display:block; font-family:var(--f-titular); font-weight:400; text-transform:uppercase; font-size:clamp(2.2rem, 7vw, 4.4rem); line-height:1; opacity:0; animation:nv-sube .8s 2.0s var(--ease) forwards; }
+#nv-intro .txt em { display:block; font-family:var(--f-script); font-style:normal; color:var(--oro2); font-size:clamp(1.6rem, 4.6vw, 2.8rem); margin-top:6px; opacity:0; animation:nv-sube .8s 2.3s var(--ease) forwards; }
+#nv-intro .txt small { display:block; margin-top:12px; font-weight:800; letter-spacing:.28em; text-transform:uppercase; color:rgba(243,238,220,.75); font-size:.8rem; opacity:0; animation:nv-sube .8s 2.6s var(--ease) forwards; }
+#nv-intro .logo { position:absolute; left:50%; top:clamp(40px, 9vh, 90px); width:150px; margin-left:-75px; opacity:0; animation:nv-sube .8s .3s var(--ease) forwards; filter:drop-shadow(0 6px 14px rgba(0,0,0,.6)); }
+#nv-intro .saltar { position:absolute; right:20px; bottom:22px; border:1px solid rgba(243,238,220,.35); background:rgba(243,238,220,.08); color:var(--crema); font:700 .85rem var(--f-body);
+  padding:.6em 1.2em; border-radius:999px; cursor:pointer; }
+@keyframes nv-cae { from { transform:translateY(-120vh) rotate(-8deg); } to { transform:none; } }
+@keyframes nv-desata { to { transform:translateY(-30px) scale(1.4) rotate(14deg); opacity:0; } }
+@keyframes nv-tapa { to { transform:translate(140px, -340px) rotate(38deg); opacity:0; } }
+@keyframes nv-luz { 0% { opacity:0; transform:scale(1); } 30% { opacity:1; } 100% { opacity:0; transform:scale(60); } }
+@keyframes nv-sale { 0% { opacity:0; transform:translate(0,0) rotate(0) scale(.4); } 15% { opacity:1; } 100% { opacity:0; transform:translate(var(--dx), var(--dy)) rotate(260deg) scale(1.1); } }
+@keyframes nv-sube { from { opacity:0; transform:translateY(24px); } to { opacity:1; transform:none; } }
+@media (prefers-reduced-motion: reduce) {
+  #nv-intro .caja, #nv-intro .tapa, #nv-intro .lazo, #nv-intro .luz, #nv-intro .copo { animation:none !important; }
+  #nv-intro .txt b, #nv-intro .txt em, #nv-intro .txt small { animation:none !important; opacity:1; }
+}
 @media (prefers-reduced-motion: reduce) {
   .nv-bombilla, .nv-adorno, .nv-h1 .brilla, .nv-trad .ic, .nv-cuenta::before { animation:none !important; }
 }
@@ -194,6 +247,38 @@ JS = r"""
 (function () {
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const $ = (s) => document.querySelector(s);
+
+  /* ---------- Intro: el regalo que se abre (una vez por visita) ---------- */
+  const intro = $("#nv-intro");
+  if (intro) {
+    let visto = false; try { visto = sessionStorage.getItem("nv-intro") === "1"; } catch (e) {}
+    const quitar = () => { intro.classList.add("fuera"); document.documentElement.style.overflow = ""; setTimeout(() => intro.remove(), 800); };
+    if (visto) intro.remove();
+    else {
+      try { sessionStorage.setItem("nv-intro", "1"); } catch (e) {}
+      document.documentElement.style.overflow = "hidden";
+      intro.addEventListener("click", quitar);
+      setTimeout(quitar, reduce ? 1400 : 4300);
+    }
+  }
+
+  /* ---------- Ver las publicaciones en grande ---------- */
+  const gal = [...document.querySelectorAll("#nv-galeria [data-lb]")];
+  document.addEventListener("click", (e) => {
+    const b = e.target.closest("[data-nv-ver]"); if (!b || !gal.length) return;
+    e.preventDefault(); gal[Math.min(+b.dataset.nvVer, gal.length - 1)].click();
+  });
+  document.addEventListener("keydown", (e) => {
+    const b = e.target.closest && e.target.closest("[data-nv-ver]");
+    if (b && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); b.click(); }
+  });
+  const lbx = $(".lightbox");   // deslizar con el dedo en el visor
+  let x0 = null;
+  document.addEventListener("touchstart", (e) => { if (lbx && lbx.classList.contains("is-open")) x0 = e.touches[0].clientX; }, { passive: true });
+  document.addEventListener("touchend", (e) => {
+    if (x0 === null || !lbx) return; const dx = e.changedTouches[0].clientX - x0; x0 = null;
+    if (Math.abs(dx) > 50) lbx.querySelector(dx < 0 ? ".lb-next" : ".lb-prev").click();
+  }, { passive: true });
 
   /* ---------- Cuentas atrás (hora de España) ---------- */
   const F = (s) => new Date(s + "+01:00");
@@ -335,6 +420,7 @@ html = f"""<!doctype html>
   <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 </head>
 <body data-page="navidad" class="nv">
+<div id="nv-intro" aria-hidden="true"><div class="escena"><div class="caja"><span class="cinta-v"></span></div><div class="tapa"><span class="cinta-v"></span></div><svg class="lazo" viewBox="0 0 200 160"><defs><linearGradient id="lzo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff1c2"/><stop offset=".45" stop-color="#f4d27a"/><stop offset="1" stop-color="#a9761c"/></linearGradient></defs><path d="M93 72 L58 150 L71 141 L79 156 L104 80Z" fill="url(#lzo)"/><path d="M107 72 L142 150 L129 141 L121 156 L96 80Z" fill="url(#lzo)"/><path d="M100 70 C 62 18, 4 22, 16 64 C 26 96, 72 92, 100 76Z" fill="url(#lzo)"/><path d="M100 70 C 138 18, 196 22, 184 64 C 174 96, 128 92, 100 76Z" fill="url(#lzo)"/><path d="M96 70 C 72 46, 42 46, 40 62 C 44 76, 76 78, 96 73Z" fill="#7a4e0c" opacity=".45"/><path d="M104 70 C 128 46, 158 46, 160 62 C 156 76, 124 78, 104 73Z" fill="#7a4e0c" opacity=".45"/><rect x="85" y="56" width="30" height="30" rx="10" fill="url(#lzo)"/></svg><span class="luz"></span><img class="copo" src="img/kv/flor-kv.webp" alt="" style="--dx:-260px;--dy:-220px;animation-delay:1.75s"><img class="copo" src="img/kv/flor-kv.webp" alt="" style="--dx:240px;--dy:-260px;animation-delay:1.78s"><img class="copo" src="img/kv/flor-kv.webp" alt="" style="--dx:-180px;--dy:-380px;animation-delay:1.81s"><img class="copo" src="img/kv/flor-kv.webp" alt="" style="--dx:190px;--dy:-400px;animation-delay:1.84s"><img class="copo" src="img/kv/flor-kv.webp" alt="" style="--dx:-330px;--dy:-60px;animation-delay:1.87s"><img class="copo" src="img/kv/flor-kv.webp" alt="" style="--dx:330px;--dy:-90px;animation-delay:1.90s"><img class="copo" src="img/kv/flor-kv.webp" alt="" style="--dx:0px;--dy:-440px;animation-delay:1.93s"><img class="copo" src="img/kv/flor-kv.webp" alt="" style="--dx:-120px;--dy:-300px;animation-delay:1.96s"><img class="copo" src="img/kv/flor-kv.webp" alt="" style="--dx:120px;--dy:-320px;animation-delay:1.99s"><img class="copo" src="img/kv/flor-kv.webp" alt="" style="--dx:-280px;--dy:-330px;animation-delay:2.02s"><img class="copo" src="img/kv/flor-kv.webp" alt="" style="--dx:280px;--dy:-350px;animation-delay:2.05s"><img class="copo" src="img/kv/flor-kv.webp" alt="" style="--dx:0px;--dy:-250px;animation-delay:2.08s"></div><div class="txt"><b>Navidad</b><em>a la paraguaya</em><small>Nochebuena · Nochevieja</small></div><img class="logo" src="img/marca/logo-loren.webp" alt=""><button class="saltar" type="button">Saltar ›</button></div>
 <!-- Generado por herramientas/navidad_web.py: los cambios se hacen en herramientas/navidad_datos.py y en ese script -->
 <div id="shell-top"></div>
 <main>
@@ -352,7 +438,7 @@ html = f"""<!doctype html>
 {cuenta("24", "Nochebuena", "Jueves 24 de diciembre", "nv-cuenta--24", f'<a class="nv-btn nv-btn--24" href="{wa(msg(None, "24"))}" target="_blank" rel="noopener">🎄 Encargar para el 24</a>')}
 {cuenta("31", "Nochevieja", "Jueves 31 de diciembre", "nv-cuenta--31", f'<a class="nv-btn nv-btn--31" href="{wa(msg(None, "31"))}" target="_blank" rel="noopener">🥂 Encargar para el 31</a>')}
     </div>
-    <div class="nv-ctas"><a href="#combos" class="btn">Ver los combos</a></div>
+    <div class="nv-ctas"><a href="#combos" class="btn" data-nv-ver="0">Ver los combos</a></div>
   </div>
 </section>
 
@@ -379,6 +465,8 @@ html = f"""<!doctype html>
     <div class="nv-combos">
 {chr(10).join(tarjeta(c, i) for i, c in enumerate(COMBOS))}
     </div>
+    <div class="nv-ver-todo"><a href="#" class="nv-btn nv-btn--24" data-nv-ver="0">🔍 Ver todas las publicaciones en grande</a></div>
+    <div id="nv-galeria" data-lb-grupo hidden>{"".join(f'<a href="#" data-lb="img/navidad/publicaciones/{n}.webp" data-cap="{cap}"></a>' for n, cap in PUBS)}</div>
     <p class="nv-nota">⏰ Encarga con antelación · Recogida en el local, Carrer de la Muntanya 115 · WhatsApp {WHATSAPP}</p>
   </div>
 </section>
