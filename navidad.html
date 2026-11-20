@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Bocaditos de Navidad y Fin de Año · Loren Restobar</title>
-  <meta name="description" content="Combos de bocaditos paraguayos para Nochebuena y Fin de Año en Barcelona: 50 unidades desde 65 €, tablas de embutidos y quesos para 8–10 personas. Encarga por WhatsApp y recoge en Carrer de la Muntanya 115.">
+  <title>Bocaditos para Nochebuena y Nochevieja · Loren Restobar</title>
+  <meta name="description" content="Combos de bocaditos paraguayos para Nochebuena (24) y Nochevieja (31) en Barcelona: 50 unidades desde 65 €, tablas de embutidos y quesos para 8–10 personas. Encarga por WhatsApp y recoge en Carrer de la Muntanya 115.">
   <link rel="canonical" href="https://lorenrestobar.com/navidad">
-  <meta property="og:title" content="Bocaditos de Navidad a la paraguaya · Loren Restobar">
-  <meta property="og:description" content="Nochebuena 24 y Fin de Año 31: combos caseros de bocaditos y tablas para compartir. Encarga por WhatsApp.">
+  <meta property="og:title" content="Bocaditos para Nochebuena y Nochevieja · Loren Restobar">
+  <meta property="og:description" content="Nochebuena 24 y Nochevieja 31: combos caseros de bocaditos paraguayos y tablas para compartir. Encarga por WhatsApp.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://lorenrestobar.com/navidad">
   <meta property="og:image" content="https://lorenrestobar.com/img/redes/og-navidad-es.jpg">
@@ -16,7 +16,7 @@
   <meta property="og:locale" content="es_ES">
   <meta property="og:site_name" content="Loren Restobar">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="theme-color" content="#59011d">
+  <meta name="theme-color" content="#151012">
   <link rel="icon" href="img/marca/favicon.webp" type="image/webp">
   <link rel="stylesheet" href="css/styles.css?v=61">
   <link rel="stylesheet" href="css/paginas.css?v=61">
@@ -24,96 +24,284 @@
   <link rel="preload" href="fuentes/anton-latin-a6f395.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/fuentes.css?v=61">
   <link rel="stylesheet" href="css/v2.css?v=61">
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "url": "https://lorenrestobar.com/navidad", "name": "Bocaditos de Navidad y Fin de Año · Loren Restobar", "description": "Combos de bocaditos paraguayos para Nochebuena y Fin de Año en Barcelona: 50 unidades desde 65 €, tablas de embutidos y quesos para 8–10 personas. Encarga por WhatsApp y recoge en Carrer de la Muntanya 115.", "inLanguage": "es", "about": {"@id": "https://lorenrestobar.com/#restaurante"}, "mainEntity": {"@type": "OfferCatalog", "name": "Bocaditos de Navidad y Fin de Año", "itemListElement": [{"@type": "Offer", "price": "70.00", "priceCurrency": "EUR", "itemOffered": {"@type": "Product", "name": "Combo 1 · bocaditos de Fin de Año", "description": "Sándwichitos de peceto al vitel toné, Sándwichitos de lengua a la vinagreta, Sándwichitos de milanesitas de ternera, Matambrito relleno, Sopa paraguaya"}}, {"@type": "Offer", "price": "65.00", "priceCurrency": "EUR", "itemOffered": {"@type": "Product", "name": "Combo 2 · bocaditos de Fin de Año", "description": "Empanaditas de ternera, Croquetitas de ternera, Chipa guazú, Milanesitas, Sándwichitos de pollo desmechado"}}, {"@type": "Offer", "price": "44.90", "priceCurrency": "EUR", "itemOffered": {"@type": "Product", "name": "Embutidos · tabla surtida", "description": "Salchichón ibérico, Fuet, Jamón ibérico, Lomo ibérico, Chorizo ibérico, Longaniza, Frutos secos"}}, {"@type": "Offer", "price": "42.90", "priceCurrency": "EUR", "itemOffered": {"@type": "Product", "name": "Quesos · tabla surtida", "description": "Queso manchego, Queso brie, Queso de cabra, Queso gouda curado, Frutos secos, uvas, fresas y picos de pan"}}]}}</script>
+  <style>
+/* ====== Navidad (sólo esta página) ====== */
+.nv { --oro:#e8b43a; --oro2:#f4d27a; --vino:#59011d; --carb:#151012; }
+.nv-hero { position:relative; overflow:hidden; isolation:isolate; color:var(--crema); text-align:center;
+  padding:calc(var(--nav-h) + clamp(70px, 9vw, 120px)) 0 clamp(70px, 8vw, 110px);
+  background:radial-gradient(900px 520px at 50% 20%, #5b0a26 0%, transparent 65%), radial-gradient(700px 500px at 0% 100%, #3d0014, transparent 60%),
+    radial-gradient(700px 500px at 100% 100%, #2a000e, transparent 60%), var(--carb); }
+.nv-hero::after { content:""; position:absolute; inset:0; z-index:-1; background:url("img/kv/textura-oscura.webp") center/cover; opacity:.35; mix-blend-mode:screen; }
+#nv-nieve { position:absolute; inset:0; width:100%; height:100%; z-index:0; pointer-events:none; }
+.nv-guir { position:absolute; left:0; right:0; top:var(--nav-h); height:150px; z-index:2; pointer-events:none; }
+.nv-guir svg { position:absolute; inset:0; width:100%; height:100%; overflow:visible; }
+.nv-bombilla { position:absolute; width:12px; height:15px; margin:-2px 0 0 -6px; border-radius:50%; animation:nv-titila 2.4s ease-in-out infinite; }
+@keyframes nv-titila { 0%,100% { opacity:1; } 50% { opacity:.35; } }
+.nv-adorno { position:absolute; display:flex; flex-direction:column; align-items:center; transform-origin:50% 0; animation:nv-mece 4s ease-in-out infinite; }
+.nv-adorno i { width:2px; flex:1; background:linear-gradient(rgba(244,210,122,.3), var(--oro2)); }
+.nv-adorno b { width:22%; height:9px; border-radius:3px 3px 1px 1px; background:linear-gradient(90deg,#8a5a10,#f4d27a 45%,#8a5a10); margin-bottom:-2px; position:relative; z-index:1; }
+.nv-adorno span { border-radius:50%; position:relative; overflow:hidden; background:radial-gradient(circle at 34% 30%, #fff7dc 0, #f4d27a 22%, #c98e1e 62%, #6e4308 100%); box-shadow:0 0 30px rgba(244,210,122,.55), 0 10px 20px rgba(0,0,0,.5); }
+.nv-adorno span.vino { background:radial-gradient(circle at 34% 30%, #ffd0d8 0, #b0405f 20%, #59011d 60%, #1c0009 100%); box-shadow:0 0 26px rgba(176,64,95,.55), 0 10px 20px rgba(0,0,0,.5); }
+.nv-adorno span img { position:absolute; inset:9%; width:82%; height:82%; opacity:.6; mix-blend-mode:multiply; }
+.nv-adorno span.vino img { mix-blend-mode:screen; filter:sepia(1) saturate(2.5) brightness(1.1); opacity:.55; }
+.nv-adorno span::after { content:""; position:absolute; left:18%; top:12%; width:30%; height:20%; border-radius:50%; background:rgba(255,255,255,.55); filter:blur(3px); }
+@keyframes nv-mece { 0%,100% { transform:rotate(-5deg); } 50% { transform:rotate(5deg); } }
+.nv-hero .wrap { position:relative; z-index:3; }
+.nv-miga { display:inline-block; margin-bottom:18px; }
+.nv-eyebrow { display:inline-flex; gap:14px; align-items:center; font-weight:800; letter-spacing:.28em; text-transform:uppercase; color:var(--oro2); font-size:clamp(.72rem, 1.4vw, .95rem); }
+.nv-eyebrow::before, .nv-eyebrow::after { content:"✦"; color:var(--oro); text-shadow:0 0 12px rgba(244,210,122,.9); }
+.nv-h1 { font-family:var(--f-titular); font-weight:400; text-transform:uppercase; line-height:.95; margin:18px 0 0; font-size:clamp(2.9rem, 8.4vw, 6.6rem); text-shadow:0 10px 40px rgba(0,0,0,.6); }
+.nv-h1 .y { display:block; font-family:var(--f-script); text-transform:none; color:var(--oro2); font-size:.6em; line-height:1.15; transform:rotate(-3deg); margin:12px 0 18px; text-shadow:0 4px 24px rgba(0,0,0,.8); }
+.nv-h1 .brilla { background:linear-gradient(100deg, #f3eedc 30%, #fff8dc 45%, #f4d27a 50%, #fff8dc 55%, #f3eedc 70%); background-size:250% 100%; -webkit-background-clip:text; background-clip:text; color:transparent; animation:nv-brillo 5s linear infinite; }
+@keyframes nv-brillo { from { background-position:150% 0; } to { background-position:-100% 0; } }
+.nv-cinta { display:inline-block; margin-top:14px; font-family:var(--f-script); color:#2a000e; font-size:clamp(1.2rem, 2.6vw, 1.7rem); padding:.15em 1.2em .25em;
+  background:linear-gradient(90deg,#c98e1e,#f4d27a 30%,#fff1c2 50%,#f4d27a 70%,#c98e1e); transform:rotate(-2deg); box-shadow:0 10px 24px -8px rgba(0,0,0,.7), 0 0 26px rgba(244,210,122,.35); position:relative; }
+.nv-cinta::before, .nv-cinta::after { content:""; position:absolute; top:22%; width:.9em; height:76%; background:#a9761c; z-index:-1; }
+.nv-cinta::before { left:-.55em; clip-path:polygon(0 0,100% 0,100% 100%,0 100%,40% 50%); }
+.nv-cinta::after { right:-.55em; clip-path:polygon(0 0,100% 0,60% 50%,100% 100%,0 100%); }
+.nv-intro { max-width:640px; margin:22px auto 0; color:rgba(243,238,220,.85); font-size:clamp(1rem, 1.6vw, 1.12rem); line-height:1.65; }
+/* cuentas atrás */
+.nv-cuentas { display:grid; grid-template-columns:1fr 1fr; gap:clamp(16px, 2.4vw, 30px); max-width:980px; margin:clamp(34px, 4vw, 50px) auto 0; }
+.nv-cuenta { position:relative; padding:clamp(20px, 2.6vw, 30px) clamp(16px, 2vw, 26px) clamp(22px, 2.6vw, 28px); border-radius:26px; overflow:hidden;
+  background:linear-gradient(160deg, rgba(243,238,220,.09), rgba(243,238,220,.03)); border:1.5px solid rgba(232,180,58,.55); backdrop-filter:blur(6px);
+  box-shadow:0 30px 60px -30px rgba(0,0,0,.8), inset 0 0 40px rgba(232,180,58,.07); }
+.nv-cuenta::before { content:""; position:absolute; right:-40px; top:-40px; width:170px; height:170px; background:url("img/kv/flor-kv.webp") center/contain no-repeat; opacity:.14; animation:girar 40s linear infinite; }
+.nv-cuenta--31 { border-color:rgba(176,64,95,.75); background:linear-gradient(160deg, rgba(176,64,95,.18), rgba(243,238,220,.03)); }
+.nv-cuenta h2 { margin:0; font-family:var(--f-script); font-weight:400; color:var(--oro2); font-size:clamp(1.9rem, 3.6vw, 2.7rem); line-height:1; }
+.nv-cuenta .fecha { display:block; margin-top:6px; font-weight:800; letter-spacing:.2em; text-transform:uppercase; font-size:.75rem; color:rgba(243,238,220,.75); }
+.nv-cuenta .falta { margin-top:14px; font-size:.82rem; letter-spacing:.12em; text-transform:uppercase; font-weight:700; color:rgba(243,238,220,.7); }
+.nv-digitos { display:flex; justify-content:center; gap:clamp(6px, 1.2vw, 12px); margin-top:10px; }
+.nv-digitos div { min-width:clamp(58px, 7.6vw, 86px); padding:10px 4px 8px; border-radius:14px; background:rgba(0,0,0,.35); border:1px solid rgba(243,238,220,.12); }
+.nv-digitos b { display:block; font-family:var(--f-titular); font-weight:400; font-size:clamp(1.9rem, 4.4vw, 3.1rem); line-height:1; color:#fff; text-shadow:0 0 20px rgba(244,210,122,.45); }
+.nv-digitos b.tic { animation:nv-tic .45s var(--ease); }
+@keyframes nv-tic { from { transform:translateY(-8px); opacity:.2; } to { transform:none; opacity:1; } }
+.nv-digitos small { display:block; margin-top:4px; font-size:.68rem; letter-spacing:.14em; text-transform:uppercase; color:rgba(243,238,220,.65); font-weight:700; }
+.nv-hoy { margin-top:16px; font-family:var(--f-script); font-size:clamp(1.8rem, 3.4vw, 2.6rem); color:#fff; text-shadow:0 0 26px rgba(244,210,122,.8); }
+.nv-cuenta .nv-btn { margin-top:18px; }
+.nv-btn { display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:.85em 1.4em; border-radius:999px; font-weight:800; font-size:.92rem; text-decoration:none; transition:transform .3s var(--ease), box-shadow .3s; }
+.nv-btn:hover { transform:translateY(-3px); }
+.nv-btn--24 { background:var(--oro); color:#2a000e; box-shadow:0 12px 26px -10px rgba(232,180,58,.8); }
+.nv-btn--31 { background:linear-gradient(135deg,#b0405f,#59011d); color:#fff; box-shadow:0 12px 26px -10px rgba(176,64,95,.9), inset 0 0 0 2px rgba(244,210,122,.6); }
+.nv-ctas { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin-top:30px; }
+/* dos noches */
+.nv-sec { position:relative; overflow:hidden; padding:clamp(70px, 9vw, 120px) 0; }
+.nv-sec--oscura { background:radial-gradient(800px 500px at 50% 0%, #3d0014, transparent 65%), var(--carb); color:var(--crema); }
+.nv-sec--crema { background:radial-gradient(rgba(89,1,29,.035) 1px, transparent 1.4px) 0 0/7px 7px, radial-gradient(120% 80% at 50% 40%, #fbf6ea, #efe2c6); color:#2a1a1e; }
+.nv-cab { text-align:center; max-width:760px; margin:0 auto clamp(34px, 4vw, 54px); }
+.nv-cab h2 { margin:10px 0 0; font-family:var(--f-titular); font-weight:400; text-transform:uppercase; font-size:clamp(2.2rem, 5vw, 3.8rem); line-height:1; }
+.nv-cab h2 em { font-family:var(--f-script); text-transform:none; font-style:normal; color:var(--oro); display:inline-block; transform:rotate(-3deg); }
+.nv-sec--crema .nv-cab h2 { color:var(--vino); }
+.nv-sec--crema .nv-cab h2 em { color:#c98e1e; }
+.nv-cab p { margin:16px auto 0; opacity:.85; line-height:1.65; }
+.nv-noches { display:grid; grid-template-columns:1fr 1fr; gap:clamp(16px, 2.4vw, 30px); }
+.nv-noche { position:relative; min-height:440px; border-radius:30px; overflow:hidden; display:flex; flex-direction:column; justify-content:flex-end; padding:clamp(24px, 3vw, 38px); color:#fff;
+  box-shadow:0 40px 70px -35px rgba(0,0,0,.9); isolation:isolate; }
+.nv-noche > img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:-2; transition:transform 1.4s var(--ease); }
+.nv-noche:hover > img { transform:scale(1.06); }
+.nv-noche::before { content:""; position:absolute; inset:0; z-index:-1; background:linear-gradient(180deg, rgba(21,16,18,.05) 20%, rgba(21,16,18,.92) 82%); }
+.nv-noche--31::before { background:linear-gradient(180deg, rgba(42,0,14,.1) 20%, rgba(42,0,14,.95) 82%); }
+.nv-noche .chip { position:absolute; top:22px; left:22px; background:var(--oro); color:#2a000e; font-weight:800; padding:.5em 1em; border-radius:999px; font-size:.85rem; letter-spacing:.06em; }
+.nv-noche--31 .chip { background:#b0405f; color:#fff; }
+.nv-noche h3 { margin:0; font-family:var(--f-script); font-weight:400; font-size:clamp(2.4rem, 4.6vw, 3.4rem); color:var(--oro2); line-height:1; }
+.nv-noche p { margin:12px 0 18px; color:rgba(255,255,255,.88); line-height:1.6; max-width:420px; }
+.nv-noche .nv-btn { align-self:flex-start; }
+/* combos */
+.nv-combos { display:grid; grid-template-columns:repeat(4, 1fr); gap:clamp(16px, 2vw, 26px); }
+.nv-combo { background:#fffdf8; border-radius:28px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 30px 60px -32px rgba(60,10,20,.55); border:1.5px solid rgba(201,142,30,.35);
+  transition:transform .5s var(--ease), box-shadow .5s; }
+.nv-combo:hover { transform:translateY(-6px) rotate(-.4deg); box-shadow:0 40px 70px -30px rgba(60,10,20,.6); }
+.nv-combo__foto { position:relative; aspect-ratio:4/3; }
+.nv-combo__foto img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:50% 58%; transition:transform 1.2s var(--ease); }
+.nv-combo:hover .nv-combo__foto img { transform:scale(1.08); }
+.nv-combo__cant { position:absolute; left:14px; top:14px; background:rgba(21,16,18,.82); color:var(--oro2); font-weight:800; font-size:.74rem; padding:.45em .9em; border-radius:999px; letter-spacing:.06em; text-transform:uppercase; }
+.nv-combo__precio { position:absolute; right:12px; bottom:12px; font-family:var(--f-titular); font-size:2rem; color:#fff; background:linear-gradient(135deg,#7d0b2e,#59011d); padding:.15em .55em; border-radius:12px 26px 12px 26px; box-shadow:0 10px 24px -6px rgba(0,0,0,.6), inset 0 0 0 2px var(--oro); }
+.nv-combo__cuerpo { padding:clamp(20px, 2.2vw, 28px); display:flex; flex-direction:column; flex:1; }
+.nv-combo h3 { margin:0; font-family:var(--f-titular); font-weight:400; text-transform:uppercase; font-size:1.9rem; color:var(--vino); line-height:1; }
+.nv-combo h3 em { display:block; font-family:var(--f-script); text-transform:none; font-style:normal; color:#c98e1e; font-size:1.1rem; margin-top:4px; }
+.nv-combo ul { list-style:none; padding:0; margin:14px 0 18px; flex:1; color:#4a3a3e; font-size:.93rem; line-height:1.5; }
+.nv-combo li { position:relative; padding-left:1.3em; }
+.nv-combo li::before { content:"✦"; position:absolute; left:0; color:#e8b43a; }
+.nv-combo__btns { display:flex; gap:10px; flex-wrap:wrap; }
+.nv-combo__btns .nv-btn { flex:1 1 auto; padding:.75em .9em; font-size:.84rem; white-space:nowrap; }
+.nv-nota { text-align:center; margin-top:28px; color:#6a5458; font-size:.9rem; }
+/* tradiciones */
+.nv-trad { display:grid; grid-template-columns:repeat(4, 1fr); gap:18px; }
+.nv-trad div { text-align:center; padding:28px 20px; border-radius:24px; background:rgba(243,238,220,.05); border:1px solid rgba(243,238,220,.12); transition:transform .4s var(--ease), background .4s; }
+.nv-trad div:hover { transform:translateY(-6px); background:rgba(243,238,220,.09); }
+.nv-trad .ic { font-size:2.4rem; display:block; margin-bottom:10px; animation:nv-flota 4s ease-in-out infinite; }
+.nv-trad div:nth-child(2) .ic { animation-delay:-1s; } .nv-trad div:nth-child(3) .ic { animation-delay:-2s; } .nv-trad div:nth-child(4) .ic { animation-delay:-3s; }
+@keyframes nv-flota { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-8px); } }
+.nv-trad h3 { margin:0; font-family:var(--f-script); font-weight:400; color:var(--oro2); font-size:1.6rem; }
+.nv-trad p { margin:8px 0 0; color:rgba(243,238,220,.75); font-size:.92rem; line-height:1.55; }
+/* pasos */
+.nv-pasos { display:grid; grid-template-columns:repeat(3, 1fr); gap:20px; counter-reset:p; }
+.nv-pasos div { position:relative; padding:30px 24px 26px; border-radius:24px; background:#fffdf8; border:1.5px solid rgba(201,142,30,.3); box-shadow:0 20px 40px -28px rgba(60,10,20,.5); }
+.nv-pasos div::before { counter-increment:p; content:counter(p); position:absolute; top:-22px; left:24px; width:46px; height:46px; border-radius:50%; display:grid; place-items:center;
+  background:var(--vino); color:#fff6e0; font-family:var(--f-script); font-size:1.5rem; box-shadow:inset 0 0 0 3px var(--oro); }
+.nv-pasos h3 { margin:6px 0 6px; font-family:var(--f-script); font-weight:400; color:var(--vino); font-size:1.6rem; }
+.nv-pasos p { margin:0; color:#5a474b; font-size:.94rem; line-height:1.55; }
+/* final con fuegos */
+.nv-final { position:relative; overflow:hidden; isolation:isolate; text-align:center; color:var(--crema); padding:clamp(90px, 12vw, 160px) 0;
+  background:radial-gradient(800px 500px at 50% 100%, #59011d, transparent 70%), #0e0a0b; }
+#nv-fuegos { position:absolute; inset:0; width:100%; height:100%; z-index:-1; }
+.nv-final h2 { margin:0; font-family:var(--f-titular); font-weight:400; text-transform:uppercase; font-size:clamp(2.4rem, 6vw, 4.6rem); line-height:1; }
+.nv-final h2 em { display:block; font-family:var(--f-script); text-transform:none; font-style:normal; color:var(--oro2); font-size:.7em; margin-top:8px; }
+.nv-final p { margin:18px auto 0; max-width:560px; color:rgba(243,238,220,.82); }
+@media (max-width: 1100px) { .nv-combos { grid-template-columns:repeat(2, 1fr); } }
+@media (max-width: 900px) {
+  .nv-cuentas, .nv-noches { grid-template-columns:1fr; }
+  .nv-trad { grid-template-columns:1fr 1fr; }
+  .nv-pasos { grid-template-columns:1fr; gap:34px; }
+}
+@media (max-width: 560px) {
+  .nv-combos { grid-template-columns:1fr; }
+  .nv-eyebrow { letter-spacing:.14em; gap:8px; }
+  .nv-trad { grid-template-columns:1fr; }
+  .nv-guir { height:110px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .nv-bombilla, .nv-adorno, .nv-h1 .brilla, .nv-trad .ic, .nv-cuenta::before { animation:none !important; }
+}
+</style>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "url": "https://lorenrestobar.com/navidad", "name": "Bocaditos para Nochebuena y Nochevieja · Loren Restobar", "description": "Combos de bocaditos paraguayos para Nochebuena (24) y Nochevieja (31) en Barcelona: 50 unidades desde 65 €, tablas de embutidos y quesos para 8–10 personas. Encarga por WhatsApp y recoge en Carrer de la Muntanya 115.", "inLanguage": "es", "about": {"@id": "https://lorenrestobar.com/#restaurante"}, "mainEntity": {"@type": "OfferCatalog", "name": "Bocaditos para Nochebuena y Nochevieja", "itemListElement": [{"@type": "Offer", "price": "70.00", "priceCurrency": "EUR", "itemOffered": {"@type": "Product", "name": "Combo 1 · bocaditos de Fin de Año", "description": "Sándwichitos de peceto al vitel toné, Sándwichitos de lengua a la vinagreta, Sándwichitos de milanesitas de ternera, Matambrito relleno, Sopa paraguaya"}}, {"@type": "Offer", "price": "65.00", "priceCurrency": "EUR", "itemOffered": {"@type": "Product", "name": "Combo 2 · bocaditos de Fin de Año", "description": "Empanaditas de ternera, Croquetitas de ternera, Chipa guazú, Milanesitas, Sándwichitos de pollo desmechado"}}, {"@type": "Offer", "price": "44.90", "priceCurrency": "EUR", "itemOffered": {"@type": "Product", "name": "Embutidos · tabla surtida", "description": "Salchichón ibérico, Fuet, Jamón ibérico, Lomo ibérico, Chorizo ibérico, Longaniza, Frutos secos"}}, {"@type": "Offer", "price": "42.90", "priceCurrency": "EUR", "itemOffered": {"@type": "Product", "name": "Quesos · tabla surtida", "description": "Queso manchego, Queso brie, Queso de cabra, Queso gouda curado, Frutos secos, uvas, fresas y picos de pan"}}]}}</script>
 </head>
-<body data-page="navidad">
-<!-- Generado por herramientas/navidad_web.py: los cambios se hacen en herramientas/navidad_datos.py -->
+<body data-page="navidad" class="nv">
+<!-- Generado por herramientas/navidad_web.py: los cambios se hacen en herramientas/navidad_datos.py y en ese script -->
 <div id="shell-top"></div>
 <main>
 
-<section class="phero">
-  <canvas id="brasas" aria-hidden="true"></canvas><div class="hero__grano"></div>
-  <div class="phero__encaje" data-nanduti></div>
-  <div class="wrap phero__grid">
-    <div>
-      <nav class="miga" aria-label="Migas"><a href="index.html">Inicio</a> / <span>Navidad</span></nav>
-      <span class="eyebrow">Nochebuena 24 · Fin de Año 31 <span class="gn">vy'a</span></span>
-      <h1>Bocaditos de Navidad <em>a la paraguaya</em></h1>
-      <p class="phero__txt">Este año, la Nochebuena sabe a Paraguay. En Paraguay no hay fiesta sin bocaditos, y en las mesas de Navidad nunca faltan la chipa y la sopa paraguaya. Te preparamos bandejas caseras para el 24 y el 31 de diciembre, listas para recoger.</p>
-      <div class="hero__ctas"><a href="https://wa.me/34602076828?text=%C2%A1Hola%20Loren%21%20Quiero%20encargar%20bocaditos%20de%20Navidad.%0A%E2%80%A2%20Combo%3A%20%0A%E2%80%A2%20D%C3%ADa%3A%2024%20/%2031%20de%20diciembre%0A%E2%80%A2%20Nombre%3A%20" target="_blank" rel="noopener" class="btn">Encargar por WhatsApp</a><a href="#combos" class="btn btn--ghost">Ver los combos</a></div>
-      <div class="phero__datos">
-        <div><b>50</b><span>bocaditos por combo</span></div>
-        <div><b>42,90 €</b><span>tablas desde</span></div>
-        <div><b>24 · 31</b><span>de diciembre</span></div>
+<section class="nv-hero">
+  <canvas id="nv-nieve" aria-hidden="true"></canvas>
+  <div class="nv-guir" aria-hidden="true"></div>
+  <div class="wrap">
+    <nav class="miga nv-miga" aria-label="Migas"><a href="index.html">Inicio</a> / <span>Navidad</span></nav><br>
+    <span class="nv-eyebrow">Nochebuena 24 · Nochevieja 31</span>
+    <h1 class="nv-h1"><span class="brilla">Bocaditos para</span><span class="y">Nochebuena y Nochevieja</span><span class="brilla">a la paraguaya</span></h1>
+    <span class="nv-cinta">¡Vy'apavẽ Navidad!</span>
+    <p class="nv-intro">Este año, las dos noches más especiales saben a Paraguay. Te preparamos bandejas caseras de bocaditos y tablas para compartir, listas para recoger el <b>24</b> y el <b>31 de diciembre</b>.</p>
+    <div class="nv-cuentas">
+      <div class="nv-cuenta nv-cuenta--24 rv" data-cuenta="24">
+        <h2>Nochebuena</h2><span class="fecha">Jueves 24 de diciembre</span>
+        <div class="falta">Faltan</div>
+        <div class="nv-digitos"><div><b>--</b><small>días</small></div><div><b>--</b><small>horas</small></div><div><b>--</b><small>min</small></div><div><b>--</b><small>seg</small></div></div>
+        <div class="nv-hoy" hidden></div>
+        <a class="nv-btn nv-btn--24" href="https://wa.me/34602076828?text=%C2%A1Hola%20Loren%21%20Quiero%20encargar%20bocaditos%20para%20las%20fiestas.%0A%E2%80%A2%20Combo%3A%20%0A%E2%80%A2%20D%C3%ADa%3A%2024%20de%20diciembre%20%28Nochebuena%29%0A%E2%80%A2%20Nombre%3A%20" target="_blank" rel="noopener">🎄 Encargar para el 24</a>
+      </div>
+      <div class="nv-cuenta nv-cuenta--31 rv" data-cuenta="31">
+        <h2>Nochevieja</h2><span class="fecha">Jueves 31 de diciembre</span>
+        <div class="falta">Faltan</div>
+        <div class="nv-digitos"><div><b>--</b><small>días</small></div><div><b>--</b><small>horas</small></div><div><b>--</b><small>min</small></div><div><b>--</b><small>seg</small></div></div>
+        <div class="nv-hoy" hidden></div>
+        <a class="nv-btn nv-btn--31" href="https://wa.me/34602076828?text=%C2%A1Hola%20Loren%21%20Quiero%20encargar%20bocaditos%20para%20las%20fiestas.%0A%E2%80%A2%20Combo%3A%20%0A%E2%80%A2%20D%C3%ADa%3A%2031%20de%20diciembre%20%28Nochevieja%29%0A%E2%80%A2%20Nombre%3A%20" target="_blank" rel="noopener">🥂 Encargar para el 31</a>
       </div>
     </div>
-    <div class="phero__media">
-      <div class="phero__arco"><img src="img/navidad/bandeja-variada-combo2.webp" alt="Bandeja de bocaditos paraguayos: sándwiches de miga, empanaditas, chipa guazú, croquetas y milanesitas" style="object-position:50% 55%"></div>
-      <div class="phero__chapa"><b>Hecho en casa</b><small>Encarga con antelación · Recogida en Carrer de la Muntanya 115</small></div>
+    <div class="nv-ctas"><a href="#combos" class="btn">Ver los combos</a></div>
+  </div>
+</section>
+
+<section class="nv-sec nv-sec--oscura">
+  <div class="wrap">
+    <div class="nv-cab"><span class="nv-eyebrow">Dos noches, una mesa</span><h2 class="rv">Paraguay en tu <em>mesa de fiesta</em></h2></div>
+    <div class="nv-noches">
+      <article class="nv-noche nv-noche--24 rv" data-delay="1"><img src="img/navidad/bandeja-variada-combo2.webp" alt="Bandeja de bocaditos paraguayos para Nochebuena" loading="lazy">
+        <span class="chip">24 · Nochebuena</span><h3>Nochebuena</h3>
+        <p>La cena en familia, con bocaditos caseros para picar mientras llega la medianoche: empanaditas, chipa guazú, sopa paraguaya y sándwichitos.</p>
+        <a class="nv-btn nv-btn--24" href="https://wa.me/34602076828?text=%C2%A1Hola%20Loren%21%20Quiero%20encargar%20bocaditos%20para%20las%20fiestas.%0A%E2%80%A2%20Combo%3A%20%0A%E2%80%A2%20D%C3%ADa%3A%2024%20de%20diciembre%20%28Nochebuena%29%0A%E2%80%A2%20Nombre%3A%20" target="_blank" rel="noopener">🎄 Encargar para el 24</a></article>
+      <article class="nv-noche nv-noche--31 rv" data-delay="2"><img src="img/navidad/tabla-embutidos.webp" alt="Tabla de embutidos para Nochevieja" loading="lazy">
+        <span class="chip">31 · Nochevieja</span><h3>Nochevieja</h3>
+        <p>Despide el año a lo grande: tablas de embutidos y quesos para compartir y bocaditos para el picoteo antes de las campanadas.</p>
+        <a class="nv-btn nv-btn--31" href="https://wa.me/34602076828?text=%C2%A1Hola%20Loren%21%20Quiero%20encargar%20bocaditos%20para%20las%20fiestas.%0A%E2%80%A2%20Combo%3A%20%0A%E2%80%A2%20D%C3%ADa%3A%2031%20de%20diciembre%20%28Nochevieja%29%0A%E2%80%A2%20Nombre%3A%20" target="_blank" rel="noopener">🥂 Encargar para el 31</a></article>
     </div>
   </div>
 </section>
 
-<section class="sec" id="combos">
+<section class="nv-sec nv-sec--crema" id="combos">
   <div class="wrap">
-    <div class="cabecera cabecera--centro">
-      <span class="eyebrow rv">Navidad y Año Nuevo</span>
-      <h2 class="titulo rv" data-delay="1">Elige tu <em>combo</em></h2>
-      <p class="lead rv" data-delay="2">Dos combos de 50 bocaditos y dos tablas para compartir entre 8 y 10 personas. Toca “Encargar” y te abrimos WhatsApp con el pedido ya escrito.</p>
-    </div>
-    <div class="tres bandejas-grid">
-      <article class="bandeja-card rv" data-delay="1">
-        <div class="bandeja-card__img"><img src="img/navidad/sandwichitos-lechuga-tomate.webp" alt="Combo 1 de Navidad: sándwichitos de peceto al vitel toné, sándwichitos de lengua a la vinagreta, sándwichitos de milanesitas de ternera" loading="lazy" style="object-position:50% 62%"><span class="pers">50 unidades</span></div>
-        <div class="bandeja-card__body"><h3>Combo 1 <small class="nav-sub">bocaditos de Fin de Año</small></h3>
+    <div class="nv-cab"><span class="nv-eyebrow" style="color:#c98e1e">Navidad y Año Nuevo</span><h2 class="rv">Elige tu <em>combo</em></h2>
+      <p class="rv">Dos combos de 50 bocaditos y dos tablas para 8–10 personas. Toca «Para el 24» o «Para el 31» y te abrimos WhatsApp con el pedido ya escrito.</p></div>
+    <div class="nv-combos">
+      <article class="nv-combo rv" data-delay="1">
+        <div class="nv-combo__foto"><img src="img/navidad/sandwichitos-lechuga-tomate.webp" alt="Combo 1 de Navidad: sándwichitos de peceto al vitel toné, sándwichitos de lengua a la vinagreta, sándwichitos de milanesitas de ternera" loading="lazy">
+          <span class="nv-combo__cant">50 unidades</span><span class="nv-combo__precio">70,00 €</span></div>
+        <div class="nv-combo__cuerpo">
+          <h3>Combo 1 <em>bocaditos de Fin de Año</em></h3>
           <ul><li>Sándwichitos de peceto al vitel toné</li><li>Sándwichitos de lengua a la vinagreta</li><li>Sándwichitos de milanesitas de ternera</li><li>Matambrito relleno</li><li>Sopa paraguaya</li></ul>
-          <p class="nav-precio">70,00 €</p>
-          <a class="btn btn--sm btn--vino" href="https://wa.me/34602076828?text=%C2%A1Hola%20Loren%21%20Quiero%20encargar%20el%20Combo%201%20%28bocaditos%20de%20Fin%20de%20A%C3%B1o%29%20de%20Navidad.%0A%E2%80%A2%20D%C3%ADa%3A%2024%20/%2031%20de%20diciembre%0A%E2%80%A2%20Cantidad%3A%20%0A%E2%80%A2%20Nombre%3A%20" target="_blank" rel="noopener">Encargar este combo</a></div>
+          <div class="nv-combo__btns">
+            <a class="nv-btn nv-btn--24" href="https://wa.me/34602076828?text=%C2%A1Hola%20Loren%21%20Quiero%20encargar%20el%20Combo%201%20%28bocaditos%20de%20Fin%20de%20A%C3%B1o%29.%0A%E2%80%A2%20D%C3%ADa%3A%2024%20de%20diciembre%20%28Nochebuena%29%0A%E2%80%A2%20Cantidad%3A%20%0A%E2%80%A2%20Nombre%3A%20" target="_blank" rel="noopener">🎄 Para el 24</a>
+            <a class="nv-btn nv-btn--31" href="https://wa.me/34602076828?text=%C2%A1Hola%20Loren%21%20Quiero%20encargar%20el%20Combo%201%20%28bocaditos%20de%20Fin%20de%20A%C3%B1o%29.%0A%E2%80%A2%20D%C3%ADa%3A%2031%20de%20diciembre%20%28Nochevieja%29%0A%E2%80%A2%20Cantidad%3A%20%0A%E2%80%A2%20Nombre%3A%20" target="_blank" rel="noopener">🥂 Para el 31</a>
+          </div>
+        </div>
       </article>
-      <article class="bandeja-card rv" data-delay="2">
-        <div class="bandeja-card__img"><img src="img/navidad/bandeja-variada-combo2.webp" alt="Combo 2 de Navidad: empanaditas de ternera, croquetitas de ternera, chipa guazú" loading="lazy" style="object-position:50% 62%"><span class="pers">50 unidades</span></div>
-        <div class="bandeja-card__body"><h3>Combo 2 <small class="nav-sub">bocaditos de Fin de Año</small></h3>
+      <article class="nv-combo rv" data-delay="2">
+        <div class="nv-combo__foto"><img src="img/navidad/bandeja-variada-combo2.webp" alt="Combo 2 de Navidad: empanaditas de ternera, croquetitas de ternera, chipa guazú" loading="lazy">
+          <span class="nv-combo__cant">50 unidades</span><span class="nv-combo__precio">65,00 €</span></div>
+        <div class="nv-combo__cuerpo">
+          <h3>Combo 2 <em>bocaditos de Fin de Año</em></h3>
           <ul><li>Empanaditas de ternera</li><li>Croquetitas de ternera</li><li>Chipa guazú</li><li>Milanesitas</li><li>Sándwichitos de pollo desmechado</li></ul>
-          <p class="nav-precio">65,00 €</p>
-          <a class="btn btn--sm btn--vino" href="https://wa.me/34602076828?text=%C2%A1Hola%20Loren%21%20Quiero%20encargar%20el%20Combo%202%20%28bocaditos%20de%20Fin%20de%20A%C3%B1o%29%20de%20Navidad.%0A%E2%80%A2%20D%C3%ADa%3A%2024%20/%2031%20de%20diciembre%0A%E2%80%A2%20Cantidad%3A%20%0A%E2%80%A2%20Nombre%3A%20" target="_blank" rel="noopener">Encargar este combo</a></div>
+          <div class="nv-combo__btns">
+            <a class="nv-btn nv-btn--24" href="https://wa.me/34602076828?text=%C2%A1Hola%20Loren%21%20Quiero%20encargar%20el%20Combo%202%20%28bocaditos%20de%20Fin%20de%20A%C3%B1o%29.%0A%E2%80%A2%20D%C3%ADa%3A%2024%20de%20diciembre%20%28Nochebuena%29%0A%E2%80%A2%20Cantidad%3A%20%0A%E2%80%A2%20Nombre%3A%20" target="_blank" rel="noopener">🎄 Para el 24</a>
+            <a class="nv-btn nv-btn--31" href="https://wa.me/34602076828?text=%C2%A1Hola%20Loren%21%20Quiero%20encargar%20el%20Combo%202%20%28bocaditos%20de%20Fin%20de%20A%C3%B1o%29.%0A%E2%80%A2%20D%C3%ADa%3A%2031%20de%20diciembre%20%28Nochevieja%29%0A%E2%80%A2%20Cantidad%3A%20%0A%E2%80%A2%20Nombre%3A%20" target="_blank" rel="noopener">🥂 Para el 31</a>
+          </div>
+        </div>
       </article>
-      <article class="bandeja-card rv" data-delay="3">
-        <div class="bandeja-card__img"><img src="img/navidad/tabla-embutidos.webp" alt="Embutidos de Navidad: salchichón ibérico, fuet, jamón ibérico" loading="lazy" style="object-position:50% 62%"><span class="pers">Para 8 a 10 personas</span></div>
-        <div class="bandeja-card__body"><h3>Embutidos <small class="nav-sub">tabla surtida</small></h3>
+      <article class="nv-combo rv" data-delay="1">
+        <div class="nv-combo__foto"><img src="img/navidad/tabla-embutidos.webp" alt="Embutidos de Navidad: salchichón ibérico, fuet, jamón ibérico" loading="lazy">
+          <span class="nv-combo__cant">Para 8 a 10 personas</span><span class="nv-combo__precio">44,90 €</span></div>
+        <div class="nv-combo__cuerpo">
+          <h3>Embutidos <em>tabla surtida</em></h3>
           <ul><li>Salchichón ibérico</li><li>Fuet</li><li>Jamón ibérico</li><li>Lomo ibérico</li><li>Chorizo ibérico</li><li>Longaniza</li><li>Frutos secos</li></ul>
-          <p class="nav-precio">44,90 €</p>
-          <a class="btn btn--sm btn--vino" href="https://wa.me/34602076828?text=%C2%A1Hola%20Loren%21%20Quiero%20encargar%20el%20Embutidos%20%28tabla%20surtida%29%20de%20Navidad.%0A%E2%80%A2%20D%C3%ADa%3A%2024%20/%2031%20de%20diciembre%0A%E2%80%A2%20Cantidad%3A%20%0A%E2%80%A2%20Nombre%3A%20" target="_blank" rel="noopener">Encargar este combo</a></div>
+          <div class="nv-combo__btns">
+            <a class="nv-btn nv-btn--24" href="https://wa.me/34602076828?text=%C2%A1Hola%20Loren%21%20Quiero%20encargar%20el%20Embutidos%20%28tabla%20surtida%29.%0A%E2%80%A2%20D%C3%ADa%3A%2024%20de%20diciembre%20%28Nochebuena%29%0A%E2%80%A2%20Cantidad%3A%20%0A%E2%80%A2%20Nombre%3A%20" target="_blank" rel="noopener">🎄 Para el 24</a>
+            <a class="nv-btn nv-btn--31" href="https://wa.me/34602076828?text=%C2%A1Hola%20Loren%21%20Quiero%20encargar%20el%20Embutidos%20%28tabla%20surtida%29.%0A%E2%80%A2%20D%C3%ADa%3A%2031%20de%20diciembre%20%28Nochevieja%29%0A%E2%80%A2%20Cantidad%3A%20%0A%E2%80%A2%20Nombre%3A%20" target="_blank" rel="noopener">🥂 Para el 31</a>
+          </div>
+        </div>
       </article>
-      <article class="bandeja-card rv" data-delay="1">
-        <div class="bandeja-card__img"><img src="img/navidad/tabla-quesos.webp" alt="Quesos de Navidad: queso manchego, queso brie, queso de cabra" loading="lazy" style="object-position:50% 62%"><span class="pers">Para 8 a 10 personas</span></div>
-        <div class="bandeja-card__body"><h3>Quesos <small class="nav-sub">tabla surtida</small></h3>
+      <article class="nv-combo rv" data-delay="2">
+        <div class="nv-combo__foto"><img src="img/navidad/tabla-quesos.webp" alt="Quesos de Navidad: queso manchego, queso brie, queso de cabra" loading="lazy">
+          <span class="nv-combo__cant">Para 8 a 10 personas</span><span class="nv-combo__precio">42,90 €</span></div>
+        <div class="nv-combo__cuerpo">
+          <h3>Quesos <em>tabla surtida</em></h3>
           <ul><li>Queso manchego</li><li>Queso brie</li><li>Queso de cabra</li><li>Queso gouda curado</li><li>Frutos secos, uvas, fresas y picos de pan</li></ul>
-          <p class="nav-precio">42,90 €</p>
-          <a class="btn btn--sm btn--vino" href="https://wa.me/34602076828?text=%C2%A1Hola%20Loren%21%20Quiero%20encargar%20el%20Quesos%20%28tabla%20surtida%29%20de%20Navidad.%0A%E2%80%A2%20D%C3%ADa%3A%2024%20/%2031%20de%20diciembre%0A%E2%80%A2%20Cantidad%3A%20%0A%E2%80%A2%20Nombre%3A%20" target="_blank" rel="noopener">Encargar este combo</a></div>
+          <div class="nv-combo__btns">
+            <a class="nv-btn nv-btn--24" href="https://wa.me/34602076828?text=%C2%A1Hola%20Loren%21%20Quiero%20encargar%20el%20Quesos%20%28tabla%20surtida%29.%0A%E2%80%A2%20D%C3%ADa%3A%2024%20de%20diciembre%20%28Nochebuena%29%0A%E2%80%A2%20Cantidad%3A%20%0A%E2%80%A2%20Nombre%3A%20" target="_blank" rel="noopener">🎄 Para el 24</a>
+            <a class="nv-btn nv-btn--31" href="https://wa.me/34602076828?text=%C2%A1Hola%20Loren%21%20Quiero%20encargar%20el%20Quesos%20%28tabla%20surtida%29.%0A%E2%80%A2%20D%C3%ADa%3A%2031%20de%20diciembre%20%28Nochevieja%29%0A%E2%80%A2%20Cantidad%3A%20%0A%E2%80%A2%20Nombre%3A%20" target="_blank" rel="noopener">🥂 Para el 31</a>
+          </div>
+        </div>
       </article>
     </div>
-    <p class="carta__nota" style="margin-top:22px;text-align:center">⏰ Encarga con antelación · Recogida en el local, Carrer de la Muntanya 115 · WhatsApp 602 07 68 28</p>
+    <p class="nv-nota">⏰ Encarga con antelación · Recogida en el local, Carrer de la Muntanya 115 · WhatsApp 602 07 68 28</p>
   </div>
 </section>
 
-<section class="sec sec--oscuro">
+<section class="nv-sec nv-sec--oscura">
   <div class="wrap">
-    <div class="cabecera cabecera--centro">
-      <span class="eyebrow rv">Cómo funciona</span>
-      <h2 class="titulo rv" data-delay="1">Encargarlo es <em>muy fácil</em></h2>
-    </div>
-    <div class="pasos nav-pasos">
-      <div class="paso rv" data-delay="1"><h3>Elige tu combo</h3><p>Combo 1, Combo 2, la tabla de embutidos o la de quesos.</p></div>
-      <div class="paso rv" data-delay="2"><h3>Escríbenos por WhatsApp</h3><p>Al 602 07 68 28: dinos el combo, la cantidad y el día (24 o 31 de diciembre).</p></div>
-      <div class="paso rv" data-delay="3"><h3>Recógelo en el local</h3><p>Carrer de la Muntanya 115, Camp de l'Arpa. Encarga con antelación.</p></div>
+    <div class="nv-cab"><span class="nv-eyebrow">Así se celebra en Paraguay</span><h2 class="rv">Una Navidad <em>con sabor a casa</em></h2></div>
+    <div class="nv-trad">
+      <div class="rv" data-delay="1"><span class="ic">🌽</span><h3>Sopa y chipa</h3><p>La sopa paraguaya y la chipa no faltan en ninguna mesa de fiesta.</p></div>
+      <div class="rv" data-delay="2"><span class="ic">🍷</span><h3>Clericó</h3><p>El cóctel de frutas con vino con el que se brinda en las fiestas.</p></div>
+      <div class="rv" data-delay="3"><span class="ic">🌼</span><h3>Flor de coco</h3><p>Su perfume anuncia la Navidad en cada casa paraguaya.</p></div>
+      <div class="rv" data-delay="4"><span class="ic">⭐</span><h3>El pesebre</h3><p>Se adorna con frutas y flores y es el centro de la casa.</p></div>
     </div>
   </div>
 </section>
 
-<section class="sec sec--vino cta-final">
+<section class="nv-sec nv-sec--crema">
   <div class="wrap">
-    <h2 class="titulo rv">Este año, la Nochebuena <em>sabe a Paraguay</em></h2>
-    <p class="lead rv" style="margin:18px auto 0">Escríbenos y te lo dejamos listo para recoger.</p>
-    <div class="hero__ctas rv"><a href="https://wa.me/34602076828?text=%C2%A1Hola%20Loren%21%20Quiero%20encargar%20bocaditos%20de%20Navidad.%0A%E2%80%A2%20Combo%3A%20%0A%E2%80%A2%20D%C3%ADa%3A%2024%20/%2031%20de%20diciembre%0A%E2%80%A2%20Nombre%3A%20" target="_blank" rel="noopener" class="btn">Encargar por WhatsApp</a><a href="carta.html" class="btn btn--ghost">Ver la carta</a></div>
+    <div class="nv-cab"><span class="nv-eyebrow" style="color:#c98e1e">Cómo funciona</span><h2 class="rv">Encargarlo es <em>muy fácil</em></h2></div>
+    <div class="nv-pasos">
+      <div class="rv" data-delay="1"><h3>Elige tu combo</h3><p>Combo 1, Combo 2, la tabla de embutidos o la de quesos.</p></div>
+      <div class="rv" data-delay="2"><h3>Escríbenos por WhatsApp</h3><p>Al 602 07 68 28: dinos el combo, la cantidad y el día (24 o 31 de diciembre).</p></div>
+      <div class="rv" data-delay="3"><h3>Recógelo en el local</h3><p>Carrer de la Muntanya 115, Camp de l'Arpa. Encarga con antelación.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="nv-final">
+  <canvas id="nv-fuegos" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <h2 class="rv">Que no falte Paraguay <em>en tus fiestas</em></h2>
+    <p class="rv">Escríbenos y te lo dejamos listo para recoger. ¡Vy'apavẽ Navidad y feliz Año Nuevo!</p>
+    <div class="nv-ctas rv"><a class="nv-btn nv-btn--24" href="https://wa.me/34602076828?text=%C2%A1Hola%20Loren%21%20Quiero%20encargar%20bocaditos%20para%20las%20fiestas.%0A%E2%80%A2%20Combo%3A%20%0A%E2%80%A2%20D%C3%ADa%3A%2024%20de%20diciembre%20%28Nochebuena%29%0A%E2%80%A2%20Nombre%3A%20" target="_blank" rel="noopener">🎄 Encargar para el 24</a><a class="nv-btn nv-btn--31" href="https://wa.me/34602076828?text=%C2%A1Hola%20Loren%21%20Quiero%20encargar%20bocaditos%20para%20las%20fiestas.%0A%E2%80%A2%20Combo%3A%20%0A%E2%80%A2%20D%C3%ADa%3A%2031%20de%20diciembre%20%28Nochevieja%29%0A%E2%80%A2%20Nombre%3A%20" target="_blank" rel="noopener">🥂 Encargar para el 31</a></div>
   </div>
 </section>
 
@@ -126,5 +314,108 @@
 <script src="js/paginas.js?v=61"></script>
 <script src="js/main.js?v=61"></script>
 <script src="js/v2.js?v=61"></script>
+<script>
+(function () {
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const $ = (s) => document.querySelector(s);
+
+  /* ---------- Cuentas atrás (hora de España) ---------- */
+  const F = (s) => new Date(s + "+01:00");
+  const EVENTOS = {
+    "24": { fin: F("2026-12-24T00:00:00"), hoyHasta: F("2026-12-26T00:00:00"), hoy: "¡Hoy es Nochebuena! 🎄", pasado: "¡Feliz Navidad! 🎄" },
+    "31": { fin: F("2026-12-31T00:00:00"), hoyHasta: F("2027-01-01T00:00:00"), campanadas: F("2027-01-01T00:00:00"), pasado: "¡Feliz Año Nuevo! 🥂" }
+  };
+  const pad = (n) => String(n).padStart(2, "0");
+  function pinta(id) {
+    const el = document.querySelector('[data-cuenta="' + id + '"]'); if (!el) return;
+    const ev = EVENTOS[id], ahora = new Date();
+    let objetivo = ev.fin, txt = null, falta = "Faltan";
+    if (ahora >= ev.fin) {
+      if (id === "31" && ahora < ev.campanadas) { objetivo = ev.campanadas; falta = "Para las campanadas"; }
+      else if (ahora < ev.hoyHasta && id === "24") txt = ev.hoy;
+      else txt = ev.pasado;
+    }
+    el.querySelector(".falta").textContent = txt ? "" : falta;
+    const dig = el.querySelector(".nv-digitos"), hoy = el.querySelector(".nv-hoy");
+    if (txt) { dig.hidden = true; hoy.hidden = false; hoy.textContent = txt; return; }
+    dig.hidden = false; hoy.hidden = true;
+    let s = Math.max(0, Math.floor((objetivo - ahora) / 1000));
+    const v = [Math.floor(s / 86400), Math.floor(s % 86400 / 3600), Math.floor(s % 3600 / 60), s % 60];
+    dig.querySelectorAll("b").forEach((b, i) => {
+      const t = i === 0 ? String(v[i]) : pad(v[i]);
+      if (b.textContent !== t) { b.textContent = t; if (!reduce) { b.classList.remove("tic"); void b.offsetWidth; b.classList.add("tic"); } }
+    });
+  }
+  const tic = () => { pinta("24"); pinta("31"); };
+  tic(); setInterval(tic, 1000);
+
+  /* ---------- Guirnalda con bombillas y bolas ---------- */
+  const guir = $(".nv-guir");
+  function guirnalda() {
+    if (!guir) return;
+    const W = guir.clientWidth, sag = Math.min(70, W * .06), tramos = W < 700 ? 1 : 2, gy = (x) => 10 + sag * Math.abs(Math.sin(Math.PI * x / (W / tramos)));
+    let p = ""; for (let x = -10; x <= W + 10; x += 8) p += x + "," + gy(x).toFixed(1) + " ";
+    let h = '<svg><polyline points="' + p + '" fill="none" stroke="#f4d27a" stroke-width="2.5" style="filter:drop-shadow(0 0 4px rgba(244,210,122,.9))"/></svg>';
+    const col = ["#fff3c4", "#f4d27a", "#ffb347", "#fff3c4", "#ffd27a"];
+    for (let k = 0, x = 18; x < W; x += 46, k++) {
+      const c = col[k % 5];
+      h += '<span class="nv-bombilla" style="left:' + x + "px;top:" + (gy(x) + 3) + "px;background:" + c + ";box-shadow:0 0 10px 3px " + c + ",0 0 24px 8px rgba(255,190,90,.4);animation-delay:" + (-(k * 0.37) % 2.4).toFixed(2) + 's"></span>';
+    }
+    const bolas = W < 700 ? [[.07, 18, 46], [.93, 26, 50]] : [[.06, 90, 70], [.2, 30, 48], [.8, 40, 52], [.94, 110, 76]];
+    bolas.forEach(([f, l, d], i) => {
+      const x = f * W, y = gy(x);
+      h += '<div class="nv-adorno" style="left:' + (x - d / 2) + "px;top:" + y + "px;width:" + d + "px;height:" + (l + d + 8) + "px;animation-delay:" + (-i * 0.9) + 's"><i></i><b></b><span class="' + (i % 2 ? "vino" : "") + '" style="width:' + d + "px;height:" + d + 'px"><img src="img/kv/flor-kv.webp" alt=""></span></div>';
+    });
+    guir.innerHTML = h;
+  }
+  guirnalda(); let rt; addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(guirnalda, 200); });
+
+  /* ---------- Nieve de ñandutí y luces desenfocadas ---------- */
+  function lienzo(cv, dibuja) {
+    if (!cv) return;
+    const ctx = cv.getContext("2d"); let W = 0, H = 0, vis = true, t0 = performance.now();
+    const size = () => { const d = Math.min(devicePixelRatio || 1, 2); W = cv.clientWidth; H = cv.clientHeight; cv.width = W * d; cv.height = H * d; ctx.setTransform(d, 0, 0, d, 0, 0); };
+    size(); addEventListener("resize", size);
+    new IntersectionObserver(([e]) => (vis = e.isIntersecting)).observe(cv);
+    const bucle = (now) => { if (vis && !document.hidden) dibuja(ctx, W, H, (now - t0) / 1000); requestAnimationFrame(bucle); };
+    if (reduce) dibuja(ctx, W, H, 0); else requestAnimationFrame(bucle);
+  }
+  const flor = new Image(); flor.src = "img/kv/flor-kv.webp";
+  const R = (n) => { const x = Math.sin(n * 91.7) * 43758.5453; return x - Math.floor(x); };
+  const COPOS = Array.from({ length: innerWidth < 700 ? 34 : 70 }, (_, i) => ({ x: R(i + 1), y: R(i + 50), s: 8 + R(i + 99) * 22, v: 18 + R(i + 7) * 40, w: R(i + 3) * 6, f: .3 + R(i + 9) * .7, a: .25 + R(i + 11) * .5 }));
+  const LUCES = Array.from({ length: 16 }, (_, i) => ({ x: R(i + 300), y: R(i + 400), r: 30 + R(i + 500) * 90, f: .15 + R(i + 600) * .3, c: ["244,210,122", "255,170,80", "255,236,190", "176,64,95"][i % 4], a: .12 + R(i + 700) * .2 }));
+  lienzo($("#nv-nieve"), (ctx, W, H, t) => {
+    ctx.clearRect(0, 0, W, H);
+    LUCES.forEach((l) => {
+      const x = l.x * W + Math.sin(t * l.f + l.x * 9) * 40, y = ((l.y * H - t * 10 * l.f) % H + H) % H;
+      const g = ctx.createRadialGradient(x, y, 0, x, y, l.r); g.addColorStop(0, "rgba(" + l.c + "," + l.a + ")"); g.addColorStop(1, "rgba(" + l.c + ",0)");
+      ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x, y, l.r, 0, 6.3); ctx.fill();
+    });
+    if (!flor.complete) return;
+    COPOS.forEach((c) => {
+      const y = ((c.y * (H + 60) + t * c.v) % (H + 60)) - 30, x = c.x * W + Math.sin(t * c.f + c.x * 20) * 18 * c.w / 3;
+      ctx.save(); ctx.globalAlpha = c.a; ctx.translate(x, y); ctx.rotate(t * c.f * .6 + c.x * 6); ctx.drawImage(flor, -c.s / 2, -c.s / 2, c.s, c.s); ctx.restore();
+    });
+  });
+
+  /* ---------- Fuegos artificiales dorados al final ---------- */
+  const CH = []; let prox = 0;
+  lienzo($("#nv-fuegos"), (ctx, W, H, t) => {
+    ctx.globalCompositeOperation = "source-over"; ctx.fillStyle = "rgba(14,10,11,.22)"; ctx.fillRect(0, 0, W, H);
+    if (reduce) return;
+    if (t > prox) {
+      prox = t + 0.9 + Math.random() * 0.9;
+      const cx = W * (.15 + Math.random() * .7), cy = H * (.15 + Math.random() * .4), n = 46, col = Math.random() < .7 ? [244, 210, 122] : [255, 180, 200];
+      for (let i = 0; i < n; i++) { const a = i / n * 6.283, v = 1.6 + Math.random() * 2.2; CH.push({ x: cx, y: cy, vx: Math.cos(a) * v, vy: Math.sin(a) * v, vida: 1, col }); }
+    }
+    ctx.globalCompositeOperation = "lighter";
+    for (let i = CH.length - 1; i >= 0; i--) {
+      const p = CH[i]; p.x += p.vx; p.y += p.vy; p.vy += .03; p.vx *= .985; p.vy *= .985; p.vida -= .012;
+      if (p.vida <= 0) { CH.splice(i, 1); continue; }
+      ctx.fillStyle = "rgba(" + p.col.join(",") + "," + p.vida + ")"; ctx.beginPath(); ctx.arc(p.x, p.y, 1.8, 0, 6.3); ctx.fill();
+    }
+  });
+})();
+</script>
 </body>
 </html>
