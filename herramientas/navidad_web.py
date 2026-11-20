@@ -58,8 +58,10 @@ ld = {"@context": "https://schema.org", "@type": "WebPage", "url": URL, "name": 
       "about": {"@id": "https://lorenrestobar.com/#restaurante"},
       "mainEntity": {"@type": "OfferCatalog", "name": "Bocaditos para Nochebuena y Nochevieja", "itemListElement": [
           {"@type": "Product", "name": f"{c['titulo']} · {c['sub']}", "description": ", ".join(c["items"]),
+           "image": f"https://lorenrestobar.com/img/navidad/{c['foto']}.webp", "brand": {"@type": "Brand", "name": "Loren Restobar"},
            "offers": {"@type": "Offer", "price": c["precio"].replace(" €", "").replace(",", "."), "priceCurrency": "EUR",
-                      "priceValidUntil": "2026-12-31", "seller": {"@id": "https://lorenrestobar.com/#restaurante"}}} for c in COMBOS]}}
+                      "availability": "https://schema.org/InStock", "url": URL, "priceValidUntil": "2026-12-31",
+                      "seller": {"@id": "https://lorenrestobar.com/#restaurante"}}} for c in COMBOS]}}
 
 CSS = r"""
 /* ====== Navidad (sólo esta página) ====== */
