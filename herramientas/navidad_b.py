@@ -101,8 +101,8 @@ def pola(c, w, h, rot, pie, fs=40, pos="50% 58%"):
             f'<img src="{foto(c)}" style="width:{w}px;height:{h}px;object-position:{pos}"><div class="pie" style="font-size:{fs}px">{pie}</div></div>')
 
 
-def tag(c, fs, rot=-5):
-    return (f'<div class="tagw" style="transform:rotate({rot}deg);font-size:{fs}px"><span class="cordel"></span>'
+def tag(c, fs, rot=-5, cordel=True):
+    return (f'<div class="tagw" style="transform:rotate({rot}deg);font-size:{fs}px">{'<span class="cordel"></span>' if cordel else ''}'
             f'<div class="tag"><small>{c["cantidad"]}</small><b>{c["precio"]}</b></div></div>')
 
 
@@ -189,12 +189,16 @@ def slide_encargar(W, H, alto):
 
 
 def fila(c, fs, fw, fh, rot):
-    return f"""<div style="display:flex;gap:{fs * 1.5:.0f}px;align-items:center">
-  <div style="flex:none;padding:12px 8px 0">{pola(c, fw, fh, rot, "", 10).replace('padding:18px 18px 74px', '').replace('class="pola"', 'class="pola" style="padding:12px 12px 36px"', 1)}</div>
+    """Cada combo en su propia tarjeta: foto, nombre con su precio al lado y la lista debajo (sin cordel, para que no haya dudas)."""
+    pol = pola(c, fw, fh, rot, "", 10).replace('class="pola"', 'class="pola" style="padding:10px 10px 26px"', 1).replace(f'style="transform:rotate({rot}deg)"', f'style="padding:10px 10px 26px;transform:rotate({rot}deg)"', 1)
+    return f"""<div style="display:flex;gap:{fs * 1.3:.0f}px;align-items:center;background:rgba(255,253,246,.72);border:2px solid rgba(201,142,30,.35);border-radius:20px;padding:{fs * .55:.0f}px {fs * .9:.0f}px;box-shadow:0 8px 20px -14px rgba(60,10,20,.45)">
+  <div style="flex:none">{pol}</div>
   <div style="flex:1;min-width:0">
-    <div style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap"><span class="titulo" style="font-size:{fs * 2.4:.0f}px;text-align:left">{c['titulo']}</span><span class="anton" style="font-size:{fs * .95:.0f}px;letter-spacing:.14em">{c['sub']}</span></div>
-    <div style="margin-top:{fs * .4:.0f}px">{lista(c['items'], fs, 2)}</div>
-    <div style="margin-top:{fs * .7:.0f}px">{tag(c, fs * 1.75, -3)}</div>
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
+      <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;min-width:0"><span class="titulo" style="font-size:{fs * 2.3:.0f}px;text-align:left">{c['titulo']}</span><span class="anton" style="font-size:{fs * .9:.0f}px;letter-spacing:.14em">{c['sub']}</span></div>
+      <div style="flex:none">{tag(c, fs * 1.6, -3, False)}</div>
+    </div>
+    <div style="margin-top:{fs * .45:.0f}px">{lista(c['items'], fs, 2)}</div>
   </div>
 </div>"""
 
@@ -227,10 +231,10 @@ def main():
         T.append(("2-instagram-historias", f"0{n + 2}-{c['id']}", pagina(slide_combo(c, 1080, 1920, True, n), 1080, 1920), 1080, 1920, None))
     T.append(("1-instagram-carrusel", "06-como-encargar", pagina(slide_encargar(1080, 1350, False), 1080, 1350), 1080, 1350, None))
     T.append(("2-instagram-historias", "06-como-encargar", pagina(slide_encargar(1080, 1920, True), 1080, 1920), 1080, 1920, None))
-    T.append(("3-whatsapp", "resumen-1080x1350", pagina(resumen(1080, 1350, False, 0, 17, 170, 132, 8, 10, 46, 74), 1080, 1350), 1080, 1350, None))
-    T.append(("3-whatsapp", "estado-1080x1920", pagina(resumen(1080, 1920, False, 170, 20, 210, 165, 16, 18, 56, 90), 1080, 1920), 1080, 1920, None))
-    T.append(("4-imprenta", "cartel-A4", pagina(resumen(1111, 1559, True, 0, 19, 200, 155, 10, 12, 64, 84), 1111, 1559), 1111, 1559, (216, 303)))
-    T.append(("4-imprenta", "flyer-A5", pagina(resumen(1111, 1559, True, 0, 19, 200, 155, 10, 12, 64, 84), 1111, 1559), 1111, 1559, (154, 216)))
+    T.append(("3-whatsapp", "resumen-1080x1350", pagina(resumen(1080, 1350, False, 0, 19, 200, 150, 14, 14, 46, 78), 1080, 1350), 1080, 1350, None))
+    T.append(("3-whatsapp", "estado-1080x1920", pagina(resumen(1080, 1920, False, 170, 22, 235, 182, 18, 20, 50, 94), 1080, 1920), 1080, 1920, None))
+    T.append(("4-imprenta", "cartel-A4", pagina(resumen(1111, 1559, True, 0, 20, 225, 170, 14, 14, 60, 86), 1111, 1559), 1111, 1559, (216, 303)))
+    T.append(("4-imprenta", "flyer-A5", pagina(resumen(1111, 1559, True, 0, 20, 225, 170, 14, 14, 60, 86), 1111, 1559), 1111, 1559, (154, 216)))
     with sync_playwright() as pw:
         nav = pw.chromium.launch()
         for carpeta, nombre, html, W, H, mm in T:
