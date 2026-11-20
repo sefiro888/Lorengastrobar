@@ -26,7 +26,7 @@ try:
         pg.wait_for_function("window.LISTO === true"); pg.wait_for_timeout(600)
         dur = pg.evaluate("window.DUR"); NF = int(dur * FPS)
         proc = subprocess.Popen([FF, "-y", "-loglevel", "error", "-f", "image2pipe", "-framerate", str(FPS), "-c:v", "mjpeg", "-i", "-",
-                                 "-c:v", "libx264", "-crf", "17", "-preset", "medium", "-pix_fmt", "yuv420p", "-an", "-movflags", "+faststart", SAL],
+                                 "-vf", "scale=in_range=full:out_range=tv", "-c:v", "libx264", "-crf", "17", "-preset", "medium", "-pix_fmt", "yuv420p", "-color_range", "tv", "-an", "-movflags", "+faststart", SAL],
                                 stdin=subprocess.PIPE)
         for i in range(NF):
             pg.evaluate(f"render({i / FPS})")
